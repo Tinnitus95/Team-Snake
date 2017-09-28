@@ -8,7 +8,7 @@
 .flex-nav a {
     color: white;
     text-align: center;
-    padding: 14px 50px;
+    padding: 14px;
     text-decoration: none;
     font-size: 17px;
     margin: 25px;
@@ -16,4 +16,7 @@
 .flex-nav a:hover {
     background-color: #ddd;
     color: black;
+}
+.flex-nav img{
+  margin-right: 920px;
 }
