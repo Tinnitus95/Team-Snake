@@ -1,0 +1,32 @@
+.login{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.login h2{
+  text-align: center;
+  color: white;
+  font-size: 35px;
+}
+
+.login input{
+  display: block;
+  width: 320px;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+
+}
+.login #login-btn{
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 20px;
+}
