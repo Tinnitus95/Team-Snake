@@ -1,8 +1,13 @@
+/* Det betyder atting på hml sida kommer att få det här */
+
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
+
+
+/* Det betyder att allting i html kommer att få de här väderna */
 
 html {
     color: #555;
@@ -12,16 +17,25 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+
+/* Min sida kommer aldrig blir större än  1140px */
+
 .row {
     max-width: 1140px;
     margin: 0 auto;
 }
 
+
+/* Låser navigationen */
+
 .main-nav-fixed {
-    overflow: hidden;
+    background-color: #000;
     position: fixed;
     width: 100%;
 }
+
+
+/* Storlek på bilden Logo */
 
 .logo {
     opacity: 1;
@@ -31,6 +45,9 @@ html {
     margin-top: 10px;
 }
 
+
+/* Sätter mina länkar till höger */
+
 .main-nav {
     float: right;
     list-style: none;
@@ -38,15 +55,21 @@ html {
     margin-right: 10px;
 }
 
+
+/* Marginalen mellan länkarna */
+
 .main-nav li {
     display: inline-block;
     margin-left: 40px;
 }
 
+
+/* Definerar hur länkarna ska ser ut när man INTE håller musen över */
+
 .main-nav li a:link,
 .main-nav li a:visited {
     padding: 8px 0;
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
@@ -54,11 +77,17 @@ html {
     transition: border-bottom 0.2s;
 }
 
+
+/* Definerar hur länkarna ska ser ut när man HÅLLER musen över */
+
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #393B3B;
-    color: #393B3B;
+    border-bottom: 2px solid #969696;
+    color: #969696;
 }
+
+
+/* flyttar ner sectionen 200px */
 
 section {
     padding: 200px 0;
