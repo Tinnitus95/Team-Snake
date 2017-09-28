@@ -1,2 +1,0 @@
-# Team-Snake
-Första projektarbetet
