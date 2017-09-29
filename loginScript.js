@@ -1,11 +1,17 @@
-const userName =["oscar", "silvia", "simon"];
-const passWord =["123","456","789"];
+const users = [
+    { username: "jesse", password: "jesse" },
+    { username: "oscar", password: "oscar" },
+    { username: "silvia", password: "silvia"},
+    { username: "simon", password: "simon"},
+    { username: "natasha", password: "natasha"},
+    { username: "elias", password: "elias"}
+];
 
 
 function check(form) { /*function to check userid & password*/
                /*the following code checkes whether the entered userid and password are matching*/
-               for(let i = 0; i < 3; i++) {
-                 if(form.username.value == userName[i]  && form.password.value == passWord[i]) {
+               for(let i = 0; i < users.length; i++) {
+                 if(form.username.value == users[i].username && form.password.value == users[i].password) {
                    valid = true;
                    break;
                   }
