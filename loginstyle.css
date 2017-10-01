@@ -1,12 +1,17 @@
-body{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  display: flex;
-  background-image: url('SimonFrontPage/FrontPage/background.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    background-image: url('SimonFrontPage/FrontPage/background.jpg');
+    /*   background-repeat: no-repeat; */
+    background-attachment: fixed;
+}
+
 header {
     background-color: #d9d9d9;
     display: flex;
@@ -39,53 +44,56 @@ nav a {
     height: 40px;
     width: 33%;
 }
+
 nav a:hover {
     background-color: black;
     color: white;
 }
 
-.login{
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-}
-.login h2{
-  text-align: center;
-  color: white;
-  font-size: 35px;
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.login input{
-  display: block;
-  width: 320px;
-  height: 40px;
-  padding: 10px;
-  font-size: 14px;
-  color: black;
-  outline: none;
-  border: 1px solid black;
-  border-radius: 5px;
-  margin-bottom: 10px;
+.login h2 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
 
+.login input {
+    display: block;
+    width: 320px;
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+    color: black;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
 
+.login #login-btn {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
 }
-.login #login-btn{
-  width: 100%;
-  font-size: 18px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 20px;
+
+.login #login-btn:hover {
+    background-color: black;
+    color: white;
 }
-.login #login-btn:hover{
-  background-color: black;
-  color: white;
-}
-#Change{
-  font-size: 18px;
-  color: red;
-  display: flex;
-  justify-content: center;
-  border-radius: 5px;
-  background-color: black;
+
+#Change {
+    font-size: 18px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: black;
 }
