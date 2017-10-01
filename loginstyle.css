@@ -3,12 +3,12 @@
 }
 
 body {
+    font-size: 18px;
     margin: 0;
     padding: 0;
     border: 0;
     display: flex;
     background-image: url('SimonFrontPage/FrontPage/background.jpg');
-    /*   background-repeat: no-repeat; */
     background-attachment: fixed;
 }
 
@@ -60,7 +60,7 @@ nav a:hover {
 .login h2 {
     text-align: center;
     color: white;
-    font-size: 35px;
+    font-size: 200%;
 }
 
 .login input {
@@ -68,7 +68,7 @@ nav a:hover {
     width: 320px;
     height: 40px;
     padding: 10px;
-    font-size: 14px;
+    font-size: 85%;
     color: black;
     outline: none;
     border: 1px solid black;
@@ -78,7 +78,7 @@ nav a:hover {
 
 .login #login-btn {
     width: 100%;
-    font-size: 18px;
+    font-size: 100%;
     text-align: center;
     vertical-align: middle;
     line-height: 20px;
@@ -90,10 +90,16 @@ nav a:hover {
 }
 
 #Change {
-    font-size: 18px;
+    font-size: 100%;
     color: red;
     display: flex;
     justify-content: center;
     border-radius: 5px;
     background-color: black;
+}
+
+.features {
+    font-size: 100%;
+    text-align: left;
+    list-style: none;
 }
