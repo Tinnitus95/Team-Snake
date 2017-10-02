@@ -4,9 +4,9 @@ body {
     padding: 0;
     border: 0;
     display: flex;
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
+    background-image: url('../Pictures/background.jpg');
     background-attachment: fixed;
+
 }
 
 header {
@@ -28,7 +28,7 @@ nav {
     margin-left: 50px;
 }
 
-a {
+nav a {
     font-family: arial;
     color: black;
     display: flex;
@@ -42,7 +42,19 @@ a {
     width: 33%;
 
 }
-a:hover {
+nav a:hover {
     background-color: black;
     color: white;
 }
+main {
+    border-radius: 5%;
+    background-color: white;
+    color: black;
+    width: 80%;
+    display: flex;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 5%;
+}
+
