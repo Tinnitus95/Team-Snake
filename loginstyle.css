@@ -18,6 +18,7 @@ header {
     height: 50px;
     flex: 0 0 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 nav {
