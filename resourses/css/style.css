@@ -41,16 +41,6 @@ h2 {
     text-align: center;
 }
 
-h2:after {
-    display: block;
-    height: 2px;
-    background-color: #16a085;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
 
 /* Header section */
 
@@ -111,6 +101,60 @@ section {
     padding-top: 120px;
     background-color: #FFFFFF;
 }
+
+
+/* login section */
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 200%;
+}
+
+.login input {
+    display: block;
+    width: 320px;
+    height: 40px;
+    padding: 10px;
+    font-size: 85%;
+    color: black;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.login #login-btn {
+    width: 100%;
+    font-size: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+.login #login-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+#Change {
+    font-size: 80%;
+    color: red;
+    display: flex;
+    justify-content: center;
+    border-radius: 0px;
+    background-color: #FFFFFF;
+}
+
+
+/* Nav list for main page */
 
 .nav-list {
     float: left;
