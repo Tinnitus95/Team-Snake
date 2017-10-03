@@ -5,7 +5,9 @@ body {
     border: 0;
     display: flex;
     background-image: url('../Pictures/background.jpg');
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    flex-direction: column;
 
 }
 
@@ -47,14 +49,19 @@ nav a:hover {
     color: white;
 }
 main {
-    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pricing {
     background-color: white;
+    flex-direction: column;
+    align-items: center;
     color: black;
     width: 80%;
     display: flex;
-    position: absolute;
     margin-top: 5%;
-    margin-left: 5%;
     padding: 5%;
 }
 

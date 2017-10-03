@@ -21,7 +21,7 @@ function check(form) { /*function to check userid & password*/
                   }
               }
                 if (valid) {
-                 window.open('https://www.google.se/')/*opens the target page while Id & password matches*/
+                 window.open('../html/kurssida.html')/*opens the target page while Id & password matches*/
                  }
                else {
 

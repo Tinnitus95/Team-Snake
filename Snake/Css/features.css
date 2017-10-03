@@ -48,18 +48,33 @@ nav a:hover {
     color: white;
 }
 main {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .maincontent {
-    border-radius: 5%;
     background-color: white;
+    flex-direction: column;
+    align-items: center;
     color: black;
     width: 80%;
     display: flex;
-    position: absolute;
     margin-top: 5%;
-    margin-left: 5%;
     padding: 5%;
+}
+.features {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.coolfeatures {
+    display: flex;
+    background-color: white;
+    width: 30%;
+    padding: 1%;
+    height: auto;
 }
 
 
