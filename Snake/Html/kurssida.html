@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title> Kurssida</title>
-    <link rel="stylesheet" href="kurssida.css">
+    <link rel="stylesheet" href="../Css/kurssida.css">
+    <script src="../Javascript/kursSida.js"></script>
   </head>
   <body>
 
-    <img class="logo" src="snakee.jpg" alt="Snake Logo" >
+    <img class="logo" src="../Pictures/snakee.jpg" alt="Snake Logo" >
 
 
     <div class="vertical-menu">
@@ -16,6 +17,26 @@
     <a href="#">Kursplan</a>
     <a href="#">Lärare</a>
 
+  </div>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  </div>
+  
+  <div id="London" class="tabcontent">
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+  
+  <div id="Paris" class="tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p> 
+  </div>
+  
+  <div id="Tokyo" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
   </div>
 
   </body>
