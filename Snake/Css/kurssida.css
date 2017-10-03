@@ -1,6 +1,13 @@
+
 body{
-  background-image: url(background.jpg);
+  background-image: url(../pictures/background.jpg);
 }
+.logo{
+    width: 200px;
+    height: 200px;
+}
+/***********************************SIDE MENU**********************************/
+
 .vertical-menu {
     width: 200px; /* Set a width if you like */
     padding-top: 25%;
@@ -28,6 +35,8 @@ div.tab {
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
+
+/***********************************TAB MENU**********************************/
 
 /* Style the buttons inside the tab */
 div.tab button {
