@@ -6,11 +6,25 @@ body{
     width: 200px;
     height: 200px;
 }
+.flexcontainer{
+  max-width: 800px;
+  background-color: #FFF;
+  line-height: 1.65;
+  display: flex;
+  padding-right: 0;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.tab{
+  flex: 3;
+}
 /***********************************SIDE MENU**********************************/
 
 .vertical-menu {
     width: 200px; /* Set a width if you like */
-    padding-top: 25%;
 }
 
 .vertical-menu a {
@@ -66,4 +80,3 @@ div.tab button.active {
     border: 1px solid #ccc;
     border-top: none;
 }
-
