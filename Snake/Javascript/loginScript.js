@@ -21,7 +21,8 @@ function check(form) { /*function to check userid & password*/
                   }
               }
                 if (valid) {
-                 window.open('../html/kurssida.html')/*opens the target page while Id & password matches*/
+                 window.open('../Html/huvudelevsida.html',"_self")/*opens the target page while Id & password matches*/
+
                  }
                else {
 
