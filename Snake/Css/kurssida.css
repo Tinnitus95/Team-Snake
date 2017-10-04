@@ -7,15 +7,13 @@ body{
     height: 200px;
 }
 .flexcontainer{
-  max-width: 800px;
-  background-color: #FFF;
+  max-width: 200px;
   line-height: 1.65;
   display: flex;
   padding-right: 0;
   align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
+
 }
 
 .tab{
@@ -25,6 +23,7 @@ body{
 
 .vertical-menu {
     width: 200px; /* Set a width if you like */
+    margin-top: 10px;
 }
 
 .vertical-menu a {
@@ -44,17 +43,30 @@ body{
     color: white;
 }
 
-div.tab {
+
+/***********************************TAB MENU**********************************/
+
+/* Style the buttons inside the tab */
+.center-container{
+  max-width: 400px;
+  max-height: 300px;
+}
+.center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }
+}
+.tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
 
-/***********************************TAB MENU**********************************/
-
-/* Style the buttons inside the tab */
-div.tab button {
-    background-color: inherit;
+.tab button {
+    background-color: #f1f1f1;
     float: left;
     border: none;
     outline: none;
@@ -64,12 +76,12 @@ div.tab button {
 }
 
 /* Change background color of buttons on hover */
-div.tab button:hover {
+.tab button:hover {
     background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
-div.tab button.active {
+.tab button.active {
     background-color: #ccc;
 }
 
