@@ -92,3 +92,7 @@ body{
     border: 1px solid #ccc;
     border-top: none;
 }
+
+#London, #Paris, #Tokyo {
+  background-color: white;
+}
