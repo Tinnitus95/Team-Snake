@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Kurssida</title>
+    <link rel="stylesheet" href="../Css/kurssida_v2.css">
+    <script src="../Javascript/kursSida_v2.js"></script>
+  </head>
+  <body>
+      <img class="logo" src="../Pictures/snakecity.jpg" alt="Snake Logo" width: 20px; height:20px>
+      <main class="content">
+        <div class="vertical-menu">
+            <a href="#" class="active">Current Courses</a>
+            <a href="#">Finished Courses</a>
+            <a href="#">Failed Courses</a>
+            <a href="#">Coming Courses</a>
+        </div>
+        <div class="column-layout">
+            <div class="main-column">
+              <h2>-Den här kursen-</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet nisl sit amet pretium sollicitudin. Maecenas volutpat, elit sed varius congue, metus risus ultrices massa, in feugiat nulla ipsum ac magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur non leo maximus, tincidunt urna ac, egestas nibh. In at tellus eget erat ornare accumsan. Vestibulum quis lorem semper, interdum nunc eget, varius erat. Fusce non dolor et diam euismod scelerisque id ac enim. Duis sit amet maximus nisl. In maximus sapien et nulla pulvinar, sit amet ultrices nibh ultricies. Donec aliquam efficitur ligula, vel tempor dui malesuada nec. Ut varius mollis lacus, et sollicitudin ligula elementum sed. Pellentesque et condimentum quam. In dapibus ligula et mauris finibus, vitae elementum libero vulputate. Integer sodales lectus vel arcu pellentesque euismod.</p>
+            </div>
+            <div class="tab-container">
+              <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'exercise')">InlämningsUppgifter</button>
+                <button class="tablinks" onclick="openTab(event, 'test')">Tentor</button>
+                <button class="tablinks" onclick="openTab(event, 'plan')">Kursplan</button>
+                <button class="tablinks" onclick="openTab(event, 'material')">Kursmaterial</button>
+                <button class="tablinks" onclick="openTab(event, 'teacher')">Lärare</button>
+
+              </div>
+
+              <div id="exercise" class="tabcontent">
+
+                <table>
+                  <tr>
+                    <th>Uppgiftnamn</th>
+                    <th>Status</th>
+                    <th>Betyg</th>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Uppgift 1</a></td>
+                    <td>Klar</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Uppgift 2</a></td>
+                    <td>Klar</td>
+                    <td>C</td>
+                  </tr>
+                </table>
+              </div>
+
+              <div id="test" class="tabcontent">
+                  <table>
+                    <tr>
+                      <th>Uppgiftnamn</th>
+                      <th>Status</th>
+                      <th>Betyg</th>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Tenta 1</a></td>
+                      <td>Klar</td>
+                      <td>A</td>
+                    </tr>
+                  </table>
+              </div>
+              <div id="plan" class="tabcontent">
+                  <table>
+                    <tr>
+                      <th>Uppgiftnamn</th>
+                      <th>Status</th>
+                      <th>Betyg</th>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Tenta 1</a></td>
+                      <td>Klar</td>
+                      <td>A</td>
+                    </tr>
+                  </table>
+              </div>
+              <div id="material" class="tabcontent">
+                  <table>
+                    <tr>
+                      <th>Uppgiftnamn</th>
+                      <th>Status</th>
+                      <th>Betyg</th>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Tenta 1</a></td>
+                      <td>Klar</td>
+                      <td>A</td>
+                    </tr>
+                  </table>
+              </div>
+              <div id="teacher" class="tabcontent">
+                  <table>
+                    <tr>
+                      <th>Uppgiftnamn</th>
+                      <th>Status</th>
+                      <th>Betyg</th>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Tenta 1</a></td>
+                      <td>Klar</td>
+                      <td>A</td>
+                    </tr>
+                  </table>
+              </div>
+          </div>
+        </div>
+      </main>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+body{
+  background-image: url(../pictures/background.jpg);
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+.column-layout{
+    order: 2;
+    width: 90%;
+    background-color: #FFF;
+    margin: 20px auto;
+    line-height: 1.65;
+    padding: 20px 50px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-column{
+    flex: 4;
+    order: 1;
+    margin: 20px;
+}
+/***********************************SIDE MENU**********************************/
+
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+
+    order: 1;
+}
+
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: flex;
+    flex-direction: column;
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: #bfbfbf; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+
+/***********************************TAB MENU**********************************/
+div.tab-container{
+    order: 2;
+
+
+}
+
+div.tab {
+    overflow: hidden;
+    /*border: 1px solid #ccc;*/
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+
+
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    background-color: white;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/*#exercise, #test, #plan, #material, #teacher{
+  background-color: white;
+}*/
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+
+}
+
+/**************************************media******************************/
+@media (min-width: 900px) {
+  .content {
+    display: flex;
+  }
+  .column-layout {
+    width: 60%;
+    margin-top: 0;
+  }
+}
