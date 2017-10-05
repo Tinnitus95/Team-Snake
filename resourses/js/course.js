@@ -14,13 +14,15 @@ function courses(status) {
     var list = '';
     // Create return html list
     courses.forEach(function (listItem) {
-        list += '<li>'
+        list += '<li><a href=\"javascript:void\" onclick=\"coursesContent(\''
         list += listItem
-        list += '</li>'
+        list += '\')\">'
+        list += listItem
+        list += '</a></li>'
     });
     console.log(list)
 
-    // create a variable called htmlChunk and assign it the HTML 
+    // create a variable called htmlChunk and assign it the HTML
     // page element specified by the ID "courses-content"
     // ElementID is dynamic depending on params
     var courseList = document.getElementById('courseList');
@@ -29,8 +31,24 @@ function courses(status) {
     courseList.innerHTML = list;
 }
 
-
 function coursesContent(course) {
-    var courseContent = document.getElementById('courseContent');
-    courseContent.innerHTML = ["Pass"]
+    var c = {
+        "english": {
+            "status": "ongoing",
+            "time": ["november"]
+        },
+        "swedish": {
+            "status": "ongoing",
+            "time": ["november", "december"]
+        }
+    }
+    res = []
+    for (var i = 0; i < objects.length; i++) {
+        for (key in objects[i]) {
+            if (objects[i][key].indexOf() != -1) {
+                res.push(objects[i]);
+            }
+        }
+    }
+
 }

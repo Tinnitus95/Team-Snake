@@ -14,7 +14,7 @@ function check(form) { /*function to check userid & password*/
         }
     }
     if (valid) {
-        window.open('/Users/silvia/Development/git/Projekt1/Team-Snake/main.html', '_self') /*opens the target page while Id & password matches*/
+        window.open('/Users/silvia/Development/git/Team-Snake/main.html', '_self') /*opens the target page while Id & password matches*/
     } else {
 
         document.getElementById("Change").innerHTML = "Prova Igen";
