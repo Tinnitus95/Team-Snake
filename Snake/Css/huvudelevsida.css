@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    display: flex;
     background-image: url('../Pictures/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -13,36 +12,23 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo{
-  width: 153px;
-  height: 153px;
-}
 /* define a fixed width for the entire menu */
 .navigation {
-  width: 300px;
  height: top;
 }
 
 /* reset our lists to remove bullet points and padding */
-.mainmenu, .submenu {
+.submenu {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 /* make ALL links (main and submenu) have padding and background color */
-.mainmenu a {
-  display: block;
-  background-color: #CCC;
-  text-decoration: none;
-  padding: 10px;
-  color: #000;
-}
+
 
 /* add hover behaviour */
-.mainmenu a:hover {
-    background-color: #C5C5C5;
-}
+
 
 
 /* when hovering over a .mainmenu item,
@@ -50,7 +36,7 @@ html, body {
   we're changing the submenu's max-height from 0 to 200px;
 */
 
-.mainmenu li:hover .submenu {
+.main-nav li:hover .submenu {
   display: block;
   max-height: 300px;
 }

@@ -3,52 +3,11 @@
 }
 
 body {
-    font-size: 18px;
     margin: 0;
     padding: 0;
     border: 0;
-    display: flex;
     background-image: url('../Pictures/background.jpg');
     background-attachment: fixed;
-}
-
-header {
-    background-color: #d9d9d9;
-    display: flex;
-    height: 50px;
-    flex: 0 0 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-nav {
-    display: flex;
-    flex: 0 0 40%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.logo {
-    margin-left: 50px;
-}
-
-nav a {
-    font-family: arial;
-    color: black;
-    display: flex;
-    margin-right: 10px;
-    align-items: center;
-    justify-content: center;
-    background-color: #bfbfbf;
-    text-decoration: none;
-    border-radius: 5px;
-    height: 40px;
-    width: 33%;
-}
-
-nav a:hover {
-    background-color: black;
-    color: white;
 }
 
 .login {
