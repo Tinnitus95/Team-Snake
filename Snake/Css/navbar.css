@@ -34,7 +34,7 @@ a {
 
 .main-nav {
 	margin-top: 5px;
-
+	position: relative;
 }
 .logo a,
 .main-nav a {

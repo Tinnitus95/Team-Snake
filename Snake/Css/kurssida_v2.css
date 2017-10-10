@@ -32,6 +32,8 @@ body{
   list-style: none;
   padding: 0;
   margin: 0;
+  overflow: hidden;
+  width: 100%;
 }
 
 /* make ALL links (main and submenu) have padding and background color */
@@ -58,8 +60,9 @@ body{
 
 .submenu a {
   background-color: #999;
-  justify-content: flex-end;
+  justify-content: center;
   display: flex;
+  font-size: 1em;
 }
 
 /* hover behaviour for links inside .submenu */
@@ -71,7 +74,6 @@ body{
   we set it to max-height: 0, and hide the overflowed content.
 */
 .submenu {
-  overflow: hidden;
   max-height: 0;
   -webkit-transition: all 0.5s ease-out;
 }
@@ -151,5 +153,9 @@ th, td{
   .column-layout {
     width: 60%;
     margin-top: 0;
+  }
+  .submenu {
+    width: 33%;
+    position: absolute;
   }
 }
