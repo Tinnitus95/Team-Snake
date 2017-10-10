@@ -17,8 +17,14 @@ html, body {
  height: top;
 }
 
-/* reset our lists to remove bullet points and padding */
 
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}
 
 /* make ALL links (main and submenu) have padding and background color */
 
@@ -44,6 +50,9 @@ html, body {
 
 .submenu a {
   background-color: #999;
+  justify-content: center;
+  display: flex;
+  font-size: 1em;
 }
 
 /* hover behaviour for links inside .submenu */
@@ -55,7 +64,10 @@ html, body {
   we set it to max-height: 0, and hide the overflowed content.
 */
 .submenu {
-  overflow: hidden;
   max-height: 0;
   -webkit-transition: all 0.5s ease-out;
 }
+.submenu {
+    width: 33%;
+    position: absolute;
+  }
