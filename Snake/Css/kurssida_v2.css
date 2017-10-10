@@ -5,7 +5,10 @@ body{
   justify-content: space-between;
 }
 .content {
-  margin-top: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
 }
 .column-layout{
     order: 2;
@@ -24,6 +27,55 @@ body{
     order: 1;
     margin: 20px;
 }
+/***********************************DROPDOWN**********************************/
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+
+
+/* add hover behaviour */
+
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.main-nav li:hover .submenu {
+  display: block;
+  max-height: 300px;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+  background-color: #999;
+  justify-content: flex-end;
+  display: flex;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: #666;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
 /***********************************SIDE MENU**********************************/
 
 
@@ -63,14 +115,19 @@ div.tab button.active {
     background-color: #ccc;
 }
 
+
 /* Style the tab content */
-.tabcontent {
+.column-layout .tabcontent {
     background-color: white;
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
 }
+.dropcontent {
+  display: none;
+}
+
 /*#exercise, #test, #plan, #material, #teacher{
   background-color: white;
 }*/
