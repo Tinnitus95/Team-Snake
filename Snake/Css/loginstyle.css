@@ -5,9 +5,19 @@
 body {
     margin: 0;
     padding: 0;
-    border: 0;
+    border: 0;    
+    width: 100%;
+    height: 100%;
     background-image: url('../Pictures/background.jpg');
     background-attachment: fixed;
+}
+.loginsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+
 }
 
 .login {
@@ -49,6 +59,7 @@ body {
 }
 
 #Change {
+    width: 320px;
     font-size: 100%;
     color: red;
     display: flex;
