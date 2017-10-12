@@ -70,9 +70,10 @@ html, body {
 
 
 
-@media and screen (min-width:900px) { 
+@media (min-width: 900px) { 
 .submenu {
-    width: 33%;
+    width: 25%;
+    margin-left: 2%;
     position: absolute;
   }
 }
