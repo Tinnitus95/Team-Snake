@@ -67,7 +67,12 @@ html, body {
   max-height: 0;
   -webkit-transition: all 0.5s ease-out;
 }
+
+
+
+@media and screen (min-width:900px) { 
 .submenu {
     width: 33%;
     position: absolute;
   }
+}
