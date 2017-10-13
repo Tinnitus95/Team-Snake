@@ -286,9 +286,10 @@ section {
 }
 
 .background-bild {
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url('img/background.jpg');
-    background-size: cover;
+    background-image: url("img/background.jpg");
+    background-size: 80px 60px;
     background-position: center;
-    height: 100vh;
     background-attachment: fixed;
+    background-position: center;
+    padding-top: 60px;
 }
