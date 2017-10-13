@@ -273,3 +273,14 @@ section {
     display: inline-block;
     margin-left: 40px;
 }
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    background-color: #998f8f;
+    text-align: center;
+    font-size: 0.80rem;
+}
