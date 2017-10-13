@@ -284,3 +284,11 @@ section {
     text-align: center;
     font-size: 0.80rem;
 }
+
+.background-bild {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
