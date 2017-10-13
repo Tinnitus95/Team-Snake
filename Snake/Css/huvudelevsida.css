@@ -1,5 +1,4 @@
 body {
-
     margin: 0;
     padding: 0;
     border: 0;
@@ -8,29 +7,31 @@ body {
     background-attachment: fixed;
 }
 
-html, body {
+html,
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* define a fixed width for the entire menu */
-.navigation {
- height: top;
-}
 
+/* define a fixed width for the entire menu */
+
+.navigation {
+    height: top;
+}
 
 .submenu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
 }
+
 
 /* make ALL links (main and submenu) have padding and background color */
 
 
 /* add hover behaviour */
-
 
 
 /* when hovering over a .mainmenu item,
@@ -39,9 +40,10 @@ html, body {
 */
 
 .main-nav li:hover .submenu {
-  display: block;
-  max-height: 300px;
+    display: block;
+    max-height: 300px;
 }
+
 
 /*
   we now overwrite the background-color for .submenu links only.
@@ -49,31 +51,57 @@ html, body {
 */
 
 .submenu a {
-  background-color: #999;
-  justify-content: center;
-  display: flex;
-  font-size: 1em;
+    background-color: #999;
+    justify-content: center;
+    display: flex;
+    font-size: 1em;
 }
 
+
 /* hover behaviour for links inside .submenu */
+
 .submenu a:hover {
-  background-color: #666;
+    background-color: #666;
 }
+
 
 /* this is the initial state of all submenus.
   we set it to max-height: 0, and hide the overflowed content.
 */
+
 .submenu {
-  max-height: 0;
-  -webkit-transition: all 0.5s ease-out;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
 }
 
+.elev-logo img {
+    width: 300px;
+    height: auto;
+    margin-left: -150px;
+    margin-top: -150px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
 
+.elev-logo {
+    height: 600px;
+}
 
-@media (min-width: 900px) { 
-.submenu {
-    width: 25%;
-    margin-left: 2%;
-    position: absolute;
-  }
+@media (min-width: 900px) {
+    .submenu {
+        width: 25%;
+        margin-left: 2%;
+        position: absolute;
+    }
+}
+
+@media (max-width: 900px) {
+    .elev-logo img {
+        width: 180px;
+        margin-top: -90px;
+        margin-left: -90px;
+        top: 30%;
+        left: 50%;
+    }
 }
