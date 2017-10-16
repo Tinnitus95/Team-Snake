@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../Css/navbarorginal.css">
   <link rel="stylesheet" href="../Css/huvudelevsida.css">
   <script src="../Javascript/dropdownmenu.js"></script>
+  <script src="../Javascript/attendance.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     <nav class="navigation">
       <ul class="main-nav">
         <li>
-          <a href="">Anmäl närvaro</a>
+          <a href="#" onClick="pop('popDiv')">Anmäl Närvaro</a>
         </li>
         <li>
           <a href="https://calendar.google.com/">Schema</a>
@@ -48,6 +49,19 @@
       <img src="../Pictures/holding_logo.png">
     </div>
   </section>
+  <div id="popDiv" class="ontop">
+    <div class="center">
+      <div id="popup" class="attendance">
+        <form>
+          <a href="#" onClick="hide('popDiv')">Close</a>
+          <h3>Anmäl Närvaro</h3>
+          <input type="password" id="code" placeholder="Enter Code" />
+          <input type="button" id="okbutton" onclick="check(this.form)" value="OK">
+          <p id="message"></p>
+        </form>
+      </div>
+   </div>
+  </div>
 
 </body>
 
