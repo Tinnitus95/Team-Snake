@@ -1,38 +1,33 @@
 body {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background-image: url('../Pictures/background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: url('../Pictures/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-html,
-body {
-    font-family: Arial, Helvetica, sans-serif;
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /* define a fixed width for the entire menu */
 
 .navigation {
-    height: top;
+  height: top;
 }
 
 .submenu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
 }
-
 
 /* make ALL links (main and submenu) have padding and background color */
 
-
 /* add hover behaviour */
-
 
 /* when hovering over a .mainmenu item,
   display the submenu inside it.
@@ -40,10 +35,9 @@ body {
 */
 
 .main-nav li:hover .submenu {
-    display: block;
-    max-height: 300px;
+  display: block;
+  max-height: 300px;
 }
-
 
 /*
   we now overwrite the background-color for .submenu links only.
@@ -51,105 +45,143 @@ body {
 */
 
 .submenu a {
-    background-color: #999;
-    justify-content: center;
-    display: flex;
-    font-size: 1em;
+  background-color: #999;
+  justify-content: center;
+  display: flex;
+  font-size: 1em;
 }
-
 
 /* hover behaviour for links inside .submenu */
 
 .submenu a:hover {
-    background-color: #666;
+  background-color: #666;
 }
-
 
 /* this is the initial state of all submenus.
   we set it to max-height: 0, and hide the overflowed content.
 */
 
 .submenu {
-    max-height: 0;
-    -webkit-transition: all 0.5s ease-out;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
 }
 
 .elev-logo img {
-    width: 300px;
-    height: auto;
-    margin-left: -150px;
-    margin-top: -150px;
-    position: relative;
-    top: 50%;
-    left: 50%;
+  width: 300px;
+  height: auto;
+  margin-left: -150px;
+  margin-top: -150px;
+  position: relative;
+  top: 50%;
+  left: 50%;
 }
 
 .elev-logo {
-    height: 600px;
+  height: 600px;
 }
+
+/*............................Style for newsfeed........................ */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 5% 5% 5%;
+}
+
+.feed {
+  max-width: 600px;
+  background-color: white;
+}
+
+.blog-post {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.more {
+  align-self: flex-end;
+  text-decoration: underline;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.date {
+  font-size: 10px;
+  font-style: italic;
+}
+
 /*............................popup for attedance................... */
+
 .ontop {
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: none;
-    position: absolute;            
-    background: gray; /* older browsers */
-    background: rgba(128,128,128,0.4);  
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  position: absolute;
+  background: gray;
+  /* older browsers */
+  background: rgba(128, 128, 128, 0.4);
 }
+
 .center {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 #popup {
-    display: flex;
-    height: auto;
-    width: 30%;
-    margin: auto;
-    background-color: #ffffff;
-
+  display: flex;
+  height: auto;
+  width: 30%;
+  margin: auto;
+  background-color: #ffffff;
 }
+
 #popup form {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-form input, a, h3, p {
-    margin-bottom: 10px;
-    color: black;
-}
-form a {
-    display: flex;
-    align-self: flex-end;
-    margin-right: 10px;
-}
-#okbutton, #code {
-    width: 40%;
-    box-sizing: border-box; 
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+form input, a, h3, p {
+  margin-bottom: 10px;
+  color: black;
+}
+
+form a {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+#okbutton, #code {
+  width: 40%;
+  box-sizing: border-box;
+}
 
 @media (min-width: 900px) {
-    .submenu {
-        width: 25%;
-        margin-left: 2%;
-        position: absolute;
-    }
+  .submenu {
+    width: 25%;
+    margin-left: 2%;
+    position: absolute;
+  }
 }
 
 @media (max-width: 900px) {
-    .elev-logo img {
-        width: 180px;
-        margin-top: -90px;
-        margin-left: -90px;
-        top: 30%;
-        left: 50%;
-    }
+  .elev-logo img {
+    width: 180px;
+    margin-top: -90px;
+    margin-left: -90px;
+    top: 30%;
+    left: 50%;
+  }
 }
