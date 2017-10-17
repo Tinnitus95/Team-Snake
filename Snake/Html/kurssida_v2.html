@@ -1,88 +1,67 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Snake</title>
+      <script src="../Javascript/kursSida_v2.js"></script>
+    <script src="../Javascript/dropdownmenu.js"></script>
+     <link rel="stylesheet" href="../Css/kurssida_v2.css">
+  </head>
+      <header class="header">
+    <h1 class="logo"><a href="HomePageTwo.html">SNAKE</a></h1>
 
-<head>
-  <meta charset="utf-8">
-  <title> Kurssida</title>
-  <link rel="stylesheet" href="../Css/navbarorginal.css">
-  <link rel="stylesheet" href="../Css/kurssida_v2.css">
-  <script src="../Javascript/kursSida_v2.js"></script>
-  <script src="../Javascript/dropdownmenu.js"></script>
-</head>
-
-<body>
-  <header class="header">
-    <h1 class="logo">
-      <a href="HomePageTwo.html">SNAKE</a>
-    </h1>
     <nav class="navigation">
       <ul class="main-nav">
         <li>
-          <a href="#">Nuvarande kurser</a>
+          <a href="">närvaro</a>
+        </li>
+        <li>
+          <a href="https://calendar.google.com/">Schema</a>
+        </li>
+        <li>
+          <a href="kurssida_v2.html">kurser</a>
+        </li>
+        <li>
+          <a href="">utvärdering</a>
           <ul class="submenu">
             <li>
-              <a class="droplinks" onclick="openDrop(event, 'swedish')">Html</a>
+              <a href="">Dagens Feedback</a>
             </li>
             <li>
-              <a class="droplinks" onclick="openDrop(event, 'english')">Css</a>
-            </li>
-            <li>
-              <a class="droplinks" onclick="openDrop(event, 'maths')">Arbetsmetodik</a>
+              <a href="">Veckans Feedback</a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="#">Avslutad kurser</a>
-          <ul class="submenu">
-            <li>
-              <a class="droplinks" onclick="openDrop(event, 'programming')">Backend(VG)</a>
-            </li>
-            <li>
-              <a class="droplinks" onclick="openDrop(event, 'chemistry')">Frontend(IG)</a>
-            </li>
-            <li>
-              <a class="droplinks" onclick="openDrop(event, 'computersiencce')">JavaScript(G)</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Framtida Kurser</a>
-          <ul class="submenu">
-            <li>
-              <a class="droplinks" onclick="openDrop(event, 'philosophy')">Webb</a>
-            </li>
-            <li>
-              <a class="droplinks" onclick="openDrop(event, 'psychology')">Design</a>
-            </li>
-            <li>
-              <a class="droplinks" onclick="openDrop(event, 'art')">Animation</a>
-            </li>
-
-          </ul>
-          <li>
-            <a href="HomePageTwo.html">LOGOUT</a>
-          </li>
+          <a href="HomePageTwo.html">logga ut</a>
         </li>
       </ul>
     </nav>
   </header>
+    
 
-  <main class="content">
+<div id="pagewrap">
+
+
+	<section id="content">
+        <h2>AVSLUTADE</h2>
+          <ul>
+       <li>
+              <a class="droplinks" onclick="openDrop(event, 'swedish')">JAVASCRIPT(G)</a>
+            </li>
+            <li>
+              <a class="droplinks" onclick="openDrop(event, 'english')">HTML5(VG)</a>
+            </li> 
+              </ul>
+        <main class="content">
     <div id="swedish" class="dropcontent">
       <div class="column-layout">
         <div class="main-column">
-          <h2>-Html-</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet nisl sit amet pretium sollicitudin.
-            Maecenas volutpat, elit sed varius congue, metus risus ultrices massa, in feugiat nulla ipsum ac magna. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur non leo maximus,
-            tincidunt urna ac, egestas nibh. In at tellus eget erat ornare accumsan. Vestibulum quis lorem semper, interdum
-            nunc eget, varius erat. Fusce non dolor et diam euismod scelerisque id ac enim. Duis sit amet maximus nisl. In
-            maximus sapien et nulla pulvinar, sit amet ultrices nibh ultricies. Donec aliquam efficitur ligula, vel tempor
-            dui malesuada nec. Ut varius mollis lacus, et sollicitudin ligula elementum sed. Pellentesque et condimentum
-            quam. In dapibus ligula et mauris finibus, vitae elementum libero vulputate. Integer sodales lectus vel arcu
-            pellentesque euismod.</p>
-        </div>
-        <div class="tab-container">
+          <h2>-JAVASCRIPT-</h2>
+     
+          </div>
+           <div class="tab-container">
           <div class="tab">
             <button class="tablinks" onclick="openTab(event, 'exercise')">InlämningsUppgifter</button>
             <button class="tablinks" onclick="openTab(event, 'test')">Tentor</button>
@@ -178,135 +157,14 @@
         </div>
       </div>
     </div>
-    <div id="english" class="dropcontent">
+            
+            <div id="english" class="dropcontent">
       <div class="column-layout">
         <div class="main-column">
-          <h2>-Css-</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet nisl sit amet pretium sollicitudin.
-            Maecenas volutpat, elit sed varius congue, metus risus ultrices massa, in feugiat nulla ipsum ac magna. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur non leo maximus,
-            tincidunt urna ac, egestas nibh. In at tellus eget erat ornare accumsan. Vestibulum quis lorem semper, interdum
-            nunc eget, varius erat. Fusce non dolor et diam euismod scelerisque id ac enim. Duis sit amet maximus nisl. In
-            maximus sapien et nulla pulvinar, sit amet ultrices nibh ultricies. Donec aliquam efficitur ligula, vel tempor
-            dui malesuada nec. Ut varius mollis lacus, et sollicitudin ligula elementum sed. Pellentesque et condimentum
-            quam. In dapibus ligula et mauris finibus, vitae elementum libero vulputate. Integer sodales lectus vel arcu
-            pellentesque euismod.</p>
+          <h2>-HTML5-</h2>
+    
         </div>
-        <div class="tab-container">
-          <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'en-exercise')">InlämningsUppgifter</button>
-            <button class="tablinks" onclick="openTab(event, 'en-test')">Tentor</button>
-            <button class="tablinks" onclick="openTab(event, 'en-plan')">Kursplan</button>
-            <button class="tablinks" onclick="openTab(event, 'en-material')">Kursmaterial</button>
-            <button class="tablinks" onclick="openTab(event, 'en-teacher')">Lärare</button>
-
-          </div>
-
-          <div id="en-exercise" class="tabcontent">
-
-            <table>
-              <tr>
-                <th>Uppgiftnamn</th>
-                <th>Status</th>
-                <th>Betyg</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Uppgift 1</a>
-                </td>
-                <td>Klar</td>
-                <td>VG</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Uppgift 2</a>
-                </td>
-                <td>Klar</td>
-                <td>VG</td>
-              </tr>
-            </table>
-          </div>
-
-          <div id="en-test" class="tabcontent">
-            <table>
-              <tr>
-                <th>Exam</th>
-                <th>Status</th>
-                <th>Betyg</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Tenta 1</a>
-                </td>
-                <td>Klar</td>
-                <td>VG</td>
-              </tr>
-            </table>
-          </div>
-          <div id="en-plan" class="tabcontent">
-            <table>
-              <tr>
-                <th>Behöver Kunna</th>
-                <th>Status</th>
-                <th>Betyg</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Tenta 1</a>
-                </td>
-                <td>Klar</td>
-                <td>VG</td>
-              </tr>
-            </table>
-          </div>
-          <div id="en-material" class="tabcontent">
-            <table>
-              <tr>
-                <th>Böcker</th>
-                <th>Författare</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Kursbok</a>
-                </td>
-                <td>John Doerson</td>
-              </tr>
-            </table>
-          </div>
-          <div id="en-teacher" class="tabcontent">
-            <table>
-              <tr>
-                <th>Namn</th>
-                <th>Email</th>
-                <th>Telefon Nummer</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">John Doe</a>
-                </td>
-                <td>John.doe@email.com</td>
-                <td>076-8292950</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="maths" class="dropcontent">
-      <div class="column-layout">
-        <div class="main-column">
-          <h2>-Arbetsmetodik-</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet nisl sit amet pretium sollicitudin.
-            Maecenas volutpat, elit sed varius congue, metus risus ultrices massa, in feugiat nulla ipsum ac magna. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur non leo maximus,
-            tincidunt urna ac, egestas nibh. In at tellus eget erat ornare accumsan. Vestibulum quis lorem semper, interdum
-            nunc eget, varius erat. Fusce non dolor et diam euismod scelerisque id ac enim. Duis sit amet maximus nisl. In
-            maximus sapien et nulla pulvinar, sit amet ultrices nibh ultricies. Donec aliquam efficitur ligula, vel tempor
-            dui malesuada nec. Ut varius mollis lacus, et sollicitudin ligula elementum sed. Pellentesque et condimentum
-            quam. In dapibus ligula et mauris finibus, vitae elementum libero vulputate. Integer sodales lectus vel arcu
-            pellentesque euismod.</p>
-        </div>
-        <div class="tab-container">
+          <div class="tab-container">
           <div class="tab">
             <button class="tablinks" onclick="openTab(event, 'ma-exercise')">InlämningsUppgifter</button>
             <button class="tablinks" onclick="openTab(event, 'ma-test')">Tentor</button>
@@ -315,8 +173,8 @@
             <button class="tablinks" onclick="openTab(event, 'ma-teacher')">Lärare</button>
 
           </div>
-
-          <div id="ma-exercise" class="tabcontent">
+              
+               <div id="ma-exercise" class="tabcontent">
 
             <table>
               <tr>
@@ -402,21 +260,39 @@
         </div>
       </div>
     </div>
-    <div id="programming" class="dropcontent">
+              
+              
+              
+              
+            
+           
+       
+            
+
+        </main>
+
+	</section>
+	
+	<section id="middle">
+		       <h2>PÅGÅENDE</h2>
+        <ul>
+            <li>
+              <a class="droplinks" onclick="openDrop(event, 'philosophy')">WEBBUTVECKLING(40YHP)</a>
+            </li>
+            <li>
+              <a class="droplinks" onclick="openDrop(event, 'psychology')">LIA(40YHP)</a>
+            </li>
+            <li>
+              <a class="droplinks" onclick="openDrop(event, 'art')">ARBETSMETODIK(40YHP)</a>
+            </li>
+          </ul>
+  
+    <div id="philosophy" class="dropcontent">
       <div class="column-layout">
         <div class="main-column">
-          <h2>-Backend-</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet nisl sit amet pretium sollicitudin.
-            Maecenas volutpat, elit sed varius congue, metus risus ultrices massa, in feugiat nulla ipsum ac magna. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur non leo maximus,
-            tincidunt urna ac, egestas nibh. In at tellus eget erat ornare accumsan. Vestibulum quis lorem semper, interdum
-            nunc eget, varius erat. Fusce non dolor et diam euismod scelerisque id ac enim. Duis sit amet maximus nisl. In
-            maximus sapien et nulla pulvinar, sit amet ultrices nibh ultricies. Donec aliquam efficitur ligula, vel tempor
-            dui malesuada nec. Ut varius mollis lacus, et sollicitudin ligula elementum sed. Pellentesque et condimentum
-            quam. In dapibus ligula et mauris finibus, vitae elementum libero vulputate. Integer sodales lectus vel arcu
-            pellentesque euismod.</p>
+          <h2>-WEBBUTVECKLING-</h2>
         </div>
-        <div class="tab-container">
+           <div class="tab-container">
           <div class="tab">
             <button class="tablinks" onclick="openTab(event, 'pr-exercise')">InlämningsUppgifter</button>
             <button class="tablinks" onclick="openTab(event, 'pr-test')">Tentor</button>
@@ -425,8 +301,9 @@
             <button class="tablinks" onclick="openTab(event, 'pr-teacher')">Lärare</button>
 
           </div>
-
-          <div id="pr-exercise" class="tabcontent">
+               
+               
+                <div id="pr-exercise" class="tabcontent">
 
             <table>
               <tr>
@@ -512,349 +389,11 @@
         </div>
       </div>
     </div>
-    <div id="chemistry" class="dropcontent">
+        
+  <div id="psychology" class="dropcontent">
       <div class="column-layout">
         <div class="main-column">
-          <h2>-Frontend-</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet nisl sit amet pretium sollicitudin.
-            Maecenas volutpat, elit sed varius congue, metus risus ultrices massa, in feugiat nulla ipsum ac magna. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur non leo maximus,
-            tincidunt urna ac, egestas nibh. In at tellus eget erat ornare accumsan. Vestibulum quis lorem semper, interdum
-            nunc eget, varius erat. Fusce non dolor et diam euismod scelerisque id ac enim. Duis sit amet maximus nisl. In
-            maximus sapien et nulla pulvinar, sit amet ultrices nibh ultricies. Donec aliquam efficitur ligula, vel tempor
-            dui malesuada nec. Ut varius mollis lacus, et sollicitudin ligula elementum sed. Pellentesque et condimentum
-            quam. In dapibus ligula et mauris finibus, vitae elementum libero vulputate. Integer sodales lectus vel arcu
-            pellentesque euismod.</p>
-        </div>
-        <div class="tab-container">
-          <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'ch-exercise')">InlämningsUppgifter</button>
-            <button class="tablinks" onclick="openTab(event, 'ch-test')">Tentor</button>
-            <button class="tablinks" onclick="openTab(event, 'ch-plan')">Kursplan</button>
-            <button class="tablinks" onclick="openTab(event, 'ch-material')">Kursmaterial</button>
-            <button class="tablinks" onclick="openTab(event, 'ch-teacher')">Lärare</button>
-
-          </div>
-
-          <div id="ch-exercise" class="tabcontent">
-
-            <table>
-              <tr>
-                <th>Uppgiftnamn</th>
-                <th>Status</th>
-                <th>Betyg</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Uppgift 1</a>
-                </td>
-                <td>Klar</td>
-                <td>IG</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Uppgift 2</a>
-                </td>
-                <td>Klar</td>
-                <td>IG</td>
-              </tr>
-            </table>
-          </div>
-
-          <div id="ch-test" class="tabcontent">
-            <table>
-              <tr>
-                <th>Exam</th>
-                <th>Status</th>
-                <th>Betyg</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Tenta 1</a>
-                </td>
-                <td>Klar</td>
-                <td>IG</td>
-              </tr>
-            </table>
-          </div>
-          <div id="ch-plan" class="tabcontent">
-            <table>
-              <tr>
-                <th>Behöver Kunna</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Kursplan</a>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div id="ch-material" class="tabcontent">
-            <table>
-              <tr>
-                <th>Böcker</th>
-                <th>Författare</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Kursbok</a>
-                </td>
-                <td>John Doerson</td>
-              </tr>
-            </table>
-          </div>
-          <div id="ch-teacher" class="tabcontent">
-            <table>
-              <tr>
-                <th>Namn</th>
-                <th>Email</th>
-                <th>Telefon Nummer</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">John Doe</a>
-                </td>
-                <td>John.doe@email.com</td>
-                <td>076-8292950</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="computersiencce" class="dropcontent">
-      <div class="column-layout">
-        <div class="main-column">
-          <h2>-JavaScript-</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet nisl sit amet pretium sollicitudin.
-            Maecenas volutpat, elit sed varius congue, metus risus ultrices massa, in feugiat nulla ipsum ac magna. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur non leo maximus,
-            tincidunt urna ac, egestas nibh. In at tellus eget erat ornare accumsan. Vestibulum quis lorem semper, interdum
-            nunc eget, varius erat. Fusce non dolor et diam euismod scelerisque id ac enim. Duis sit amet maximus nisl. In
-            maximus sapien et nulla pulvinar, sit amet ultrices nibh ultricies. Donec aliquam efficitur ligula, vel tempor
-            dui malesuada nec. Ut varius mollis lacus, et sollicitudin ligula elementum sed. Pellentesque et condimentum
-            quam. In dapibus ligula et mauris finibus, vitae elementum libero vulputate. Integer sodales lectus vel arcu
-            pellentesque euismod.</p>
-        </div>
-        <div class="tab-container">
-          <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'cs-exercise')">InlämningsUppgifter</button>
-            <button class="tablinks" onclick="openTab(event, 'cs-test')">Tentor</button>
-            <button class="tablinks" onclick="openTab(event, 'cs-plan')">Kursplan</button>
-            <button class="tablinks" onclick="openTab(event, 'cs-material')">Kursmaterial</button>
-            <button class="tablinks" onclick="openTab(event, 'cs-teacher')">Lärare</button>
-
-          </div>
-
-          <div id="cs-exercise" class="tabcontent">
-
-            <table>
-              <tr>
-                <th>Uppgiftnamn</th>
-                <th>Status</th>
-                <th>Betyg</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Uppgift 1</a>
-                </td>
-                <td>Klar</td>
-                <td>G</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Uppgift 2</a>
-                </td>
-                <td>Klar</td>
-                <td>G</td>
-              </tr>
-            </table>
-          </div>
-
-          <div id="cs-test" class="tabcontent">
-            <table>
-              <tr>
-                <th>Exam</th>
-                <th>Status</th>
-                <th>Betyg</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Tenta 1</a>
-                </td>
-                <td>Klar</td>
-                <td>G</td>
-              </tr>
-            </table>
-          </div>
-          <div id="cs-plan" class="tabcontent">
-            <table>
-              <tr>
-                <th>Behöver Kunna</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Kursplan</a>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div id="cs-material" class="tabcontent">
-            <table>
-              <tr>
-                <th>Böcker</th>
-                <th>Författare</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Kursbok</a>
-                </td>
-                <td>John Doerson</td>
-              </tr>
-            </table>
-          </div>
-          <div id="cs-teacher" class="tabcontent">
-            <table>
-              <tr>
-                <th>Namn</th>
-                <th>Email</th>
-                <th>Telefon Nummer</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">John Doe</a>
-                </td>
-                <td>John.doe@email.com</td>
-                <td>076-8292950</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="philosophy" class="dropcontent">
-      <div class="column-layout">
-        <div class="main-column">
-          <h2>-Webb-</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet nisl sit amet pretium sollicitudin.
-            Maecenas volutpat, elit sed varius congue, metus risus ultrices massa, in feugiat nulla ipsum ac magna. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur non leo maximus,
-            tincidunt urna ac, egestas nibh. In at tellus eget erat ornare accumsan. Vestibulum quis lorem semper, interdum
-            nunc eget, varius erat. Fusce non dolor et diam euismod scelerisque id ac enim. Duis sit amet maximus nisl. In
-            maximus sapien et nulla pulvinar, sit amet ultrices nibh ultricies. Donec aliquam efficitur ligula, vel tempor
-            dui malesuada nec. Ut varius mollis lacus, et sollicitudin ligula elementum sed. Pellentesque et condimentum
-            quam. In dapibus ligula et mauris finibus, vitae elementum libero vulputate. Integer sodales lectus vel arcu
-            pellentesque euismod.</p>
-        </div>
-        <div class="tab-container">
-          <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'pi-exercise')">InlämningsUppgifter</button>
-            <button class="tablinks" onclick="openTab(event, 'pi-test')">Tentor</button>
-            <button class="tablinks" onclick="openTab(event, 'pi-plan')">Kursplan</button>
-            <button class="tablinks" onclick="openTab(event, 'pi-material')">Kursmaterial</button>
-            <button class="tablinks" onclick="openTab(event, 'pi-teacher')">Lärare</button>
-
-          </div>
-
-          <div id="pi-exercise" class="tabcontent">
-
-            <table>
-              <tr>
-                <th>Uppgiftnamn</th>
-                <th>Status</th>
-                <th>Betyg</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Uppgift 1</a>
-                </td>
-                <td>Klar</td>
-                <td>VG</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Uppgift 2</a>
-                </td>
-                <td>Klar</td>
-                <td>VG</td>
-              </tr>
-            </table>
-          </div>
-
-          <div id="pi-test" class="tabcontent">
-            <table>
-              <tr>
-                <th>Exam</th>
-                <th>Status</th>
-                <th>Betyg</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Tenta 1</a>
-                </td>
-                <td>Klar</td>
-                <td>G</td>
-              </tr>
-            </table>
-          </div>
-          <div id="pi-plan" class="tabcontent">
-            <table>
-              <tr>
-                <th>Behöver Kunna</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Kursplan</a>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div id="pi-material" class="tabcontent">
-            <table>
-              <tr>
-                <th>Böcker</th>
-                <th>Författare</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">Kursbok</a>
-                </td>
-                <td>John Doerson</td>
-              </tr>
-            </table>
-          </div>
-          <div id="pi-teacher" class="tabcontent">
-            <table>
-              <tr>
-                <th>Namn</th>
-                <th>Email</th>
-                <th>Telefon Nummer</th>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#">John Doe</a>
-                </td>
-                <td>John.doe@email.com</td>
-                <td>076-8292950</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="psychology" class="dropcontent">
-      <div class="column-layout">
-        <div class="main-column">
-          <h2>-Design-</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet nisl sit amet pretium sollicitudin.
-            Maecenas volutpat, elit sed varius congue, metus risus ultrices massa, in feugiat nulla ipsum ac magna. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur non leo maximus,
-            tincidunt urna ac, egestas nibh. In at tellus eget erat ornare accumsan. Vestibulum quis lorem semper, interdum
-            nunc eget, varius erat. Fusce non dolor et diam euismod scelerisque id ac enim. Duis sit amet maximus nisl. In
-            maximus sapien et nulla pulvinar, sit amet ultrices nibh ultricies. Donec aliquam efficitur ligula, vel tempor
-            dui malesuada nec. Ut varius mollis lacus, et sollicitudin ligula elementum sed. Pellentesque et condimentum
-            quam. In dapibus ligula et mauris finibus, vitae elementum libero vulputate. Integer sodales lectus vel arcu
-            pellentesque euismod.</p>
+          <h2>-LIA-</h2>
         </div>
         <div class="tab-container">
           <div class="tab">
@@ -951,20 +490,11 @@
           </div>
         </div>
       </div>
-    </div>
-    <div id="art" class="dropcontent">
+    </div>      
+         <div id="art" class="dropcontent">
       <div class="column-layout">
         <div class="main-column">
-          <h2>-Animation-</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet nisl sit amet pretium sollicitudin.
-            Maecenas volutpat, elit sed varius congue, metus risus ultrices massa, in feugiat nulla ipsum ac magna. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur non leo maximus,
-            tincidunt urna ac, egestas nibh. In at tellus eget erat ornare accumsan. Vestibulum quis lorem semper, interdum
-            nunc eget, varius erat. Fusce non dolor et diam euismod scelerisque id ac enim. Duis sit amet maximus nisl. In
-            maximus sapien et nulla pulvinar, sit amet ultrices nibh ultricies. Donec aliquam efficitur ligula, vel tempor
-            dui malesuada nec. Ut varius mollis lacus, et sollicitudin ligula elementum sed. Pellentesque et condimentum
-            quam. In dapibus ligula et mauris finibus, vitae elementum libero vulputate. Integer sodales lectus vel arcu
-            pellentesque euismod.</p>
+          <h2>-ARBETSMETODIK-</h2>
         </div>
         <div class="tab-container">
           <div class="tab">
@@ -1061,8 +591,145 @@
           </div>
         </div>
       </div>
-    </div>
-  </main>
-</body>
+    </div> 
+	</section>
 
+	<aside id="sidebar">
+		<h2>FRAMTIDA
+        </h2>
+        <ul>
+                  <li>
+              <a class="droplinks" onclick="openDrop(event, 'programming')">EXAMENSARBETE(40YHP)</a>
+            </li>
+            <li>
+              <a class="droplinks" onclick="openDrop(event, 'chemistry')">BACKEND(30YHP)</a>
+            </li>   </ul>     
+        
+         <div id="programming" class="dropcontent">
+      <div class="column-layout">
+        <div class="main-column">
+          <h2>-EXAMENSARBETE-</h2>
+        </div>
+        <div class="tab-container">
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'pr-plan')">Kursplan</button>
+            <button class="tablinks" onclick="openTab(event, 'pr-material')">Kursmaterial</button>
+            <button class="tablinks" onclick="openTab(event, 'pr-teacher')">Lärare</button>
+
+          </div>
+
+          <div id="pr-plan" class="tabcontent">
+            <table>
+              <tr>
+                <th>Behöver Kunna</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#">Kursplan</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="pr-material" class="tabcontent">
+            <table>
+              <tr>
+                <th>Böcker</th>
+                <th>Författare</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#">Kursbok</a>
+                </td>
+                <td>John Doerson</td>
+              </tr>
+            </table>
+          </div>
+          <div id="pr-teacher" class="tabcontent">
+            <table>
+              <tr>
+                <th>Namn</th>
+                <th>Email</th>
+                <th>Telefon Nummer</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#">John Doe</a>
+                </td>
+                <td>John.doe@email.com</td>
+                <td>076-8292950</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+        
+ <div id="chemistry" class="dropcontent">
+      <div class="column-layout">
+        <div class="main-column">
+          <h2>-BACKEND-</h2>
+        </div>
+        <div class="tab-container">
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'ch-plan')">Kursplan</button>
+            <button class="tablinks" onclick="openTab(event, 'ch-material')">Kursmaterial</button>
+            <button class="tablinks" onclick="openTab(event, 'ch-teacher')">Lärare</button>
+
+          </div>
+
+         
+          <div id="ch-plan" class="tabcontent">
+            <table>
+              <tr>
+                <th>Behöver Kunna</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#">Kursplan</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="ch-material" class="tabcontent">
+            <table>
+              <tr>
+                <th>Böcker</th>
+                <th>Författare</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#">Kursbok</a>
+                </td>
+                <td>John Doerson</td>
+              </tr>
+            </table>
+          </div>
+          <div id="ch-teacher" class="tabcontent">
+            <table>
+              <tr>
+                <th>Namn</th>
+                <th>Email</th>
+                <th>Telefon Nummer</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#">John Doe</a>
+                </td>
+                <td>John.doe@email.com</td>
+                <td>076-8292950</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	</aside>
+	
+	<footer>
+		
+	</footer>
+
+</div>
 </html>
