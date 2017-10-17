@@ -1,3 +1,8 @@
+.body {
+    margin: 0;
+    height: 2000px;
+}
+
 .hero p {
     font-size: 150%;
     text-align: center;
@@ -11,12 +16,16 @@ footer {
     position: fixed;
     text-align: center;
     font-size: 130%;
-    height: 150px;
+    height: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
 }
 
 .hero {
     display: block;
-    background-image: linear-gradient(rgba(58, 56, 56, 0.993), rgba(122, 122, 122, 0.3)), url(img/background.jpg);
+    background-image: linear-gradient(rgba(58, 56, 56, 0.993), rgba(122, 122, 122, 0.3)), url(../Pictures/backgroundtwo.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
