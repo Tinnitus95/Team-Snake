@@ -41,7 +41,7 @@
               <a href="#" onClick="pop('feedback')">Dagens Feedback</a>
             </li>
             <li>
-              <a href="">Veckans Feedback</a>
+              <a href="#" onclick="pop('vfeedback')">Veckans Feedback</a>
             </li>
           </ul>
         </li>
@@ -826,15 +826,84 @@
             <button onclick="myFunction()">Submit</button>
             <button onclick="reset()">Reset</button>
           </div>
-
-
-
         </div>
       </div>
     </div>
   </div>
 
+  <div id="vfeedback" class="ontop">
+    <div class="center">
+      <div id="vpopup" class="vvfeedback">
+        <div class="main-form">
+          <a class="fbclose" href="#" onClick="hide('vfeedback')">Close</a>
+          <h3>Veckans utvärderingar.</h3>
+          <div class="questions">
+            <form id="q6" action="">
+              <p>Hur upplever du tempot i skolan just nu?</p>
 
+              <input type="radio" name="answer-q6" value="6"> 6
+              <input type="radio" name="answer-q6" value="7"> 7
+              <input type="radio" name="answer-q6" value="8"> 8
+              <input type="radio" name="answer-q6" value="9"> 9
+              <input type="radio" name="answer-q6" value="10"> 10
+            </form>
+          </div>
+          <div class="questions">
+            <form id="q7" action="">
+              <p>Hur upplever du stämningen i klassen?</p>
+              <input type="radio" name="answer-q7" value="6"> 6
+              <input type="radio" name="answer-q7" value="7"> 7
+              <input type="radio" name="answer-q7" value="8"> 8
+              <input type="radio" name="answer-q7" value="9"> 9
+              <input type="radio" name="answer-q7" value="10"> 10
+            </form>
+          </div>
+
+          <div class="questions">
+            <form id="q8" action="">
+              <p>Hur motiverad är du i dina studier?</p>
+              <input type="radio" name="answer-q8" value="6"> 6
+              <input type="radio" name="answer-q8" value="7"> 7
+              <input type="radio" name="answer-q8" value="8"> 8
+              <input type="radio" name="answer-q8" value="9"> 9
+              <input type="radio" name="answer-q8" value="10"> 10
+            </form>
+          </div>
+          <div class="questions">
+            <form id="q9" action="">
+              <p>Tycker du att du har tillgång till det du behöver?</p>
+              <input type="radio" name="answer-q9" value="6"> 6
+              <input type="radio" name="answer-q9" value="7"> 7
+              <input type="radio" name="answer-q9" value="8"> 8
+              <input type="radio" name="answer-q9" value="9"> 9
+              <input type="radio" name="answer-q9" value="10"> 10
+            </form>
+          </div>
+
+          <div class="questions">
+            <form id="q10" action="">
+              <p>Är du nöjd med dina studier?</p>
+              <input type="radio" name="answer-q10" value="6"> 6
+              <input type="radio" name="answer-q10" value="7"> 7
+              <input type="radio" name="answer-q10" value="8"> 8
+              <input type="radio" name="answer-q10" value="9"> 9
+              <input type="radio" name="answer-q10" value="10"> 10
+            </form>
+          </div>
+          <div>
+            <button onclick="myFunctiontwo()">Submit</button>
+            <button onclick="resettwo()">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<<<<<<< HEAD
+
+
+=======
+  <div class="wrapper">
+>>>>>>> 4a058b7272af2e46cd67639cc42194ba289661fc
 
 
     <div class="feed">

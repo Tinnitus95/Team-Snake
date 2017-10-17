@@ -31,9 +31,14 @@
     <div class="login">
       <form>
         <h2>Sign In</h2>
-        <input type="text" id="username" placeholder="Enter Username" />
-        <input type="password" id="password" placeholder="Enter Password" />
-        <input type="button" id="login-btn" onclick="check(this.form)" value="Sign In">
+        <select type="text" id="userchoice">  
+          <option value="student">Elev</option>
+          <option value="teacher">Lärare</option>
+          <option value="admin">Admin</option>
+        </select>
+        <input type="text" id="username" placeholder="Enter Username"  />
+        <input type="password" id="password" placeholder="Enter Password" onkeypress="handle(event)" />
+        <input type="button" id="login-btn" onclick="check(this.form)" onkeypress="handle(event)" value="Sign In">
       </form>
     </div>
     <p id="Change">
