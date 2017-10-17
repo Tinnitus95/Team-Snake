@@ -31,3 +31,37 @@ function reset() {
     document.getElementById("q4").reset();
     document.getElementById("q5").reset();
 }
+
+function myFunction() {
+    if (document.querySelector("input[name=answer-q6]:checked") === null) {
+        window.alert("Lämna svar på alla frågorna")
+        return false
+    } else if (document.querySelector("input[name=answer-q7]:checked") === null) {
+        window.alert("Lämna svar på alla frågorna")
+        return false
+    } else if (document.querySelector("input[name=answer-q8]:checked") === null) {
+        window.alert("Lämna svar på alla frågorna")
+        return false
+    } else if (document.querySelector("input[name=answer-q9]:checked") === null) {
+        window.alert("Lämna svar på alla frågorna")
+        return false
+    } else if (document.querySelector("input[name=answer-q10]:checked") === null) {
+        window.alert("Lämna svar på alla frågorna")
+        return false
+    }
+    var q = [];
+    q.push(document.querySelector("input[name=answer-q6]:checked").value)
+    q.push(document.querySelector("input[name=answer-q7]:checked").value)
+    q.push(document.querySelector("input[name=answer-q8]:checked").value)
+    q.push(document.querySelector("input[name=answer-q9]:checked").value)
+    q.push(document.querySelector("input[name=answer-q10]:checked").value)
+    window.alert("Tack för dina svar!")
+}
+
+function resettwo() {
+    document.getElementById("q6").reset();
+    document.getElementById("q7").reset();
+    document.getElementById("q8").reset();
+    document.getElementById("q9").reset();
+    document.getElementById("q10").reset();
+}
