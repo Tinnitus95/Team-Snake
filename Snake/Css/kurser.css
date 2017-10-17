@@ -1,0 +1,134 @@
+#hidestart{
+  display: none;
+}
+
+#content {
+  padding: 30px;
+  width: 1160px;
+  margin: 20px auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+/*header {
+	height: 100px;
+	padding: 0 15px;
+}*/
+#mainbar, #sidebar, #middle{
+  background-color: #f8f8f8;
+}
+#mainbar {
+  width: 340px;
+  float: left;
+
+}
+
+#middle {
+  width: 344px;
+  /* Account for margins + border values */
+  float: left;
+  padding: 5px 15px;
+  margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+  width: 340px;
+  padding: 5px 15px;
+  float: left;
+}
+
+div.tab-container {
+  order: 2;
+}
+
+div.tab {
+  overflow: hidden;
+  /*border: 1px solid #ccc;*/
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+
+div.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+
+div.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+
+div.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+
+.column-layout .tabcontent {
+  background-color: white;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.dropcontent {
+  display: none;
+}
+
+/*#exercise, #test, #plan, #material, #teacher{
+  background-color: white;
+}*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+
+ul a:hover {
+  color: blue;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+
+/* for 980px or less */
+
+@media screen and (max-width: 980px) {
+  #pagewrap {
+    width: 94%;
+  }
+  #mainbar {
+    width: 41%;
+    padding: 1% 4%;
+  }
+  #middle {
+    width: 41%;
+    padding: 1% 4%;
+    margin: 0px 0px 5px 5px;
+    float: right;
+  }
+  #sidebar {
+    clear: both;
+    padding: 1% 4%;
+    width: auto;
+    float: none;
+  }

@@ -66,10 +66,14 @@ html, body {
   -webkit-transition: all 0.5s ease-out;
 }
 
+#content{
+  display: none;
+}
 /*............................Style for newsfeed........................ */
 
 .wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 8% 5% 5% 5%;
@@ -176,7 +180,7 @@ form a, .fbclose {
         flex-direction: column;
         justify-content: center;
         align-items: center;
- 
+
     }
     .main-form p {
         font-size: 100%;
@@ -221,5 +225,3 @@ form a, .fbclose {
     position: absolute;
   }
 }
-
-
