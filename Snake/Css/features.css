@@ -11,13 +11,14 @@ body {
 
 
 .maincontent {
-    max-width: 80%;
+    max-width: 50%;
     background-color: white;
     margin: 40px auto 0 auto;
     line-height: 1.65;
     padding: 20px 50px;
     box-sizing: border-box;
     display: flex;
+    font-size: 20px;
 }
 .content {
     display: flex;
@@ -25,8 +26,9 @@ body {
     align-items: center;    
 }
 .feature-container {
-    max-width: 80%;
+    max-width: 50%;
     margin: 40px auto 0 auto;   
+    font-size:20px;
 }
 .feature {
     padding: 2%;
