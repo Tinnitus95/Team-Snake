@@ -1,33 +1,132 @@
-body{
-  background-image: url(../pictures/background.jpg);
-  height: 100%;
-  width: 100%;
-  justify-content: space-between;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
 }
-.content {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
+
+/* STRUCTURE */
+
+#pagewrap {
+	padding: 30px;
+	width: 1160px;
+	margin: 20px auto;
 }
-.column-layout{
-    order: 2;
-    width: 90%;
-    background-color: #FFF;
-    margin: 20px auto;
-    line-height: 1.65;
-    padding: 20px 50px;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: space-between;
+/*header {
+	height: 100px;
+	padding: 0 15px;
+}*/
+#content {
+	width: 340px;
+	float: left;
+	padding: 5px 15px;
 }
-.main-column{
-    flex: 4;
-    order: 1;
-    margin: 20px;
+
+#middle {
+	width: 344px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
 }
-/***********************************DROPDOWN**********************************/
+
+#sidebar {
+	width: 340px;
+	padding: 5px 15px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+#middle
+{
+	background: #f8f8f8;
+}
+
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+/*#pagewrap, header, #content, #middle, #sidebar, footer {
+	border: solid 1px #ccc;
+}
+
+*/
 .submenu {
   list-style: none;
   padding: 0;
@@ -78,10 +177,10 @@ body{
   -webkit-transition: all 0.5s ease-out;
 }
 
-/***********************************SIDE MENU**********************************/
 
 
-/***********************************TAB MENU**********************************/
+
+
 div.tab-container{
     order: 2;
 
@@ -145,17 +244,133 @@ th, td{
 
 }
 
-/**************************************media******************************/
-@media (min-width: 900px) {
-  .content {
-    display: flex;
-  }
-  .column-layout {
-    width: 60%;
-    margin-top: 0;
-  }
-  .submenu {
-    width: 28%;
-    position: absolute;
-  }
+ ul
+{
+    list-style: none;
+
 }
+
+
+
+ul li
+{
+    font-size: 24px;
+}
+
+
+
+
+
+ul a:hover
+{
+    color:blue;
+}
+
+
+/************************************    TOPBAR        **********************************/
+
+
+
+
+
+
+
+
+body {
+	
+    background: url("../Pictures/background.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    font-family: 'arial';
+	line-height: 1.6;
+	margin: 0;
+ 
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+{
+    color: blue;
+}
+.logo {
+    
+	margin: 0;
+    font-size: 2em;
+    font-style:bold;
+}
+
+.main-nav {
+	margin-top: 5px;
+	position: relative;
+}
+.logo a,
+.main-nav a {
+	padding: 10px 20px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #424548;
+	font-size: 1.3em;
+}
+
+.main-nav a:hover {
+	color: #9b9ea0;
+}
+
+
+.header {
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	border: 1px solid #655f5f;
+	background-color: rgba(245, 233, 233, 0.69);
+
+}
+
+
+/*-----------------------------------------------------------------
+  Media querys
+------------------------------------------------------------------ */
+
+
+@media  (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+
+    .header {
+		flex-direction: column;
+		align-items: center;
+    	}
+
+}
+
+@media  (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+
