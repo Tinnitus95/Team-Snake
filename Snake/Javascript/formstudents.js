@@ -32,7 +32,7 @@ function reset() {
     document.getElementById("q5").reset();
 }
 
-function myFunction() {
+function myFunctiontwo() {
     if (document.querySelector("input[name=answer-q6]:checked") === null) {
         window.alert("Lämna svar på alla frågorna")
         return false
@@ -49,12 +49,12 @@ function myFunction() {
         window.alert("Lämna svar på alla frågorna")
         return false
     }
-    var q = [];
-    q.push(document.querySelector("input[name=answer-q6]:checked").value)
-    q.push(document.querySelector("input[name=answer-q7]:checked").value)
-    q.push(document.querySelector("input[name=answer-q8]:checked").value)
-    q.push(document.querySelector("input[name=answer-q9]:checked").value)
-    q.push(document.querySelector("input[name=answer-q10]:checked").value)
+    var qv = [];
+    qv.push(document.querySelector("input[name=answer-q6]:checked").value)
+    qv.push(document.querySelector("input[name=answer-q7]:checked").value)
+    qv.push(document.querySelector("input[name=answer-q8]:checked").value)
+    qv.push(document.querySelector("input[name=answer-q9]:checked").value)
+    qv.push(document.querySelector("input[name=answer-q10]:checked").value)
     window.alert("Tack för dina svar!")
 }
 
