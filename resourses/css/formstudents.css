@@ -5,6 +5,7 @@
     }
 
     .main-form h3 {
+        margin-top: 7px;
         margin-left: 10px;
         font-size: 20px;
         text-align: center;
@@ -29,6 +30,7 @@
         height: auto;
         width: 100px;
         font-size: 100%;
+        margin-top: 10px;
         margin-left: 10px;
         padding-bottom: 10px;
     }
