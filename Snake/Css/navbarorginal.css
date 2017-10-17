@@ -59,7 +59,7 @@ a {
 	padding-bottom: 0.2em;
 	border: 1px solid #655f5f;
 	background-color: rgba(245, 233, 233, 0.69);
-
+    box-shadow: 3px 3px 20px;
 }
 
 
