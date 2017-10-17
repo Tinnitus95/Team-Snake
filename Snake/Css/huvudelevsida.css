@@ -152,7 +152,7 @@ form input, form a, form h3, form p {
   color: black;
 }
 
-form a {
+form a, .fbclose {
   display: flex;
   align-self: flex-end;
   margin-right: 10px;
@@ -162,6 +162,57 @@ form a {
   width: 40%;
   box-sizing: border-box;
 }
+/*----------------------------------FEEDBACK POPUP----------------------- */
+    #fpopup {
+        display: flex;
+        height: auto;
+        width: 38%;
+        margin: auto;
+        background-color: #ffffff;
+    }
+    .main-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+ 
+    }
+    .main-form p {
+        font-size: 100%;
+        margin-left: 1px;
+        text-align: center;
+    }
+
+    .main-form h3 {
+        margin-top: 7px;
+        margin-left: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .questions {
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .radio {
+        color: #555;
+        font-family: 'lato', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        text-rendering: auto;
+        text-align: center;
+    }
+
+    .main-form button {
+        height: auto;
+        width: 100px;
+        font-size: 100%;
+        margin-left: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
 
 @media (min-width: 900px) {
   .submenu {
