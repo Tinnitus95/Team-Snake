@@ -1,13 +1,16 @@
 #hidestart{
   display: none;
+  width: 100%;
+
 }
 
 #content {
-  padding: 30px;
-  width: 1160px;
-  margin: 20px auto;
   display: flex;
+  justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
+
+  width: 100%;
 }
 
 /*header {
@@ -16,26 +19,45 @@
 }*/
 #mainbar, #sidebar, #middle{
   background-color: #f8f8f8;
+  width: auto;
+  min-width: 265px;
+  min-height: 162px;
+  margin: 3%;
+  box-shadow: 7px 7px 20px;
+
 }
+
+.title ,.droplinks{
+  padding-left: 5%;
+  font-size: 1em;
+  cursor: pointer;
+}
+.title{
+  text-shadow: 0.5px 0.5px #474446;
+}
+.droplinks{
+  text-decoration: underline;
+}
+/*
 #mainbar {
-  width: 340px;
-  float: left;
+  /*width: 340px;
+  /*float: left;
 
 }
 
 #middle {
-  width: 344px;
-  /* Account for margins + border values */
-  float: left;
+  /*width: 344px;*/
+  /* Account for margins + border values
+/*  float: left;
   padding: 5px 15px;
   margin: 0px 5px 5px 5px;
 }
 
 #sidebar {
-  width: 340px;
+  /*width: 340px;
   padding: 5px 15px;
-  float: left;
-}
+  /*float: left;
+}*/
 
 div.tab-container {
   order: 2;
@@ -43,8 +65,7 @@ div.tab-container {
 
 div.tab {
   overflow: hidden;
-  /*border: 1px solid #ccc;*/
-  background-color: #f1f1f1;
+  background-color: #696969;
 }
 
 /* Style the buttons inside the tab */
@@ -90,7 +111,8 @@ div.tab button.active {
 }*/
 
 table {
-  width: 100%;
+  display: table;
+  width: 100% !important;
   border-collapse: collapse;
 }
 
@@ -109,26 +131,11 @@ ul a:hover {
 /************************************************************************************
 MEDIA QUERIES
 *************************************************************************************/
-
-/* for 980px or less */
-
-@media screen and (max-width: 980px) {
-  #pagewrap {
-    width: 94%;
+@media (min-width:1025px) {
+  #content{
+    flex-wrap: nowrap;
   }
-  #mainbar {
-    width: 41%;
-    padding: 1% 4%;
+  #mainbar, #middle, #sidebar{
+    width: 30%;
   }
-  #middle {
-    width: 41%;
-    padding: 1% 4%;
-    margin: 0px 0px 5px 5px;
-    float: right;
-  }
-  #sidebar {
-    clear: both;
-    padding: 1% 4%;
-    width: auto;
-    float: none;
-  }
+}
