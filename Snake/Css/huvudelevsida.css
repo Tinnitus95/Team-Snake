@@ -1,68 +1,75 @@
 body {
-margin: 0;
-padding: 0;
-border: 0;
-background-image: url('../Pictures/background.jpg');
-background-repeat: no-repeat;
-background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: url('../Pictures/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-html,
-body {
-font-family: Arial, Helvetica, sans-serif;
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 /* define a fixed width for the entire menu */
 
 .navigation {
-height: top;
+  height: top;
 }
 
 .submenu {
-list-style: none;
-padding: 0;
-margin: 0;
-overflow: hidden;
-width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
 }
+
 /* make ALL links (main and submenu) have padding and background color */
+
 /* add hover behaviour */
+
 /* when hovering over a .mainmenu item,
 display the submenu inside it.
 we're changing the submenu's max-height from 0 to 200px;
 */
 
 .main-nav li:hover .submenu {
-display: block;
-max-height: 300px;
+  display: block;
+  max-height: 300px;
 }
+
 /*
 we now overwrite the background-color for .submenu links only.
 CSS reads down the page, so code at the bottom will overwrite the code at the top.
 */
 
 .submenu a {
-background-color: #999;
-justify-content: center;
-display: flex;
-font-size: 1em;
+  background-color: #999;
+  justify-content: center;
+  display: flex;
+  font-size: 1em;
 }
+
 /* hover behaviour for links inside .submenu */
 
 .submenu a:hover {
-background-color: #666;
+  background-color: #666;
 }
+
 /* this is the initial state of all submenus.
 we set it to max-height: 0, and hide the overflowed content.
 */
 
 .submenu {
-max-height: 0;
--webkit-transition: all 0.5s ease-out;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
 }
 
-#content{
+#content {
   display: none;
 }
+
 /*............................Style for newsfeed........................ */
 
 .wrapper {
@@ -76,10 +83,8 @@ max-height: 0;
 .feed {
   display: flex;
   max-width: 600px;
-  flex-direction: column-reverse ;
+  flex-direction: column-reverse;
   justify-content: space-between;
-
-
 }
 
 .blog-post {
@@ -89,6 +94,7 @@ max-height: 0;
   border-bottom: 1px solid black;
   background-color: white;
   margin-bottom: 5%;
+  box-shadow: 7px 7px 20px;
 }
 
 .more {
@@ -105,282 +111,119 @@ max-height: 0;
 
 /*............................popup for attedance................... */
 
-
 .ontop {
-z-index: 999;
-width: 100%;
-height: 100%;
-top: 0;
-left: 0;
-display: none;
-position: fixed;
-background: gray;
-/* older browsers */
-background: rgba(128, 128, 128, 0.4);
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+  background: gray;
+  /* older browsers */
+  background: rgba(128, 128, 128, 0.4);
 }
 
 .center {
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #popup {
-border-radius: 5%;
-border-style: solid;
-border-width: 5px;
-display: flex;
-height: auto;
-width: 30%;
-margin: auto;
-background-color: #ffffff;
+  border-radius: 5%;
+  border-style: solid;
+  border-width: 5px;
+  display: flex;
+  height: auto;
+  width: 30%;
+  margin: auto;
+  background-color: #ffffff;
 }
 
 #popup form {
-display: flex;
-width: 100%;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-form input,
-form a,
-form h3,
-form p {
-margin-bottom: 10px;
-color: black;
+form input, form a, form h3, form p {
+  margin-bottom: 10px;
+  color: black;
 }
 
-form a,
-.fbclose {
-display: flex;
-align-self: flex-end;
-margin-right: 10px;
+form a, .fbclose {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 10px;
 }
 
-#okbutton,
-#code {
-width: 40%;
-box-sizing: border-box;
+#okbutton, #code {
+  width: 40%;
+  box-sizing: border-box;
 }
 
 /*----------------------------------FEEDBACK POPUP----------------------- */
- 
- /*----------------------------------FEEDBACK POPUP----------------------- */
 
-#fpopup,
-#vpopup {
-display: flex;
-height: auto;
-width: 38%;
-margin: auto;
-background-color: #ffffff;
+
+#fpopup, #vpopup {
+  display: flex;
+  height: auto;
+  width: 38%;
+  margin: auto;
+  background-color: #ffffff;
 }
 
 .main-form {
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-form p {
-font-size: 100%;
-margin-left: 1px;
-text-align: center;
+  font-size: 100%;
+  margin-left: 1px;
+  text-align: center;
 }
 
 .main-form h3 {
-margin-top: 7px;
-margin-left: 10px;
-font-size: 20px;
-text-align: center;
+  margin-top: 7px;
+  margin-left: 10px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .questions {
-margin-left: 10px;
-text-align: center;
+  margin-left: 10px;
+  text-align: center;
 }
 
 .radio {
-color: #555;
-font-family: 'lato', Arial, Helvetica, sans-serif;
-font-weight: 300;
-font-size: 20px;
-text-rendering: auto;
-text-align: center;
+  color: #555;
+  font-family: 'lato', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: auto;
+  text-align: center;
 }
 
 .main-form button {
-height: auto;
-width: 100px;
-font-size: 100%;
-margin-left: 10px;
-padding-bottom: 10px;
-margin-bottom: 10px;
+  height: auto;
+  width: 100px;
+  font-size: 100%;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
-    /*............................Style for newsfeed........................ */
 
-    .wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 8% 5% 5% 5%;
-    }
 
-    .feed {
-        display: flex;
-        max-width: 600px;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-    }
-
-    .blog-post {
-        padding: 5%;
-        display: flex;
-        flex-direction: column;
-        border-bottom: 1px solid black;
-        background-color: white;
-        margin-bottom: 5%;
-        box-shadow: 7px 7px 20px;
-    }
-
-    .more {
-        align-self: flex-end;
-        text-decoration: underline;
-        font-size: 11px;
-        font-style: italic;
-    }
-
-    .date {
-        font-size: 10px;
-        font-style: italic;
-    }
-    /*............................popup for attedance................... */
-
-    .ontop {
-        z-index: 999;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        display: none;
-        position: fixed;
-        background: gray;
-        /* older browsers */
-        background: rgba(128, 128, 128, 0.4);
-    }
-
-    .center {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #popup {
-        border-radius: 5%;
-        border-style: solid;
-        border-width: 5px;
-        display: flex;
-        height: auto;
-        width: 30%;
-        margin: auto;
-        background-color: #ffffff;
-    }
-
-    #popup form {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    form input,
-    form a,
-    form h3,
-    form p {
-        margin-bottom: 10px;
-        color: black;
-    }
-
-    form a,
-    .fbclose {
-        display: flex;
-        align-self: flex-end;
-        margin-right: 10px;
-    }
-
-    #okbutton,
-    #code {
-        width: 40%;
-        box-sizing: border-box;
-    }
-    /*----------------------------------FEEDBACK POPUP----------------------- */
-
-    #fpopup,
-    #vpopup {
->>>>>>> 4a058b7272af2e46cd67639cc42194ba289661fc
-        display: flex;
-        height: auto;
-        width: 38%;
-        margin: auto;
-        background-color: #ffffff;
-    }
-
-    .main-form {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-<<<<<<< HEAD
-
-=======
->>>>>>> 4a058b7272af2e46cd67639cc42194ba289661fc
-    }
-
-    .main-form p {
-        font-size: 100%;
-        margin-left: 1px;
-        text-align: center;
-    }
-
-    .main-form h3 {
-        margin-top: 7px;
-        margin-left: 10px;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .questions {
-        margin-left: 10px;
-        text-align: center;
-    }
-
-    .radio {
-        color: #555;
-        font-family: 'lato', Arial, Helvetica, sans-serif;
-        font-weight: 300;
-        font-size: 20px;
-        text-rendering: auto;
-        text-align: center;
-    }
-
-    .main-form button {
-        height: auto;
-        width: 100px;
-        font-size: 100%;
-        margin-left: 10px;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-    }
+/*..................................MEDIA..................................*/
 
 @media (min-width: 900px) {
   .submenu {
