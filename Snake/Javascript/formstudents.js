@@ -55,7 +55,10 @@ function myFunctiontwo() {
     qv.push(document.querySelector("input[name=answer-q8]:checked").value)
     qv.push(document.querySelector("input[name=answer-q9]:checked").value)
     qv.push(document.querySelector("input[name=answer-q10]:checked").value)
+    var feedback = document.getElementbyID("usrform").value;
+    document.getElementById("usrform").value = ""
     window.alert("Tack för dina svar!")
+
 }
 
 function resettwo() {
@@ -64,4 +67,5 @@ function resettwo() {
     document.getElementById("q8").reset();
     document.getElementById("q9").reset();
     document.getElementById("q10").reset();
+    document.getElementById("usrform").value = ""
 }
