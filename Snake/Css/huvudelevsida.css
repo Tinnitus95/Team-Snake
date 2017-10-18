@@ -262,3 +262,21 @@ form a,
         position: absolute;
     }
 }
+
+
+/*-------------MEDIA FOR FEEDBACK-----------------*/
+
+@media (max-width: 900px) {
+    #fpopup,
+    #vpopup {
+        position: absolute;
+        width: 70%;
+    }
+}
+
+@media (max-width: 450px) {
+    #fpopup,
+    #vpopup {
+        width: 90%;
+    }
+}
