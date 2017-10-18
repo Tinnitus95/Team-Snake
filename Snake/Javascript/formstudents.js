@@ -21,7 +21,10 @@ function myFunction() {
     q.push(document.querySelector("input[name=answer-q3]:checked").value)
     q.push(document.querySelector("input[name=answer-q4]:checked").value)
     q.push(document.querySelector("input[name=answer-q5]:checked").value)
+    resettwo();
     window.alert("Tack för dina svar!")
+    document.getElementById("feedback").style.display = "none";
+
 }
 
 function reset() {
@@ -55,9 +58,10 @@ function myFunctiontwo() {
     qv.push(document.querySelector("input[name=answer-q8]:checked").value)
     qv.push(document.querySelector("input[name=answer-q9]:checked").value)
     qv.push(document.querySelector("input[name=answer-q10]:checked").value)
-    var feedback = document.getElementbyID("usrform").value;
-    document.getElementById("usrform").value = ""
+    var feedback = document.getElementById("usrform").value;
+    resettwo();
     window.alert("Tack för dina svar!")
+    document.getElementById("vfeedback").style.display = "none";
 
 }
 
@@ -67,5 +71,5 @@ function resettwo() {
     document.getElementById("q8").reset();
     document.getElementById("q9").reset();
     document.getElementById("q10").reset();
-    document.getElementById("usrform").value = ""
+    document.getElementById("usrform").value = "";
 }
