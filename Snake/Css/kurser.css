@@ -19,7 +19,7 @@
 #mainbar, #sidebar, #middle {
   background-color: #f8f8f8;
   width: auto;
-  min-width: 265px;
+  min-width: 365px;
   min-height: 162px;
   margin: 3%;
   box-shadow: 7px 7px 20px;
@@ -113,9 +113,10 @@ div.tab button.active {
 }*/
 
 table {
-  display: table;
+  display: flex;
   width: 100% !important;
   border-collapse: collapse;
+  height: auto;
 }
 
 th, td {
@@ -132,7 +133,7 @@ ul a:hover {
 MEDIA QUERIES
 *************************************************************************************/
 
-@media (min-width:1025px) {
+@media (min-width:1300px) {
   #content {
     flex-wrap: nowrap;
   }
