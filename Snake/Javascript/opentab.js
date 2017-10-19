@@ -1,6 +1,14 @@
-function openCourse(evt, tabName) {
+function openCourse() {
+
+    var x = document.getElementById("hidestart");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+    } else {
+        x.style.display = "none";
+    }
+}
     // Declare all variables
-    var i, contentdrop, linksdrop;
+    /*var i, contentdrop, linksdrop;
 
     // Get all elements with class="dropcontent" and hide them
     contentdrop = document.getElementsByClassName("contentdrop");
@@ -16,5 +24,4 @@ function openCourse(evt, tabName) {
 
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+    evt.currentTarget.className += " active";*/
