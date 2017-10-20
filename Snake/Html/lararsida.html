@@ -5,11 +5,12 @@
   <meta charset="utf-8">
   <title>Snake</title>
   <link rel="stylesheet" href="../Css/navbarwithlogo.css">
-  <link rel="stylesheet" href="../Css/huvudelevsida.css">
+  <link rel="stylesheet" href="../Css/lararsida.css">
   <link rel="stylesheet" href="../Css/kurser.css">
   <script src="../Javascript/dropdownmenu.js"></script>
   <script src="../Javascript/kursSida_v2.js"></script>
   <script src="../Javascript/opentab.js"></script>
+  <script src="../Javascript/openPost.js"></script>
 </head>
 
 <body>
@@ -747,10 +748,22 @@
 
 
 
-
-
+    <button class="posttoggle" onClick="openPost(newspost)">Nytt Inlägg</button>
 
     <div class="feed">
+      <div id="newsposttoggle">
+        <div id="newspost">
+
+
+        <form class="new-post" action="index.html" method="post">
+          <textarea class="area" name="Titel" rows="1" cols="96" placeholder="Titel"></textarea>
+          <textarea class="area" name="Datum" rows="1" cols="96" placeholder="Datum"></textarea>
+          <textarea class="area" name="Post" rows="8" cols="96" placeholder="Inlägg"></textarea>
+
+
+        </form>
+      </div>
+      </div>
       <div class="blog-post">
         <h3>Rektorn Informerar</h3>
         <div class="date">
