@@ -11,6 +11,7 @@
   <script src="../Javascript/attendance.js"></script>
   <script src="../Javascript/formstudents.js"></script>
   <script src="../Javascript/Feedback.js"></script>
+  <script src="../Javascript/coursereview.js"></script>
   <script src="../Javascript/kursSida_v2.js"></script>
   <script src="../Javascript/opentab.js"></script>
 </head>
@@ -213,6 +214,11 @@
                         <td>Klar</td>
                         <td>G</td>
                       </tr>
+                         <tr>
+                        <td>
+                        <a href="#" onClick="pop('coursereview')">Utvärdering av kursen</a>
+                            </td>
+                         </tr>
                     </table>
                   </div>
 
@@ -759,6 +765,53 @@
             <input type="button" id="okbutton" onclick="check(this.form)" value="OK">
             <p id="message"></p>
           </form>
+        </div>
+      </div>
+    </div>
+         <div id="coursereview" class="ontop">
+      <div class="center">
+        <div id="fpopup" class="dfeedback">
+          <div class="main-form">
+            <a class="fbclose" href="#" onClick="hide('coursereview')">Close</a>
+            <h3>Utvärdering av kursen</h3>
+            <div class="questions">
+             <form id="q1" action="">
+                <p>Hur upplever du tempot har varit under kursens gång?</p>
+                <textarea style="width: 60%" rows="3" cols="80"></textarea>
+              </form>
+            </div>
+                 <div class="questions">
+                  <form id="q2" action="">
+                    <p>Vad har kursen gett dig? Nämn några viktiga saker.</p>
+                    <textarea style="width: 60%" rows="3" cols="80"></textarea>
+                  </form>
+                </div>
+              <div class="questions">
+              <form id="q3" action="">
+                <p>Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i 
+                    kursplanen? Om inte, varför?</p>
+                <textarea style="width: 60%" rows="3" cols="80"></textarea>
+              </form>
+            </div>
+              <div class="questions">
+            <form id="q4" action="">
+            <p>Hur har kursinformationen fungerat (i form av muntlig information från lärare, 
+                studiehandledning, kursguide, expedition, annonsering på anslagstavlor etc)?</p>
+                <textarea style="width: 60%" rows="3" cols="80"></textarea>
+                  </form>
+              </div>
+              <div class="questions">
+                  <form id="q5" action="">
+                    <p>Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har 
+                        kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?</p>
+                    <textarea style="width: 60%"rows="3" cols="80"></textarea>
+                  </form>
+            </div>
+            <div>
+              <button onclick="myFunctionThree()">Submit</button>
+              <button onclick="reset()">Reset</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
