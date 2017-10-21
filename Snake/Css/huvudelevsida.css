@@ -252,6 +252,19 @@ form a,
     width: 80%;
 }
 
+footer {
+    background-color: rgba(245, 233, 233, 0.69);
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 130%;
+    height: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
 
 /*..................................MEDIA..................................*/
 
