@@ -15,8 +15,6 @@ body {
 
 /* define a fixed width for the entire menu */
 
-
-
 .submenu {
     list-style: none;
     padding: 0;
@@ -115,10 +113,14 @@ we set it to max-height: 0, and hide the overflowed content.
     font-size: 10px;
     font-style: italic;
 }
+
+
 /*..............................new blog-post...........................*/
-.posttoggle{
-margin-bottom: 7px;
+
+.posttoggle {
+    margin-bottom: 7px;
 }
+
 textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -126,18 +128,18 @@ textarea {
     resize: none;
     width: 100%;
 }
-#newsposttoggle{
-  display: none;
-  order: 1;
 
+#newsposttoggle {
+    display: none;
+    order: 1;
 }
 
-.new-post{
-
-  margin-bottom: 1%;
+.new-post {
+    margin-bottom: 1%;
 }
-.area{
-  box-shadow: 7px 7px 20px;
+
+.area {
+    box-shadow: 7px 7px 20px;
 }
 
 
@@ -272,6 +274,19 @@ form a,
 .textarea textarea {
     resize: none;
     width: 80%;
+}
+
+footer {
+    background-color: rgba(245, 233, 233, 0.69);
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 130%;
+    height: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
 }
 
 
