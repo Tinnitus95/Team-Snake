@@ -128,21 +128,30 @@ textarea {
     resize: none;
     width: 100%;
 }
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  padding-left:1%;
+}
 
 #newsposttoggle {
     display: none;
     order: 1;
 }
 
-.new-post {
-    margin-bottom: 1%;
-}
-
 .area {
     box-shadow: 7px 7px 20px;
 }
+.hide{
+  display: none;
+}
+.show {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 7px 7px 20px;
 
-
+}
 /*............................popup for attedance................... */
 
 .ontop {

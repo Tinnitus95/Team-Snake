@@ -1,12 +1,12 @@
-function openCourse() {
+function openCourse(id) {
+        var e = document.getElementById("hidestart");
+        e.style.display = (e.style.display == 'flex') ? 'none' : 'flex';
+     }
 
-    var x = document.getElementById("hidestart");
-    if (x.style.display === "none") {
-        x.style.display = "flex";
-    } else {
-        x.style.display = "none";
-    }
-}
+     function openPost(id) {
+        var e = document.getElementById("newsposttoggle");
+        e.style.display = (e.style.display == 'flex') ? 'none' : 'flex';
+     }
     // Declare all variables
     /*var i, contentdrop, linksdrop;
 

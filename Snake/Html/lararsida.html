@@ -10,7 +10,9 @@
   <script src="../Javascript/dropdownmenu.js"></script>
   <script src="../Javascript/kursSida_v2.js"></script>
   <script src="../Javascript/opentab.js"></script>
-  <script src="../Javascript/openPost.js"></script>
+  <script src="../Javascript/submit.js"></script>
+
+
 </head>
 
 <body>
@@ -761,9 +763,12 @@
             <textarea class="area" name="Post" rows="8" cols="96" placeholder="Inlägg"></textarea>
 
 
+
           </form>
+            <button class="posttoggle" onclick="submit()">Publicera</button>
         </div>
       </div>
+
       <div class="blog-post">
         <h3>Rektorn Informerar</h3>
         <div class="date">
@@ -803,6 +808,9 @@
           velit molestie, pellentesque ex non, dictum dolor...</p>
         <a class="more" href="#">Läs vidare</a>
 
+      </div>
+      <div id="timed" class="hide">
+        <p>Ditt inlägg har publicerats</p>
       </div>
     </div>
   </div>
