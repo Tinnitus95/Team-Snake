@@ -117,7 +117,7 @@ div.tab button.active {
 }*/
 
 table {
-  display: flex;
+  display: table;
   width: 100% !important;
   border-collapse: collapse;
   height: auto;
@@ -137,6 +137,18 @@ ul a
 
 ul a:hover {
   color: orangered;
+}
+.pr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pr-exercise button, #art-exercise button, #ps-exercise button{
+  width: 237px;
+}
+#pr-exercise button, #pr-exercise .task, #art-exercise button, #art-exercise .task, 
+#ps-exercise button, #ps-exercise .task {
+  margin-top: 5px;
 }
 
 /************************************************************************************
