@@ -17,12 +17,13 @@
 }*/
 
 #mainbar, #sidebar, #middle {
-  background-color: #f8f8f8;
+  background-color: rgba(153, 153, 153, 0.8);
   width: auto;
   min-width: 365px;
   min-height: 162px;
   margin: 3%;
   box-shadow: 7px 7px 20px;
+border-radius: 25px;
 }
 
 .title, .droplinks {
@@ -33,6 +34,8 @@
 
 .title {
   text-shadow: 0.5px 0.5px #474446;
+    color: #b12f00;
+    font-size: 20px;
 }
 
 .droplinks {
@@ -97,7 +100,8 @@ div.tab button.active {
 /* Style the tab content */
 
 .column-layout .tabcontent {
-  background-color: white;
+  background-color: rgba(153, 153, 153, 0.8);
+;
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
@@ -125,8 +129,14 @@ th, td {
   padding: 8px;
 }
 
+ul a 
+{
+    color: black; 
+    
+}
+
 ul a:hover {
-  color: blue;
+  color: orangered;
 }
 
 /************************************************************************************
