@@ -38,7 +38,7 @@ const admin = [
                   }
               }
                 if (valid) {
-                 window.open('../Html/huvudelevsida.html',"_self")/*opens the target page while Id & password matches*/
+                 window.open('../Html/huvudelevsida.html#',"_self")/*opens the target page while Id & password matches*/
 
                  }
                else {

@@ -11,7 +11,7 @@
   <script src="../Javascript/kursSida_v2.js"></script>
   <script src="../Javascript/opentab.js"></script>
   <script src="../Javascript/submit.js"></script>
-
+  <script src="../Javascript/addtask.js"></script>
 
 </head>
 
@@ -321,28 +321,50 @@
 
 
                 <div id="pr-exercise" class="tabcontent">
-
-                  <table>
-                    <tr>
-                      <th>Uppgiftnamn</th>
-                      <th>Status</th>
-                      <th>Betyg</th>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="#">Uppgift 1</a>
-                      </td>
-                      <td>Klar</td>
-                      <td>VG</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="#">Uppgift 2</a>
-                      </td>
-                      <td>Klar</td>
-                      <td>VG</td>
-                    </tr>
-                  </table>
+                  <div class="pr-container">
+                    <table id="pr-table">
+                      <tr>
+                        <th>Uppgiftnamn</th>
+                        <th>Status</th>
+                        <th>Betyg</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="#">Uppgift 1</a>
+                        </td>
+                        <td>Klar</td>
+                        <td>
+                          <select type="text" id="grade">
+                            <option value="ig">IG</option>
+                    <option value="g">G</option>
+                    <option value="vg">VG</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="#">Uppgift 2</a>
+                        </td>
+                        <td>Klar</td>
+                        <td>
+                          <select type="text" id="grade">
+                            <option value="ig">IG</option>
+                    <option value="g">G</option>
+                    <option value="vg">VG</option>
+                          </select>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="task">
+                <input type="text" id="taskname" placeholder="Uppgift"  />
+                <select id="tasks" class="taskstatus">
+                  <option>Ny</option>
+                  <option>Pågår</option>
+                  <option>Klar</option>
+                </select>
+                    </div>
+                    <button class="taskbutton" onclick="addTask()">Lägg till Uppgift</button>
+                  </div>
                 </div>
 
                 <div id="pr-test" class="tabcontent">
@@ -357,7 +379,13 @@
                         <a href="#">Tenta 1</a>
                       </td>
                       <td>Klar</td>
-                      <td>VG</td>
+                      <td>
+                        <select type="text" id="grade">
+                          <option value="ig">IG</option>
+                  <option value="g">G</option>
+                  <option value="vg">VG</option>
+                        </select>
+                      </td>
                     </tr>
                   </table>
                 </div>
@@ -423,8 +451,8 @@
                 </div>
 
                 <div id="ps-exercise" class="tabcontent">
-
-                  <table>
+                  <div class="pr-container">
+                  <table id="ps-table">
                     <tr>
                       <th>Uppgiftnamn</th>
                       <th>Status</th>
@@ -435,16 +463,38 @@
                         <a href="#">Uppgift 1</a>
                       </td>
                       <td>Klar</td>
-                      <td>G</td>
+                      <td>
+                        <select type="text" id="grade">
+                          <option value="ig">IG</option>
+                  <option value="g">G</option>
+                  <option value="vg">VG</option>
+                      </select>
+                      </td>
                     </tr>
                     <tr>
                       <td>
                         <a href="#">Uppgift 2</a>
                       </td>
                       <td>Klar</td>
-                      <td>G</td>
+                      <td>
+                        <select type="text" id="grade">
+                            <option value="ig">IG</option>
+                    <option value="g">G</option>
+                    <option value="vg">VG</option>
+                          </select>
+                      </td>
                     </tr>
                   </table>
+                  <div class="task">
+                <input type="text" id="tasknamec" placeholder="Uppgift"  />
+                <select id="tasksd" class="taskstatus">
+                  <option>Ny</option>
+                  <option>Pågår</option>
+                  <option>Klar</option>
+                </select>
+                    </div>
+                    <button class="taskbutton" onclick="addTasks()">Lägg till Uppgift</button>
+                </div>
                 </div>
 
                 <div id="ps-test" class="tabcontent">
@@ -459,7 +509,13 @@
                         <a href="#">Tenta 1</a>
                       </td>
                       <td>Klar</td>
-                      <td>G</td>
+                      <td>
+                        <select type="text" id="grade">
+                            <option value="ig">IG</option>
+                    <option value="g">G</option>
+                    <option value="vg">VG</option>
+                          </select>
+                        </td>
                     </tr>
                   </table>
                 </div>
@@ -524,28 +580,50 @@
                 </div>
 
                 <div id="art-exercise" class="tabcontent">
-
-                  <table>
-                    <tr>
-                      <th>Uppgiftnamn</th>
-                      <th>Status</th>
-                      <th>Betyg</th>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="#">Uppgift 1</a>
-                      </td>
-                      <td>Klar</td>
-                      <td>IG</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="#">Uppgift 2</a>
-                      </td>
-                      <td>Klar</td>
-                      <td>G</td>
-                    </tr>
-                  </table>
+                  <div class="pr-container">
+                    <table id="art-table">
+                      <tr>
+                        <th>Uppgiftnamn</th>
+                        <th>Status</th>
+                        <th>Betyg</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="#">Uppgift 1</a>
+                        </td>
+                        <td>Klar</td>
+                        <td>
+                          <select type="text" id="grade">
+                            <option value="ig">IG</option>
+                    <option value="g">G</option>
+                    <option value="vg">VG</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="#">Uppgift 2</a>
+                        </td>
+                        <td>Klar</td>
+                        <td>
+                          <select type="text" id="grade">
+                            <option value="ig">IG</option>
+                    <option value="g">G</option>
+                    <option value="vg">VG</option>
+                          </select>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="task">
+                  <input type="text" id="tasknamea" placeholder="Uppgift"  />
+                  <select id="tasksb" class="taskstatus">
+                    <option>Ny</option>
+                    <option>Pågår</option>
+                    <option>Klar</option>
+                  </select>
+                      </div>
+                   <button class="taskbutton" onclick="addTaska()">Lägg till Uppgift</button>
+                </div>
                 </div>
 
                 <div id="art-test" class="tabcontent">
@@ -560,7 +638,13 @@
                         <a href="#">Tenta 1</a>
                       </td>
                       <td>Klar</td>
-                      <td>VG</td>
+                      <td>
+                        <select type="text" id="grade">
+                          <option value="ig">IG</option>
+                  <option value="g">G</option>
+                  <option value="vg">VG</option>
+                        </select>
+                      </td>
                     </tr>
                   </table>
                 </div>
@@ -810,7 +894,7 @@
 
       </div>
       <div id="timed" class="hide">
-        <p>Ditt inlägg har publicerats</p>
+        <h3>Ditt inlägg har publicerats</h3>
       </div>
     </div>
   </div>

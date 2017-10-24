@@ -11,12 +11,13 @@ body {
 
 .maincontent {
     max-width: 100%;
-    background-color: white;
+    background-color: rgba(153, 153, 153, 0.8);
     margin: 40px auto 0 auto;
     line-height: 1.65;
     padding: 2% 4%;
     display: flex;
     box-shadow: 7px 7px 20px;
+    border-radius: 35px;
 }
 
 table {
