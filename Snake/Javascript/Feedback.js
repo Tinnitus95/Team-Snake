@@ -14,11 +14,13 @@ document.onkeydown = function (evt) {
 	evt = evt || window.event;
 	if (evt.keyCode == 27) {
 		hide('feedback');
+		hide('vfeedback');
+		hide('popDiv');
 	}
 };
-document.onkeydown = function (evt) {
+/*document.onkeydown = function (evt) {
 	evt = evt || window.event;
 	if (evt.keyCode == 27) {
 		hide('vfeedback');
 	}
-};
+};*/
