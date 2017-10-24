@@ -773,52 +773,38 @@
         </div>
       </div>
     </div>
-    <div id="coursereview" class="ontop">
+             <div id="coursereview" class="ontop">
       <div class="center">
-        <div id="fpopup" class="dfeedback">
-          <div class="main-form">
+     
+          <div class="lain-form">
             <a class="fbclose" href="#" onClick="hide('coursereview')">Close</a>
-            <h3>Utvärdering av kursen</h3>
-            <div class="questions">
-              <form id="q1" action="">
-                <p>Hur upplever du tempot har varit under kursens gång?</p>
-                <textarea style="width: 60%" rows="3" cols="80"></textarea>
+               <h3>Utvärdering av kursen</h3>
+           
+             <form id="q1" action="">
+                <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
+                <textarea name= "he" style="width: 60%" rows="3" cols="80" required></textarea>
+                
+                <p class="breakword">Vad har kursen gett dig? Nämn några viktiga saker.</p>
+                <textarea name= "he" style="width: 60%" rows="3" cols="80" required></textarea>
+                                   
+                <p class="breakword">Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i 
+                    kursplanen? Om inte, varför?</p>
+                <textarea name= "he" style="width: 60%" rows="3" cols="80" required></textarea>
+                                  
+                <p class="breakword">Hur har kursinformationen fungerat (i form av muntlig information från lärare, 
+                studiehandledning, kursguide, expedition, annonsering på anslagstavlor etc)?</p>
+                <textarea name= "he" style="width: 60%" rows="3" cols="80" required></textarea>
+                                                      
+                <p class="breakword">Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har 
+                        kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?</p>
+                <textarea name= "he" style="width: 60%" rows="3" cols="80" required></textarea><br>
+                                
+                 <input type="submit" onSubmit ="hide('coursereview')">
               </form>
-            </div>
-            <div class="questions">
-              <form id="q2" action="">
-                <p>Vad har kursen gett dig? Nämn några viktiga saker.</p>
-                <textarea style="width: 60%" rows="3" cols="80"></textarea>
-              </form>
-            </div>
-            <div class="questions">
-              <form id="q3" action="">
-                <p>Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i  kursplanen? Om inte, varför?
-                </p>
-                <textarea style="width: 60%" rows="3" cols="80"></textarea>
-              </form>
-            </div>
-            <div class="questions">
-              <form id="q4" action="">
-                <p>Hur har kursinformationen fungerat (i form av muntlig information från lärare,  studiehandledning, kursguide, expedition, annonsering på anslagstavlor etc)?
-                </p>
-                <textarea style="width: 60%" rows="3" cols="80"></textarea>
-              </form>
-            </div>
-            <div class="questions">
-              <form id="q5" action="">
-                <p>Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har  kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?
-                </p>
-                <textarea style="width: 60%" rows="3" cols="80"></textarea>
-              </form>
-            </div>
-            <div>
-              <button onclick="myFunctionThree()">Submit</button>
-              <button onclick="reset()">Reset</button>
             </div>
           </div>
-        </div>
-      </div>
+      
+    
     </div>
 
     <div id="feedback" class="ontop">
@@ -826,66 +812,26 @@
         <div id="fpopup" class="dfeedback">
           <div class="main-form">
             <a class="fbclose" href="#" onClick="hide('feedback')">Close</a>
-            <h3>Dagliga utvärderingar.</h3>
-            <div class="questions">
-              <form id="q1" action="">
-                <p>Hur upplever du tempot i skolan just nu?</p>
+              <div class="questions">
+             <form ><p>Hur var dagen?  <span>
+                 <span>
+                <span>
+                <input name="staatus" type="radio" value="bad" autofocus required>&nbsp;
+                <span>&#128534;</span>
+              </span>
 
-                <input type="radio" name="answer-q1" value="1"> 1
-                <input type="radio" name="answer-q1" value="2"> 2
-                <input type="radio" name="answer-q1" value="3"> 3
-                <input type="radio" name="answer-q1" value="4"> 4
-                <input type="radio" name="answer-q1" value="5"> 5
-              </form>
-            </div>
-            <div class="questions">
-              <form id="q2" action="">
-                <p>Hur upplever du stämningen i klassen?</p>
-                <input type="radio" name="answer-q2" value="1"> 1
-                <input type="radio" name="answer-q2" value="2"> 2
-                <input type="radio" name="answer-q2" value="3"> 3
-                <input type="radio" name="answer-q2" value="4"> 4
-                <input type="radio" name="answer-q2" value="5"> 5
-              </form>
-            </div>
+                <span>
+                <input name="staatus" type="radio" value="ok">&nbsp;
+                <span>&#128529;</span>
+              </span>
 
-            <div class="questions">
-              <form id="q3" action="">
-                <p>Hur motiverad är du i dina studier?</p>
-
-                <input type="radio" name="answer-q3" value="1"> 1
-                <input type="radio" name="answer-q3" value="2"> 2
-                <input type="radio" name="answer-q3" value="3"> 3
-                <input type="radio" name="answer-q3" value="4"> 4
-                <input type="radio" name="answer-q3" value="5"> 5
-              </form>
-            </div>
-            <div class="questions">
-              <form id="q4" action="">
-                <p>Tycker du att du har tillgång till det du behöver?</p>
-
-                <input type="radio" name="answer-q4" value="1"> 1
-                <input type="radio" name="answer-q4" value="2"> 2
-                <input type="radio" name="answer-q4" value="3"> 3
-                <input type="radio" name="answer-q4" value="4"> 4
-                <input type="radio" name="answer-q4" value="5"> 5
-              </form>
-            </div>
-            <div class="questions">
-              <form id="q5" action="">
-                <p>Är du nöjd med dina studier?</p>
-
-                <input type="radio" name="answer-q5" value="1"> 1
-                <input type="radio" name="answer-q5" value="2"> 2
-                <input type="radio" name="answer-q5" value="3"> 3
-                <input type="radio" name="answer-q5" value="4"> 4
-                <input type="radio" name="answer-q5" value="5"> 5
-
-              </form>
-            </div>
-            <div>
-              <button onclick="myFunction()">Submit</button>
-              <button onclick="reset()">Reset</button>
+                <span>
+                <input name="staatus" type="radio" value="good">&nbsp;
+                <span>&#128515;</span>
+              </span>
+                </span>
+               </span><p> <input type="submit" value="Skicka" ></p>
+                </form>
             </div>
           </div>
         </div>
