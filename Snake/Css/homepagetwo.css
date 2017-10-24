@@ -39,6 +39,7 @@ footer {
 }
 .hero p{
   font-size: 2em;
-  font-weight: bold;
+  
+  color: #d43900;
   text-shadow: 0.5px 0.5px #474446;
 }
