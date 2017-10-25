@@ -11,7 +11,11 @@
   <script src="../Javascript/kursSida_v2.js"></script>
   <script src="../Javascript/opentab.js"></script>
   <script src="../Javascript/submit.js"></script>
+
+  <script src="../Javascript/Feedback.js"></script>
+
   <script src="../Javascript/addtask.js"></script>
+
 
 </head>
 
@@ -61,22 +65,23 @@
           <h2 class="title">AVSLUTADE KURSER</h2>
           <ul>
             <li>
-              <a class="droplinks" onclick="openDrop(event, 'swedish')">JAVASCRIPT (G)</a>
+              <a class="droplinks" onclick="openDrop(event, 'html5')">HTML5</a>
             </li>
             <li>
-              <a class="droplinks" onclick="openDrop(event, 'english')">HTML5 (VG)</a>
+              <a class="droplinks" onclick="openDrop(event, 'javascript')">JAVASCRIPT</a>
             </li>
           </ul>
           <main class="content">
-            <div id="swedish" class="dropcontent">
+            <div id="html5" class="dropcontent">
               <div class="column-layout">
                 <div class="main-column">
-                  <h2 class="title">-JAVASCRIPT-</h2>
+                    <a class="droplinks" onclick="openDrop(event,'html5')">-FE17</a>
+                     <a class="droplinks" onclick="openDrop(event,'html5')">-FE16</a>
 
                 </div>
                 <div class="tab-container">
                   <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'exercise')">InlämningsUppgifter</button>
+                    <button class="tablinks" onclick="openTab(event, 'exercise')">Utvärderingar</button>
                     <button class="tablinks" onclick="openTab(event, 'test')">Tentor</button>
                     <button class="tablinks" onclick="openTab(event, 'plan')">Kursplan</button>
                     <button class="tablinks" onclick="openTab(event, 'material')">Kursmaterial</button>
@@ -91,23 +96,31 @@
 
                     <table>
                       <tr>
-                        <th>Uppgiftnamn</th>
+                        <th>Elev</th>
                         <th>Status</th>
-                        <th>Betyg</th>
+                        
                       </tr>
                       <tr>
                         <td>
-                          <a href="#">Uppgift 1</a>
+                        <a href="#" onClick="pop('answered-form')">Jesse Jonsson</a>
                         </td>
                         <td>Klar</td>
-                        <td>G</td>
+                        
                       </tr>
                       <tr>
                         <td>
-                          <a href="#">Uppgift 2</a>
+                          <a href="#" onClick="pop('answered-form')">Natasha Bosnjak</a>
                         </td>
                         <td>Klar</td>
-                        <td>VG</td>
+                            
+                      </tr>
+                        
+                         <tr>
+                        <td>
+                          <a href="#" onClick="pop('answered-form')">Oscar Fredriksson</a>
+                        </td>
+                        <td>Klar</td>
+                            
                       </tr>
                     </table>
 
@@ -175,15 +188,17 @@
               </div>
             </div>
 
-            <div id="english" class="dropcontent">
+            <div id="javascript" class="dropcontent">
               <div class="column-layout">
                 <div class="main-column">
-                  <h2 class="title">-HTML5-</h2>
-
-                </div>
+                    
+                 <a class="droplinks" onclick="openDrop(event,'javascript')">-EX17</a>
+                     <a class="droplinks" onclick="openDrop(event,'javascript')">-EX16</a>
+              
+                  </div>
                 <div class="tab-container">
                   <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'ma-exercise')">InlämningsUppgifter</button>
+                    <button class="tablinks" onclick="openTab(event, 'ma-exercise')">Utvärderingar</button>
                     <button class="tablinks" onclick="openTab(event, 'ma-test')">Tentor</button>
                     <button class="tablinks" onclick="openTab(event, 'ma-plan')">Kursplan</button>
                     <button class="tablinks" onclick="openTab(event, 'ma-material')">Kursmaterial</button>
@@ -195,26 +210,29 @@
 
                     <table>
                       <tr>
-                        <th>Uppgiftnamn</th>
+                        <th>Elev</th>
                         <th>Status</th>
-                        <th>Betyg</th>
+                        
                       </tr>
                       <tr>
                         <td>
-                          <a href="#">Uppgift 1</a>
+                        <a href="#" onClick="pop('answered-form')">Silvia Rodrigues</a>
                         </td>
                         <td>Klar</td>
-                        <td>G</td>
+                        
                       </tr>
                       <tr>
                         <td>
-                          <a href="#">Uppgift 2</a>
+                          <a href="#" onClick="pop('answered-form')">Simon Gribert</a>
                         </td>
                         <td>Klar</td>
-                        <td>G</td>
+                            
                       </tr>
+                        
                     </table>
+
                   </div>
+
 
                   <div id="ma-test" class="tabcontent">
                     <table>
@@ -831,7 +849,51 @@
 
       </div>
     </div>
+    <div id="answered-form" class="ontop">
+      <div class="center">
 
+          <div class="lain-form">
+            <a class="fbclose" href="#" onClick="hide('answered-form')">Close</a>
+            <h3>Utvärdering av kursen</h3>
+            <div class="questions">
+              
+                <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
+                <p><strong>Svar:</strong> Alldeles lagom</p>  
+             
+                
+            
+              
+                <p class="breakword">Vad har kursen gett dig? Nämn några viktiga saker.</p>
+                <p><strong>Svar:</strong> Vänner för livet, yolo.</p>
+            
+            
+              
+                <p class ="breakword">Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i  kursplanen? 
+                    Om inte, varför?
+                </p>
+                <p><strong>Svar:</strong> Mycket bra.</p>
+             
+            
+            
+              
+                <p class="breakword">Hur har kursinformationen fungerat (i form av muntlig information från lärare, studiehandledning, kursguide, expedition, annonsering på anslagstavlor etc)? 
+                </p>
+                <p><strong>Svar:</strong> Dåligt, vart äter vi lunch ens?</p>
+              
+        
+           
+              
+                <p class="breakword">Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har  kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?
+                </p>
+                <p><strong>Svar:</strong> Vet inte.</p>
+            
+            </div>
+          </div>
+        </div>
+        </div>
+   
+
+      
 
 
     <button class="posttoggle" onClick="openPost(newspost)">Nytt Inlägg</button>
