@@ -15,7 +15,7 @@ document.onkeydown = function(evt) {
 						hide('popDiv');
 				}
 };
-const code = "DE456F3K9J";
+const code = "123";
 
 function check(form) {
   if(form.code.value == code) {
