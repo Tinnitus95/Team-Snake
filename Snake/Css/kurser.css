@@ -23,7 +23,7 @@
   min-height: 162px;
   margin: 3%;
   box-shadow: 7px 7px 20px;
-border-radius: 25px;
+  border-radius: 25px;
 }
 
 .title, .droplinks {
@@ -34,8 +34,8 @@ border-radius: 25px;
 
 .title {
   text-shadow: 0.5px 0.5px #474446;
-    color: #b12f00;
-    font-size: 20px;
+  color: #b12f00;
+  font-size: 20px;
 }
 
 .droplinks {
@@ -101,7 +101,8 @@ div.tab button.active {
 
 .column-layout .tabcontent {
   background-color: rgba(153, 153, 153, 0.8);
-;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
@@ -117,7 +118,7 @@ div.tab button.active {
 }*/
 
 table {
-  display: flex;
+  display: table;
   width: 100% !important;
   border-collapse: collapse;
   height: auto;
@@ -129,14 +130,26 @@ th, td {
   padding: 8px;
 }
 
-ul a 
-{
-    color: black; 
-    
+ul a {
+  color: black;
 }
 
 ul a:hover {
   color: orangered;
+}
+
+.pr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pr-exercise button, #art-exercise button, #ps-exercise button {
+  width: 237px;
+}
+
+#pr-exercise button, #pr-exercise .task, #art-exercise button, #art-exercise .task, #ps-exercise button, #ps-exercise .task {
+  margin-top: 5px;
 }
 
 /************************************************************************************

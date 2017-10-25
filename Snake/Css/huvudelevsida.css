@@ -209,6 +209,36 @@ form a,
     align-items: center;
 }
 
+
+.breakword
+{
+    overflow-wrap:break-word;
+    
+}
+
+textarea
+{
+    resize:none;
+}
+
+
+
+.lain-form{
+    
+background-color:white;
+ flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    width: 60%;
+    
+}
+span 
+{
+    font-size: 20px;
+
+}
+
 .main-form p {
     font-size: 100%;
     margin-left: 1px;

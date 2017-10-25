@@ -97,9 +97,13 @@ we set it to max-height: 0, and hide the overflowed content.
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid black;
-    background-color: white;
+    background-color: rgba(153, 153, 153, 0.8);
     margin-bottom: 5%;
     box-shadow: 7px 7px 20px;
+    border-radius: 35px;
+}
+.blog-post h3{
+  color:#0b0b0b;
 }
 
 .more {
@@ -110,8 +114,9 @@ we set it to max-height: 0, and hide the overflowed content.
 }
 
 .date {
-    font-size: 10px;
-    font-style: italic;
+    font-size: 14px;
+    font-style: bold;
+    color: #d43900;
 }
 
 
@@ -145,12 +150,16 @@ textarea {
 }
 .show {
   display: flex;
-  background-color: white;
+  background-color: rgba(153, 153, 153, 0.8);
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
   box-shadow: 7px 7px 20px;
+  border-radius: 35px;
 
+}
+.show h3{
+  color: #d43900;
 }
 /*............................popup for attedance................... */
 
