@@ -63,7 +63,7 @@ function myFunctiontwo() {
     qv.push(document.querySelector("input[name=answer-q10]:checked").value)
     var feedback = document.getElementById("usrform").value;
     resettwo();
-    window.alert("Tack för dina svar!")
+    
     document.getElementById("vfeedback").style.display = "none";
 
 }

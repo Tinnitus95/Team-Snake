@@ -1,34 +1,29 @@
 body {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background-image: url('../Pictures/background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: url('../Pictures/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-html,
-body {
-    font-family: Arial, Helvetica, sans-serif;
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /* define a fixed width for the entire menu */
 
 .submenu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
 }
-
 
 /* make ALL links (main and submenu) have padding and background color */
 
-
 /* add hover behaviour */
-
 
 /* when hovering over a .mainmenu item,
 display the submenu inside it.
@@ -36,10 +31,9 @@ we're changing the submenu's max-height from 0 to 200px;
 */
 
 .main-nav li:hover .submenu {
-    display: block;
-    max-height: 300px;
+  display: block;
+  max-height: 300px;
 }
-
 
 /*
 we now overwrite the background-color for .submenu links only.
@@ -47,223 +41,230 @@ CSS reads down the page, so code at the bottom will overwrite the code at the to
 */
 
 .submenu a {
-    background-color: #999;
-    justify-content: center;
-    display: flex;
-    font-size: 1em;
+  background-color: #999;
+  justify-content: center;
+  display: flex;
+  font-size: 1em;
 }
-
 
 /* hover behaviour for links inside .submenu */
 
 .submenu a:hover {
-    background-color: #666;
+  background-color: #666;
 }
-
 
 /* this is the initial state of all submenus.
 we set it to max-height: 0, and hide the overflowed content.
 */
 
 .submenu {
-    max-height: 0;
-    -webkit-transition: all 0.5s ease-out;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
 }
 
 #content {
-    display: none;
+  display: none;
 }
-
 
 /*............................Style for newsfeed........................ */
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 8% 5% 5% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8% 5% 5% 5%;
 }
 
 .feed {
-    display: flex;
-    max-width: 600px;
-    flex-direction: column-reverse;
-    justify-content: space-between;
+  display: flex;
+  max-width: 600px;
+  flex-direction: column-reverse;
+  justify-content: space-between;
 }
 
 .blog-post {
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid black;
-    background-color: rgba(153,153, 153, 0.8);
-    margin-bottom: 5%;
-    box-shadow: 7px 7px 20px;
-    border-radius: 35px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  background-color: rgba(153, 153, 153, 0.8);
+  margin-bottom: 5%;
+  box-shadow: 7px 7px 20px;
+  border-radius: 35px;
 }
-.blog-post h3{
-    color:#0b0b0b;
+
+.blog-post h3 {
+  color: #0b0b0b;
 }
 
 .more {
-    align-self: flex-end;
-    text-decoration: underline;
-    font-size: 11px;
-    font-style: italic;
+  align-self: flex-end;
+  text-decoration: underline;
+  font-size: 11px;
+  font-style: italic;
 }
 
 .date {
-    font-size: 14px;
-    font-style: bold;
-    color: #d43900;
+  font-size: 14px;
+  font-style: bold;
+  color: #d43900;
 }
-
 
 /*..............................new blog-post...........................*/
 
 .posttoggle {
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 textarea {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    resize: none;
-    width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: none;
+  width: 100%;
 }
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  padding-left:1%;
+
+::-webkit-input-placeholder {
+  padding-left: 1%;
+}
+
+/* Removes the clear button from date inputs */
+
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+/* Removes the spin button */
+
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* A few custom styles for date inputs */
+
+input[type="date"] {
+  border: 1px solid black;
+  margin-bottom: 7px;
+  padding-left: 1%;
 }
 
 #newsposttoggle {
-    display: none;
-    order: 1;
+  display: none;
+  order: 1;
 }
 
 .area {
-    box-shadow: 7px 7px 20px;
+  box-shadow: 7px 7px 20px;
 }
-.hide{
+
+.hide {
   display: none;
 }
+
 .show {
   display: flex;
-  background-color: rgba(153,153,153, 0.8);
+  background-color: rgba(153, 153, 153, 0.8);
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
   box-shadow: 7px 7px 20px;
-    border-radius: 35px;
+  border-radius: 35px;
+}
 
+.show h3 {
+  color: #d43900
 }
-.show h3{
-    color:#d43900
-}
+
 /*............................popup for attedance................... */
 
 .ontop {
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: none;
-    position: fixed;
-    background: gray;
-    /* older browsers */
-    background: rgba(128, 128, 128, 0.4);
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+  background: gray;
+  /* older browsers */
+  background: rgba(128, 128, 128, 0.4);
 }
 
 .center {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
-
-
-
-
 
 /*----------------------------------FEEDBACK POPUP----------------------- */
 
-
-.lain-form{
-    background-color:white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-    width: 60%;
-    height: 80%;
-    overflow: scroll;
-    padding: 1em 1em 1em 1em;
-     
-    
-    }
-
-.breakword
-{
-    overflow-wrap:break-word;
+.lain-form {
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  height: 80%;
+  overflow: scroll;
+  padding: 1em 1em 1em 1em;
 }
 
-
+.breakword {
+  overflow-wrap: break-word;
+}
 
 .textarea {
-    display: block;
-    margin-top: 10px;
-    width: 80%;
+  display: block;
+  margin-top: 10px;
+  width: 80%;
 }
 
 .textarea textarea {
-    resize: none;
-    width: 80%;
+  resize: none;
+  width: 80%;
 }
 
 footer {
-    background-color: rgba(245, 233, 233, 0.69);
-    width: 100%;
-    position: relative;
-    text-align: center;
-    font-size: 130%;
-    height: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
+  background-color: rgba(245, 233, 233, 0.69);
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 130%;
+  height: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
 }
-
 
 /*..................................MEDIA..................................*/
 
 @media (min-width: 900px) {
-    .submenu {
-        width: 25%;
-        margin-left: 2%;
-        position: absolute;
-    }
+  .submenu {
+    width: 25%;
+    margin-left: 2%;
+    position: absolute;
+  }
 }
-
 
 /*-------------MEDIA FOR FEEDBACK-----------------*/
 
 @media (max-width: 900px) {
-    .lain-form  {
-        position: absolute;
-        width: 80%;
-        height: 80%;
-        overflow: scroll;
-    }
+  .lain-form {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    overflow: scroll;
+  }
 }
 
 @media (max-width: 350px) {
-   .lain-form {
-        width: 80%;
-        height: 90%;
-    }
+  .lain-form {
+    width: 80%;
+    height: 90%;
+  }
 }
