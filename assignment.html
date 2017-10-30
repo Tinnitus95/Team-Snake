@@ -1,1 +1,28 @@
 <!-- skapa en form för fil uppladdning och en selector för att välja vilken kurs den tillhör -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uppgift</title>
+</head>
+
+<body>
+    <form method="kurs" id="kurs-list">
+        Välj kurs for inlämning:
+        <input type="kurs" name="kursToUpload" id="kursToUpload">
+        <input type="submit" value="Lämna in" name="submit">
+    </form>
+
+    <select name="kurslist" form="kursform" id="file-course-select">
+        <option value="Html5">Html5</option>
+        <option value="JacaScript">JavaScript</option>
+        <option value="Agila">Agila</option>
+        <option value="Arbetesmetodik">Arbetesmetodik</option>
+    </select>
+
+</body>
+
+</html>
