@@ -113,6 +113,18 @@
                       <td>VG</td>
                     </tr>
                   </table>
+                  <h3>Ladda upp din inlämningsuppgift</h3>
+                  <form method="">
+                    <input type="file" name="kursToUpload" id="kursToUpload">
+                  </form>
+                  <h3>Välj kurs for inlämning:</h3>
+                  <select name="kurslist" form="kursform" id="file-course-select">
+                    <option value="Html5">Html5</option>
+                    <option value="JacaScript">JavaScript</option>
+                    <option value="Agila">Agila</option>
+                    <option value="Arbetesmetodik">Arbetesmetodik</option>
+                  </select>
+                  <button type="skicka" onclick="turnInAssignment()">Skicka</button>
                 </div>
 
                 <div id="pr-test" class="tabcontent">
