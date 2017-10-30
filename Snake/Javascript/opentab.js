@@ -11,6 +11,7 @@ function openPost(id) {
 function openAttendence(id) {
     var e = document.getElementById(id);
     e.style.display = (e.style.display == 'flex') ? 'none' : 'flex';
+
 }
 
 // Declare all variables

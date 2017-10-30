@@ -14,10 +14,7 @@
   <script src="../Javascript/Feedback.js"></script>
   <script src="../Javascript/addtask.js"></script>
   <script src="../Javascript/taskreview.js"></script>
-
-
-
-
+  <script src="../Javascript/generator.js"></script>
 </head>
 
 <body>
@@ -58,9 +55,16 @@
   </header>
   <div class="wrapper">
     <div id="attendence">
-      <div id="content">
-        <p> test</p>
-      </div>
+      <select name="kuserlist" id="list">
+        <option value="html">Html</option>
+        <option value="javascript">JavaScript</option>
+        <option value="agila">Agila</option>
+        <option value="arbetsmetodik">Arbetsmetodik</option>
+      </select>
+      <input type="date" id="date" />
+      <Button onclick="generate()">Generate Code</Button>
+      <br>
+      <p id="response"></p>
     </div>
 
     <div id="hidestart">
