@@ -6,22 +6,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="resourses/js/assignment.js"></script>
+    <link rel="stylesheet" href="resourses/css/assignment.css">
     <title>Uppgift</title>
 </head>
 
 <body>
-    <form method="kurs" id="kurs-list">
-        Välj kurs for inlämning:
-        <input type="kurs" name="kursToUpload" id="kursToUpload">
-        <input type="submit" value="Lämna in" name="submit">
-    </form>
+    <div class="main-assignment">
+        <h2>Kursinlämning</h2>
+        <h3>Ladda upp din inlämningsuppgift</h3>
+        <form method="">
+            <input type="file" name="kursToUpload" id="kursToUpload">
+        </form>
+        <h3>Välj kurs for inlämning:</h3>
+        <select name="kurslist" form="kursform" id="file-course-select">
+            <option value="Html5">Html5</option>
+            <option value="JacaScript">JavaScript</option>
+            <option value="Agila">Agila</option>
+            <option value="Arbetesmetodik">Arbetesmetodik</option>
+        </select>
 
-    <select name="kurslist" form="kursform" id="file-course-select">
-        <option value="Html5">Html5</option>
-        <option value="JacaScript">JavaScript</option>
-        <option value="Agila">Agila</option>
-        <option value="Arbetesmetodik">Arbetesmetodik</option>
-    </select>
+        <button type="skicka" onclick="myFunction()">Skicka</button>
+    </div>
 
 </body>
 

@@ -1,16 +1,12 @@
-function file() {
-    let f =
-}
-// SKapa en funktion för att ta emot filen
-// I den funktionen ska hämta filens värde 
-// hämta selecorns väde
-// Efter filen är uppladdad ska skicka en window.alert med filnamn och kurs
-
-function assignments() {
-    // bind variabel till id "kurslista"
-    var l =
-
-        // bind variable till id "upload"
-
-        // gör en window.alert med tack för + filnamn + i kurs + kurslista.value
-}
+function myFunction() {
+    var file = document.getElementById("kursToUpload").value;
+    let i = document.getElementById("file-course-select");
+    let course = i.options[i.selectedIndex].value;
+    if (file === "") {
+        window.alert("Filen saknas!")
+        return
+    } else {
+        window.alert("Tack för uppgiften i " + course + file);
+    }
+    location.reload();
+};
