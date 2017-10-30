@@ -16,6 +16,7 @@ document.onkeydown = function (evt) {
 		hide('feedback');
 		hide('vfeedback');
 		hide('popDiv');
+		hide('webb-uppgift1');
 	}
 };
 /*document.onkeydown = function (evt) {

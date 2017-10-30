@@ -199,6 +199,46 @@ input[type="date"] {
   align-items: center;
 }
 
+#popupup1 {
+    display: flex;
+    height: auto;
+    width: 50%;
+    margin: auto;
+    background-color: #ffffff;
+}
+.main-js-content h3 {
+        font-size: 125%;
+        text-align: center;
+    }
+    .main-js-content {
+        padding-left: 17px;
+        text-align: center;
+        margin: 5px;
+    }
+    .main-js-content textarea {
+        resize: none;
+    }
+    .main-content th {
+        text-align: center;
+        font-size: 175%;
+        padding-bottom: 5px;
+    }
+    .main-content td {
+        font-size: 100%;
+        text-align: center;
+    }
+    .main-content table {
+        border-spacing: 17px 0px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .box {
+        margin: 5px;
+        padding-top: 15px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
 /*----------------------------------FEEDBACK POPUP----------------------- */
 
 .lain-form {
