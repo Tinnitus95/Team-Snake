@@ -290,6 +290,10 @@ input[type="date"] {
     width: 80%;
 }
 
+#attendence {
+    display: none;
+}
+
 #attendence p {
     color: white;
     text-align: center;

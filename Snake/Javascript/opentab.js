@@ -10,7 +10,7 @@ function openPost(id) {
 
 function openAttendence(id) {
     var e = document.getElementById(id);
-    e.style.display = (e.style.display == 'flex') ? 'none' : 'flex';
+    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
 
 }
 
