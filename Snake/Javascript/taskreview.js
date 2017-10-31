@@ -6,7 +6,7 @@ var assignments = [{
     "text": "...här kommer elevs uppgift sen...",
     "feedback": "",
     "grade": ""
-}]
+}];
 function showAssignment(number) {
     // Bygg en sträng från objektet och addera mellan paragraferna
     var uppgiftstext = "<h3>Uppgifts text</h3><p>" + assignments[number].text + "</p>";
