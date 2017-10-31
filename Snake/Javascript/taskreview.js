@@ -24,7 +24,7 @@ function showAssignment(number) {
     document.getElementById("feedbacks").innerHTML = textarea;
     document.getElementById("grades").innerHTML = selector;
     document.getElementById("submitButton").innerHTML = button;
-};
+}
 function submitGrade(number) {
     // hämtar select elementet värdet och spara i assignments objektes grade
     var g = document.getElementById("gradeSelect");
@@ -38,4 +38,4 @@ function submitGrade(number) {
     assignments[number].feedback = fb;
     window.alert("Uppgifterna är nu uppdaterade");
     location.reload(); // laddar om sidan// laddar om sidan
-};
+}
