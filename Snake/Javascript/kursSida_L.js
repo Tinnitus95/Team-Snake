@@ -1,5 +1,3 @@
-// Outdated code, saved for reference.
-
 function openTab(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -20,7 +18,6 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-
 function openClass(evt, tabName) {
   // Declare all variables
   var j, classcontent, classlinks, test;
