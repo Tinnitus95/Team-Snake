@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../Css/kurser.css">
   <script src="../Javascript/dropdownmenu.js"></script>
   <script src="../Javascript/kursSida_L.js"></script>
-  <script src="../Javascript/opentab.js"></script>
+  <script src="../Javascript/toggles.js"></script>
   <script src="../Javascript/submit.js"></script>
   <script src="../Javascript/Feedback.js"></script>
   <script src="../Javascript/addtask.js"></script>
@@ -79,220 +79,220 @@
               <a class="droplinks" onclick="openDrop(event,'fe16')">-FE16</a>
 
               <div id="fe17" class="dropcontent">
-                  <div class="column-layout">
-                    <div class="main-column">
-                  <h2 class="title">-HTML5-</h2>
+                <div class="column-layout">
+                  <div class="main-column">
+                    <h2 class="title">-HTML5-</h2>
+                  </div>
+                  <div class="tab-container">
+                    <div class="tab">
+                      <button class="tablinks" onclick="openTab(event, 'exercise')">Utvärderingar</button>
+                      <button class="tablinks" onclick="openTab(event, 'test')">Tentor</button>
+                      <button class="tablinks" onclick="openTab(event, 'plan')">Kursplan</button>
+                      <button class="tablinks" onclick="openTab(event, 'material')">Kursmaterial</button>
+                      <button class="tablinks" onclick="openTab(event, 'teacher')">Lärare</button>
+
                     </div>
-                    <div class="tab-container">
-                      <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'exercise')">Utvärderingar</button>
-                        <button class="tablinks" onclick="openTab(event, 'test')">Tentor</button>
-                        <button class="tablinks" onclick="openTab(event, 'plan')">Kursplan</button>
-                        <button class="tablinks" onclick="openTab(event, 'material')">Kursmaterial</button>
-                        <button class="tablinks" onclick="openTab(event, 'teacher')">Lärare</button>
 
-                      </div>
-
-                      <div id="exercise" class="tabcontent">
+                    <div id="exercise" class="tabcontent">
 
 
 
 
-                        <table>
-                          <tr>
-                            <th>Elev</th>
-                            <th>Status</th>
+                      <table>
+                        <tr>
+                          <th>Elev</th>
+                          <th>Status</th>
 
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#" onClick="pop('answered-form')">Jesse Jonsson</a>
-                            </td>
-                            <td>Klar</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#" onClick="pop('answered-form')">Jesse Jonsson</a>
+                          </td>
+                          <td>Klar</td>
 
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#" onClick="pop('answered-form')">Natasha Bosnjak</a>
-                            </td>
-                            <td>Klar</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#" onClick="pop('answered-form')">Natasha Bosnjak</a>
+                          </td>
+                          <td>Klar</td>
 
-                          </tr>
+                        </tr>
 
-                          <tr>
-                            <td>
-                              <a href="#" onClick="pop('answered-form')">Oscar Fredriksson</a>
-                            </td>
-                            <td>Klar</td>
+                        <tr>
+                          <td>
+                            <a href="#" onClick="pop('answered-form')">Oscar Fredriksson</a>
+                          </td>
+                          <td>Klar</td>
 
-                          </tr>
-                        </table>
+                        </tr>
+                      </table>
 
-                      </div>
-                      <div id="test" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Exam</th>
-                            <th>Status</th>
-                            <th>Betyg</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">Tenta 1</a>
-                            </td>
-                            <td>Klar</td>
-                            <td>IG</td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div id="plan" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Behöver Kunna</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">Kursplan</a>
-                            </td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div id="material" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Böcker</th>
-                            <th>Författare</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">Kursbok</a>
-                            </td>
-                            <td>John Doerson</td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div id="teacher" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Namn</th>
-                            <th>Email</th>
-                            <th>Telefon Nummer</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">John Doe</a>
-                            </td>
-                            <td>John.doe@email.com</td>
-                            <td>076-8292950</td>
-                          </tr>
-                        </table>
-                      </div>
+                    </div>
+                    <div id="test" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Exam</th>
+                          <th>Status</th>
+                          <th>Betyg</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">Tenta 1</a>
+                          </td>
+                          <td>Klar</td>
+                          <td>IG</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div id="plan" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Behöver Kunna</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">Kursplan</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div id="material" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Böcker</th>
+                          <th>Författare</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">Kursbok</a>
+                          </td>
+                          <td>John Doerson</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div id="teacher" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Namn</th>
+                          <th>Email</th>
+                          <th>Telefon Nummer</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">John Doe</a>
+                          </td>
+                          <td>John.doe@email.com</td>
+                          <td>076-8292950</td>
+                        </tr>
+                      </table>
                     </div>
                   </div>
+                </div>
               </div>
               <div id="fe16" class="dropcontent">
-                  <div class="column-layout">
-                    <div class="main-column">
-                      <h2 class="title">-HTML5-</h2>
+                <div class="column-layout">
+                  <div class="main-column">
+                    <h2 class="title">-HTML5-</h2>
+                  </div>
+                  <div class="tab-container">
+                    <div class="tab">
+                      <button class="tablinks" onclick="openTab(event, 'exercisefe16')">Utvärderingar</button>
+                      <button class="tablinks" onclick="openTab(event, 'testfe16')">Tentor</button>
+                      <button class="tablinks" onclick="openTab(event, 'planfe16')">Kursplan</button>
+                      <button class="tablinks" onclick="openTab(event, 'materialfe16')">Kursmaterial</button>
+                      <button class="tablinks" onclick="openTab(event, 'teacherfe16')">Lärare</button>
                     </div>
-                    <div class="tab-container">
-                      <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'exercisefe16')">Utvärderingar</button>
-                        <button class="tablinks" onclick="openTab(event, 'testfe16')">Tentor</button>
-                        <button class="tablinks" onclick="openTab(event, 'planfe16')">Kursplan</button>
-                        <button class="tablinks" onclick="openTab(event, 'materialfe16')">Kursmaterial</button>
-                        <button class="tablinks" onclick="openTab(event, 'teacherfe16')">Lärare</button>
-                      </div>
-                      <div id="exercisefe16" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Elev</th>
-                            <th>Status</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#" onClick="pop('answered-form')">Jesse Jonsson</a>
-                            </td>
-                            <td>Klar</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#" onClick="pop('answered-form')">Natasha Bosnjak</a>
-                            </td>
-                            <td>Klar</td>
+                    <div id="exercisefe16" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Elev</th>
+                          <th>Status</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#" onClick="pop('answered-form')">Jesse Jonsson</a>
+                          </td>
+                          <td>Klar</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#" onClick="pop('answered-form')">Natasha Bosnjak</a>
+                          </td>
+                          <td>Klar</td>
 
-                          </tr>
+                        </tr>
 
-                          <tr>
-                            <td>
-                              <a href="#" onClick="pop('answered-form')">Oscar Fredriksson</a>
-                            </td>
-                            <td>Klar</td>
+                        <tr>
+                          <td>
+                            <a href="#" onClick="pop('answered-form')">Oscar Fredriksson</a>
+                          </td>
+                          <td>Klar</td>
 
-                          </tr>
-                        </table>
+                        </tr>
+                      </table>
 
-                      </div>
-                      <div id="testfe16" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Exam</th>
-                            <th>Status</th>
-                            <th>Betyg</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">Tenta 1</a>
-                            </td>
-                            <td>Klar</td>
-                            <td>IG</td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div id="planfe16" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Behöver Kunna</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">Kursplan</a>
-                            </td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div id="materialfe16" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Böcker</th>
-                            <th>Författare</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">Kursbok</a>
-                            </td>
-                            <td>John Doerson</td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div id="teacherfe16" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Namn</th>
-                            <th>Email</th>
-                            <th>Telefon Nummer</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">John Doe</a>
-                            </td>
-                            <td>John.doe@email.com</td>
-                            <td>076-8292950</td>
-                          </tr>
-                        </table>
-                      </div>
+                    </div>
+                    <div id="testfe16" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Exam</th>
+                          <th>Status</th>
+                          <th>Betyg</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">Tenta 1</a>
+                          </td>
+                          <td>Klar</td>
+                          <td>IG</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div id="planfe16" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Behöver Kunna</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">Kursplan</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div id="materialfe16" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Böcker</th>
+                          <th>Författare</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">Kursbok</a>
+                          </td>
+                          <td>John Doerson</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div id="teacherfe16" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Namn</th>
+                          <th>Email</th>
+                          <th>Telefon Nummer</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">John Doe</a>
+                          </td>
+                          <td>John.doe@email.com</td>
+                          <td>076-8292950</td>
+                        </tr>
+                      </table>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
 
@@ -301,212 +301,212 @@
               <a class="droplinks" onclick="openDrop(event,'ex16')">-EX16</a>
 
               <div id="ex17" class="dropcontent">
-                  <div class="column-layout">
-                    <div class="main-column">
-                      <h2 class="title">-JAVASCRIPT-</h2>
+                <div class="column-layout">
+                  <div class="main-column">
+                    <h2 class="title">-JAVASCRIPT-</h2>
+                  </div>
+                  <div class="tab-container">
+                    <div class="tab">
+                      <button class="tablinks" onclick="openTab(event, 'ma-exercise')">Utvärderingar</button>
+                      <button class="tablinks" onclick="openTab(event, 'ma-test')">Tentor</button>
+                      <button class="tablinks" onclick="openTab(event, 'ma-plan')">Kursplan</button>
+                      <button class="tablinks" onclick="openTab(event, 'ma-material')">Kursmaterial</button>
+                      <button class="tablinks" onclick="openTab(event, 'ma-teacher')">Lärare</button>
+
                     </div>
-                    <div class="tab-container">
-                      <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'ma-exercise')">Utvärderingar</button>
-                        <button class="tablinks" onclick="openTab(event, 'ma-test')">Tentor</button>
-                        <button class="tablinks" onclick="openTab(event, 'ma-plan')">Kursplan</button>
-                        <button class="tablinks" onclick="openTab(event, 'ma-material')">Kursmaterial</button>
-                        <button class="tablinks" onclick="openTab(event, 'ma-teacher')">Lärare</button>
 
-                      </div>
+                    <div id="ma-exercise" class="tabcontent">
 
-                      <div id="ma-exercise" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Elev</th>
+                          <th>Status</th>
 
-                        <table>
-                          <tr>
-                            <th>Elev</th>
-                            <th>Status</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#" onClick="pop('answered-form')">Silvia Rodrigues</a>
+                          </td>
+                          <td>Klar</td>
 
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#" onClick="pop('answered-form')">Silvia Rodrigues</a>
-                            </td>
-                            <td>Klar</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#" onClick="pop('answered-form')">Simon Gribert</a>
+                          </td>
+                          <td>Klar</td>
 
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#" onClick="pop('answered-form')">Simon Gribert</a>
-                            </td>
-                            <td>Klar</td>
+                        </tr>
 
-                          </tr>
+                      </table>
 
-                        </table>
-
-                      </div>
+                    </div>
 
 
-                      <div id="ma-test" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Exam</th>
-                            <th>Status</th>
-                            <th>Betyg</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">Tenta 1</a>
-                            </td>
-                            <td>Klar</td>
-                            <td>VG</td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div id="ma-plan" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Behöver Kunna</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">Kursplan</a>
-                            </td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div id="ma-material" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Böcker</th>
-                            <th>Författare</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">Kursbok</a>
-                            </td>
-                            <td>John Doerson</td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div id="ma-teacher" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Namn</th>
-                            <th>Email</th>
-                            <th>Telefon Nummer</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">John Doe</a>
-                            </td>
-                            <td>John.doe@email.com</td>
-                            <td>076-8292950</td>
-                          </tr>
-                        </table>
-                      </div>
+                    <div id="ma-test" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Exam</th>
+                          <th>Status</th>
+                          <th>Betyg</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">Tenta 1</a>
+                          </td>
+                          <td>Klar</td>
+                          <td>VG</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div id="ma-plan" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Behöver Kunna</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">Kursplan</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div id="ma-material" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Böcker</th>
+                          <th>Författare</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">Kursbok</a>
+                          </td>
+                          <td>John Doerson</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div id="ma-teacher" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Namn</th>
+                          <th>Email</th>
+                          <th>Telefon Nummer</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">John Doe</a>
+                          </td>
+                          <td>John.doe@email.com</td>
+                          <td>076-8292950</td>
+                        </tr>
+                      </table>
                     </div>
                   </div>
+                </div>
               </div>
               <div id="ex16" class="dropcontent">
-                  <div class="column-layout">
-                    <div class="main-column">
-                      <h2 class="title">-JAVASCRIPT-</h2>
+                <div class="column-layout">
+                  <div class="main-column">
+                    <h2 class="title">-JAVASCRIPT-</h2>
+                  </div>
+                  <div class="tab-container">
+                    <div class="tab">
+                      <button class="tablinks" onclick="openTab(event, 'ma-exerciseex16')">Utvärderingar</button>
+                      <button class="tablinks" onclick="openTab(event, 'ma-testex16')">Tentor</button>
+                      <button class="tablinks" onclick="openTab(event, 'ma-planex16')">Kursplan</button>
+                      <button class="tablinks" onclick="openTab(event, 'ma-materialex16')">Kursmaterial</button>
+                      <button class="tablinks" onclick="openTab(event, 'ma-teacherex16')">Lärare</button>
+
                     </div>
-                    <div class="tab-container">
-                      <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'ma-exerciseex16')">Utvärderingar</button>
-                        <button class="tablinks" onclick="openTab(event, 'ma-testex16')">Tentor</button>
-                        <button class="tablinks" onclick="openTab(event, 'ma-planex16')">Kursplan</button>
-                        <button class="tablinks" onclick="openTab(event, 'ma-materialex16')">Kursmaterial</button>
-                        <button class="tablinks" onclick="openTab(event, 'ma-teacherex16')">Lärare</button>
 
-                      </div>
+                    <div id="ma-exerciseex16" class="tabcontent">
 
-                      <div id="ma-exerciseex16" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Elev</th>
+                          <th>Status</th>
 
-                        <table>
-                          <tr>
-                            <th>Elev</th>
-                            <th>Status</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#" onClick="pop('answered-form')">Silvia Rodrigues</a>
+                          </td>
+                          <td>Klar</td>
 
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#" onClick="pop('answered-form')">Silvia Rodrigues</a>
-                            </td>
-                            <td>Klar</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#" onClick="pop('answered-form')">Simon Gribert</a>
+                          </td>
+                          <td>Klar</td>
 
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#" onClick="pop('answered-form')">Simon Gribert</a>
-                            </td>
-                            <td>Klar</td>
+                        </tr>
 
-                          </tr>
+                      </table>
 
-                        </table>
-
-                      </div>
+                    </div>
 
 
-                      <div id="ma-testex16" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Exam</th>
-                            <th>Status</th>
-                            <th>Betyg</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">Tenta 1</a>
-                            </td>
-                            <td>Klar</td>
-                            <td>VG</td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div id="ma-planex16" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Behöver Kunna</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">Kursplan</a>
-                            </td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div id="ma-materialex16" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Böcker</th>
-                            <th>Författare</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">Kursbok</a>
-                            </td>
-                            <td>John Doerson</td>
-                          </tr>
-                        </table>
-                      </div>
-                      <div id="ma-teacherex16" class="tabcontent">
-                        <table>
-                          <tr>
-                            <th>Namn</th>
-                            <th>Email</th>
-                            <th>Telefon Nummer</th>
-                          </tr>
-                          <tr>
-                            <td>
-                              <a href="#">John Doe</a>
-                            </td>
-                            <td>John.doe@email.com</td>
-                            <td>076-8292950</td>
-                          </tr>
-                        </table>
-                      </div>
+                    <div id="ma-testex16" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Exam</th>
+                          <th>Status</th>
+                          <th>Betyg</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">Tenta 1</a>
+                          </td>
+                          <td>Klar</td>
+                          <td>VG</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div id="ma-planex16" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Behöver Kunna</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">Kursplan</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div id="ma-materialex16" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Böcker</th>
+                          <th>Författare</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">Kursbok</a>
+                          </td>
+                          <td>John Doerson</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div id="ma-teacherex16" class="tabcontent">
+                      <table>
+                        <tr>
+                          <th>Namn</th>
+                          <th>Email</th>
+                          <th>Telefon Nummer</th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="#">John Doe</a>
+                          </td>
+                          <td>John.doe@email.com</td>
+                          <td>076-8292950</td>
+                        </tr>
+                      </table>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
           </main>
@@ -557,7 +557,7 @@
                         </tr>
                         <tr>
                           <td>
-                            <a href="#">Uppgift 1</a>
+                            <a href="#" onclick="pop('group')">Uppgift 1</a>
                           </td>
                           <td>Klar</td>
                           <td>
@@ -1461,6 +1461,29 @@
 
       </div>
     </div>
+    <div id="group" class="ontop">
+      <div class="center">
+        <div class="lain-form" id="groupstyle">
+          <a class="fbclose" href="#" onClick="hide('group')">Close</a>
+          <h1>uppgift 1</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2>Grupper</h2>
+          <input id="groupNr" type="number" name="quantity" min="1" max="3" value="1">
+          <button type="button" onclick="groupShow()" name="groupBtn">Kör</button>
+          <div id="grupp1" class="invis">
+            <h3>Grupp 1:</h3>
+          </div>
+          <div id="grupp2" class="invis">
+            <h3>Grupp 2:</h3>
+          </div>
+
+          <div id="grupp3" class="invis">
+            <h3>Grupp 3:</h3>
+          </div>
+
+        </div>
+      </div>
+    </div>
     <div id="answered-form" class="ontop">
       <div class="center">
 
@@ -1570,7 +1593,7 @@
     <p>&copy; Copyright Snake Limited</p>
   </footer>
   <script src="../Javascript/newDate.js"></script>
-
+  <script src="../Javascript/grouping.js"></script>
 </body>
 
 </html>

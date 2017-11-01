@@ -241,6 +241,18 @@ footer {
   overflow: auto;
 }
 
+/*..................................style for grouping.......................*/
+#groupstyle{
+  text-align: left;
+}
+.invis{
+  display: none;
+  border: 1px solid black;
+  margin-bottom: 5px;
+}
+#grupp1{
+  margin-top: 5px;
+}
 /*..................................MEDIA..................................*/
 
 @media (min-width: 900px) {

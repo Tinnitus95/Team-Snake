@@ -213,7 +213,7 @@ form a,
 .breakword
 {
     overflow-wrap:break-word;
-    
+
 }
 
 textarea
@@ -224,16 +224,16 @@ textarea
 
 
 .lain-form{
-    
+
 background-color:white;
  flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align:center;
     width: 60%;
-    
+
 }
-span 
+span
 {
     font-size: 20px;
 
@@ -258,13 +258,9 @@ span
     text-align: center;
 }
 
-.radio {
-    color: #555;
-    font-family: 'lato', Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    text-rendering: auto;
-    text-align: center;
+#slider{
+  width: 200px;
+  height: 20px;
 }
 
 .main-form button {

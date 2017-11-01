@@ -36,7 +36,7 @@ function reset() {
 }
 
 function myFunctiontwo() {
-  if (document.querySelector("input[name=answer-q6]:checked") === null) {
+  /*if (document.querySelector("input[name=answer-q6]:checked") === null) {
     window.alert("Lämna svar på alla frågorna")
     return false
   } else if (document.querySelector("input[name=answer-q7]:checked") === null) {
@@ -51,7 +51,7 @@ function myFunctiontwo() {
   } else if (document.querySelector("input[name=answer-q10]:checked") === null) {
     window.alert("Lämna svar på alla frågorna")
     return false
-  } else if (document.getElementById("usrform").value === "") {
+  }/*else if (document.getElementById("usrform").value === "") {
     window.alert('Lämna ett meddelande tack!');
     return false;
   }
@@ -62,7 +62,7 @@ function myFunctiontwo() {
   qv.push(document.querySelector("input[name=answer-q9]:checked").value)
   qv.push(document.querySelector("input[name=answer-q10]:checked").value)
   var feedback = document.getElementById("usrform").value;
-  resettwo();
+  resettwo();*/
 
   document.getElementById("vfeedback").style.display = "none";
 
