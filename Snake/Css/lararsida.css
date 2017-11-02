@@ -345,7 +345,7 @@ footer {
 }
 .invis{
   display: none;
-
+  /*border: 1px solid black;*/
   margin-bottom: 5px;
 }
 #grupp1{
@@ -380,6 +380,8 @@ footer {
     }
 }
 
+
+/*---------------------------------------------DRAG AND DROP --------------------------------------*/
 [data-draggable="target"]
 {
 	float:left;
