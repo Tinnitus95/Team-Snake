@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Snake</title>
+  <link rel="stylesheet" href="../Css/navbarwithlogo.css">
+  <link rel="stylesheet" href="../Css/lararsida.css">
+
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="HomePageTwo.html">
+        <img src="../Pictures/KYH-logo.png">
+      </a>
+    </div>
+
+    <nav class="navigation">
+      <ul class="main-nav">
+
+        <li>
+          <a href="https://calendar.google.com/">Schema</a>
+        </li>
+
+        <li>
+          <a href="">Utvärderingar</a>
+          <ul class="submenu">
+            <li>
+              <a href="#" >Dagens Feedback</a>
+            </li>
+            <li>
+              <a href="#" >Veckans Feedback</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="HomePageTwo.html">logga ut</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <button class="posttoggle" onClick="openPost(newspost)">Nytt Inlägg</button>
+
+    <div class="feed">
+      <div id="newsposttoggle">
+        <div id="newspost">
+
+
+          <form class="new-post" action="index.html" method="post">
+            <textarea class="area" name="Titel" rows="1" cols="96" placeholder="Titel"></textarea>
+            <input id="datepicker" class="area" type="date" name="PostDate">
+            <textarea class="area" name="Post" rows="8" cols="96" placeholder="Inlägg"></textarea>
+
+
+
+
+          </form>
+          <button class="posttoggle" onclick="submit()">Publicera</button>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <h3>Rektorn Informerar</h3>
+        <div class="date">
+          <span>Publicerat 16/10-2017</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et
+          sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec,
+          egestas aliquet felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat,
+          eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et
+          velit molestie, pellentesque ex non, dictum dolor...</p>
+        <a class="more" href="#">Läs vidare</a>
+
+      </div>
+      <div class="blog-post">
+        <h3>Rektorn Informerar</h3>
+        <div class="date">
+          <span>Publicerat 16/10-2017</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et
+          sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec,
+          egestas aliquet felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat,
+          eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et
+          velit molestie, pellentesque ex non, dictum dolor...</p>
+        <a class="more" href="#">Läs vidare</a>
+
+      </div>
+
+      <div class="blog-post">
+        <h3>oscar Informerar</h3>
+        <div class="date">
+          <span>Publicerat 16/10-2017</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et
+          sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec,
+          egestas aliquet felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat,
+          eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et
+          velit molestie, pellentesque ex non, dictum dolor...</p>
+        <a class="more" href="#">Läs vidare</a>
+
+      </div>
+      <div id="timed" class="hide">
+        <h3>Ditt inlägg har publicerats</h3>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+  <footer>
+    <p>&copy; Copyright Snake Limited</p>
+  </footer>
+  <script src="../Javascript/dropdownmenu.js"></script>
+  <script src="../Javascript/toggles.js"></script>
+  <script src="../Javascript/submit.js"></script>
+
+
+
+
+  <script src="../Javascript/newDate.js"></script>
+
+</body>
+
+</html>
