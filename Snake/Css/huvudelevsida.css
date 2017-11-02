@@ -300,6 +300,48 @@ footer {
     overflow: auto;
 }
 
+/*-------------------------------DAILY REVIEW SMILEY--------------------------------------------------*/
+.cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.sad{background-image:url(https://openclipart.org/download/22396/nicubunu-Emoticons-Crying-face.svg);}
+.worried{background-image:url(https://openclipart.org/download/22390/nicubunu-Emoticons-Worried-face.svg);}
+.happy{background-image:url(https://openclipart.org/download/22398/nicubunu-Emoticons-Laughing-face.svg);}
+
+.cc-selector input:active +.emojis-cc{opacity: .9;}
+.cc-selector input:checked +.emojis-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.emojis-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    margin: 20px;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.emojis-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+
+
+
+
+
 
 /*..................................MEDIA..................................*/
 

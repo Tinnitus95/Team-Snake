@@ -825,28 +825,16 @@
             <a class="fbclose" href="#" onClick="hide('feedback')">Close</a>
             <div class="questions">
               <form>
-                <p>Hur var dagen?
-                  <span>
-                    <span>
-                      <span>
-                        <input name="staatus" type="radio" value="bad" autofocus required>&nbsp;
-                        <span>&#128534;</span>
-                      </span>
-
-                      <span>
-                        <input name="staatus" type="radio" value="ok">&nbsp;
-                        <span>&#128529;</span>
-                      </span>
-
-                      <span>
-                        <input name="staatus" type="radio" value="good">&nbsp;
-                        <span>&#128515;</span>
-                      </span>
-                    </span>
-                  </span>
-                  <p>
-                    <input type="submit" value="Skicka">
-                  </p>
+       <p>Hur har dagen varit?</p>
+             <div class="cc-selector">
+                <input id="sad" type="radio" name="mood" value="sad" />
+                <label class="emojis-cc sad" for="sad"></label>
+                <input id="worried" type="radio" name="mood" value="worried" />
+                <label class="emojis-cc worried"for="worried"></label>
+                <input id="happy" type="radio" name="mood" value="happy" />
+                <label class="emojis-cc happy"for="happy"></label>
+                <input type="submit" onClick ="hide('feedback')">
+              </div>
               </form>
             </div>
           </div>
