@@ -213,7 +213,7 @@ form a,
 .breakword
 {
     overflow-wrap:break-word;
-
+    
 }
 
 textarea
@@ -223,10 +223,10 @@ textarea
 
 
 
-.lain-form{
-
-background-color:white;
- flex-direction: column;
+.lain-form {
+    
+    background-color:white;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align:center;
@@ -234,9 +234,9 @@ background-color:white;
     height: 80%;
     overflow: scroll;
     padding: 1em 1em 1em 1em;
-
+    
 }
-span
+span 
 {
     font-size: 20px;
 
@@ -261,9 +261,13 @@ span
     text-align: center;
 }
 
-#slider{
-  width: 200px;
-  height: 20px;
+.radio {
+    color: #555;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: auto;
+    text-align: center;
 }
 
 .main-form button {
