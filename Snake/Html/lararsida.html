@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="../Css/navbarwithlogo.css">
   <link rel="stylesheet" href="../Css/lararsida.css">
   <link rel="stylesheet" href="../Css/kurser.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../Javascript/dragdrop.js"></script>
+
 
 </head>
 
@@ -1474,14 +1477,43 @@
           <input id="groupNr" type="number" name="quantity" min="1" max="3" value="1">
           <button type="button" onclick="groupShow()" name="groupBtn">Kör</button>
           <div id="grupp1" class="invis">
-            <h3>Grupp 1:</h3>
+      
+              <ol data-draggable="target">
+    <h2>KLASS FE17</h2>
+  <li data-draggable="item">Natasha Bosnjak</li>
+  <li data-draggable="item">Jesse Jonsson</li>
+  <li data-draggable="item">Oscar Fredriksson</li>
+  <li data-draggable="item">Silvia Morais</li>
+  <li data-draggable="item">Simon Gribert</li>
+  <li data-draggable="item">Kristian Kjeldsen</li>
+      <li data-draggable="item">Emil Olsson</li>
+ <li data-draggable="item">Adam Eriksson</li>
+  <li data-draggable="item">Lina Svensson</li>
+        
+</ol>
+      <h3>Grupp 1:</h3>
+<ol data-draggable="target">
+    
+
+</ol>
+
+
+
           </div>
           <div id="grupp2" class="invis">
             <h3>Grupp 2:</h3>
+              
+<ol data-draggable="target">
+   
+ 
+</ol>
           </div>
 
           <div id="grupp3" class="invis">
             <h3>Grupp 3:</h3>
+              <ol data-draggable="target">
+  
+</ol>
           </div>
 
         </div>

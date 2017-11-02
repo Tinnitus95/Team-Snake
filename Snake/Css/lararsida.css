@@ -345,7 +345,7 @@ footer {
 }
 .invis{
   display: none;
-  border: 1px solid black;
+
   margin-bottom: 5px;
 }
 #grupp1{
@@ -379,3 +379,47 @@ footer {
         height: 90%;
     }
 }
+
+[data-draggable="target"]
+{
+	float:left;
+	list-style-type:none;
+	
+	width:42%;
+	height:18.5em;
+	overflow-y:auto;
+	
+	margin:0 0.5em 0.5em 0;
+	padding:0.5em;
+	
+	border:2px solid #888;
+	border-radius:0.2em;
+	
+	background:#ddd;
+	color:#555;
+}
+
+
+[data-draggable="item"]
+{
+	display:block;
+	list-style-type:none;
+    background-color:grey;
+	margin:0 0 2px 0;
+	padding:0.2em 0.4em;
+	color:black;
+
+	border-radius:0.2em;
+	
+	line-height:1.5;
+}
+
+
+
+
+
+
+
+
+
+
