@@ -44,7 +44,15 @@
 .classcontent {
   display: none;
 }
-
+#sidbar {
+  order: 3;
+}
+#middle {
+  order: 2;
+}
+#mainbar {
+  order: 3;
+}
 
 /*
 #mainbar {
