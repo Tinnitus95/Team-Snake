@@ -7,14 +7,7 @@
   <link rel="stylesheet" href="../Css/navbarwithlogo.css">
   <link rel="stylesheet" href="../Css/lararsida.css">
   <link rel="stylesheet" href="../Css/kurser.css">
-  <script src="../Javascript/dropdownmenu.js"></script>
-  <script src="../Javascript/kursSida_L.js"></script>
-  <script src="../Javascript/toggles.js"></script>
-  <script src="../Javascript/submit.js"></script>
-  <script src="../Javascript/Feedback.js"></script>
-  <script src="../Javascript/addtask.js"></script>
-  <script src="../Javascript/taskreview.js"></script>
-  <script src="../Javascript/generator.js"></script>
+
 </head>
 
 <body>
@@ -570,6 +563,7 @@
                           <td>Klar</td>
                           <td>
                             <select type="text" id="grade">
+                              <option value="-">-</option>
                               <option value="ig">IG</option>
                               <option value="g">G</option>
                               <option value="vg">VG</option>
@@ -578,11 +572,12 @@
                         </tr>
                         <tr>
                           <td>
-                            <a href="#">Uppgift 2</a>
+                            <a href="#" onclick="pop('group')">Uppgift 2</a>
                           </td>
-                          <td>Klar</td>
+                          <td>Ny</td>
                           <td>
                             <select type="text" id="grade">
+                              <option value="-">-</option>
                               <option value="ig">IG</option>
                               <option value="g">G</option>
                               <option value="vg">VG</option>
@@ -1733,7 +1728,7 @@
                       <td>JavaScript1</td>
                       <td>Sabrina</td>
                       <td>
-                        <Button onclick="showAssignment(0)" ">Visa Uppgiften</Button>
+                        <Button onclick="showAssignment(0) ">Visa Uppgiften</Button>
                       </td>
                     </tr>
                     <tr>
@@ -1763,6 +1758,14 @@
   <footer>
     <p>&copy; Copyright Snake Limited</p>
   </footer>
+  <script src="../Javascript/dropdownmenu.js"></script>
+  <script src="../Javascript/kursSida_L.js"></script>
+  <script src="../Javascript/toggles.js"></script>
+  <script src="../Javascript/submit.js"></script>
+  <script src="../Javascript/Feedback.js"></script>
+  <script src="../Javascript/addtask.js"></script>
+  <script src="../Javascript/taskreview.js"></script>
+  <script src="../Javascript/generator.js"></script>
   <script src="../Javascript/newDate.js"></script>
   <script src="../Javascript/grouping.js"></script>
 </body>
