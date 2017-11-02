@@ -36,6 +36,37 @@ function reset() {
 }
 
 function myFunctiontwo() {
+<<<<<<< HEAD
+  /*if (document.querySelector("input[name=answer-q6]:checked") === null) {
+    window.alert("Lämna svar på alla frågorna")
+    return false
+  } else if (document.querySelector("input[name=answer-q7]:checked") === null) {
+    window.alert("Lämna svar på alla frågorna")
+    return false
+  } else if (document.querySelector("input[name=answer-q8]:checked") === null) {
+    window.alert("Lämna svar på alla frågorna")
+    return false
+  } else if (document.querySelector("input[name=answer-q9]:checked") === null) {
+    window.alert("Lämna svar på alla frågorna")
+    return false
+  } else if (document.querySelector("input[name=answer-q10]:checked") === null) {
+    window.alert("Lämna svar på alla frågorna")
+    return false
+  }/*else if (document.getElementById("usrform").value === "") {
+    window.alert('Lämna ett meddelande tack!');
+    return false;
+  }
+  var qv = [];
+  qv.push(document.querySelector("input[name=answer-q6]:checked").value)
+  qv.push(document.querySelector("input[name=answer-q7]:checked").value)
+  qv.push(document.querySelector("input[name=answer-q8]:checked").value)
+  qv.push(document.querySelector("input[name=answer-q9]:checked").value)
+  qv.push(document.querySelector("input[name=answer-q10]:checked").value)
+  var feedback = document.getElementById("usrform").value;
+  resettwo();*/
+
+  document.getElementById("vfeedback").style.display = "none";
+=======
     if (document.querySelector("input[name=answer-q6]:checked") === null) {
         window.alert("Lämna svar på alla frågorna")
         return false
@@ -65,6 +96,7 @@ function myFunctiontwo() {
     resettwo();
     
     document.getElementById("vfeedback").style.display = "none";
+>>>>>>> parent of 8bf7ff6... commented and tidied up some javascript
 
 }
 
