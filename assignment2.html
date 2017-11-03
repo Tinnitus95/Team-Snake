@@ -5,34 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=+, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="resourses/css/assignment2.css">
+    <script src="resourses/js/assignment2.js"></script>
     <title>Assignment2</title>
 </head>
 
 <body>
-    <table>
-        <tr>
-            <th>Kurser</th>
-            <th>Studerande</th>
-            <th>Närvaro</th>
-        </tr>
-        <tr>
-            <td>Html5</td>
-            <td>JavaScript</td>
-            <td>Arbetesmetodik</td>
-            <td>Webdesign</td>
-            <td>Agila</td>
-        </tr>
-        <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-        </tr>
-        <tr>
-            <td>Centro comercial</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-        </tr>
-    </table>
+    <div class="columns">
+        <table>
+            <!--This is a table lin/row-->
+            <tr>
+                <!--This is a table header-->
+                <th>Student</th>
+            </tr>
+            <tr>
+                <!--This is a table data-->
+                <td>Thiago</td>
+                <td>
+                    <label class="switch">
+                        <input type="checkbox" onchange="displayUserData('thiago')">
+                        <span class="slider round"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Silvia</td>
+                <td>
+                    <label class="switch">
+                        <input type="checkbox" onchange="displayUserData('silvia')">
+                        <span class="slider round"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Sabrina</td>
+                <td>
+                    <label class="switch">
+                        <input type="checkbox" onchange="displayUserData('sarmento')">
+                        <span class="slider round"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Jorge</td>
+                <td>
+                    <label class="switch">
+                        <input type="checkbox" onchange="displayUserData('jorge')">
+                        <span class="slider round"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Nando</td>
+                <td>
+                    <label class="switch">
+                        <input type="checkbox" onchange="displayUserData('nando')">
+                        <span class="slider round"></span>
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="columns2">
+        <table id="user-data">
+            <tr>
+                <th>Kurser</th>
+                <th>Närvaro</th>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
