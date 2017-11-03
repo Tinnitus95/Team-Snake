@@ -252,13 +252,13 @@ input[type="date"] {
     text-align: center;
     margin: 0 auto;
 }
+
 .webbu1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 
 
 /*----------------------------------FEEDBACK POPUP----------------------- */
@@ -305,9 +305,7 @@ input[type="date"] {
     padding: 8px 16px;
 }
 
-
-
- .next-prev a:hover {
+.next-prev a:hover {
     background-color: #ddd;
     color: black;
 }
@@ -315,16 +313,13 @@ input[type="date"] {
 .previous {
     background-color: #f1f1f1;
     color: black;
-    }
+}
 
 .next {
     background-color: #f1f1f1;
     color: black;
     justify-content: flex-end;
-    }
-
-
-
+}
 
 footer {
     background-color: rgba(245, 233, 233, 0.69);
@@ -339,18 +334,24 @@ footer {
     overflow: auto;
 }
 
+
 /*..................................style for grouping.......................*/
-#groupstyle{
-  text-align: left;
+
+#groupstyle {
+    text-align: left;
 }
-.invis{
-  display: none;
-  /*border: 1px solid black;*/
-  margin-bottom: 5px;
+
+.invis {
+    display: none;
+    /*border: 1px solid black;*/
+    margin-bottom: 5px;
 }
-#grupp1{
-  margin-top: 5px;
+
+#grupp1 {
+    margin-top: 5px;
 }
+
+
 /*..................................MEDIA..................................*/
 
 @media (min-width: 900px) {
@@ -382,46 +383,28 @@ footer {
 
 
 /*---------------------------------------------DRAG AND DROP --------------------------------------*/
-[data-draggable="target"]
-{
-	float:left;
-	list-style-type:none;
-	
-	width:42%;
-	height:18.5em;
-	overflow-y:auto;
-	
-	margin:0 0.5em 0.5em 0;
-	padding:0.5em;
-	
-	border:2px solid #888;
-	border-radius:0.2em;
-	
-	background:#ddd;
-	color:#555;
+
+[data-draggable="target"] {
+    float: left;
+    list-style-type: none;
+    width: 42%;
+    height: 18.5em;
+    overflow-y: auto;
+    margin: 0 0.5em 0.5em 0;
+    padding: 0.5em;
+    border: 2px solid #888;
+    border-radius: 0.2em;
+    background: #ddd;
+    color: #555;
 }
 
-
-[data-draggable="item"]
-{
-	display:block;
-	list-style-type:none;
-    background-color:grey;
-	margin:0 0 2px 0;
-	padding:0.2em 0.4em;
-	color:black;
-
-	border-radius:0.2em;
-	
-	line-height:1.5;
+[data-draggable="item"] {
+    display: block;
+    list-style-type: none;
+    background-color: grey;
+    margin: 0 0 2px 0;
+    padding: 0.2em 0.4em;
+    color: black;
+    border-radius: 0.2em;
+    line-height: 1.5;
 }
-
-
-
-
-
-
-
-
-
-
