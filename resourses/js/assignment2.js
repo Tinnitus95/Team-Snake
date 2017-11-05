@@ -1,5 +1,5 @@
 let header = "<tr><th>Kurser</th><th>Närvaro</th></tr>"
-let thiago = "<tr><td>html</td><td>5%</td></tr><tr><td>agila</td><td>10%</td></tr>"
+let thiago = "<tr><td>html</td><td>5%</td><td>Css</td><td>89%</td></tr><tr><td>agila</td><td>10%</td></tr>"
 let silvia = "<tr><td>html</td><td>100%</td></tr><tr><td>agila</td><td>95%</td></tr>"
 let sarmento = "<tr><td>html</td><td>85%</td></tr><tr><td>agila</td><td>90%</td></tr>"
 let jorge = "<tr><td>html</td><td>100%</td></tr><tr><td>agila</td><td>100%</td></tr>"
@@ -18,4 +18,5 @@ function displayUserData(user) {
     } else if (user === "nando") {
         document.getElementById("user-data").innerHTML = header + nando;
     }
+
 };
