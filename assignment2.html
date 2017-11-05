@@ -11,69 +11,98 @@
 </head>
 
 <body>
-    <div class="columns">
-        <table>
-            <!--This is a table lin/row-->
-            <tr>
-                <!--This is a table header-->
-                <th>Student</th>
-            </tr>
-            <tr>
-                <!--This is a table data-->
-                <td>Thiago</td>
-                <td>
-                    <label class="switch">
-                        <input type="checkbox" onchange="displayUserData('thiago')">
-                        <span class="slider round"></span>
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td>Silvia</td>
-                <td>
-                    <label class="switch">
-                        <input type="checkbox" onchange="displayUserData('silvia')">
-                        <span class="slider round"></span>
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td>Sabrina</td>
-                <td>
-                    <label class="switch">
-                        <input type="checkbox" onchange="displayUserData('sarmento')">
-                        <span class="slider round"></span>
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td>Jorge</td>
-                <td>
-                    <label class="switch">
-                        <input type="checkbox" onchange="displayUserData('jorge')">
-                        <span class="slider round"></span>
-                    </label>
-                </td>
-            </tr>
-            <tr>
-                <td>Nando</td>
-                <td>
-                    <label class="switch">
-                        <input type="checkbox" onchange="displayUserData('nando')">
-                        <span class="slider round"></span>
-                    </label>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="columns2">
-        <table id="user-data">
-            <tr>
-                <th>Kurser</th>
-                <th>Närvaro</th>
-            </tr>
-        </table>
-    </div>
+    <table>
+        <tr>
+            <th>Elev</th>
+            <th>Kurser</th>
+            <th></th>
+            <th>Närvaro</th>
+        </tr>
+        <tr>
+            <td>Silvia</td>
+            <td>
+                <i>html</i>
+            </td>
+
+            <td>
+                <label class="switch">
+                    <input type="checkbox" onchange="showAttendence('data','checkBox')" id="checkBox">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td id="data">100%</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <i>Css</i>
+            </td>
+
+            <td>
+                <label class="switch">
+                    <input type="checkbox" onchange="showAttendence('data2', 'checkBox2')" id="checkBox2">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td id="data2">99%</td>
+        </tr>
+        <tr>
+            <td>Simon</td>
+            <td>
+                <i>html</i>
+            </td>
+
+            <td>
+                <label class="switch">
+                    <input type="checkbox" onchange="showAttendence('data3','checkBox3')" id="checkBox3">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td id="data3">89%</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <i>Css</i>
+            </td>
+
+            <td>
+                <label class="switch">
+                    <input type="checkbox" onchange="showAttendence('data4', 'checkBox4')" id="checkBox4">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td id="data4">85%</td>
+        </tr>
+        <tr>
+            <td>Jesse</td>
+            <td>
+                <i>html</i>
+            </td>
+
+            <td>
+                <label class="switch">
+                    <input type="checkbox" onchange="showAttendence('data5','checkBox5')" id="checkBox5">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td id="data5">88%</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <i>Css</i>
+            </td>
+
+            <td>
+                <label class="switch">
+                    <input type="checkbox" onchange="showAttendence('data6', 'checkBox6')" id="checkBox6">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td id="data6">100%</td>
+        </tr>
+    </table>
 </body>
 
 </html>

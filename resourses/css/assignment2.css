@@ -1,8 +1,60 @@
+td {
+    padding-right: 10px;
+}
+
+#data {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#data2 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#data3 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#data4 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#data5 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#data6 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
 .switch {
     position: relative;
     display: inline-block;
-    width: 30px;
-    height: 15px;
+    width: 32px;
+    height: 17px;
 }
 
 .switch input {
@@ -24,8 +76,8 @@
 .slider:before {
     position: absolute;
     content: "";
-    height: 15px;
-    width: 14px;
+    height: 17px;
+    width: 17px;
     left: 0px;
     bottom: 0px;
     background-color: white;
@@ -56,8 +108,4 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
-}
-
-.columns {
-    float: left;
 }
