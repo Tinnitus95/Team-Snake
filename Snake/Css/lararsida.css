@@ -253,33 +253,44 @@ input[type="date"] {
     margin: 0 auto;
 }
 
-.webbu1, .acc, .showacc, #timedacc {
+.webbu1,
+.acc,
+.showacc,
+#timedacc {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#popupacc, .showacc, #timedacc {
+#popupacc,
+.showacc,
+#timedacc {
     display: flex;
     height: auto;
     width: 40%;
     margin: auto;
     background-color: #ffffff;
 }
+
 #selectorcontainer {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.acc a, .acc input, .acc h2, .acc div, .acc button {
+
+.acc a,
+.acc input,
+.acc h2,
+.acc div,
+.acc button {
     margin-bottom: 5px;
 }
+
 .acc a {
     align-self: flex-end;
     margin: 5px;
 }
-
 
 
 /*----------------------------------FEEDBACK POPUP----------------------- */
@@ -428,4 +439,80 @@ footer {
     color: black;
     border-radius: 0.2em;
     line-height: 1.5;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 17px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 0px;
+    bottom: 0px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#silvia-webbutveckling {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#silvia-lia {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
 }

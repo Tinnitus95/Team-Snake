@@ -549,6 +549,7 @@
                     <button class="tablinks" onclick="openTab(event, 'pr-plan')">Kursplan</button>
                     <button class="tablinks" onclick="openTab(event, 'pr-material')">Kursmaterial</button>
                     <button class="tablinks" onclick="openTab(event, 'pr-teacher')">Lärare</button>
+                    <button class="tablinks" onclick="openTab(event, 'pr-student')">Elever</button>
 
                   </div>
 
@@ -663,6 +664,32 @@
                         </td>
                         <td>John.doe@email.com</td>
                         <td>076-8292950</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="pr-student" class="tabcontent">
+                    <table>
+                      <tr>
+                        <th>Namn</th>
+                        <th>Email</th>
+                        <th>Telefon Nummer</th>
+                        <th></th>
+                        <th>Närvaro</th>
+
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="#">Silvia</a>
+                        </td>
+                        <td>Silvai@email.com</td>
+                        <td>076-66666</td>
+                        <td>
+                          <label class="switch">
+                            <input type="checkbox" onchange="showAttendence('silvia-webbutveckling', 'checkbox-silvia-webbutveckling')" id="checkbox-silvia-webbutveckling">
+                            <span class="slider round"></span>
+                          </label>
+                        </td>
+                        <td id="silvia-webbutveckling">100%</td>
                       </tr>
                     </table>
                   </div>
@@ -818,6 +845,8 @@
                     <button class="tablinks" onclick="openTab(event, 'ps-plan')">Kursplan</button>
                     <button class="tablinks" onclick="openTab(event, 'ps-material')">Kursmaterial</button>
                     <button class="tablinks" onclick="openTab(event, 'ps-teacher')">Lärare</button>
+                    <button class="tablinks" onclick="openTab(event, 'ps-student')">Elever</button>
+
 
                   </div>
 
@@ -932,432 +961,120 @@
                       </tr>
                     </table>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="fe19lia" class="dropcontent">
-              <div class="column-layout">
-                <div class="main-column">
-                  <h2 class="title">-LIA-</h2>
-                </div>
-                <div class="tab-container">
-                  <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'ps-exercisefe19lia')">InlämningsUppgifter</button>
-                    <button class="tablinks" onclick="openTab(event, 'ps-testfe19lia')">Tentor</button>
-                    <button class="tablinks" onclick="openTab(event, 'ps-planfe19lia')">Kursplan</button>
-                    <button class="tablinks" onclick="openTab(event, 'ps-materialfe19lia')">Kursmaterial</button>
-                    <button class="tablinks" onclick="openTab(event, 'ps-teacherfe19lia')">Lärare</button>
-
-                  </div>
-
-                  <div id="ps-exercisefe19lia" class="tabcontent">
-                    <div class="pr-container">
-                      <table id="ps-tablee">
-                        <tr>
-                          <th>Uppgiftnamn</th>
-                          <th>Status</th>
-                          <th>Betyg</th>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="#">Uppgift 1</a>
-                          </td>
-                          <td>Klar</td>
-                          <td>
-                            <select type="text" id="grade">
-                              <option value="ig">IG</option>
-                              <option value="g">G</option>
-                              <option value="vg">VG</option>
-                            </select>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="#">Uppgift 2</a>
-                          </td>
-                          <td>Klar</td>
-                          <td>
-                            <select type="text" id="grade">
-                              <option value="ig">IG</option>
-                              <option value="g">G</option>
-                              <option value="vg">VG</option>
-                            </select>
-                          </td>
-                        </tr>
-                      </table>
-                      <div class="task">
-                        <input type="text" id="tasknamee" placeholder="Uppgift" />
-                        <select id="taskse" class="taskstatus">
-                          <option>Ny</option>
-                          <option>Pågår</option>
-                          <option>Klar</option>
-                        </select>
-                      </div>
-                      <button class="taskbutton" onclick="addTask('tasknamee', 'taskse', 'ps-tablee')">Lägg till Uppgift</button>
-                    </div>
-                  </div>
-
-                  <div id="ps-testfe19lia" class="tabcontent">
-                    <table>
-                      <tr>
-                        <th>Exam</th>
-                        <th>Status</th>
-                        <th>Betyg</th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#">Tenta 1</a>
-                        </td>
-                        <td>Klar</td>
-                        <td>
-                          <select type="text" id="grade">
-                            <option value="ig">IG</option>
-                            <option value="g">G</option>
-                            <option value="vg">VG</option>
-                          </select>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div id="ps-planfe19lia" class="tabcontent">
-                    <table>
-                      <tr>
-                        <th>Behöver Kunna</th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#">Kursplan</a>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div id="ps-materialfe19lia" class="tabcontent">
-                    <table>
-                      <tr>
-                        <th>Böcker</th>
-                        <th>Författare</th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#">Kursbok</a>
-                        </td>
-                        <td>John Doerson</td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div id="ps-teacherfe19lia" class="tabcontent">
+                  <div id="ps-student" class="tabcontent">
                     <table>
                       <tr>
                         <th>Namn</th>
                         <th>Email</th>
                         <th>Telefon Nummer</th>
+                        <th></th>
+                        <th>Närvaro</th>
                       </tr>
                       <tr>
                         <td>
-                          <a href="#">John Doe</a>
+                          <a href="#">Silvia</a>
                         </td>
-                        <td>John.doe@email.com</td>
-                        <td>076-8292950</td>
-                      </tr>
-                    </table>
+                        <td>Silvai@email.com</td>
+                        <td>076-66666</td>
+                        <td>
+                          <label class="switch">
+                            <input type="checkbox" onchange="showAttendence('silvia-lia', 'checkbox-silvia-lia')" id="checkbox-silvia-lia">
+                            <span class="slider round"></span>
+                          </label>
+                        </td>
+                        <td id="silvia-lia">100%</td>
                   </div>
+                  </table>
                 </div>
               </div>
             </div>
           </div>
 
-          <div id="arbetsmetodik" class="classcontent">
-            <a class="droplinks" onclick="openDrop(event,'fe18a')">-FE18</a>
-            <a class="droplinks" onclick="openDrop(event,'fe19a')">-FE19</a>
-
-            <div id="fe18a" class="dropcontent">
-              <div class="column-layout">
-                <div class="main-column">
-                  <h2 class="title">-ARBETSMETODIK-</h2>
-                </div>
-                <div class="tab-container">
-                  <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'art-exercise')">InlämningsUppgifter</button>
-                    <button class="tablinks" onclick="openTab(event, 'art-test')">Tentor</button>
-                    <button class="tablinks" onclick="openTab(event, 'art-plan')">Kursplan</button>
-                    <button class="tablinks" onclick="openTab(event, 'art-material')">Kursmaterial</button>
-                    <button class="tablinks" onclick="openTab(event, 'art-teacher')">Lärare</button>
-
-                  </div>
-
-                  <div id="art-exercise" class="tabcontent">
-                    <div class="pr-container">
-                      <table id="art-table">
-                        <tr>
-                          <th>Uppgiftnamn</th>
-                          <th>Status</th>
-                          <th>Betyg</th>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="#">Uppgift 1</a>
-                          </td>
-                          <td>Klar</td>
-                          <td>
-                            <select type="text" id="grade">
-                              <option value="ig">IG</option>
-                              <option value="g">G</option>
-                              <option value="vg">VG</option>
-                            </select>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="#">Uppgift 2</a>
-                          </td>
-                          <td>Klar</td>
-                          <td>
-                            <select type="text" id="grade">
-                              <option value="ig">IG</option>
-                              <option value="g">G</option>
-                              <option value="vg">VG</option>
-                            </select>
-                          </td>
-                        </tr>
-                      </table>
-                      <div class="task">
-                        <input type="text" id="tasknamea" placeholder="Uppgift" />
-                        <select id="tasksb" class="taskstatus">
-                          <option>Ny</option>
-                          <option>Pågår</option>
-                          <option>Klar</option>
-                        </select>
-                      </div>
-                      <button class="taskbutton" onclick="addTask('tasknamea', 'tasksb', 'art-table')">Lägg till Uppgift</button>
-                    </div>
-                  </div>
-
-                  <div id="art-test" class="tabcontent">
-                    <table>
-                      <tr>
-                        <th>Exam</th>
-                        <th>Status</th>
-                        <th>Betyg</th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#">Tenta 1</a>
-                        </td>
-                        <td>Klar</td>
-                        <td>
-                          <select type="text" id="grade">
-                            <option value="ig">IG</option>
-                            <option value="g">G</option>
-                            <option value="vg">VG</option>
-                          </select>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div id="art-plan" class="tabcontent">
-                    <table>
-                      <tr>
-                        <th>Behöver Kunna</th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#">Kursplan</a>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div id="art-material" class="tabcontent">
-                    <table>
-                      <tr>
-                        <th>Böcker</th>
-                        <th>Författare</th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#">Kursbok</a>
-                        </td>
-                        <td>John Doerson</td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div id="art-teacher" class="tabcontent">
-                    <table>
-                      <tr>
-                        <th>Namn</th>
-                        <th>Email</th>
-                        <th>Telefon Nummer</th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#">John Doe</a>
-                        </td>
-                        <td>John.doe@email.com</td>
-                        <td>076-8292950</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="fe19a" class="dropcontent">
-              <div class="column-layout">
-                <div class="main-column">
-                  <h2 class="title">-ARBETSMETODIK-</h2>
-                </div>
-                <div class="tab-container">
-                  <div class="tab">
-                    <button class="tablinks" onclick="openTab(event, 'art-exercisefe19a')">InlämningsUppgifter</button>
-                    <button class="tablinks" onclick="openTab(event, 'art-testfe19a')">Tentor</button>
-                    <button class="tablinks" onclick="openTab(event, 'art-planfe19a')">Kursplan</button>
-                    <button class="tablinks" onclick="openTab(event, 'art-materialfe19a')">Kursmaterial</button>
-                    <button class="tablinks" onclick="openTab(event, 'art-teacherfe19a')">Lärare</button>
-
-                  </div>
-
-                  <div id="art-exercisefe19a" class="tabcontent">
-                    <div class="pr-container">
-                      <table id="art-tableh">
-                        <tr>
-                          <th>Uppgiftnamn</th>
-                          <th>Status</th>
-                          <th>Betyg</th>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="#">Uppgift 1</a>
-                          </td>
-                          <td>Klar</td>
-                          <td>
-                            <select type="text" id="grade">
-                              <option value="ig">IG</option>
-                              <option value="g">G</option>
-                              <option value="vg">VG</option>
-                            </select>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="#">Uppgift 2</a>
-                          </td>
-                          <td>Klar</td>
-                          <td>
-                            <select type="text" id="grade">
-                              <option value="ig">IG</option>
-                              <option value="g">G</option>
-                              <option value="vg">VG</option>
-                            </select>
-                          </td>
-                        </tr>
-                      </table>
-                      <div class="task">
-                        <input type="text" id="tasknameh" placeholder="Uppgift" />
-                        <select id="tasksh" class="taskstatus">
-                          <option>Ny</option>
-                          <option>Pågår</option>
-                          <option>Klar</option>
-                        </select>
-                      </div>
-                      <button class="taskbutton" onclick="addTask('tasknameh', 'tasksh', 'art-tableh')">Lägg till Uppgift</button>
-                    </div>
-                  </div>
-
-                  <div id="art-testfe19a" class="tabcontent">
-                    <table>
-                      <tr>
-                        <th>Exam</th>
-                        <th>Status</th>
-                        <th>Betyg</th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#">Tenta 1</a>
-                        </td>
-                        <td>Klar</td>
-                        <td>
-                          <select type="text" id="grade">
-                            <option value="ig">IG</option>
-                            <option value="g">G</option>
-                            <option value="vg">VG</option>
-                          </select>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div id="art-planfe19a" class="tabcontent">
-                    <table>
-                      <tr>
-                        <th>Behöver Kunna</th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#">Kursplan</a>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div id="art-materialfe19a" class="tabcontent">
-                    <table>
-                      <tr>
-                        <th>Böcker</th>
-                        <th>Författare</th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#">Kursbok</a>
-                        </td>
-                        <td>John Doerson</td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div id="art-teacherfe19a" class="tabcontent">
-                    <table>
-                      <tr>
-                        <th>Namn</th>
-                        <th>Email</th>
-                        <th>Telefon Nummer</th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="#">John Doe</a>
-                        </td>
-                        <td>John.doe@email.com</td>
-                        <td>076-8292950</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </section>
-
-        <aside id="sidebar">
-          <h2 class="title">FRAMTIDA KURSER</h2>
-          <ul>
-            <li>
-              <a class="droplinks" onclick="openDrop(event, 'programming')">EXAMENSARBETE (40YHP)</a>
-            </li>
-            <li>
-              <a class="droplinks" onclick="openDrop(event, 'chemistry')">BACKEND (30YHP)</a>
-            </li>
-          </ul>
-
-          <div id="programming" class="dropcontent">
+          <div id="fe19lia" class="dropcontent">
             <div class="column-layout">
               <div class="main-column">
-                <h2 class="title">-EXAMENSARBETE-</h2>
+                <h2 class="title">-LIA-</h2>
               </div>
               <div class="tab-container">
                 <div class="tab">
-                  <button class="tablinks" onclick="openTab(event, 'ex-plan')">Kursplan</button>
-                  <button class="tablinks" onclick="openTab(event, 'ex-material')">Kursmaterial</button>
-                  <button class="tablinks" onclick="openTab(event, 'ex-teacher')">Lärare</button>
+                  <button class="tablinks" onclick="openTab(event, 'ps-exercisefe19lia')">InlämningsUppgifter</button>
+                  <button class="tablinks" onclick="openTab(event, 'ps-testfe19lia')">Tentor</button>
+                  <button class="tablinks" onclick="openTab(event, 'ps-planfe19lia')">Kursplan</button>
+                  <button class="tablinks" onclick="openTab(event, 'ps-materialfe19lia')">Kursmaterial</button>
+                  <button class="tablinks" onclick="openTab(event, 'ps-teacherfe19lia')">Lärare</button>
 
                 </div>
 
-                <div id="ex-plan" class="tabcontent">
+                <div id="ps-exercisefe19lia" class="tabcontent">
+                  <div class="pr-container">
+                    <table id="ps-tablee">
+                      <tr>
+                        <th>Uppgiftnamn</th>
+                        <th>Status</th>
+                        <th>Betyg</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="#">Uppgift 1</a>
+                        </td>
+                        <td>Klar</td>
+                        <td>
+                          <select type="text" id="grade">
+                            <option value="ig">IG</option>
+                            <option value="g">G</option>
+                            <option value="vg">VG</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="#">Uppgift 2</a>
+                        </td>
+                        <td>Klar</td>
+                        <td>
+                          <select type="text" id="grade">
+                            <option value="ig">IG</option>
+                            <option value="g">G</option>
+                            <option value="vg">VG</option>
+                          </select>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="task">
+                      <input type="text" id="tasknamee" placeholder="Uppgift" />
+                      <select id="taskse" class="taskstatus">
+                        <option>Ny</option>
+                        <option>Pågår</option>
+                        <option>Klar</option>
+                      </select>
+                    </div>
+                    <button class="taskbutton" onclick="addTask('tasknamee', 'taskse', 'ps-tablee')">Lägg till Uppgift</button>
+                  </div>
+                </div>
+
+                <div id="ps-testfe19lia" class="tabcontent">
+                  <table>
+                    <tr>
+                      <th>Exam</th>
+                      <th>Status</th>
+                      <th>Betyg</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#">Tenta 1</a>
+                      </td>
+                      <td>Klar</td>
+                      <td>
+                        <select type="text" id="grade">
+                          <option value="ig">IG</option>
+                          <option value="g">G</option>
+                          <option value="vg">VG</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div id="ps-planfe19lia" class="tabcontent">
                   <table>
                     <tr>
                       <th>Behöver Kunna</th>
@@ -1369,7 +1086,7 @@
                     </tr>
                   </table>
                 </div>
-                <div id="ex-material" class="tabcontent">
+                <div id="ps-materialfe19lia" class="tabcontent">
                   <table>
                     <tr>
                       <th>Böcker</th>
@@ -1383,7 +1100,7 @@
                     </tr>
                   </table>
                 </div>
-                <div id="ex-teacher" class="tabcontent">
+                <div id="ps-teacherfe19lia" class="tabcontent">
                   <table>
                     <tr>
                       <th>Namn</th>
@@ -1402,363 +1119,701 @@
               </div>
             </div>
           </div>
+      </div>
 
+      <div id="arbetsmetodik" class="classcontent">
+        <a class="droplinks" onclick="openDrop(event,'fe18a')">-FE18</a>
+        <a class="droplinks" onclick="openDrop(event,'fe19a')">-FE19</a>
 
-          <div id="chemistry" class="dropcontent">
-            <div class="column-layout">
-              <div class="main-column">
-                <h2 class="title">-BACKEND-</h2>
+        <div id="fe18a" class="dropcontent">
+          <div class="column-layout">
+            <div class="main-column">
+              <h2 class="title">-ARBETSMETODIK-</h2>
+            </div>
+            <div class="tab-container">
+              <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'art-exercise')">InlämningsUppgifter</button>
+                <button class="tablinks" onclick="openTab(event, 'art-test')">Tentor</button>
+                <button class="tablinks" onclick="openTab(event, 'art-plan')">Kursplan</button>
+                <button class="tablinks" onclick="openTab(event, 'art-material')">Kursmaterial</button>
+                <button class="tablinks" onclick="openTab(event, 'art-teacher')">Lärare</button>
+
               </div>
-              <div class="tab-container">
-                <div class="tab">
-                  <button class="tablinks" onclick="openTab(event, 'ch-plan')">Kursplan</button>
-                  <button class="tablinks" onclick="openTab(event, 'ch-material')">Kursmaterial</button>
-                  <button class="tablinks" onclick="openTab(event, 'ch-teacher')">Lärare</button>
 
-                </div>
-
-
-                <div id="ch-plan" class="tabcontent">
-                  <table>
+              <div id="art-exercise" class="tabcontent">
+                <div class="pr-container">
+                  <table id="art-table">
                     <tr>
-                      <th>Behöver Kunna</th>
+                      <th>Uppgiftnamn</th>
+                      <th>Status</th>
+                      <th>Betyg</th>
                     </tr>
                     <tr>
                       <td>
-                        <a href="#">Kursplan</a>
+                        <a href="#">Uppgift 1</a>
                       </td>
-                    </tr>
-                  </table>
-                </div>
-                <div id="ch-material" class="tabcontent">
-                  <table>
-                    <tr>
-                      <th>Böcker</th>
-                      <th>Författare</th>
+                      <td>Klar</td>
+                      <td>
+                        <select type="text" id="grade">
+                          <option value="ig">IG</option>
+                          <option value="g">G</option>
+                          <option value="vg">VG</option>
+                        </select>
+                      </td>
                     </tr>
                     <tr>
                       <td>
-                        <a href="#">Kursbok</a>
+                        <a href="#">Uppgift 2</a>
                       </td>
-                      <td>John Doerson</td>
-                    </tr>
-                  </table>
-                </div>
-                <div id="ch-teacher" class="tabcontent">
-                  <table>
-                    <tr>
-                      <th>Namn</th>
-                      <th>Email</th>
-                      <th>Telefon Nummer</th>
-                    </tr>
-                    <tr>
+                      <td>Klar</td>
                       <td>
-                        <a href="#">John Doe</a>
+                        <select type="text" id="grade">
+                          <option value="ig">IG</option>
+                          <option value="g">G</option>
+                          <option value="vg">VG</option>
+                        </select>
                       </td>
-                      <td>John.doe@email.com</td>
-                      <td>076-8292950</td>
                     </tr>
                   </table>
+                  <div class="task">
+                    <input type="text" id="tasknamea" placeholder="Uppgift" />
+                    <select id="tasksb" class="taskstatus">
+                      <option>Ny</option>
+                      <option>Pågår</option>
+                      <option>Klar</option>
+                    </select>
+                  </div>
+                  <button class="taskbutton" onclick="addTask('tasknamea', 'tasksb', 'art-table')">Lägg till Uppgift</button>
                 </div>
+              </div>
+
+              <div id="art-test" class="tabcontent">
+                <table>
+                  <tr>
+                    <th>Exam</th>
+                    <th>Status</th>
+                    <th>Betyg</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">Tenta 1</a>
+                    </td>
+                    <td>Klar</td>
+                    <td>
+                      <select type="text" id="grade">
+                        <option value="ig">IG</option>
+                        <option value="g">G</option>
+                        <option value="vg">VG</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="art-plan" class="tabcontent">
+                <table>
+                  <tr>
+                    <th>Behöver Kunna</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">Kursplan</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="art-material" class="tabcontent">
+                <table>
+                  <tr>
+                    <th>Böcker</th>
+                    <th>Författare</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">Kursbok</a>
+                    </td>
+                    <td>John Doerson</td>
+                  </tr>
+                </table>
+              </div>
+              <div id="art-teacher" class="tabcontent">
+                <table>
+                  <tr>
+                    <th>Namn</th>
+                    <th>Email</th>
+                    <th>Telefon Nummer</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">John Doe</a>
+                    </td>
+                    <td>John.doe@email.com</td>
+                    <td>076-8292950</td>
+                  </tr>
+                </table>
               </div>
             </div>
           </div>
-
-        </aside>
-
-
-      </div>
-    </div>
-    <div id="group" class="ontop">
-      <div class="center">
-        <div class="lain-form" id="groupstyle">
-          <a class="fbclose" href="#" onClick="hide('group')">Close</a>
-          <h1>uppgift 1</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.</p>
-          <h2>Grupper</h2>
-          <input id="groupNr" type="number" name="quantity" min="1" max="3" value="1">
-          <button type="button" onclick="groupShow()" name="groupBtn">Kör</button>
-          <div id="grupp1" class="invis">
-
-            <ol data-draggable="target">
-              <h2>KLASS FE17</h2>
-
-
-              <li data-draggable="item" draggable="true">Jesse Jonsson</li>
-              <li data-draggable="item" draggable="true">Simon Gribert</li>
-              <li data-draggable="item" draggable="true">Natasha Bosnjak</li>
-              <li data-draggable="item" draggable="true">Silvia Morais</li>
-              <li data-draggable="item" draggable="true">Adam Eriksson</li>
-              <li data-draggable="item" draggable="true">Emil Olsson</li>
-              <li data-draggable="item" draggable="true">Kristian Kjeldsen</li>
-              <li data-draggable="item" draggable="true">Oscar Fredriksson</li>
-              <li data-draggable="item" draggable="true">Lina Svensson</li>
-
-            </ol>
-
-            <ol data-draggable="target">
-              <h3>GRUPP 1</h3>
-
-            </ol>
-
-
-          </div>
-          <div id="grupp2" class="invis">
-            <ol data-draggable="target">
-              <h3>GRUPP 2</h3>
-
-            </ol>
-
-          </div>
-          <div id="grupp3" class="invis">
-
-            <ol data-draggable="target">
-              <h3>GRUPP 3</h3>
-            </ol>
-          </div>
         </div>
-      </div>
-    </div>
-
-
-
-    <div id="answered-form" class="ontop">
-      <div class="center">
-
-        <div class="lain-form">
-          <a class="fbclose" href="#" onClick="hide('answered-form')">Close</a>
-          <h3>Utvärdering av kursen /nr1</h3>
-          <div class="questions">
-
-            <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
-            <p>
-              <strong>Svar:</strong> Alldeles lagom</p>
-
-
-
-
-            <p class="breakword">Vad har kursen gett dig? Nämn några viktiga saker.</p>
-            <p>
-              <strong>Svar:</strong> Vänner för livet, yolo.</p>
-
-
-
-            <p class="breakword">Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i  kursplanen?  Om inte, varför?
-            </p>
-            <p>
-              <strong>Svar:</strong> Mycket bra.</p>
-
-
-
-
-            <p class="breakword">Hur har kursinformationen fungerat (i form av muntlig information från lärare, studiehandledning, kursguide, expedition,
-              annonsering på anslagstavlor etc)?
-            </p>
-            <p>
-              <strong>Svar:</strong> Dåligt, vart äter vi lunch ens?</p>
-
-
-
-
-            <p class="breakword">Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har  kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?
-            </p>
-
-            <p>
-              <strong>Svar:</strong> Vet inte.</p>
-
-            <div class="next-prev">
-
-              <a href="#" onClick="pop('answered-form3'); hide('answered-form')" class="previous">&laquo; Föregående</a>
-
-              <a href="#" onClick="pop('answered-form2'); hide('answered-form')" class="next">Nästa &raquo;</a>
-
+        <div id="fe19a" class="dropcontent">
+          <div class="column-layout">
+            <div class="main-column">
+              <h2 class="title">-ARBETSMETODIK-</h2>
             </div>
+            <div class="tab-container">
+              <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'art-exercisefe19a')">InlämningsUppgifter</button>
+                <button class="tablinks" onclick="openTab(event, 'art-testfe19a')">Tentor</button>
+                <button class="tablinks" onclick="openTab(event, 'art-planfe19a')">Kursplan</button>
+                <button class="tablinks" onclick="openTab(event, 'art-materialfe19a')">Kursmaterial</button>
+                <button class="tablinks" onclick="openTab(event, 'art-teacherfe19a')">Lärare</button>
 
+              </div>
 
+              <div id="art-exercisefe19a" class="tabcontent">
+                <div class="pr-container">
+                  <table id="art-tableh">
+                    <tr>
+                      <th>Uppgiftnamn</th>
+                      <th>Status</th>
+                      <th>Betyg</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#">Uppgift 1</a>
+                      </td>
+                      <td>Klar</td>
+                      <td>
+                        <select type="text" id="grade">
+                          <option value="ig">IG</option>
+                          <option value="g">G</option>
+                          <option value="vg">VG</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#">Uppgift 2</a>
+                      </td>
+                      <td>Klar</td>
+                      <td>
+                        <select type="text" id="grade">
+                          <option value="ig">IG</option>
+                          <option value="g">G</option>
+                          <option value="vg">VG</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="task">
+                    <input type="text" id="tasknameh" placeholder="Uppgift" />
+                    <select id="tasksh" class="taskstatus">
+                      <option>Ny</option>
+                      <option>Pågår</option>
+                      <option>Klar</option>
+                    </select>
+                  </div>
+                  <button class="taskbutton" onclick="addTask('tasknameh', 'tasksh', 'art-tableh')">Lägg till Uppgift</button>
+                </div>
+              </div>
 
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div id="answered-form2" class="ontop">
-      <div class="center">
-
-        <div class="lain-form">
-          <a class="fbclose" href="#" onClick="hide('answered-form2')">Close</a>
-          <h3>Utvärdering av kursen /nr2</h3>
-          <div class="questions">
-
-            <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
-            <p>
-              <strong>Svar:</strong> Helt galet för fort</p>
-
-
-
-
-            <p class="breakword">Vad har kursen gett dig? Nämn några viktiga saker.</p>
-            <p>
-              <strong>Svar:</strong> Carpe diem</p>
-
-
-
-            <p class="breakword">Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i  kursplanen?  Om inte, varför?
-            </p>
-            <p>
-              <strong>Svar:</strong> jag vet inte.</p>
-
-
-
-
-            <p class="breakword">Hur har kursinformationen fungerat (i form av muntlig information från lärare, studiehandledning, kursguide, expedition,
-              annonsering på anslagstavlor etc)?
-            </p>
-            <p>
-              <strong>Svar:</strong> Väldigt bra!</p>
-
-
-
-
-            <p class="breakword">Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har  kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?
-            </p>
-            <p>
-              <strong>Svar:</strong> nej.</p>
-
-            <div class="next-prev">
-              <a href="#" onClick="pop('answered-form'); hide('answered-form2')" class="previous">&laquo; Föregående</a>
-
-              <a href="#" onClick="pop('answered-form3'); hide('answered-form2')" class="next">Nästa &raquo;</a>
-
+              <div id="art-testfe19a" class="tabcontent">
+                <table>
+                  <tr>
+                    <th>Exam</th>
+                    <th>Status</th>
+                    <th>Betyg</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">Tenta 1</a>
+                    </td>
+                    <td>Klar</td>
+                    <td>
+                      <select type="text" id="grade">
+                        <option value="ig">IG</option>
+                        <option value="g">G</option>
+                        <option value="vg">VG</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="art-planfe19a" class="tabcontent">
+                <table>
+                  <tr>
+                    <th>Behöver Kunna</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">Kursplan</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="art-materialfe19a" class="tabcontent">
+                <table>
+                  <tr>
+                    <th>Böcker</th>
+                    <th>Författare</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">Kursbok</a>
+                    </td>
+                    <td>John Doerson</td>
+                  </tr>
+                </table>
+              </div>
+              <div id="art-teacherfe19a" class="tabcontent">
+                <table>
+                  <tr>
+                    <th>Namn</th>
+                    <th>Email</th>
+                    <th>Telefon Nummer</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">John Doe</a>
+                    </td>
+                    <td>John.doe@email.com</td>
+                    <td>076-8292950</td>
+                  </tr>
+                </table>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
-    </div>
 
+      </section>
 
-    <div id="answered-form3" class="ontop">
-      <div class="center">
+      <aside id="sidebar">
+        <h2 class="title">FRAMTIDA KURSER</h2>
+        <ul>
+          <li>
+            <a class="droplinks" onclick="openDrop(event, 'programming')">EXAMENSARBETE (40YHP)</a>
+          </li>
+          <li>
+            <a class="droplinks" onclick="openDrop(event, 'chemistry')">BACKEND (30YHP)</a>
+          </li>
+        </ul>
 
-        <div class="lain-form">
-          <a class="fbclose" href="#" onClick="hide('answered-form3')">Close</a>
-          <h3>Utvärdering av kursen /nr3</h3>
-          <div class="questions">
-
-            <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
-            <p>
-              <strong>Svar:</strong> Duger i krig</p>
-
-
-
-
-            <p class="breakword">Vad har kursen gett dig? Nämn några viktiga saker.</p>
-            <p>
-              <strong>Svar:</strong> livsglädje</p>
-
-
-
-            <p class="breakword">Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i  kursplanen?  Om inte, varför?
-            </p>
-            <p>
-              <strong>Svar:</strong> Mycket bra.</p>
-
-
-
-
-            <p class="breakword">Hur har kursinformationen fungerat (i form av muntlig information från lärare, studiehandledning, kursguide, expedition,
-              annonsering på anslagstavlor etc)?
-            </p>
-            <p>
-              <strong>Svar:</strong> Dåligt, vart äter vi lunch ens?</p>
-
-
-
-
-            <p class="breakword">Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har  kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?
-            </p>
-            <p>
-              <strong>Svar:</strong> kanske det.</p>
-
-            <div class="next-prev">
-              <a href="#" onClick="pop('answered-form2'); hide('answered-form3')" class="previous"> &laquo;Föregående</a>
-
-              <a href="#" onClick="pop('answered-form'); hide('answered-form3')" class="next">Nästa &raquo;</a>
-
+        <div id="programming" class="dropcontent">
+          <div class="column-layout">
+            <div class="main-column">
+              <h2 class="title">-EXAMENSARBETE-</h2>
             </div>
+            <div class="tab-container">
+              <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ex-plan')">Kursplan</button>
+                <button class="tablinks" onclick="openTab(event, 'ex-material')">Kursmaterial</button>
+                <button class="tablinks" onclick="openTab(event, 'ex-teacher')">Lärare</button>
 
+              </div>
+
+              <div id="ex-plan" class="tabcontent">
+                <table>
+                  <tr>
+                    <th>Behöver Kunna</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">Kursplan</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="ex-material" class="tabcontent">
+                <table>
+                  <tr>
+                    <th>Böcker</th>
+                    <th>Författare</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">Kursbok</a>
+                    </td>
+                    <td>John Doerson</td>
+                  </tr>
+                </table>
+              </div>
+              <div id="ex-teacher" class="tabcontent">
+                <table>
+                  <tr>
+                    <th>Namn</th>
+                    <th>Email</th>
+                    <th>Telefon Nummer</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">John Doe</a>
+                    </td>
+                    <td>John.doe@email.com</td>
+                    <td>076-8292950</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
+
+
+        <div id="chemistry" class="dropcontent">
+          <div class="column-layout">
+            <div class="main-column">
+              <h2 class="title">-BACKEND-</h2>
+            </div>
+            <div class="tab-container">
+              <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'ch-plan')">Kursplan</button>
+                <button class="tablinks" onclick="openTab(event, 'ch-material')">Kursmaterial</button>
+                <button class="tablinks" onclick="openTab(event, 'ch-teacher')">Lärare</button>
+
+              </div>
+
+
+              <div id="ch-plan" class="tabcontent">
+                <table>
+                  <tr>
+                    <th>Behöver Kunna</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">Kursplan</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="ch-material" class="tabcontent">
+                <table>
+                  <tr>
+                    <th>Böcker</th>
+                    <th>Författare</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">Kursbok</a>
+                    </td>
+                    <td>John Doerson</td>
+                  </tr>
+                </table>
+              </div>
+              <div id="ch-teacher" class="tabcontent">
+                <table>
+                  <tr>
+                    <th>Namn</th>
+                    <th>Email</th>
+                    <th>Telefon Nummer</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="#">John Doe</a>
+                    </td>
+                    <td>John.doe@email.com</td>
+                    <td>076-8292950</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+
+
+    </div>
+  </div>
+  <div id="group" class="ontop">
+    <div class="center">
+      <div class="lain-form" id="groupstyle">
+        <a class="fbclose" href="#" onClick="hide('group')">Close</a>
+        <h1>uppgift 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua.
+        </p>
+        <h2>Grupper</h2>
+        <input id="groupNr" type="number" name="quantity" min="1" max="3" value="1">
+        <button type="button" onclick="groupShow()" name="groupBtn">Kör</button>
+        <div id="grupp1" class="invis">
+
+          <ol data-draggable="target">
+            <h2>KLASS FE17</h2>
+
+
+            <li data-draggable="item" draggable="true">Jesse Jonsson</li>
+            <li data-draggable="item" draggable="true">Simon Gribert</li>
+            <li data-draggable="item" draggable="true">Natasha Bosnjak</li>
+            <li data-draggable="item" draggable="true">Silvia Morais</li>
+            <li data-draggable="item" draggable="true">Adam Eriksson</li>
+            <li data-draggable="item" draggable="true">Emil Olsson</li>
+            <li data-draggable="item" draggable="true">Kristian Kjeldsen</li>
+            <li data-draggable="item" draggable="true">Oscar Fredriksson</li>
+            <li data-draggable="item" draggable="true">Lina Svensson</li>
+
+          </ol>
+
+          <ol data-draggable="target">
+            <h3>GRUPP 1</h3>
+
+          </ol>
+
+
+        </div>
+        <div id="grupp2" class="invis">
+          <ol data-draggable="target">
+            <h3>GRUPP 2</h3>
+
+          </ol>
+
+        </div>
+        <div id="grupp3" class="invis">
+
+          <ol data-draggable="target">
+            <h3>GRUPP 3</h3>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="answered-form" class="ontop">
+    <div class="center">
+
+      <div class="lain-form">
+        <a class="fbclose" href="#" onClick="hide('answered-form')">Close</a>
+        <h3>Utvärdering av kursen /nr1</h3>
+        <div class="questions">
+
+          <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
+          <p>
+            <strong>Svar:</strong> Alldeles lagom</p>
+
+
+
+
+          <p class="breakword">Vad har kursen gett dig? Nämn några viktiga saker.</p>
+          <p>
+            <strong>Svar:</strong> Vänner för livet, yolo.</p>
+
+
+
+          <p class="breakword">Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i  kursplanen?  Om inte, varför?
+          </p>
+          <p>
+            <strong>Svar:</strong> Mycket bra.</p>
+
+
+
+
+          <p class="breakword">Hur har kursinformationen fungerat (i form av muntlig information från lärare, studiehandledning, kursguide, expedition,
+            annonsering på anslagstavlor etc)?
+          </p>
+          <p>
+            <strong>Svar:</strong> Dåligt, vart äter vi lunch ens?</p>
+
+
+
+
+          <p class="breakword">Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har  kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?
+          </p>
+
+          <p>
+            <strong>Svar:</strong> Vet inte.</p>
+
+          <div class="next-prev">
+
+            <a href="#" onClick="pop('answered-form3'); hide('answered-form')" class="previous">&laquo; Föregående</a>
+
+            <a href="#" onClick="pop('answered-form2'); hide('answered-form')" class="next">Nästa &raquo;</a>
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="answered-form2" class="ontop">
+    <div class="center">
+
+      <div class="lain-form">
+        <a class="fbclose" href="#" onClick="hide('answered-form2')">Close</a>
+        <h3>Utvärdering av kursen /nr2</h3>
+        <div class="questions">
+
+          <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
+          <p>
+            <strong>Svar:</strong> Helt galet för fort</p>
+
+
+
+
+          <p class="breakword">Vad har kursen gett dig? Nämn några viktiga saker.</p>
+          <p>
+            <strong>Svar:</strong> Carpe diem</p>
+
+
+
+          <p class="breakword">Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i  kursplanen?  Om inte, varför?
+          </p>
+          <p>
+            <strong>Svar:</strong> jag vet inte.</p>
+
+
+
+
+          <p class="breakword">Hur har kursinformationen fungerat (i form av muntlig information från lärare, studiehandledning, kursguide, expedition,
+            annonsering på anslagstavlor etc)?
+          </p>
+          <p>
+            <strong>Svar:</strong> Väldigt bra!</p>
+
+
+
+
+          <p class="breakword">Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har  kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?
+          </p>
+          <p>
+            <strong>Svar:</strong> nej.</p>
+
+          <div class="next-prev">
+            <a href="#" onClick="pop('answered-form'); hide('answered-form2')" class="previous">&laquo; Föregående</a>
+
+            <a href="#" onClick="pop('answered-form3'); hide('answered-form2')" class="next">Nästa &raquo;</a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="answered-form3" class="ontop">
+    <div class="center">
+
+      <div class="lain-form">
+        <a class="fbclose" href="#" onClick="hide('answered-form3')">Close</a>
+        <h3>Utvärdering av kursen /nr3</h3>
+        <div class="questions">
+
+          <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
+          <p>
+            <strong>Svar:</strong> Duger i krig</p>
+
+
+
+
+          <p class="breakword">Vad har kursen gett dig? Nämn några viktiga saker.</p>
+          <p>
+            <strong>Svar:</strong> livsglädje</p>
+
+
+
+          <p class="breakword">Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i  kursplanen?  Om inte, varför?
+          </p>
+          <p>
+            <strong>Svar:</strong> Mycket bra.</p>
+
+
+
+
+          <p class="breakword">Hur har kursinformationen fungerat (i form av muntlig information från lärare, studiehandledning, kursguide, expedition,
+            annonsering på anslagstavlor etc)?
+          </p>
+          <p>
+            <strong>Svar:</strong> Dåligt, vart äter vi lunch ens?</p>
+
+
+
+
+          <p class="breakword">Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har  kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?
+          </p>
+          <p>
+            <strong>Svar:</strong> kanske det.</p>
+
+          <div class="next-prev">
+            <a href="#" onClick="pop('answered-form2'); hide('answered-form3')" class="previous"> &laquo;Föregående</a>
+
+            <a href="#" onClick="pop('answered-form'); hide('answered-form3')" class="next">Nästa &raquo;</a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <button class="posttoggle" onClick="openPost(newspost)">Nytt Inlägg</button>
+
+  <div class="feed">
+    <div id="newsposttoggle">
+      <div id="newspost">
+
+
+        <form class="new-post" action="index.html" method="post">
+          <textarea class="area" name="Titel" rows="1" cols="96" placeholder="Titel"></textarea>
+          <input id="datepicker" class="area" type="date" name="PostDate">
+          <textarea class="area" name="Post" rows="8" cols="96" placeholder="Inlägg"></textarea>
+
+
+
+
+        </form>
+        <button class="posttoggle" onclick="submit()">Publicera</button>
       </div>
     </div>
 
-
-    <button class="posttoggle" onClick="openPost(newspost)">Nytt Inlägg</button>
-
-    <div class="feed">
-      <div id="newsposttoggle">
-        <div id="newspost">
-
-
-          <form class="new-post" action="index.html" method="post">
-            <textarea class="area" name="Titel" rows="1" cols="96" placeholder="Titel"></textarea>
-            <input id="datepicker" class="area" type="date" name="PostDate">
-            <textarea class="area" name="Post" rows="8" cols="96" placeholder="Inlägg"></textarea>
-
-
-
-
-          </form>
-          <button class="posttoggle" onclick="submit()">Publicera</button>
-        </div>
+    <div class="blog-post">
+      <h3>Rektorn Informerar</h3>
+      <div class="date">
+        <span>Publicerat 16/10-2017</span>
       </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et sodales
+        erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec, egestas
+        aliquet felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat, eu condimentum
+        nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et velit molestie,
+        pellentesque ex non, dictum dolor...</p>
+      <a class="more" href="#">Läs vidare</a>
 
-      <div class="blog-post">
-        <h3>Rektorn Informerar</h3>
-        <div class="date">
-          <span>Publicerat 16/10-2017</span>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et
-          sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec,
-          egestas aliquet felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat,
-          eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et
-          velit molestie, pellentesque ex non, dictum dolor...</p>
-        <a class="more" href="#">Läs vidare</a>
-
-      </div>
-      <div class="blog-post">
-        <h3>Rektorn Informerar</h3>
-        <div class="date">
-          <span>Publicerat 16/10-2017</span>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et
-          sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec,
-          egestas aliquet felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat,
-          eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et
-          velit molestie, pellentesque ex non, dictum dolor...</p>
-        <a class="more" href="#">Läs vidare</a>
-
-      </div>
-
-      <div class="blog-post">
-        <h3>oscar Informerar</h3>
-        <div class="date">
-          <span>Publicerat 16/10-2017</span>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et
-          sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec,
-          egestas aliquet felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat,
-          eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et
-          velit molestie, pellentesque ex non, dictum dolor...</p>
-        <a class="more" href="#">Läs vidare</a>
-
-      </div>
-      <div id="timed" class="hide">
-        <h3>Ditt inlägg har publicerats</h3>
-      </div>
     </div>
+    <div class="blog-post">
+      <h3>Rektorn Informerar</h3>
+      <div class="date">
+        <span>Publicerat 16/10-2017</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et sodales
+        erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec, egestas
+        aliquet felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat, eu condimentum
+        nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et velit molestie,
+        pellentesque ex non, dictum dolor...</p>
+      <a class="more" href="#">Läs vidare</a>
+
+    </div>
+
+    <div class="blog-post">
+      <h3>oscar Informerar</h3>
+      <div class="date">
+        <span>Publicerat 16/10-2017</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et sodales
+        erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec, egestas
+        aliquet felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat, eu condimentum
+        nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et velit molestie,
+        pellentesque ex non, dictum dolor...</p>
+      <a class="more" href="#">Läs vidare</a>
+
+    </div>
+    <div id="timed" class="hide">
+      <h3>Ditt inlägg har publicerats</h3>
+    </div>
+  </div>
   </div>
 
   <div id="webb-uppgift1" class="ontop">
@@ -1819,6 +1874,7 @@
   <script src="../Javascript/newDate.js"></script>
   <script src="../Javascript/grouping.js"></script>
   <script src="../Javascript/opentab.js"></script>
+  <script src="../Javascript/attendance.js"></script>
 </body>
 
 </html>
