@@ -253,12 +253,33 @@ input[type="date"] {
     margin: 0 auto;
 }
 
-.webbu1 {
+.webbu1, .acc, .showacc, #timedacc {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+#popupacc, .showacc, #timedacc {
+    display: flex;
+    height: auto;
+    width: 40%;
+    margin: auto;
+    background-color: #ffffff;
+}
+#selectorcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.acc a, .acc input, .acc h2, .acc div, .acc button {
+    margin-bottom: 5px;
+}
+.acc a {
+    align-self: flex-end;
+    margin: 5px;
+}
+
 
 
 /*----------------------------------FEEDBACK POPUP----------------------- */

@@ -20,11 +20,12 @@
 
     <nav class="navigation">
       <ul class="main-nav">
-
+        <li>
+          <a href="#" onclick="popacc()">Hantera Konton</a>
+        </li>
         <li>
           <a href="https://calendar.google.com/">Schema</a>
         </li>
-
         <li>
           <a href="">Utvärderingar</a>
           <ul class="submenu">
@@ -43,20 +44,6 @@
     </nav>
   </header>
   <div class="wrapper">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <button class="posttoggle" onClick="openPost(newspost)">Nytt Inlägg</button>
 
@@ -126,6 +113,29 @@
 
 
   </div>
+  <div id="account" class="ontop">
+    <div class="center">
+      <div id="popupacc" class="acc">
+        <a href="#" onClick="hide('account')">Close</a>
+        <h2>Skapa nytt konto</h2>
+        <div id="selectorcontainer">
+          <p>Typ: </p>
+          <select>
+            <option>Elev</option>
+            <option>Lärare</option>
+            <option>Admin</option>
+          </select>
+        </div>
+        <input type="text" placeholder="Användarnamn" required>
+        <input type="password" placeholder="Lösenord" required>
+        <input type="text" placeholder="E-mail" required>
+        <button onclick="submitaccount()">Skapa Konto</button>
+      </div>
+      <div id="timedacc" class="hide">
+        <h3>Kontot har skapats.</h3>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <p>&copy; Copyright Snake Limited</p>
@@ -133,10 +143,7 @@
   <script src="../Javascript/dropdownmenu.js"></script>
   <script src="../Javascript/toggles.js"></script>
   <script src="../Javascript/submit.js"></script>
-
-
-
-
+  <script src="../Javascript/adminpopup.js"></script>
   <script src="../Javascript/newDate.js"></script>
 
 </body>
