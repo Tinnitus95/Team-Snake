@@ -256,7 +256,8 @@ input[type="date"] {
 .webbu1,
 .acc,
 .showacc,
-#timedacc {
+#timedacc,
+.submitform {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -284,12 +285,15 @@ input[type="date"] {
 .acc h2,
 .acc div,
 .acc button {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .acc a {
     align-self: flex-end;
     margin: 5px;
+}
+#sumbitbutton {
+    align-self: stretch;
 }
 
 

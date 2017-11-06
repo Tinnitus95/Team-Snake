@@ -4,10 +4,11 @@ function pop(div) {
 
 }
 function popacc() {
-
+	document.getElementById("resetform").reset();
 	document.getElementById('timedacc').style.display = 'none';
 	document.getElementById('account').style.display = 'flex';
 	document.getElementById("popupacc").style.display = "flex";
+
 }
 
 function hide(div) {

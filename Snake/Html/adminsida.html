@@ -118,18 +118,20 @@
       <div id="popupacc" class="acc">
         <a href="#" onClick="hide('account')">Close</a>
         <h2>Skapa nytt konto</h2>
-        <div id="selectorcontainer">
-          <p>Typ: </p>
-          <select>
-            <option>Elev</option>
-            <option>Lärare</option>
-            <option>Admin</option>
-          </select>
-        </div>
-        <input type="text" placeholder="Användarnamn" required>
-        <input type="password" placeholder="Lösenord" required>
-        <input type="text" placeholder="E-mail" required>
-        <button onclick="submitaccount()">Skapa Konto</button>
+        <form onsubmit="submitaccount()" class="submitform" id="resetform">
+          <div id="selectorcontainer">
+            <p>Typ: </p>
+            <select>
+              <option>Elev</option>
+              <option>Lärare</option>
+              <option>Admin</option>
+            </select>
+          </div>
+          <input type="text" placeholder="Användarnamn" required="required">
+          <input type="password" placeholder="Lösenord" required="required">
+          <input type="email" placeholder="E-mail" required="required">
+          <input type="submit" value="Skapa Konto" id="sumbitbutton">
+        </form>
       </div>
       <div id="timedacc" class="hide">
         <h3>Kontot har skapats.</h3>
