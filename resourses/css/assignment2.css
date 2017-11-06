@@ -10,6 +10,14 @@ td {
     display: none;
 }
 
+#data1 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
 #data2 {
     width: 100%;
     padding: 0;
@@ -43,6 +51,22 @@ td {
 }
 
 #data6 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#data7 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#data8 {
     width: 100%;
     padding: 0;
     text-align: left;
