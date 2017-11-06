@@ -213,6 +213,15 @@ input[type="date"] {
     align-items: center;
 }
 
+#popup {
+    display: flex;
+    height: auto;
+    width: 50%;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+
 #popupup1 {
     display: flex;
     height: auto;
@@ -292,6 +301,7 @@ input[type="date"] {
     align-self: flex-end;
     margin: 5px;
 }
+
 #sumbitbutton {
     align-self: stretch;
 }
@@ -505,7 +515,11 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
-#silvia-webbutveckling {
+td {
+    padding-right: 10px;
+}
+
+#data {
     width: 100%;
     padding: 0;
     text-align: left;
@@ -513,7 +527,63 @@ input:checked+.slider:before {
     display: none;
 }
 
-#silvia-lia {
+#data1 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#data2 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#data3 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#data4 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#data5 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#data6 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#data7 {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    margin-top: 0;
+    display: none;
+}
+
+#data8 {
     width: 100%;
     padding: 0;
     text-align: left;
