@@ -20,6 +20,7 @@ document.onkeydown = function (evt) {
 };
 
 =======
+		hide('group');
 	}
 };
 >>>>>>> oscar

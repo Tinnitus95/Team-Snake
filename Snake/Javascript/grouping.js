@@ -1,15 +1,13 @@
-function groupShow() {
-  var a = document.getElementById('groupNr').value;
+// Spits out number of groups chosen
+function groupGenerateGroups() {
+    var numGroups = document.querySelector("#groupNr");
+    var groupGroups = document.querySelector("#groups");
+    var groupGroupsCount = document.querySelector("#groupGroupsCount");
 
-  if (a == 1) {
-    document.getElementById('grupp1').style.display = 'flex';
-  } else if (a == 2) {
-    document.getElementById('grupp1').style.display = 'flex';
-    document.getElementById('grupp2').style.display = 'flex';
-  } else if (a == 3) {
-    document.getElementById('grupp1').style.display = 'flex';
-    document.getElementById('grupp2').style.display = 'flex';
-    document.getElementById('grupp3').style.display = 'flex';
-  }
+    // Resets the list before appending new
+    groupGroups.innerHTML = "";
 
+    for (let i = 0; i < numGroups.value; i++) {
+        groupGroups.innerHTML +="<div class=\"gruppering\" id=\"grupp" + i + "\"><ol data-draggable=\"target\"><h3>Grupp " + (i+1) + "</h3></ol></div>";
+    }
 }
