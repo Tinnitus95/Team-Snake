@@ -26,7 +26,7 @@
     <nav class="navigation">
       <ul class="main-nav">
         <li>
-          <a href="#" onClick="openAttendence('attendence')">Närvaro</a>
+          <a href="#" onClick="pop('popDiv')">Närvaro</a>
         </li>
         <li>
           <a href="https://calendar.google.com/">Schema</a>
@@ -41,18 +41,7 @@
     </nav>
   </header>
   <div class="wrapper">
-    <div id="attendence">
-      <select name="kuserlist" id="list">
-        <option value="html">Html</option>
-        <option value="javascript">JavaScript</option>
-        <option value="agila">Agila</option>
-        <option value="arbetsmetodik">Arbetsmetodik</option>
-      </select>
-      <input type="date" id="date" />
-      <Button onclick="generate()">Generate Code</Button>
-      <br>
-      <p id="response"></p>
-    </div>
+
 
     <div id="hidestart">
 
@@ -538,7 +527,7 @@
                     <button class="tablinks" onclick="openTab(event, 'pr-plan')">Kursplan</button>
                     <button class="tablinks" onclick="openTab(event, 'pr-material')">Kursmaterial</button>
                     <button class="tablinks" onclick="openTab(event, 'pr-teacher')">Lärare</button>
-                    <button class="tablinks" onclick="openTab(event, 'pr-student')">Elever</button>
+
 
                   </div>
 
@@ -834,7 +823,7 @@
                     <button class="tablinks" onclick="openTab(event, 'ps-plan')">Kursplan</button>
                     <button class="tablinks" onclick="openTab(event, 'ps-material')">Kursmaterial</button>
                     <button class="tablinks" onclick="openTab(event, 'ps-teacher')">Lärare</button>
-                    <button class="tablinks" onclick="openTab(event, 'ps-student')">Elever</button>
+
 
 
                   </div>
@@ -1852,6 +1841,156 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </div>
+  <div id="popDiv" class="ontop">
+    <div class="center">
+      <div id="popup" class="attendance">
+        <div class="attcontainer">
+          <a href="#" onClick="hide('popDiv')">Close</a>
+          <br>
+          <table>
+            <tr>
+              <th>Elev</th>
+              <th>Kurser</th>
+              <th>Närvaro</th>
+              <th></th>
+              <th>Totalt Närvaro</th>
+            </tr>
+            <tr>
+              <td>Silvia</td>
+              <td>
+                <i>html</i>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data','checkBox')" id="checkBox">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div id="data">100%</div>
+              </td>
+
+              <td>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data1','checkBox1')" id="checkBox1">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+
+              <td>
+                <div id="data1">90%</div>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <i>Css</i>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data2', 'checkBox2')" id="checkBox2">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div id="data2">99%</div>
+              </td>
+
+            </tr>
+            <tr>
+              <td>Simon</td>
+              <td>
+                <i>html</i>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data3','checkBox3')" id="checkBox3">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div id="data3">89%</div>
+              </td>
+
+              <td>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data4','checkBox4')" id="checkBox4">
+                  <span class="slider round"></span>
+                </label>
+
+              </td>
+
+              <td>
+                <div id="data4">99%</div>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <i>Css</i>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data5', 'checkBox5')" id="checkBox5">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div id="data5">100%</div>
+              </td>
+            </tr>
+            <tr>
+              <td>Jesse</td>
+              <td>
+                <i>html</i>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data6','checkBox6')" id="checkBox6">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div id="data6">100%</div>
+              </td>
+              <td>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data7','checkBox7')" id="checkBox7">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div id="data7">75%</div>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <i>Css</i>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data8', 'checkBox8')" id="checkBox8">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div id="data8">100%</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select name="kuserlist" id="list">
+                  <option value="html">Html</option>
+                  <option value="javascript">JavaScript</option>
+                  <option value="agila">Agila</option>
+                  <option value="arbetsmetodik">Arbetsmetodik</option>
+                </select>
+              </td>
+              <td>
+                <input type="date" id="date" />
+              </td>
+              <td>
+                <Button onclick="generate()">Generate Code</Button>
+              </td>
+
+              <td>
+                <p id="response"></p>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>
