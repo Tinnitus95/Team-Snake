@@ -15,3 +15,4 @@ if (mm < 10) {
 today = yyyy + '-' + mm + '-' + dd;
 
 document.getElementById("datepicker").value = today;
+document.getElementById("date").value = today;

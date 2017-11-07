@@ -216,10 +216,17 @@ input[type="date"] {
 #popup {
     display: flex;
     height: auto;
-    width: 50%;
+    max-width: 70%;
+    width: auto;
     margin: auto;
     background-color: #ffffff;
     border-radius: 7px;
+    overflow: scroll;
+    padding: 10px;
+}
+
+.attcontainer {
+    display: table;
 }
 
 #popupup1 {

@@ -1853,164 +1853,150 @@
   <div id="popDiv" class="ontop">
     <div class="center">
       <div id="popup" class="attendance">
-        <table>
-          <tr>
-            <th>Elev</th>
-            <th>Kurser</th>
-            <th></th>
-            <th>Närvaro</th>
-            <th></th>
-            <th>Totalt Närvaro</th>
-          </tr>
-          <tr>
-            <td>Silvia</td>
-            <td>
-              <i>html</i>
-            </td>
-            <td>
-              <label class="switch">
-                <input type="checkbox" onchange="showAttendence('data','checkBox')" id="checkBox">
-                <span class="slider round"></span>
-              </label>
-            </td>
-            <td>
-              <div id="data">100%</div>
-            </td>
+        <div class="attcontainer">
+          <a href="#" onClick="hide('popDiv')">Close</a>
+          <br>
+          <table>
+            <tr>
+              <th>Elev</th>
+              <th>Kurser</th>
+              <th>Närvaro</th>
+              <th></th>
+              <th>Totalt Närvaro</th>
+            </tr>
+            <tr>
+              <td>Silvia</td>
+              <td>
+                <i>html</i>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data','checkBox')" id="checkBox">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div id="data">100%</div>
+              </td>
 
-            <td>
-              <label class="switch">
-                <input type="checkbox" onchange="showAttendence('data1','checkBox1')" id="checkBox1">
-                <span class="slider round"></span>
-              </label>
-            </td>
+              <td>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data1','checkBox1')" id="checkBox1">
+                  <span class="slider round"></span>
+                </label>
+              </td>
 
-            <td>
-              <div id="data1">90%</div>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <i>Css</i>
-            </td>
+              <td>
+                <div id="data1">90%</div>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <i>Css</i>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data2', 'checkBox2')" id="checkBox2">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div id="data2">99%</div>
+              </td>
 
-            <td>
-              <label class="switch">
-                <input type="checkbox" onchange="showAttendence('data2', 'checkBox2')" id="checkBox2">
-                <span class="slider round"></span>
-              </label>
-            </td>
-            <td>
-              <div id="data2">99%</div>
-            </td>
+            </tr>
+            <tr>
+              <td>Simon</td>
+              <td>
+                <i>html</i>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data3','checkBox3')" id="checkBox3">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div id="data3">89%</div>
+              </td>
 
-          </tr>
-          <tr>
-            <td>Simon</td>
-            <td>
-              <i>html</i>
-            </td>
+              <td>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data4','checkBox4')" id="checkBox4">
+                  <span class="slider round"></span>
+                </label>
 
-            <td>
-              <label class="switch">
-                <input type="checkbox" onchange="showAttendence('data3','checkBox3')" id="checkBox3">
-                <span class="slider round"></span>
-              </label>
-            </td>
-            <td>
-              <div id="data3">89%</div>
-            </td>
+              </td>
 
-            <td>
-              <label class="switch">
-                <input type="checkbox" onchange="showAttendence('data4','checkBox4')" id="checkBox4">
-                <span class="slider round"></span>
-              </label>
+              <td>
+                <div id="data4">99%</div>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <i>Css</i>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data5', 'checkBox5')" id="checkBox5">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div id="data5">100%</div>
+              </td>
+            </tr>
+            <tr>
+              <td>Jesse</td>
+              <td>
+                <i>html</i>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data6','checkBox6')" id="checkBox6">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div id="data6">100%</div>
+              </td>
+              <td>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data7','checkBox7')" id="checkBox7">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div id="data7">75%</div>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <i>Css</i>
+                <label class="switch">
+                  <input type="checkbox" onchange="showAttendence('data8', 'checkBox8')" id="checkBox8">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+              <td>
+                <div id="data8">100%</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select name="kuserlist" id="list">
+                  <option value="html">Html</option>
+                  <option value="javascript">JavaScript</option>
+                  <option value="agila">Agila</option>
+                  <option value="arbetsmetodik">Arbetsmetodik</option>
+                </select>
+              </td>
+              <td>
+                <input type="date" id="date" />
+              </td>
+              <td>
+                <Button onclick="generate()">Generate Code</Button>
+              </td>
 
-            </td>
-
-            <td>
-              <div id="data4">99%</div>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <i>Css</i>
-            </td>
-
-            <td>
-              <label class="switch">
-                <input type="checkbox" onchange="showAttendence('data5', 'checkBox5')" id="checkBox5">
-                <span class="slider round"></span>
-              </label>
-            </td>
-            <td>
-              <div id="data5">100%</div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jesse</td>
-            <td>
-              <i>html</i>
-            </td>
-
-            <td>
-              <label class="switch">
-                <input type="checkbox" onchange="showAttendence('data6','checkBox6')" id="checkBox6">
-                <span class="slider round"></span>
-              </label>
-            </td>
-            <td>
-              <div id="data6">100%</div>
-            </td>
-            <td>
-              <label class="switch">
-                <input type="checkbox" onchange="showAttendence('data7','checkBox7')" id="checkBox7">
-                <span class="slider round"></span>
-              </label>
-            </td>
-            <td>
-              <div id="data7">75%</div>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <i>Css</i>
-            </td>
-
-            <td>
-              <label class="switch">
-                <input type="checkbox" onchange="showAttendence('data8', 'checkBox8')" id="checkBox8">
-                <span class="slider round"></span>
-              </label>
-            </td>
-            <td>
-              <div id="data8">100%</div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <select name="kuserlist" id="list">
-                <option value="html">Html</option>
-                <option value="javascript">JavaScript</option>
-                <option value="agila">Agila</option>
-                <option value="arbetsmetodik">Arbetsmetodik</option>
-              </select>
-            </td>
-            <td>
-              <input type="date" id="date" />
-            </td>
-            <td>
-              <Button onclick="generate()">Generate Code</Button>
-            </td>
-
-            <td>
-              <p id="response"></p>
-            </td>
-          </tr>
-        </table>
+              <td>
+                <p id="response"></p>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -2029,7 +2015,6 @@
   <script src="../Javascript/newDate.js"></script>
   <script src="../Javascript/grouping.js"></script>
   <script src="../Javascript/opentab.js"></script>
-  <script src="../Javascript/attendance.js"></script>
 </body>
 
 </html>
