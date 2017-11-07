@@ -214,22 +214,6 @@ input[type="date"] {
 
 }
 
-#popup {
-    display: flex;
-    height: auto;
-    max-width: 70%;
-    width: auto;
-    margin: auto;
-    background-color: #ffffff;
-    border-radius: 7px;
-    overflow: scroll;
-    padding: 10px;
-}
-
-.attcontainer {
-    display: table;
-}
-
 #popupup1 {
     display: flex;
     height: auto;
@@ -273,8 +257,7 @@ input[type="date"] {
 .webbu1,
 .acc,
 .showacc,
-#timedacc,
-.submitform {
+#timedacc {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -302,16 +285,12 @@ input[type="date"] {
 .acc h2,
 .acc div,
 .acc button {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .acc a {
     align-self: flex-end;
     margin: 5px;
-}
-
-#sumbitbutton {
-    align-self: stretch;
 }
 
 
@@ -411,7 +390,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  overflow: scroll;
+  
   height: 50%;
   width: 60%;
 }
@@ -559,11 +538,7 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
-td {
-    padding-right: 10px;
-}
-
-#data {
+#silvia-webbutveckling {
     width: 100%;
     padding: 0;
     text-align: left;
@@ -571,63 +546,7 @@ td {
     display: none;
 }
 
-#data1 {
-    width: 100%;
-    padding: 0;
-    text-align: left;
-    margin-top: 0;
-    display: none;
-}
-
-#data2 {
-    width: 100%;
-    padding: 0;
-    text-align: left;
-    margin-top: 0;
-    display: none;
-}
-
-#data3 {
-    width: 100%;
-    padding: 0;
-    text-align: left;
-    margin-top: 0;
-    display: none;
-}
-
-#data4 {
-    width: 100%;
-    padding: 0;
-    text-align: left;
-    margin-top: 0;
-    display: none;
-}
-
-#data5 {
-    width: 100%;
-    padding: 0;
-    text-align: left;
-    margin-top: 0;
-    display: none;
-}
-
-#data6 {
-    width: 100%;
-    padding: 0;
-    text-align: left;
-    margin-top: 0;
-    display: none;
-}
-
-#data7 {
-    width: 100%;
-    padding: 0;
-    text-align: left;
-    margin-top: 0;
-    display: none;
-}
-
-#data8 {
+#silvia-lia {
     width: 100%;
     padding: 0;
     text-align: left;
