@@ -29,4 +29,6 @@ function check(form) {
 		document.getElementById("message").innerHTML = "Det finns ingen lektion som passar med den koden";
 		document.getElementById("popup").style.background = '#ff7a7a';
 	}
-}
+}<<<<<<< HEAD
+=======
+>>>>>>> oscar

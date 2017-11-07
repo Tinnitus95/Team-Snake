@@ -211,6 +211,7 @@ input[type="date"] {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 #popup {
@@ -391,17 +392,45 @@ footer {
 /*..................................style for grouping.......................*/
 
 #groupstyle {
-    text-align: left;
+  display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    border:2px solid #888;
+    padding: 10px;
 }
 
-.invis {
-    display: none;
-    /*border: 1px solid black;*/
-    margin-bottom: 5px;
+#groupstyle a{
+  align-self: flex-start;
 }
 
-#grupp1 {
-    margin-top: 5px;
+
+
+.groupcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  overflow: scroll;
+  height: 50%;
+  width: 60%;
+}
+#groups{
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.gruppering{
+  width: auto;
+  height: auto;
+  margin: 5px 5px;
+}
+
+.class ol {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 160px;
 }
 
 
@@ -437,30 +466,38 @@ footer {
 
 /*---------------------------------------------DRAG AND DROP --------------------------------------*/
 
-[data-draggable="target"] {
-    float: left;
-    list-style-type: none;
-    width: 42%;
-    height: 18.5em;
-    overflow-y: auto;
-    margin: 0 0.5em 0.5em 0;
-    padding: 0.5em;
-    border: 2px solid #888;
-    border-radius: 0.2em;
-    background: #ddd;
-    color: #555;
+/* draggable targets */
+[data-draggable="target"]
+{
+    float:left;
+    list-style-type:none;
+    overflow-y:auto;
+    margin:0;
+
+    padding:0.5em;
+
+    border:2px solid #888;
+    border-radius:0.2em;
+
+    background:#ddd;
+    color:#555;
 }
 
-[data-draggable="item"] {
-    display: block;
-    list-style-type: none;
-    background-color: grey;
-    margin: 0 0 2px 0;
-    padding: 0.2em 0.4em;
-    color: black;
-    border-radius: 0.2em;
-    line-height: 1.5;
+/* draggable items */
+[data-draggable="item"]
+{
+    display:block;
+    list-style-type:none;
+
+    margin:0 0 2px 0;
+    padding:0.2em 0.4em;
+
+    border-radius:0.2em;
+
+    line-height:1.3;
 }
+
+/*---------------------------------------------switch--------------------------------------*/
 
 .switch {
     position: relative;

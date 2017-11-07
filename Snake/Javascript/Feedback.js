@@ -14,10 +14,15 @@ document.onkeydown = function (evt) {
 	evt = evt || window.event;
 	if (evt.keyCode == 27) {
 		hide('webb-uppgift1');
+<<<<<<< HEAD
 		hide('popDiv');
 	}
 };
 
+=======
+	}
+};
+>>>>>>> oscar
 function showAttendence(id, cb) {
 	var checkbox = document.getElementById(cb);
 	var data = document.getElementById(id);
