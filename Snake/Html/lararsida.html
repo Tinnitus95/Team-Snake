@@ -12,6 +12,7 @@
 
 
 
+
 </head>
 
 <body>
@@ -25,24 +26,13 @@
     <nav class="navigation">
       <ul class="main-nav">
         <li>
-          <a href="#" onClick="openAttendence('popDiv')">Närvaro</a>
+          <a href="#" onClick="openAttendence('attendence')">Närvaro</a>
         </li>
         <li>
           <a href="https://calendar.google.com/">Schema</a>
         </li>
         <li>
           <a href="#" onClick="openCourse(event, 'hidestart')">Mina kurser</a>
-        </li>
-        <li>
-          <a href="">Utvärderingar</a>
-          <ul class="submenu">
-            <li>
-              <a href="#" onClick="pop('feedback')">Dagens Feedback</a>
-            </li>
-            <li>
-              <a href="#" onclick="pop('vfeedback')">Veckans Feedback</a>
-            </li>
-          </ul>
         </li>
         <li>
           <a href="HomePageTwo.html">logga ut</a>
@@ -52,7 +42,16 @@
   </header>
   <div class="wrapper">
     <div id="attendence">
-
+      <select name="kuserlist" id="list">
+        <option value="html">Html</option>
+        <option value="javascript">JavaScript</option>
+        <option value="agila">Agila</option>
+        <option value="arbetsmetodik">Arbetsmetodik</option>
+      </select>
+      <input type="date" id="date" />
+      <Button onclick="generate()">Generate Code</Button>
+      <br>
+      <p id="response"></p>
     </div>
 
     <div id="hidestart">
@@ -1401,6 +1400,7 @@
 
               </div>
 
+
               <div id="ex-plan" class="tabcontent">
                 <table>
                   <tr>
@@ -1444,8 +1444,11 @@
                 </table>
               </div>
             </div>
+
           </div>
         </div>
+
+
 
 
         <div id="chemistry" class="dropcontent">
@@ -1505,308 +1508,308 @@
                 </table>
               </div>
             </div>
+
           </div>
-        </div>
 
       </aside>
 
 
-    </div>
-  </div>
-  <div id="group" class="ontop">
-    <div class="center">
-      <div class="groupcontainer">
-
-
-      <div id="groupstyle">
-        <a class="fbclose" href="#" onClick="hide('group')">Close</a>
-        <h1>Uppgift 2: Gruppindelning</h1>
-
-        <label for="quantity">antal grupper:</label>
-        <input id="groupNr" type="number" name="quantity" min="1" onchange="groupGenerateGroups()">
-
-        <div id="groups">
-
-        </div>
       </div>
-
-
-
-    <div class="class">
-      <ol data-draggable="target">
-        <h2>KLASS FE17</h2>
-
-
-        <li data-draggable="item" draggable="true">Jesse Jonsson</li>
-        <li data-draggable="item" draggable="true">Simon Gribert</li>
-        <li data-draggable="item" draggable="true">Natasha Bosnjak</li>
-        <li data-draggable="item" draggable="true">Silvia Morais</li>
-        <li data-draggable="item" draggable="true">Adam Eriksson</li>
-        <li data-draggable="item" draggable="true">Emil Olsson</li>
-        <li data-draggable="item" draggable="true">Kristian Kjeldsen</li>
-        <li data-draggable="item" draggable="true">Oscar Fredriksson</li>
-        <li data-draggable="item" draggable="true">Lina Svensson</li>
-        <li data-draggable="item" draggable="true">Ella Olofsson</li>
-        <li data-draggable="item" draggable="true">Signy Olsson</li>
-        <li data-draggable="item" draggable="true">Ella Kron</li>
-        <li data-draggable="item" draggable="true">Hugo Stigsson</li>
-        <li data-draggable="item" draggable="true">Tanja Niklasson</li>
-        <li data-draggable="item" draggable="true">Viktoria Albertsson</li>
-        <li data-draggable="item" draggable="true">Gunhild Axelsen</li>
-        <li data-draggable="item" draggable="true">Judit Jensen</li>
-        <li data-draggable="item" draggable="true">Gunvor Olson</li>
-        <li data-draggable="item" draggable="true">Mari Wang</li>
-        <li data-draggable="item" draggable="true">Birgitte Strand</li>
-        <li data-draggable="item" draggable="true">Jarl Hummel</li>
-        <li data-draggable="item" draggable="true">Cathrine Vinter</li>
-        <li data-draggable="item" draggable="true">Asger Einarsson</li>
-        <li data-draggable="item" draggable="true">Lasse Hall</li>
-        <li data-draggable="item" draggable="true">Osvald Vollan</li>
-        <li data-draggable="item" draggable="true">Sif Andreasen</li>
-        <li data-draggable="item" draggable="true">Hanna Jönsson</li>
-        <li data-draggable="item" draggable="true">Irene Hansen</li>
-        <li data-draggable="item" draggable="true">Svante Larsson</li>
-        <li data-draggable="item" draggable="true">Birger Ek</li>
-        <li data-draggable="item" draggable="true">Thomas Sørensen</li>
-
-
-      </ol>
     </div>
-</div>
-    </div>
+    <div id="group" class="ontop">
+      <div class="center">
+        <div class="groupcontainer">
 
 
-  </div>
+          <div id="groupstyle">
+            <a class="fbclose" href="#" onClick="hide('group')">Close</a>
+            <h1>Uppgift 2: Gruppindelning</h1>
 
+            <label for="quantity">antal grupper:</label>
+            <input id="groupNr" type="number" name="quantity" min="1" onchange="groupGenerateGroups()">
 
+            <div id="groups">
 
-  <div id="answered-form" class="ontop">
-    <div class="center">
-
-      <div class="lain-form">
-        <a class="fbclose" href="#" onClick="hide('answered-form')">Close</a>
-        <h3>Utvärdering av kursen /nr1</h3>
-        <div class="questions">
-
-          <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
-          <p>
-            <strong>Svar:</strong> Alldeles lagom</p>
-
-
-
-
-          <p class="breakword">Vad har kursen gett dig? Nämn några viktiga saker.</p>
-          <p>
-            <strong>Svar:</strong> Vänner för livet, yolo.</p>
-
-
-
-          <p class="breakword">Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i  kursplanen?  Om inte, varför?
-          </p>
-          <p>
-            <strong>Svar:</strong> Mycket bra.</p>
-
-
-
-
-          <p class="breakword">Hur har kursinformationen fungerat (i form av muntlig information från lärare, studiehandledning, kursguide, expedition, annonsering på anslagstavlor etc)?
-          </p>
-          <p>
-            <strong>Svar:</strong> Dåligt, vart äter vi lunch ens?</p>
-
-
-
-
-          <p class="breakword">Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har  kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?
-          </p>
-
-          <p>
-            <strong>Svar:</strong> Vet inte.</p>
-
-          <div class="next-prev">
-
-            <a href="#" onClick="pop('answered-form3'); hide('answered-form')" class="previous">&laquo; Föregående</a>
-
-            <a href="#" onClick="pop('answered-form2'); hide('answered-form')" class="next">Nästa &raquo;</a>
-
+            </div>
           </div>
 
 
 
+          <div class="class">
+            <ol data-draggable="target">
+              <h2>KLASS FE18</h2>
+
+
+              <li data-draggable="item" draggable="true">Jesse Jonsson</li>
+              <li data-draggable="item" draggable="true">Simon Gribert</li>
+              <li data-draggable="item" draggable="true">Natasha Bosnjak</li>
+              <li data-draggable="item" draggable="true">Silvia Morais</li>
+              <li data-draggable="item" draggable="true">Adam Eriksson</li>
+              <li data-draggable="item" draggable="true">Emil Olsson</li>
+              <li data-draggable="item" draggable="true">Kristian Kjeldsen</li>
+              <li data-draggable="item" draggable="true">Oscar Fredriksson</li>
+              <li data-draggable="item" draggable="true">Lina Svensson</li>
+              <li data-draggable="item" draggable="true">Ella Olofsson</li>
+              <li data-draggable="item" draggable="true">Signy Olsson</li>
+              <li data-draggable="item" draggable="true">Ella Kron</li>
+              <li data-draggable="item" draggable="true">Hugo Stigsson</li>
+              <li data-draggable="item" draggable="true">Tanja Niklasson</li>
+              <li data-draggable="item" draggable="true">Viktoria Albertsson</li>
+              <li data-draggable="item" draggable="true">Gunhild Axelsen</li>
+              <li data-draggable="item" draggable="true">Judit Jensen</li>
+              <li data-draggable="item" draggable="true">Gunvor Olson</li>
+              <li data-draggable="item" draggable="true">Mari Wang</li>
+              <li data-draggable="item" draggable="true">Birgitte Strand</li>
+              <li data-draggable="item" draggable="true">Jarl Hummel</li>
+              <li data-draggable="item" draggable="true">Cathrine Vinter</li>
+              <li data-draggable="item" draggable="true">Asger Einarsson</li>
+              <li data-draggable="item" draggable="true">Lasse Hall</li>
+              <li data-draggable="item" draggable="true">Osvald Vollan</li>
+              <li data-draggable="item" draggable="true">Sif Andreasen</li>
+              <li data-draggable="item" draggable="true">Hanna Jönsson</li>
+              <li data-draggable="item" draggable="true">Irene Hansen</li>
+              <li data-draggable="item" draggable="true">Svante Larsson</li>
+              <li data-draggable="item" draggable="true">Birger Ek</li>
+              <li data-draggable="item" draggable="true">Thomas Sørensen</li>
+
+
+            </ol>
+          </div>
         </div>
       </div>
+
+
     </div>
-  </div>
-
-
-  <div id="answered-form2" class="ontop">
-    <div class="center">
-
-      <div class="lain-form">
-        <a class="fbclose" href="#" onClick="hide('answered-form2')">Close</a>
-        <h3>Utvärdering av kursen /nr2</h3>
-        <div class="questions">
-
-          <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
-          <p>
-            <strong>Svar:</strong> Helt galet för fort</p>
 
 
 
+    <div id="answered-form" class="ontop">
+      <div class="center">
 
-          <p class="breakword">Vad har kursen gett dig? Nämn några viktiga saker.</p>
-          <p>
-            <strong>Svar:</strong> Carpe diem</p>
+        <div class="lain-form">
+          <a class="fbclose" href="#" onClick="hide('answered-form')">Close</a>
+          <h3>Utvärdering av kursen /nr1</h3>
+          <div class="questions">
 
-
-
-          <p class="breakword">Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i  kursplanen?  Om inte, varför?
-          </p>
-          <p>
-            <strong>Svar:</strong> jag vet inte.</p>
+            <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
+            <p>
+              <strong>Svar:</strong> Alldeles lagom</p>
 
 
 
 
-          <p class="breakword">Hur har kursinformationen fungerat (i form av muntlig information från lärare, studiehandledning, kursguide, expedition, annonsering på anslagstavlor etc)?
-          </p>
-          <p>
-            <strong>Svar:</strong> Väldigt bra!</p>
+            <p class="breakword">Vad har kursen gett dig? Nämn några viktiga saker.</p>
+            <p>
+              <strong>Svar:</strong> Vänner för livet, yolo.</p>
+
+
+
+            <p class="breakword">Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i  kursplanen?  Om inte, varför?
+            </p>
+            <p>
+              <strong>Svar:</strong> Mycket bra.</p>
 
 
 
 
-          <p class="breakword">Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har  kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?
-          </p>
-          <p>
-            <strong>Svar:</strong> nej.</p>
+            <p class="breakword">Hur har kursinformationen fungerat (i form av muntlig information från lärare, studiehandledning, kursguide, expedition, annonsering på anslagstavlor etc)?
+            </p>
+            <p>
+              <strong>Svar:</strong> Dåligt, vart äter vi lunch ens?</p>
 
-          <div class="next-prev">
-            <a href="#" onClick="pop('answered-form'); hide('answered-form2')" class="previous">&laquo; Föregående</a>
 
-            <a href="#" onClick="pop('answered-form3'); hide('answered-form2')" class="next">Nästa &raquo;</a>
+
+
+            <p class="breakword">Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har  kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?
+            </p>
+
+            <p>
+              <strong>Svar:</strong> Vet inte.</p>
+
+            <div class="next-prev">
+
+              <a href="#" onClick="pop('answered-form3'); hide('answered-form')" class="previous">&laquo; Föregående</a>
+
+              <a href="#" onClick="pop('answered-form2'); hide('answered-form')" class="next">Nästa &raquo;</a>
+
+            </div>
+
+
 
           </div>
-
         </div>
       </div>
     </div>
-  </div>
 
 
-  <div id="answered-form3" class="ontop">
-    <div class="center">
+    <div id="answered-form2" class="ontop">
+      <div class="center">
 
-      <div class="lain-form">
-        <a class="fbclose" href="#" onClick="hide('answered-form3')">Close</a>
-        <h3>Utvärdering av kursen /nr3</h3>
-        <div class="questions">
+        <div class="lain-form">
+          <a class="fbclose" href="#" onClick="hide('answered-form2')">Close</a>
+          <h3>Utvärdering av kursen /nr2</h3>
+          <div class="questions">
 
-          <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
-          <p>
-            <strong>Svar:</strong> Duger i krig</p>
-
-
-
-
-          <p class="breakword">Vad har kursen gett dig? Nämn några viktiga saker.</p>
-          <p>
-            <strong>Svar:</strong> livsglädje</p>
-
-
-
-          <p class="breakword">Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i  kursplanen?  Om inte, varför?
-          </p>
-          <p>
-            <strong>Svar:</strong> Mycket bra.</p>
+            <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
+            <p>
+              <strong>Svar:</strong> Helt galet för fort</p>
 
 
 
 
-          <p class="breakword">Hur har kursinformationen fungerat (i form av muntlig information från lärare, studiehandledning, kursguide, expedition, annonsering på anslagstavlor etc)?
-          </p>
-          <p>
-            <strong>Svar:</strong> Dåligt, vart äter vi lunch ens?</p>
+            <p class="breakword">Vad har kursen gett dig? Nämn några viktiga saker.</p>
+            <p>
+              <strong>Svar:</strong> Carpe diem</p>
+
+
+
+            <p class="breakword">Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i  kursplanen?  Om inte, varför?
+            </p>
+            <p>
+              <strong>Svar:</strong> jag vet inte.</p>
 
 
 
 
-          <p class="breakword">Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har  kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?
-          </p>
-          <p>
-            <strong>Svar:</strong> kanske det.</p>
+            <p class="breakword">Hur har kursinformationen fungerat (i form av muntlig information från lärare, studiehandledning, kursguide, expedition, annonsering på anslagstavlor etc)?
+            </p>
+            <p>
+              <strong>Svar:</strong> Väldigt bra!</p>
 
-          <div class="next-prev">
-            <a href="#" onClick="pop('answered-form2'); hide('answered-form3')" class="previous"> &laquo;Föregående</a>
 
-            <a href="#" onClick="pop('answered-form'); hide('answered-form3')" class="next">Nästa &raquo;</a>
+
+
+            <p class="breakword">Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har  kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?
+            </p>
+            <p>
+              <strong>Svar:</strong> nej.</p>
+
+            <div class="next-prev">
+              <a href="#" onClick="pop('answered-form'); hide('answered-form2')" class="previous">&laquo; Föregående</a>
+
+              <a href="#" onClick="pop('answered-form3'); hide('answered-form2')" class="next">Nästa &raquo;</a>
+
+            </div>
 
           </div>
-
         </div>
       </div>
     </div>
-  </div>
 
 
-  <button class="posttoggle" onClick="openPost(newspost)">Nytt Inlägg</button>
+    <div id="answered-form3" class="ontop">
+      <div class="center">
 
-  <div class="feed">
-    <div id="newsposttoggle">
-      <div id="newspost">
+        <div class="lain-form">
+          <a class="fbclose" href="#" onClick="hide('answered-form3')">Close</a>
+          <h3>Utvärdering av kursen /nr3</h3>
+          <div class="questions">
 
-
-        <form class="new-post" action="index.html" method="post">
-          <textarea class="area" name="Titel" rows="1" cols="96" placeholder="Titel"></textarea>
-          <input id="datepicker" class="area" type="date" name="PostDate">
-          <textarea class="area" name="Post" rows="8" cols="96" placeholder="Inlägg"></textarea>
-
-
+            <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
+            <p>
+              <strong>Svar:</strong> Duger i krig</p>
 
 
-        </form>
-        <button class="posttoggle" onclick="submit()">Publicera</button>
+
+
+            <p class="breakword">Vad har kursen gett dig? Nämn några viktiga saker.</p>
+            <p>
+              <strong>Svar:</strong> livsglädje</p>
+
+
+
+            <p class="breakword">Hur väl tycker du att kursen lever upp till lärandemålen som finns angivna i  kursplanen?  Om inte, varför?
+            </p>
+            <p>
+              <strong>Svar:</strong> Mycket bra.</p>
+
+
+
+
+            <p class="breakword">Hur har kursinformationen fungerat (i form av muntlig information från lärare, studiehandledning, kursguide, expedition, annonsering på anslagstavlor etc)?
+            </p>
+            <p>
+              <strong>Svar:</strong> Dåligt, vart äter vi lunch ens?</p>
+
+
+
+
+            <p class="breakword">Har du några förslag på hur kursens mål och uppläggning kan förbättras? Har  kursen motiverat dig till fortsatta studier i ämnet? Varför? Om inte, varför?
+            </p>
+            <p>
+              <strong>Svar:</strong> kanske det.</p>
+
+            <div class="next-prev">
+              <a href="#" onClick="pop('answered-form2'); hide('answered-form3')" class="previous"> &laquo;Föregående</a>
+
+              <a href="#" onClick="pop('answered-form'); hide('answered-form3')" class="next">Nästa &raquo;</a>
+
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="blog-post">
-      <h3>Rektorn Informerar</h3>
-      <div class="date">
-        <span>Publicerat 16/10-2017</span>
+
+    <button class="posttoggle" onClick="openPost(newspost)">Nytt Inlägg</button>
+
+    <div class="feed">
+      <div id="newsposttoggle">
+        <div id="newspost">
+
+
+          <form class="new-post" action="index.html" method="post">
+            <textarea class="area" name="Titel" rows="1" cols="96" placeholder="Titel"></textarea>
+            <input id="datepicker" class="area" type="date" name="PostDate">
+            <textarea class="area" name="Post" rows="8" cols="96" placeholder="Inlägg"></textarea>
+
+
+
+
+          </form>
+          <button class="posttoggle" onclick="submit()">Publicera</button>
+        </div>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec, egestas aliquet felis.
-        Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat, eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et velit molestie, pellentesque ex non,
-        dictum dolor...</p>
-      <a class="more" href="#">Läs vidare</a>
 
-    </div>
-    <div class="blog-post">
-      <h3>Rektorn Informerar</h3>
-      <div class="date">
-        <span>Publicerat 16/10-2017</span>
+      <div class="blog-post">
+        <h3>Rektorn Informerar</h3>
+        <div class="date">
+          <span>Publicerat 16/10-2017</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec, egestas aliquet felis.
+          Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat, eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et velit molestie, pellentesque ex non,
+          dictum dolor...</p>
+        <a class="more" href="#">Läs vidare</a>
+
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec, egestas aliquet felis.
-        Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat, eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et velit molestie, pellentesque ex non,
-        dictum dolor...</p>
-      <a class="more" href="#">Läs vidare</a>
+      <div class="blog-post">
+        <h3>Rektorn Informerar</h3>
+        <div class="date">
+          <span>Publicerat 16/10-2017</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec, egestas aliquet felis.
+          Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat, eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et velit molestie, pellentesque ex non,
+          dictum dolor...</p>
+        <a class="more" href="#">Läs vidare</a>
 
-    </div>
-
-    <div class="blog-post">
-      <h3>oscar Informerar</h3>
-      <div class="date">
-        <span>Publicerat 16/10-2017</span>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec, egestas aliquet felis.
-        Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat, eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et velit molestie, pellentesque ex non,
-        dictum dolor...</p>
-      <a class="more" href="#">Läs vidare</a>
 
+      <div class="blog-post">
+        <h3>oscar Informerar</h3>
+        <div class="date">
+          <span>Publicerat 16/10-2017</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec, egestas aliquet felis.
+          Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat, eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et velit molestie, pellentesque ex non,
+          dictum dolor...</p>
+        <a class="more" href="#">Läs vidare</a>
+
+      </div>
+      <div id="timed" class="hide">
+        <h3>Ditt inlägg har publicerats</h3>
+      </div>
     </div>
-    <div id="timed" class="hide">
-      <h3>Ditt inlägg har publicerats</h3>
-    </div>
-  </div>
   </div>
 
   <div id="webb-uppgift1" class="ontop">
@@ -1852,156 +1855,6 @@
       </div>
     </div>
   </div>
-  <div id="popDiv" class="ontop">
-    <div class="center">
-      <div id="popup" class="attendance">
-        <div class="attcontainer">
-          <a href="#" onClick="hide('popDiv')">Close</a>
-          <br>
-          <table>
-            <tr>
-              <th>Elev</th>
-              <th>Kurser</th>
-              <th>Närvaro</th>
-              <th></th>
-              <th>Totalt Närvaro</th>
-            </tr>
-            <tr>
-              <td>Silvia</td>
-              <td>
-                <i>html</i>
-                <label class="switch">
-                  <input type="checkbox" onchange="showAttendence('data','checkBox')" id="checkBox">
-                  <span class="slider round"></span>
-                </label>
-              </td>
-              <td>
-                <div id="data">100%</div>
-              </td>
-
-              <td>
-                <label class="switch">
-                  <input type="checkbox" onchange="showAttendence('data1','checkBox1')" id="checkBox1">
-                  <span class="slider round"></span>
-                </label>
-              </td>
-
-              <td>
-                <div id="data1">90%</div>
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>
-                <i>Css</i>
-                <label class="switch">
-                  <input type="checkbox" onchange="showAttendence('data2', 'checkBox2')" id="checkBox2">
-                  <span class="slider round"></span>
-                </label>
-              </td>
-              <td>
-                <div id="data2">99%</div>
-              </td>
-
-            </tr>
-            <tr>
-              <td>Simon</td>
-              <td>
-                <i>html</i>
-                <label class="switch">
-                  <input type="checkbox" onchange="showAttendence('data3','checkBox3')" id="checkBox3">
-                  <span class="slider round"></span>
-                </label>
-              </td>
-              <td>
-                <div id="data3">89%</div>
-              </td>
-
-              <td>
-                <label class="switch">
-                  <input type="checkbox" onchange="showAttendence('data4','checkBox4')" id="checkBox4">
-                  <span class="slider round"></span>
-                </label>
-
-              </td>
-
-              <td>
-                <div id="data4">99%</div>
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>
-                <i>Css</i>
-                <label class="switch">
-                  <input type="checkbox" onchange="showAttendence('data5', 'checkBox5')" id="checkBox5">
-                  <span class="slider round"></span>
-                </label>
-              </td>
-              <td>
-                <div id="data5">100%</div>
-              </td>
-            </tr>
-            <tr>
-              <td>Jesse</td>
-              <td>
-                <i>html</i>
-                <label class="switch">
-                  <input type="checkbox" onchange="showAttendence('data6','checkBox6')" id="checkBox6">
-                  <span class="slider round"></span>
-                </label>
-              </td>
-              <td>
-                <div id="data6">100%</div>
-              </td>
-              <td>
-                <label class="switch">
-                  <input type="checkbox" onchange="showAttendence('data7','checkBox7')" id="checkBox7">
-                  <span class="slider round"></span>
-                </label>
-              </td>
-              <td>
-                <div id="data7">75%</div>
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>
-                <i>Css</i>
-                <label class="switch">
-                  <input type="checkbox" onchange="showAttendence('data8', 'checkBox8')" id="checkBox8">
-                  <span class="slider round"></span>
-                </label>
-              </td>
-              <td>
-                <div id="data8">100%</div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <select name="kuserlist" id="list">
-                  <option value="html">Html</option>
-                  <option value="javascript">JavaScript</option>
-                  <option value="agila">Agila</option>
-                  <option value="arbetsmetodik">Arbetsmetodik</option>
-                </select>
-              </td>
-              <td>
-                <input type="date" id="date" />
-              </td>
-              <td>
-                <Button onclick="generate()">Generate Code</Button>
-              </td>
-
-              <td>
-                <p id="response"></p>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <footer>
     <p>&copy; Copyright Snake Limited</p>
@@ -2017,11 +1870,9 @@
   <script src="../Javascript/newDate.js"></script>
   <script src="../Javascript/grouping.js"></script>
   <script src="../Javascript/opentab.js"></script>
-<<<<<<< HEAD
-=======
   <script src="../Javascript/dragNdrop.js"></script>
 
->>>>>>> oscar
+
 </body>
 
 </html>

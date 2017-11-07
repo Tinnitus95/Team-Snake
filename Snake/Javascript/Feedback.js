@@ -1,6 +1,6 @@
 function pop(div) {
 
-	document.getElementById(div).style.display = 'block';
+	document.getElementById(div).style.display = 'flex';
 
 }
 
@@ -14,16 +14,14 @@ document.onkeydown = function (evt) {
 	evt = evt || window.event;
 	if (evt.keyCode == 27) {
 		hide('webb-uppgift1');
-<<<<<<< HEAD
-		hide('popDiv');
-	}
-};
-
-=======
 		hide('group');
+		hide('popDiv');
+		hide('answered-form');
+		hide('answered-form2');
+		hide('answered-form3');
+
 	}
 };
->>>>>>> oscar
 function showAttendence(id, cb) {
 	var checkbox = document.getElementById(cb);
 	var data = document.getElementById(id);
