@@ -107,11 +107,21 @@
                       <td>VG</td>
                     </tr>
                   </table>
-                  <h3>Ladda upp din inlämningsuppgift</h3>
-                  <form method="">
-                    <input type="file" name="kursToUpload" id="kursToUpload1">
-                  </form>
-                  <button type="skicka" onclick="turnInAssignment('webbutveckling','kursToUpload1')">Skicka</button>
+                  <div class="turnin">
+                    <h3>Ladda upp din inlämningsuppgift</h3>
+                    <form method="">
+                      <div class="turnins">
+                        <input type="file" name="kursToUpload" id="kursToUpload1">
+                        <select>
+                          <option value="uppgift1">uppgift1</option>
+                          <option value="uppgift2">uppgift2</option>
+                          <option value="uppgift3">uppgift3</option>
+                          <option value="uppgift4">uppgift4</option>
+                        </select>
+                      </div>
+                      <button type="skicka" onclick="turnInAssignment('webbutveckling','kursToUpload1')">Skicka</button>
+                    </form>
+                  </div>
                 </div>
                 <div id="pr-test" class="tabcontent">
                   <table>
@@ -216,6 +226,12 @@
                   <h3>Ladda upp din inlämningsuppgift</h3>
                   <form method="">
                     <input type="file" name="kursToUpload" id="kursToUpload2">
+                    <select>
+                      <option value="uppgift1">uppgift1</option>
+                      <option value="uppgift2">uppgift2</option>
+                      <option value="uppgift3">uppgift3</option>
+                      <option value="uppgift4">uppgift4</option>
+                    </select>
                   </form>
                   <button type="skicka" onclick="turnInAssignment('lia','kursToUpload2')">Skicka</button>
                 </div>
@@ -322,6 +338,12 @@
                   <h3>Ladda upp din inlämningsuppgift</h3>
                   <form method="">
                     <input type="file" name="kursToUpload" id="kursToUpload3">
+                    <select>
+                      <option value="uppgift1">uppgift1</option>
+                      <option value="uppgift2">uppgift2</option>
+                      <option value="uppgift3">uppgift3</option>
+                      <option value="uppgift4">uppgift4</option>
+                    </select>
                   </form>
                   <button type="skicka" onclick="turnInAssignment('arbetsmetodik','kursToUpload3')">Skicka</button>
                 </div>
@@ -825,16 +847,16 @@
             <a class="fbclose" href="#" onClick="hide('feedback')">Close</a>
             <div class="questions">
               <form>
-       <p>Hur har dagen varit?</p>
-             <div class="cc-selector">
-                <input id="sad" type="radio" name="mood" value="sad" />
-                <label class="emojis-cc sad" for="sad"></label>
-                <input id="worried" type="radio" name="mood" value="worried" />
-                <label class="emojis-cc worried"for="worried"></label>
-                <input id="happy" type="radio" name="mood" value="happy" />
-                <label class="emojis-cc happy"for="happy"></label>
-                <input type="submit" onClick ="hide('feedback')">
-              </div>
+                <p>Hur har dagen varit?</p>
+                <div class="cc-selector">
+                  <input id="sad" type="radio" name="mood" value="sad" />
+                  <label class="emojis-cc sad" for="sad"></label>
+                  <input id="worried" type="radio" name="mood" value="worried" />
+                  <label class="emojis-cc worried" for="worried"></label>
+                  <input id="happy" type="radio" name="mood" value="happy" />
+                  <label class="emojis-cc happy" for="happy"></label>
+                  <input type="submit" onClick="hide('feedback')">
+                </div>
               </form>
             </div>
           </div>
