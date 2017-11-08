@@ -238,6 +238,7 @@ span {
     margin-left: 1px;
     text-align: center;
     margin-top: 0.2px;
+    font-weight: bold;
 }
 
 .main-form h3 {
@@ -289,6 +290,10 @@ footer {
     right: 0;
     bottom: 0;
     overflow: auto;
+}
+.questions span{
+  font-size: 1em;
+  vertical-align: text-bottom;
 }
 
 .turnin {
