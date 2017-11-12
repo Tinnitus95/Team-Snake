@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../Css/navbarwithlogo.css">
   <link rel="stylesheet" href="../Css/lararsida.css">
   <link rel="stylesheet" href="../Css/kurser.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 
@@ -26,6 +27,18 @@
       <ul class="main-nav">
         <li>
           <a href="#" onClick="openAttendence('attendence')">Närvaro</a>
+          <ul class="submenu" id="thinner">
+            <li>
+              <a href="#" onclick="pop('nervaro');graph();">FE 16</a>
+            </li>
+            <li>
+              <a href="#">FE 17</a>
+            </li>
+            <li>
+              <a href="#">FE 18</a>
+            </li>
+
+          </ul>
         </li>
         <li>
           <a href="https://calendar.google.com/">Schema</a>
@@ -50,19 +63,81 @@
       </ul>
     </nav>
   </header>
+
   <div class="wrapper">
-    <div id="attendence">
-      <select name="kuserlist" id="list">
-        <option value="html">Html</option>
-        <option value="javascript">JavaScript</option>
-        <option value="agila">Agila</option>
-        <option value="arbetsmetodik">Arbetsmetodik</option>
-      </select>
-      <input type="date" id="date" />
-      <Button onclick="generate()">Generate Code</Button>
-      <br>
-      <p id="response"></p>
+
+    <div class="ontop" id="nervaro">
+      <div class="center">
+        <div class="dokument">
+
+          <div class="tab-container">
+            <div class="w3-sidebar tab" style="width:100px;">
+
+
+              <button class="tablinks" onclick="openTab(event,'tab-1')">HTML</button>
+              <button class="tablinks" name="button">Javascript</button>
+              <button class="tablinks" name="button">CSS</button>
+            </div>
+            <div id="tab-1" class="tabcontent" style="margin:100px;">
+              <h3> Närvaro v.42</h3>
+              <svg viewBox="0 0 500 100" class="chart">
+
+                <polyline
+                fill="none"
+                stroke="#0074d9"
+                stroke-width="2"
+                points="
+                00,120
+                20,60
+                40,80
+                60,20
+                80,80
+                100,80
+                120,60
+                140,100
+                160,90
+                180,80
+                200, 110
+                220, 10
+                240, 70
+                260, 100
+                280, 100
+                300, 40
+                320, 0
+                340, 100
+                360, 100
+                380, 120
+                400, 60
+                420, 70
+                440, 80
+                "
+                />
+
+              </svg>
+              <hr>
+              <div id="attendence">
+                <h3> kodgenerator</h3>
+                <select name="kuserlist" id="list">
+                  <option value="html">Html</option>
+                  <option value="javascript">JavaScript</option>
+                  <option value="agila">Agila</option>
+                  <option value="arbetsmetodik">Arbetsmetodik</option>
+                </select>
+                <input type="date" id="date" />
+                <Button onclick="generate()">Generate Code</Button>
+                <br>
+                <p id="response"></p>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+
+
+
 
     <div id="hidestart">
 
@@ -1527,61 +1602,61 @@
       <div class="groupcontainer">
 
 
-      <div id="groupstyle">
-        <a class="fbclose" href="#" onClick="hide('group')">Close</a>
-        <h1>Uppgift 2: Gruppindelning</h1>
+        <div id="groupstyle">
+          <a class="fbclose" href="#" onClick="hide('group')">Close</a>
+          <h1>Uppgift 2: Gruppindelning</h1>
 
-        <label for="quantity">antal grupper:</label>
-        <input id="groupNr" type="number" name="quantity" min="1" onchange="groupGenerateGroups()">
+          <label for="quantity">antal grupper:</label>
+          <input id="groupNr" type="number" name="quantity" min="1" onchange="groupGenerateGroups()">
 
-        <div id="groups">
+          <div id="groups">
 
+          </div>
+        </div>
+
+
+
+        <div class="class">
+          <ol data-draggable="target">
+            <h2>KLASS FE17</h2>
+
+
+            <li data-draggable="item" draggable="true">Jesse Jonsson</li>
+            <li data-draggable="item" draggable="true">Simon Gribert</li>
+            <li data-draggable="item" draggable="true">Natasha Bosnjak</li>
+            <li data-draggable="item" draggable="true">Silvia Morais</li>
+            <li data-draggable="item" draggable="true">Adam Eriksson</li>
+            <li data-draggable="item" draggable="true">Emil Olsson</li>
+            <li data-draggable="item" draggable="true">Kristian Kjeldsen</li>
+            <li data-draggable="item" draggable="true">Oscar Fredriksson</li>
+            <li data-draggable="item" draggable="true">Lina Svensson</li>
+            <li data-draggable="item" draggable="true">Ella Olofsson</li>
+            <li data-draggable="item" draggable="true">Signy Olsson</li>
+            <li data-draggable="item" draggable="true">Ella Kron</li>
+            <li data-draggable="item" draggable="true">Hugo Stigsson</li>
+            <li data-draggable="item" draggable="true">Tanja Niklasson</li>
+            <li data-draggable="item" draggable="true">Viktoria Albertsson</li>
+            <li data-draggable="item" draggable="true">Gunhild Axelsen</li>
+            <li data-draggable="item" draggable="true">Judit Jensen</li>
+            <li data-draggable="item" draggable="true">Gunvor Olson</li>
+            <li data-draggable="item" draggable="true">Mari Wang</li>
+            <li data-draggable="item" draggable="true">Birgitte Strand</li>
+            <li data-draggable="item" draggable="true">Jarl Hummel</li>
+            <li data-draggable="item" draggable="true">Cathrine Vinter</li>
+            <li data-draggable="item" draggable="true">Asger Einarsson</li>
+            <li data-draggable="item" draggable="true">Lasse Hall</li>
+            <li data-draggable="item" draggable="true">Osvald Vollan</li>
+            <li data-draggable="item" draggable="true">Sif Andreasen</li>
+            <li data-draggable="item" draggable="true">Hanna Jönsson</li>
+            <li data-draggable="item" draggable="true">Irene Hansen</li>
+            <li data-draggable="item" draggable="true">Svante Larsson</li>
+            <li data-draggable="item" draggable="true">Birger Ek</li>
+            <li data-draggable="item" draggable="true">Thomas Sørensen</li>
+
+
+          </ol>
         </div>
       </div>
-
-
-
-    <div class="class">
-      <ol data-draggable="target">
-        <h2>KLASS FE17</h2>
-
-
-        <li data-draggable="item" draggable="true">Jesse Jonsson</li>
-        <li data-draggable="item" draggable="true">Simon Gribert</li>
-        <li data-draggable="item" draggable="true">Natasha Bosnjak</li>
-        <li data-draggable="item" draggable="true">Silvia Morais</li>
-        <li data-draggable="item" draggable="true">Adam Eriksson</li>
-        <li data-draggable="item" draggable="true">Emil Olsson</li>
-        <li data-draggable="item" draggable="true">Kristian Kjeldsen</li>
-        <li data-draggable="item" draggable="true">Oscar Fredriksson</li>
-        <li data-draggable="item" draggable="true">Lina Svensson</li>
-        <li data-draggable="item" draggable="true">Ella Olofsson</li>
-        <li data-draggable="item" draggable="true">Signy Olsson</li>
-        <li data-draggable="item" draggable="true">Ella Kron</li>
-        <li data-draggable="item" draggable="true">Hugo Stigsson</li>
-        <li data-draggable="item" draggable="true">Tanja Niklasson</li>
-        <li data-draggable="item" draggable="true">Viktoria Albertsson</li>
-        <li data-draggable="item" draggable="true">Gunhild Axelsen</li>
-        <li data-draggable="item" draggable="true">Judit Jensen</li>
-        <li data-draggable="item" draggable="true">Gunvor Olson</li>
-        <li data-draggable="item" draggable="true">Mari Wang</li>
-        <li data-draggable="item" draggable="true">Birgitte Strand</li>
-        <li data-draggable="item" draggable="true">Jarl Hummel</li>
-        <li data-draggable="item" draggable="true">Cathrine Vinter</li>
-        <li data-draggable="item" draggable="true">Asger Einarsson</li>
-        <li data-draggable="item" draggable="true">Lasse Hall</li>
-        <li data-draggable="item" draggable="true">Osvald Vollan</li>
-        <li data-draggable="item" draggable="true">Sif Andreasen</li>
-        <li data-draggable="item" draggable="true">Hanna Jönsson</li>
-        <li data-draggable="item" draggable="true">Irene Hansen</li>
-        <li data-draggable="item" draggable="true">Svante Larsson</li>
-        <li data-draggable="item" draggable="true">Birger Ek</li>
-        <li data-draggable="item" draggable="true">Thomas Sørensen</li>
-
-
-      </ol>
-    </div>
-</div>
     </div>
 
 
@@ -1877,7 +1952,7 @@
   <script src="../Javascript/grouping.js"></script>
   <script src="../Javascript/opentab.js"></script>
   <script src="../Javascript/dragNdrop.js"></script>
-
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 
 </html>

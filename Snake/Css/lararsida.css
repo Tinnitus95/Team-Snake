@@ -21,6 +21,7 @@ body {
     margin: 0;
     overflow: hidden;
     width: 100%;
+
 }
 
 
@@ -49,7 +50,7 @@ CSS reads down the page, so code at the bottom will overwrite the code at the to
 .submenu a {
     background-color: #999;
     justify-content: center;
-    display: flex;
+
     font-size: 1em;
 }
 
@@ -323,12 +324,10 @@ input[type="date"] {
     width: 80%;
 }
 
-#attendence {
-    display: none;
-}
+
 
 #attendence p {
-    color: white;
+    
     text-align: center;
 }
 
@@ -411,15 +410,34 @@ footer {
   margin: 0;
   min-width: 160px;
 }
+/*..................................Närvaro..................................*/
+.chart {
+background: white;
+width: 500px;
+height: 100px;
+border-left: 1px dotted #555;
+border-bottom: 1px dotted #555;
 
+}
+
+
+.dokument{
+  width: 60%;
+
+  background-color: white;
+}
 
 /*..................................MEDIA..................................*/
 
-@media (min-width: 900px) {
+@media (min-width: 770px) {
     .submenu {
         width: 25%;
-        margin-left: 2%;
+        margin-left: 1%;
         position: absolute;
+    }
+    #thinner{
+      width: 15%;
+
     }
 }
 
