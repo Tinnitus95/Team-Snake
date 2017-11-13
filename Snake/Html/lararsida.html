@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="../Css/navbarwithlogo.css">
   <link rel="stylesheet" href="../Css/lararsida.css">
   <link rel="stylesheet" href="../Css/kurser.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 
@@ -29,7 +28,10 @@
           <a href="#" onClick="openAttendence('attendence')">Närvaro</a>
           <ul class="submenu" id="thinner">
             <li>
-              <a href="#" onclick="pop('nervaro');graph();">FE 16</a>
+              <a href="#" onclick="openAttendence('attendence')">Generera Kod</a>
+            </li>
+            <li>
+              <a href="#" onclick="pop('nervaro')">FE 16</a>
             </li>
             <li>
               <a href="#">FE 17</a>
@@ -69,72 +71,409 @@
     <div class="ontop" id="nervaro">
       <div class="center">
         <div class="dokument">
+          <div class="sidebar_1 tab" >
 
+
+            <button class="tablinks" onclick="openSide(event,'tab-1')">HTML</button>
+            <button class="tablinks" onclick="openSide(event,'tab-2')">JavaScript</button>
+            <button class="tablinks" onclick="openSide(event,'tab-3')">CSS</button>
+          </div>
           <div class="tab-container">
-            <div class="w3-sidebar tab" style="width:100px;">
 
-
-              <button class="tablinks" onclick="openTab(event,'tab-1')">HTML</button>
-              <button class="tablinks" name="button">Javascript</button>
-              <button class="tablinks" name="button">CSS</button>
-            </div>
-            <div id="tab-1" class="tabcontent" style="margin:100px;">
+            <div id="tab-1" class="tabcontent" >
+              <a class="attendclose" href="#" onClick="hide('nervaro')">Close</a>
               <h3> Närvaro v.42</h3>
-              <svg viewBox="0 0 500 100" class="chart">
-
-                <polyline
-                fill="none"
-                stroke="#0074d9"
-                stroke-width="2"
-                points="
-                00,120
-                20,60
-                40,80
-                60,20
-                80,80
-                100,80
-                120,60
-                140,100
-                160,90
-                180,80
-                200, 110
-                220, 10
-                240, 70
-                260, 100
-                280, 100
-                300, 40
-                320, 0
-                340, 100
-                360, 100
-                380, 120
-                400, 60
-                420, 70
-                440, 80
-                "
-                />
-
-              </svg>
               <hr>
-              <div id="attendence">
-                <h3> kodgenerator</h3>
-                <select name="kuserlist" id="list">
-                  <option value="html">Html</option>
-                  <option value="javascript">JavaScript</option>
-                  <option value="agila">Agila</option>
-                  <option value="arbetsmetodik">Arbetsmetodik</option>
-                </select>
-                <input type="date" id="date" />
-                <Button onclick="generate()">Generate Code</Button>
-                <br>
-                <p id="response"></p>
+              <canvas id="myCanvas" width="1000px" height="600px"></canvas>
+              <hr>
+              <button class="accordion">Detaljerad Närvaro</button>
+              <div class="panel">
+                <button class="accordion">Oscar Fredriksson</button>
+                <div class="panel">
+                  <table>
+                    <tr>
+                      <th>Tillfälle</th>
+                      <th>Närvaro</th>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>95%</td>
+                    </tr>
+                    <tr>
+                      <td>16/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>17/10</td>
+                      <td>nej</td>
+                    </tr>
+                    <tr>
+                      <td>18/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>19/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>20/10</td>
+                      <td>ja</td>
+                    </tr>
+
+                  </table>
+                </div>
+                <button class="accordion">Jesse Jonsson</button>
+                <div class="panel">
+                  <table>
+                    <tr>
+                      <th>Tillfälle</th>
+                      <th>Närvaro</th>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>95%</td>
+                    </tr>
+                    <tr>
+                      <td>16/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>17/10</td>
+                      <td>nej</td>
+                    </tr>
+                    <tr>
+                      <td>18/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>19/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>20/10</td>
+                      <td>ja</td>
+                    </tr>
+
+                  </table>
+                </div>
+                <button class="accordion">Simon Gribert</button>
+                <div class="panel">
+                  <table>
+                    <tr>
+                      <th>Tillfälle</th>
+                      <th>Närvaro</th>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>95%</td>
+                    </tr>
+                    <tr>
+                      <td>16/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>17/10</td>
+                      <td>nej</td>
+                    </tr>
+                    <tr>
+                      <td>18/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>19/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>20/10</td>
+                      <td>ja</td>
+                    </tr>
+
+                  </table>
+                </div>
+                <button class="accordion">Natasha Bosnjak</button>
+                <div class="panel">
+                  <table>
+                    <tr>
+                      <th>Tillfälle</th>
+                      <th>Närvaro</th>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>95%</td>
+                    </tr>
+                    <tr>
+                      <td>16/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>17/10</td>
+                      <td>nej</td>
+                    </tr>
+                    <tr>
+                      <td>18/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>19/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>20/10</td>
+                      <td>ja</td>
+                    </tr>
+
+                  </table>
+                </div>
+                <button class="accordion">Silvia Morais</button>
+                <div class="panel">
+                  <table>
+                    <tr>
+                      <th>Tillfälle</th>
+                      <th>Närvaro</th>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>95%</td>
+                    </tr>
+                    <tr>
+                      <td>16/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>17/10</td>
+                      <td>nej</td>
+                    </tr>
+                    <tr>
+                      <td>18/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>19/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>20/10</td>
+                      <td>ja</td>
+                    </tr>
+
+                  </table>
+                </div>
+                <button class="accordion">Adam Eriksson</button>
+                <div class="panel">
+                  <table>
+                    <tr>
+                      <th>Tillfälle</th>
+                      <th>Närvaro</th>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>95%</td>
+                    </tr>
+                    <tr>
+                      <td>16/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>17/10</td>
+                      <td>nej</td>
+                    </tr>
+                    <tr>
+                      <td>18/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>19/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>20/10</td>
+                      <td>ja</td>
+                    </tr>
+
+                  </table>
+                </div>
+                <button class="accordion">Emil Olsson</button>
+                <div class="panel">
+                  <table>
+                    <tr>
+                      <th>Tillfälle</th>
+                      <th>Närvaro</th>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>95%</td>
+                    </tr>
+                    <tr>
+                      <td>16/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>17/10</td>
+                      <td>nej</td>
+                    </tr>
+                    <tr>
+                      <td>18/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>19/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>20/10</td>
+                      <td>ja</td>
+                    </tr>
+
+                  </table>
+                </div>
+                <button class="accordion">Kristian Kjeldsen</button>
+                <div class="panel">
+                  <table>
+                    <tr>
+                      <th>Tillfälle</th>
+                      <th>Närvaro</th>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>95%</td>
+                    </tr>
+                    <tr>
+                      <td>16/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>17/10</td>
+                      <td>nej</td>
+                    </tr>
+                    <tr>
+                      <td>18/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>19/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>20/10</td>
+                      <td>ja</td>
+                    </tr>
+
+                  </table>
+                </div>
+                <button class="accordion">Lina Svensson</button>
+                <div class="panel">
+                  <table>
+                    <tr>
+                      <th>Tillfälle</th>
+                      <th>Närvaro</th>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>95%</td>
+                    </tr>
+                    <tr>
+                      <td>16/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>17/10</td>
+                      <td>nej</td>
+                    </tr>
+                    <tr>
+                      <td>18/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>19/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>20/10</td>
+                      <td>ja</td>
+                    </tr>
+
+                  </table>
+                </div>
+                <button class="accordion">Ella Olofsson</button>
+                <div class="panel">
+                  <table>
+                    <tr>
+                      <th>Tillfälle</th>
+                      <th>Närvaro</th>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>95%</td>
+                    </tr>
+                    <tr>
+                      <td>16/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>17/10</td>
+                      <td>nej</td>
+                    </tr>
+                    <tr>
+                      <td>18/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>19/10</td>
+                      <td>ja</td>
+                    </tr>
+                    <tr>
+                      <td>20/10</td>
+                      <td>ja</td>
+                    </tr>
+
+                  </table>
+                </div>
               </div>
+
               <hr>
+            </div>
+            <div id="tab-2" class="tabcontent">
+              <a class="attendclose" href="#" onClick="hide('nervaro')">Close</a>
+              <h3> Närvaro v.42</h3>
+              <hr>
+              <canvas id="myCanvas2" width="1000px" height="600px"></canvas>
+              <hr>
+              <button class="accordion">Detaljerad Närvaro</button>
+
+
+              <hr>
+
+            </div>
+            <div id="tab-3" class="tabcontent">
+              <a class="attendclose" href="#" onClick="hide('nervaro')">Close</a>
+              <h3> Närvaro v.42</h3>
+              <hr>
+              <canvas id="myCanvas3" width="1000px" height="600px"></canvas>
+              <hr>
+              <button class="accordion">Detaljerad Närvaro</button>
+
+
+              <hr>
+
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <div id="attendence">
+      <h3> kodgenerator</h3>
+      <select name="kuserlist" id="list">
+        <option value="html">Html</option>
+        <option value="javascript">JavaScript</option>
+        <option value="agila">Agila</option>
+        <option value="arbetsmetodik">Arbetsmetodik</option>
+      </select>
+      <input type="date" id="date" />
+      <Button onclick="generate()">Generate Code</Button>
+      <br>
+      <p id="response"></p>
+    </div>
 
 
 
@@ -1941,7 +2280,7 @@
     <p>&copy; Copyright Snake Limited</p>
   </footer>
   <script src="../Javascript/dropdownmenu.js"></script>
-  <script src="../Javascript/kursSida_L.js"></script>
+  <script src="../Javascript/tabcontainer.js"></script>
   <script src="../Javascript/toggles.js"></script>
   <script src="../Javascript/submit.js"></script>
   <script src="../Javascript/Feedback.js"></script>
@@ -1952,7 +2291,11 @@
   <script src="../Javascript/grouping.js"></script>
   <script src="../Javascript/opentab.js"></script>
   <script src="../Javascript/dragNdrop.js"></script>
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="../Javascript/accordion.js"></script>
+  <script src="../Javascript/graph.js"></script>
+
+  </script>
+
 </body>
 
 </html>

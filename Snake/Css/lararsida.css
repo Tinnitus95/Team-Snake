@@ -324,10 +324,13 @@ input[type="date"] {
     width: 80%;
 }
 
-
+#attendence{
+  display: none;
+  background-color: white;
+}
 
 #attendence p {
-    
+
     text-align: center;
 }
 
@@ -411,21 +414,66 @@ footer {
   min-width: 160px;
 }
 /*..................................Närvaro..................................*/
-.chart {
-background: white;
-width: 500px;
-height: 100px;
-border-left: 1px dotted #555;
-border-bottom: 1px dotted #555;
-
+.sidebar_1{
+  height: inherit;
+  position: fixed!important;
+  z-index: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
-
 
 .dokument{
   width: 60%;
-
+  height: 60%;
   background-color: white;
+  overflow: scroll;
 }
+#tab-1, #tab-2, #tab-3{
+  margin-left: 120px;
+  display: flex;
+  flex-direction: column;
+}
+#tab-2, #tab-3{
+  display: none;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 8px;
+    width: 90%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 8px;
+    background-color: white;
+    display: none;
+}
+.panel table{
+  width: 90% !important;
+}
+a.attendclose {
+    align-self: flex-end;
+    padding: 5px 10px;
+}
+/*..................................Graph..................................*/
+  #myCanvas, #myCanvas2, #myCanvas3{
+    width: 90%;
+    border: 1px solid black;
+  }
 
 /*..................................MEDIA..................................*/
 
