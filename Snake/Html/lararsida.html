@@ -25,10 +25,10 @@
     <nav class="navigation">
       <ul class="main-nav">
         <li>
-          <a href="#" onClick="openAttendence('attendence')">Närvaro</a>
+          <a href="#" >Närvaro</a>
           <ul class="submenu" id="thinner">
             <li>
-              <a href="#" onclick="openAttendence('attendence')">Generera Kod</a>
+              <a href="#" onclick="openAttendence('codePop')">Generera Kod</a>
             </li>
             <li>
               <a href="#" onclick="pop('nervaro')">FE 16</a>
@@ -461,7 +461,10 @@
       </div>
     </div>
 
-    <div id="attendence">
+    <div class="ontop" id="codePop">
+      <div class="center">
+        <div class="attendence" id="popup">
+            <a class=close href="#" onClick="hide('codePop')">X</a>
       <h3> kodgenerator</h3>
       <select name="kuserlist" id="list">
         <option value="html">Html</option>
@@ -474,6 +477,10 @@
       <br>
       <p id="response"></p>
     </div>
+  </div>
+
+</div>
+
 
 
 

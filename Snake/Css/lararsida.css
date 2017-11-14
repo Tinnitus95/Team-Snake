@@ -324,15 +324,8 @@ input[type="date"] {
     width: 80%;
 }
 
-#attendence{
-  display: none;
-  background-color: white;
-}
 
-#attendence p {
 
-    text-align: center;
-}
 
 .next-prev a {
     display: inline-flex;
@@ -469,6 +462,19 @@ a.attendclose {
     align-self: flex-end;
     padding: 5px 10px;
 }
+#popup {
+    border-radius: 5%;
+    border-style: solid;
+    border-width: 5px;
+    height: auto;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 15px;
+}
+#popup p, #popup h3{
+  text-align: center;
+}
+
 /*..................................Graph..................................*/
   #myCanvas, #myCanvas2, #myCanvas3{
     width: 90%;
