@@ -5,7 +5,6 @@ function pop(div) {
 }
 function popacc() {
 	document.getElementById("resetform").reset();
-	document.getElementById('timedacc').style.display = 'none';
 	document.getElementById('account').style.display = 'flex';
 	document.getElementById("popupacc").style.display = "flex";
 
@@ -23,13 +22,17 @@ document.onkeydown = function (evt) {
 		hide('account');
 	}
 };
-function submitaccount() {
-  document.getElementById("popupacc").style.display = "none";
-  var timed = document.getElementById("timedacc");
-  timed.style.display = "flex";
-  setTimeout(function() {
-  	 document.getElementById("account").style.display = "none"
-  }, 1000);
+function submitaccount(name, table, reset) {
+  var listitem = document.createElement("LI");
+
+  var taskname = document.getElementById(name).value;
+
+  var input = document.createTextNode(taskname);
+
+  listitem.appendChild(input);
+
+  document.getElementById(table).appendChild(listitem);
+  document.getElementById(reset).reset();
 }
 /*document.onkeydown = function (evt) {
 	evt = evt || window.event;

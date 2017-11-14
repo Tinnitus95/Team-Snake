@@ -308,6 +308,11 @@ input[type="date"] {
     align-self: flex-end;
     margin: 5px;
 }
+.submitform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 /*----------------------------------FEEDBACK POPUP----------------------- */

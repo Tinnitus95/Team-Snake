@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Snake</title>
   <link rel="stylesheet" href="../Css/navbarwithlogo.css">
-  <link rel="stylesheet" href="../Css/lararsida.css">
+  <link rel="stylesheet" href="../Css/adminsida.css">
 
 
 </head>
@@ -21,7 +21,18 @@
     <nav class="navigation">
       <ul class="main-nav">
         <li>
-          <a href="#" onclick="popacc()">Hantera Konton</a>
+          <a href="#">Hantera Konton</a>
+          <ul class="submenu" id="submenux">
+            <li>
+              <a href="#" onclick="popacc()">Student</a>
+            </li>
+            <li>
+              <a href="#" >Lärare</a>
+            </li>
+            <li>
+              <a href="#" >Admin</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a href="https://calendar.google.com/">Schema</a>
@@ -115,26 +126,28 @@
   </div>
   <div id="account" class="ontop">
     <div class="center">
-      <div id="popupacc" class="acc">
-        <a href="#" onClick="hide('account')">Close</a>
-        <h2>Skapa nytt konto</h2>
-        <form onsubmit="submitaccount()" class="submitform" id="resetform">
-          <div id="selectorcontainer">
-            <p>Typ: </p>
-            <select>
-              <option>Elev</option>
-              <option>Lärare</option>
-              <option>Admin</option>
-            </select>
-          </div>
-          <input type="text" placeholder="Användarnamn" required="required">
-          <input type="password" placeholder="Lösenord" required="required">
-          <input type="email" placeholder="E-mail" required="required">
-          <input type="submit" value="Skapa Konto" id="sumbitbutton">
-        </form>
-      </div>
-      <div id="timedacc" class="hide">
-        <h3>Kontot har skapats.</h3>
+      <div id="popupacc" class="acc">     
+        <div class="existingaccount" id="studentlist">
+          <p>Student Konton</p>
+          <ol id="studentlogins">
+            <li>Oscar</li>
+            <li>Jesse</li>
+            <li>Simon</li>
+            <li>Natasha</li>
+            <li>Silvia</li>
+            <li>Elias</li>
+          </ol>
+        </div>
+        <div class="newaccount">
+          <p>Skapa nytt student konto</p>
+          <form onsubmit="submitaccount('newstudent', 'studentlogins', 'resetform')" class="submitform" id="resetform">
+            <input type="text" placeholder="Användarnamn" required="required" id="newstudent">
+            <input type="password" placeholder="Lösenord" required="required">
+            <input type="email" placeholder="E-mail" required="required">
+            <input type="submit" value="Skapa Konto" id="sumbitbutton">
+          </form>
+        </div>
+        <a href="#" onClick="hide('account')" class="closeaccount">Close</a>
       </div>
     </div>
   </div>
