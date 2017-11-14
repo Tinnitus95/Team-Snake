@@ -130,15 +130,16 @@
         <div class="existingaccount" id="studentlist">
           <p>Student Konton</p>
           <ol id="studentlogins">
-            <li>Oscar</li>
-            <li>Jesse</li>
-            <li>Simon</li>
-            <li>Natasha</li>
-            <li>Silvia</li>
-            <li>Elias</li>
+            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc')">oscar</li>
+            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc')">jesse</li>
+            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc')">simon</li>
+            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc')">natasha</li>
+            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc')">silvia</li>
+            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc')">elias</li>
           </ol>
+          <button onclick="createaccount('hidenewacc', 'showedit')">Nytt Konto</button>
         </div>
-        <div class="newaccount">
+        <div class="newaccount" id="hidenewacc">
           <p>Skapa nytt student konto</p>
           <form onsubmit="submitaccount('newstudent', 'studentlogins', 'resetform')" class="submitform" id="resetform">
             <input type="text" placeholder="Användarnamn" required="required" id="newstudent">
@@ -147,10 +148,22 @@
             <input type="submit" value="Skapa Konto" id="sumbitbutton">
           </form>
         </div>
+        <div class="editacc" id="showedit">
+          <p>Redigera Konto</p>
+          <p id="thisaccount"></p>
+          <form onsubmit="editacounts()">
+            <input type="text" required="required" id="accname">
+            <input type="password" placeholder="Nytt Lösenord" required="required">
+            <input type="email" required="required" id="emailacc">
+            <input type="submit" value="Spara">
+          </form>
+        </div>
         <a href="#" onClick="hide('account')" class="closeaccount">Close</a>
       </div>
     </div>
   </div>
+
+
 
   <footer>
     <p>&copy; Copyright Snake Limited</p>
