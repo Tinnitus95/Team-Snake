@@ -15,10 +15,11 @@ document.onkeydown = function (evt) {
 	if (evt.keyCode == 27) {
 		hide('webb-uppgift1');
 		hide('group');
-		hide('popDiv');
+		hide('codePop');
 		hide('answered-form');
 		hide('answered-form2');
 		hide('answered-form3');
+		hide('nervaro');
 
 	}
 };
