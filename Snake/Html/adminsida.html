@@ -20,6 +20,8 @@
 
     <nav class="navigation">
       <ul class="main-nav">
+          <li><a href="#" onclick="popclass()">Hantera Klasser</a>
+          </li>
         <li>
           <a href="#">Hantera Konton</a>
           <ul class="submenu" id="submenux">
@@ -162,6 +164,49 @@
       </div>
     </div>
   </div>
+    
+     <div id="classes" class="ontop">
+    <div class="center">
+      <div id="popupclass" class="class">
+        <a href="#" onClick="hide('classes')">Close</a>
+        <h2>Skapa ny Klass</h2>
+        <form onsubmit="submitclass()" class="submitform" id="resetform2">
+         
+           <div class="input-container">
+              <input type="text" id="firstname" placeholder="Förnamn" required="required">
+              <input type="text" id="lastname" placeholder="Efternamn" required="required">
+              <input type="text" id="email" placeholder="E-mail" required="required">
+              <input type="text" id="phonenum" placeholder="Telefon (Frivilligt)">
+          </div> 
+               
+               <div class="button-container">
+                <button type="button" onclick="addHtmlTableRow(); clearFields();">Lägg till Elev</button>
+                <button type="button" onclick="editHtmlTbleSelectedRow(); clearFields();">Redigera</button>
+                <button type="button" onclick="removeSelectedRow();">Ta bort</button>
+                <input type="submit" value="Skapa Klass" id="submitbutton">  
+               </div>
+                  
+        
+       <div class="table-container">
+         <table id="student-table">
+          <tr>
+            <th>Förnamn</th>
+            <th>Efternamn</th>
+            <th>Email</th>
+            <th>telefon</th>
+            </tr>
+           <tr>
+         </table>
+          </div>
+           </form>
+         </div>
+   
+        <div id="timedclass" class="hide">
+        <h3>Klassen har skapats.</h3>
+      </div>
+    </div>
+  </div>
+
 
 
 

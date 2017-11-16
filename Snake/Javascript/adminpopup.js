@@ -11,6 +11,15 @@ function popacc() {
 	document.getElementById('account').style.display = 'flex';
 	document.getElementById("popupacc").style.display = "flex";
 }
+
+function popclass() {
+	document.getElementById("resetform2").reset();
+	document.getElementById('timedclass').style.display = 'none';
+	document.getElementById('classes').style.display = 'flex';
+	document.getElementById("popupclass").style.display = "flex";
+
+}
+
 //To detect escape button
 document.onkeydown = function (evt) {
 	evt = evt || window.event;
@@ -29,6 +38,15 @@ function submitaccount(name, table, reset) {
   	listitem.appendChild(input);
   	document.getElementById(table).appendChild(listitem);
   	document.getElementById(reset).reset();
+}
+
+function submitclass() {
+  document.getElementById("popupclass").style.display = "none";
+  var timed = document.getElementById("timedclass");
+  timed.style.display = "flex";
+  setTimeout(function() {
+  	 document.getElementById("classes").style.display = "none"
+  }, 1000);
 }
 
 function editaccount(name, hide, show, aname, aemail, p, pass) {
@@ -63,3 +81,109 @@ function editaccounts(name, logins, p, hide, show) {
 		hide('vfeedback');
 	}
 };*/
+
+
+/*-------------add student---------------------------------------------*/
+
+  
+ var rIndex,
+                table = document.getElementById("student-table");
+            
+            // check the empty input
+            function checkEmptyInput()
+            {
+                var isEmpty = false,
+                    firstname = document.getElementById("firstname").value,
+                    lastname = document.getElementById("lastname").value,
+                    email = document.getElementById("email").value,
+                    phonenum = document.getElementById("phonenum").value;
+                
+            
+               
+                
+            }
+            
+            // add Row
+            function addHtmlTableRow()
+            {
+                // get the table by id
+                // create a new row and cells
+                // get value from input text
+                // set the values into row cell's
+                if(!checkEmptyInput()){
+                var newRow = table.insertRow(table.length),
+                    cell1 = newRow.insertCell(0),
+                    cell2 = newRow.insertCell(1),
+                    cell3 = newRow.insertCell(2),
+                    cell4 = newRow.insertCell(3),
+                    firstname = document.getElementById("firstname").value,
+                    lastname = document.getElementById("lastname").value,
+                    email = document.getElementById("email").value,
+                    phonenum = document.getElementById("phonenum").value;
+            
+                cell1.innerHTML = firstname;
+                cell2.innerHTML = lastname;
+                cell3.innerHTML = email;
+                cell4.innerHTML = phonenum;    
+                // call the function to set the event to the new row
+                selectedRowToInput();  
+            }
+            }
+            
+            // display selected row data into input text
+            function selectedRowToInput()
+            {
+                
+                for(var i = 1; i < table.rows.length; i++)
+                {
+                    table.rows[i].onclick = function()
+                    {
+                      // get the seected row index
+                      rIndex = this.rowIndex;
+                      document.getElementById("firstname").value = this.cells[0].innerHTML;
+                      document.getElementById("lastname").value = this.cells[1].innerHTML;
+                      document.getElementById("email").value = this.cells[2].innerHTML;
+                      document.getElementById("phonenum").value = this.cells[3].innerHTML;
+                    };
+                }
+            }
+            selectedRowToInput();
+            
+            function editHtmlTbleSelectedRow()
+            {
+                var firstname = document.getElementById("firstname").value,
+                    lastname = document.getElementById("lastname").value,
+                    email = document.getElementById("email").value,
+                    phonenum = document.getElementById("phonenum").value;   
+                
+               if(!checkEmptyInput()){
+                table.rows[rIndex].cells[0].innerHTML = firstname;
+                table.rows[rIndex].cells[1].innerHTML = lastname;
+                table.rows[rIndex].cells[2].innerHTML = email;
+                table.rows[rIndex].cells[3].innerHTML = phonenum;   
+              }
+            }
+            
+            function removeSelectedRow()
+            {
+                table.deleteRow(rIndex);
+                // clear input text
+                document.getElementById("firstname").value = "";
+                document.getElementById("lastname").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("phonenum").value = "";
+            }
+        
+    
+             function clearFields() {
+
+             document.getElementById("firstname").value = "";
+             document.getElementById("lastname").value = "";
+             document.getElementById("email").value = "";
+             document.getElementById("phonenum").value = "";         
+           }
+
+
+
+
+
