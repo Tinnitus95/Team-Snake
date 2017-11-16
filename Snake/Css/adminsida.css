@@ -214,6 +214,99 @@ input[type="date"] {
     align-items: center;
 }
 
+
+/*------------------------create class popup---------------------*/
+
+#popupclass,
+#timedclass {
+    display: flex;
+    height: 80%;
+    overflow: scroll;
+    width: 60%;
+    box-shadow: 0 0 10px;
+    background-color: #ffffff;
+}
+
+.class a,
+{
+    align-items: flex-start;
+}
+
+.class h2 {
+    align-self: center;
+}
+
+.input-container {
+    display: flex;
+}
+
+.input-container input {
+    height: 20px;
+    width: 20%;
+    align-self: center;
+    border: 1px solid grey;
+}
+
+#submitbutton {
+    float: right;
+    height: 24px;
+    width: auto;
+}
+
+.class {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.table-wrapper {
+    height: 100%;
+}
+
+.submitform {
+    margin: 1em;
+}
+
+#student-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    max-height: 100%;
+    overflow: scroll;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-top: 15px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:hover {
+    background-color: #eeeeee;
+}
+
+
+/*----------------------create class poup---------------------------*/
+
 #popupacc {
     height: auto;
     justify-content: space-between;
