@@ -31,20 +31,31 @@ function submitaccount(name, table, reset) {
   	document.getElementById(reset).reset();
 }
 
-function editaccount(name, hide, show, aname, aemail) {
+function editaccount(name, hide, show, aname, aemail, p, pass) {
 	let kyh = "@student.kyh.se";
 	document.getElementById(hide).style.display = 'none';
 	document.getElementById(show).style.display = 'flex';
 	document.getElementById(aname).value = name.innerHTML;
 	document.getElementById(aemail).value = name.innerHTML + kyh; 
-	document.getElementById('thisaccount').innerHTML = name.innerHTML;
+	document.getElementById(p).innerHTML = name.innerHTML;
+	document.getElementById(pass).value = "";
 }
 function createaccount(hide, show) {
 	document.getElementById(show).style.display = 'none';
 	document.getElementById(hide).style.display = 'flex';
 }
-function editaccounts(name) {
+function editaccounts(name, logins, p, hide, show) {
 	var newname = document.getElementById(name).value;
+	var ol = document.getElementById(logins);
+	var items = ol.getElementsByTagName('LI');
+	var para = document.getElementById(p).innerHTML;
+	for (var i = 0; i < items.length; i++) {
+		if(items[i].innerHTML == para) {
+			items[i].innerHTML = newname;
+		} 
+	}
+	document.getElementById(show).style.display = 'none';
+	document.getElementById(hide).style.display = 'flex';
 }
 /*document.onkeydown = function (evt) {
 	evt = evt || window.event;
