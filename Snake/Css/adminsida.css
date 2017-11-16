@@ -212,9 +212,7 @@ input[type="date"] {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 
 #popupacc {
     height: auto;
@@ -224,30 +222,40 @@ input[type="date"] {
     margin: 0 auto;
     background-color: #ffffff;
 }
+
 .closeaccount {
     align-self: flex-start;
     margin: 0.4em;
 }
-.newaccount, .newaccount form {
+
+.newaccount,
+.newaccount form {
     display: flex;
     flex-direction: column;
 }
-.existingaccount ol, .existingaccount p, .existingaccount button {
+
+.existingaccount ol,
+.existingaccount p,
+.existingaccount button {
     list-style: none;
     padding-left: 0;
     margin: 0.4em;
 }
+
 .existingaccount button {
     width: 90%;
 }
+
 .existingaccount {
     display: flex;
     flex-direction: column;
 }
+
 .existingaccount ol {
     display: flex;
     flex-direction: column;
 }
+
 .existingaccount ol li {
     background-color: #b3b3b3;
     width: 100%;
@@ -255,6 +263,7 @@ input[type="date"] {
     margin-bottom: 0.2em;
     border-radius: 3%;
 }
+
 .existingaccount ol li:hover {
     background-color: grey;
 }
@@ -266,24 +275,64 @@ input[type="date"] {
 .acc button {
     margin-bottom: 0.5em;
 }
+
 #showedit {
     display: none;
     flex-direction: column;
     align-items: center;
 }
+
 #showedit p {
     margin: 0.4em;
 }
+
 #showedit form {
     display: flex;
     flex-direction: column;
 }
 
 
-
-
 /*----------------------------------FEEDBACK POPUP----------------------- */
 
+#fpopup,
+#vpopup {
+    display: flex;
+    height: auto;
+    width: 38%;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+
+.main-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.questions {
+    margin-left: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(245, 233, 233, 0.69);
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 130%;
+    height: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
 
 
 /*..................................MEDIA..................................*/
@@ -300,12 +349,12 @@ input[type="date"] {
 }
 
 @media (min-width: 750px) {
-      .groupcontainer{
+    .groupcontainer {
         flex-wrap: nowrap;
         width: 60%;
-      }
-
+    }
 }
+
 @media (max-width: 700px) {
     #popupacc {
         flex-wrap: wrap;
@@ -314,10 +363,27 @@ input[type="date"] {
         justify-content: center;
         align-items: center;
     }
-    .existingaccount, .closeaccount, .newaccount {
+    .existingaccount,
+    .closeaccount,
+    .newaccount {
         margin: 0.4em;
     }
 }
 
+
 /*-------------MEDIA FOR FEEDBACK-----------------*/
 
+@media (max-width: 900px) {
+    #fpopup,
+    #vpopup {
+        position: absolute;
+        width: 70%;
+    }
+}
+
+@media (max-width: 450px) {
+    #fpopup,
+    #vpopup {
+        width: 90%;
+    }
+}
