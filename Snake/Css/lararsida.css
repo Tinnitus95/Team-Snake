@@ -44,7 +44,7 @@ CSS reads down the page, so code at the bottom will overwrite the code at the to
   background-color: #999;
   justify-content: center;
   display: flex;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 /* hover behaviour for links inside .submenu */
@@ -505,6 +505,9 @@ a.attendclose {
     width: 19%;
     margin-left: 2%;
     position: absolute;
+  }
+  .submenu a {
+    padding: 0.4em;
   }
 }
 
