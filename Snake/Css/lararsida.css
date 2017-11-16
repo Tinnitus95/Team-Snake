@@ -66,6 +66,9 @@ we set it to max-height: 0, and hide the overflowed content.
   display: none;
 }
 
+#thinner{
+  width: 25%;
+}
 /*............................Style for newsfeed........................ */
 
 .wrapper {
@@ -498,8 +501,8 @@ a.attendclose {
 /*..................................MEDIA..................................*/
 
 @media (min-width: 900px) {
-  .submenu {
-    width: 25%;
+  #thinner {
+    width: 19%;
     margin-left: 2%;
     position: absolute;
   }
