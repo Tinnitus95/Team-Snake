@@ -1,4 +1,4 @@
-body {
+    body {
     margin: 0;
     padding: 0;
     border: 0;
@@ -106,9 +106,9 @@ we set it to max-height: 0, and hide the overflowed content.
     box-shadow: 7px 7px 20px;
     border-radius: 35px;
 }
-.blog-post h3
-{
-    color:#0b0b0b;
+
+.blog-post h3 {
+    color: #0b0b0b;
 }
 
 .more {
@@ -209,37 +209,28 @@ form a,
     align-items: center;
 }
 
-
-.breakword
-{
-    overflow-wrap:break-word;
-
+.breakword {
+    overflow-wrap: break-word;
 }
 
-textarea
-{
-    resize:none;
+textarea {
+    resize: none;
 }
 
-
-
-.lain-form{
-
-background-color:white;
- flex-direction: column;
+.lain-form {
+    background-color: white;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align:center;
+    text-align: center;
     width: 60%;
     height: 80%;
     overflow: scroll;
     padding: 1em 1em 1em 1em;
-
 }
-span
-{
-    font-size: 20px;
 
+span {
+    font-size: 20px;
 }
 
 .main-form p {
@@ -247,6 +238,7 @@ span
     margin-left: 1px;
     text-align: center;
     margin-top: 0.2px;
+    font-weight: bold;
 }
 
 .main-form h3 {
@@ -261,9 +253,9 @@ span
     text-align: center;
 }
 
-#slider{
-  width: 200px;
-  height: 20px;
+#slider {
+    width: 200px;
+    height: 20px;
 }
 
 .main-form button {
@@ -299,74 +291,84 @@ footer {
     bottom: 0;
     overflow: auto;
 }
-
-/*-------------------------------DAILY REVIEW SMILEY--------------------------------------------------*/
-.cc-selector input{
-    margin:0;padding:0;
-    -webkit-appearance:none;
-       -moz-appearance:none;
-            appearance:none;
-}
-.sad{background-image:url(https://openclipart.org/download/22396/nicubunu-Emoticons-Crying-face.svg);}
-.worried{background-image:url(https://openclipart.org/download/22390/nicubunu-Emoticons-Worried-face.svg);}
-.happy{background-image:url(https://openclipart.org/download/22398/nicubunu-Emoticons-Laughing-face.svg);}
-
-.cc-selector input:active +.emojis-cc{opacity: .9;}
-.cc-selector input:checked +.emojis-cc{
-    -webkit-filter: none;
-       -moz-filter: none;
-            filter: none;
-}
-.emojis-cc{
-    cursor:pointer;
-    background-size:contain;
-    background-repeat:no-repeat;
-    display:inline-block;
-    margin: 20px;
-    width:100px;height:70px;
-    -webkit-transition: all 100ms ease-in;
-       -moz-transition: all 100ms ease-in;
-            transition: all 100ms ease-in;
-    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-            filter: brightness(1.8) grayscale(1) opacity(.7);
-}
-.emojis-cc:hover{
-    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
-       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
-            filter: brightness(1.2) grayscale(.5) opacity(.9);
+.questions span{
+  font-size: 1em;
+  vertical-align: text-bottom;
 }
 
+.turnin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
-
-
-
-/*..................................MEDIA..................................*/
-
-@media (min-width: 900px) {
-    .submenu {
-        width: 25%;
-        margin-left: 2%;
-        position: absolute;
+.turnins {
+    display: flex;
+    /*-------------------------------DAILY REVIEW SMILEY--------------------------------------------------*/
+    .cc-selector input {
+        margin: 0;
+        padding: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
-}
-
-
-/*-------------MEDIA FOR FEEDBACK-----------------*/
-
-@media (max-width: 900px) {
-    #fpopup,
-    #vpopup {
-        position: absolute;
-        width: 70%;
+    .sad {
+        background-image: url(https://openclipart.org/download/22396/nicubunu-Emoticons-Crying-face.svg);
     }
-}
-
-@media (max-width: 450px) {
-    #fpopup,
-    #vpopup {
-        width: 90%;
+    .worried {
+        background-image: url(https://openclipart.org/download/22390/nicubunu-Emoticons-Worried-face.svg);
     }
-}
+    .happy {
+        background-image: url(https://openclipart.org/download/22398/nicubunu-Emoticons-Laughing-face.svg);
+    }
+    .cc-selector input:active+.emojis-cc {
+        opacity: .9;
+    }
+    .cc-selector input:checked+.emojis-cc {
+        -webkit-filter: none;
+        -moz-filter: none;
+        filter: none;
+    }
+    .emojis-cc {
+        cursor: pointer;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin: 20px;
+        width: 100px;
+        height: 70px;
+        -webkit-transition: all 100ms ease-in;
+        -moz-transition: all 100ms ease-in;
+        transition: all 100ms ease-in;
+        -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+        -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+        filter: brightness(1.8) grayscale(1) opacity(.7);
+    }
+    .emojis-cc:hover {
+        -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+        -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+        filter: brightness(1.2) grayscale(.5) opacity(.9);
+    }
+    /*..................................MEDIA..................................*/
+    @media (min-width: 900px) {
+        .submenu {
+            width: 25%;
+            margin-left: 2%;
+            position: absolute;
+        }
+    }
+    /*-------------MEDIA FOR FEEDBACK-----------------*/
+    @media (max-width: 900px) {
+        #fpopup,
+        #vpopup {
+            position: absolute;
+            width: 70%;
+        }
+    }
+    @media (max-width: 450px) {
+        #fpopup,
+        #vpopup {
+            width: 90%;
+        }
+    }

@@ -1,6 +1,6 @@
 function pop(div) {
 
-	document.getElementById(div).style.display = 'block';
+	document.getElementById(div).style.display = 'flex';
 
 }
 

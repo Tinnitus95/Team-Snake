@@ -5,9 +5,7 @@
   <meta charset="utf-8">
   <title>Snake</title>
   <link rel="stylesheet" href="../Css/navbarwithlogo.css">
-  <link rel="stylesheet" href="../Css/lararsida.css">
-
-
+  <link rel="stylesheet" href="../Css/adminsida.css">
 </head>
 
 <body>
@@ -21,7 +19,21 @@
     <nav class="navigation">
       <ul class="main-nav">
         <li>
-          <a href="#" onclick="popacc()">Hantera Konton</a>
+          <a href="#" onclick="popclass()">Hantera Klasser</a>
+        </li>
+        <li>
+          <a href="#">Hantera Konton</a>
+          <ul class="submenu" id="submenux">
+            <li>
+              <a href="#" onclick="popacc()">Student</a>
+            </li>
+            <li>
+              <a href="#">Lärare</a>
+            </li>
+            <li>
+              <a href="#">Admin</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a href="https://calendar.google.com/">Schema</a>
@@ -30,10 +42,10 @@
           <a href="">Utvärderingar</a>
           <ul class="submenu">
             <li>
-              <a href="#" >Dagens Feedback</a>
+              <a href="#" onClick="pop('feedback')">Dagens Feedback</a>
             </li>
             <li>
-              <a href="#" >Veckans Feedback</a>
+              <a href="#" onclick="pop('vfeedback')">Veckans Feedback</a>
             </li>
           </ul>
         </li>
@@ -116,26 +128,123 @@
   <div id="account" class="ontop">
     <div class="center">
       <div id="popupacc" class="acc">
-        <a href="#" onClick="hide('account')">Close</a>
-        <h2>Skapa nytt konto</h2>
-        <div id="selectorcontainer">
-          <p>Typ: </p>
-          <select>
-            <option>Elev</option>
-            <option>Lärare</option>
-            <option>Admin</option>
-          </select>
+        <div class="existingaccount" id="studentlist">
+          <p>Student Konton</p>
+          <ol id="studentlogins">
+            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">oscar</li>
+            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">jesse</li>
+            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">simon</li>
+            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">natasha</li>
+            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">silvia</li>
+            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">elias</li>
+          </ol>
+          <button onclick="createaccount('hidenewacc', 'showedit')">Nytt Konto</button>
         </div>
-        <input type="text" placeholder="Användarnamn" required>
-        <input type="password" placeholder="Lösenord" required>
-        <input type="text" placeholder="E-mail" required>
-        <button onclick="submitaccount()">Skapa Konto</button>
-      </div>
-      <div id="timedacc" class="hide">
-        <h3>Kontot har skapats.</h3>
+        <div class="newaccount" id="hidenewacc">
+          <p>Skapa nytt student konto</p>
+          <form onsubmit="submitaccount('newstudent', 'studentlogins', 'resetform')" class="submitform" id="resetform">
+            <input type="text" placeholder="Användarnamn" required="required" id="newstudent">
+            <input type="password" placeholder="Lösenord" required="required">
+            <input type="email" placeholder="E-mail" required="required">
+            <input type="submit" value="Skapa Konto" id="sumbitbutton">
+          </form>
+        </div>
+        <div class="editacc" id="showedit">
+          <p>Redigera Konto</p>
+          <p id="thisaccount"></p>
+          <form onsubmit="editaccounts('accname', 'studentlogins', 'thisaccount', 'hidenewacc', 'showedit')">
+            <input type="text" required="required" id="accname">
+            <input type="password" placeholder="Nytt Lösenord" required="required" id="pass">
+            <input type="email" required="required" id="emailacc">
+            <input type="submit" value="Spara">
+          </form>
+        </div>
+        <a href="#" onClick="hide('account')" class="closeaccount">Close</a>
       </div>
     </div>
   </div>
+
+  <div id="classes" class="ontop">
+    <div class="center">
+      <div id="popupclass" class="class">
+        <a href="#" onClick="hide('classes')">Close</a>
+        <h2>Skapa ny Klass</h2>
+        <form onsubmit="submitclass()" class="submitform" id="resetform2">
+
+          <div class="input-container">
+            <input type="text" id="firstname" placeholder="Förnamn" required="required">
+            <input type="text" id="lastname" placeholder="Efternamn" required="required">
+            <input type="text" id="email" placeholder="E-mail" required="required">
+            <input type="text" id="phonenum" placeholder="Telefon (Frivilligt)">
+          </div>
+
+          <div class="button-container">
+            <button type="button" onclick="addHtmlTableRow(); clearFields();">Lägg till Elev</button>
+            <button type="button" onclick="editHtmlTbleSelectedRow(); clearFields();">Redigera</button>
+            <button type="button" onclick="removeSelectedRow();">Ta bort</button>
+            <input type="submit" value="Skapa Klass" id="submitbutton">
+          </div>
+
+
+          <div class="table-container">
+            <table id="student-table">
+              <tr>
+                <th>Förnamn</th>
+                <th>Efternamn</th>
+                <th>Email</th>
+                <th>telefon</th>
+              </tr>
+              <tr>
+            </table>
+          </div>
+        </form>
+      </div>
+
+      <div id="timedclass" class="hide">
+        <h3>Klassen har skapats.</h3>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="feedback" class="ontop">
+    <div class="center">
+      <div id="fpopup" class="dfeedback">
+        <div class="main-form">
+          <a class="fbclose" href="#" onClick="hide('feedback')">Close</a>
+          <div class="questions">
+            <table>
+              <tr>
+                <td>
+                  <button type="button" onclick="questionDaily()">Spara</button>
+                </td>
+                <td>
+                  <textarea id="questionDaily" rows="1" col="20">Hur har dagen varit?</textarea>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="vfeedback" class="ontop">
+    <div class="center">
+      <div id="fpopup" class="dfeedback">
+        <div class="main-form">
+          <a class="fbclose" href="#" onClick="hide('vfeedback')">Close</a>
+          <div class="questions">
+            <button type="button" onclick="newQuestion()">Ny Fråga</button>
+            <textarea id="newQuestion" cols="30" rows="2"></textarea>
+            <button type="button" onclick="generateQuestions()">Se Frågor</button>
+            <table id="questions"></table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <footer>
     <p>&copy; Copyright Snake Limited</p>
@@ -144,8 +253,7 @@
   <script src="../Javascript/toggles.js"></script>
   <script src="../Javascript/submit.js"></script>
   <script src="../Javascript/adminpopup.js"></script>
-  <script src="../Javascript/newDate.js"></script>
-
+  <script src="../Javascript/admin.js"></script>
 </body>
 
 </html>

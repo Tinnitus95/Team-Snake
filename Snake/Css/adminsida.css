@@ -1,0 +1,482 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: url('../Pictures/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* define a fixed width for the entire menu */
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/* make ALL links (main and submenu) have padding and background color */
+
+
+/* add hover behaviour */
+
+
+/* when hovering over a .mainmenu item,
+display the submenu inside it.
+we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.main-nav li:hover .submenu {
+    display: block;
+    max-height: 300px;
+}
+
+
+/*
+we now overwrite the background-color for .submenu links only.
+CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+    background-color: #999;
+    justify-content: center;
+    display: flex;
+    font-size: 0.9em;
+    padding: 0.4em 0;
+}
+
+
+/* hover behaviour for links inside .submenu */
+
+.submenu a:hover {
+    background-color: #666;
+}
+
+
+/* this is the initial state of all submenus.
+we set it to max-height: 0, and hide the overflowed content.
+*/
+
+.submenu {
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+}
+
+#content {
+    display: none;
+}
+
+
+/*............................Style for newsfeed........................ */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8% 5% 5% 5%;
+}
+
+.feed {
+    display: flex;
+    max-width: 600px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.blog-post {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    background-color: rgba(153, 153, 153, 0.8);
+    margin-bottom: 5%;
+    box-shadow: 7px 7px 20px;
+    border-radius: 35px;
+}
+
+.blog-post h3 {
+    color: #0b0b0b;
+}
+
+.more {
+    align-self: flex-end;
+    text-decoration: underline;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.date {
+    font-size: 14px;
+    font-style: bold;
+    color: #d43900;
+}
+
+
+/*..............................new blog-post...........................*/
+
+.posttoggle {
+    margin-bottom: 7px;
+}
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    padding-left: 1%;
+}
+
+
+/* Removes the clear button from date inputs */
+
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+
+/* Removes the spin button */
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+
+/* A few custom styles for date inputs */
+
+input[type="date"] {
+    border: 1px solid black;
+    margin-bottom: 7px;
+    padding-left: 1%;
+}
+
+#newsposttoggle {
+    display: none;
+    order: 1;
+}
+
+.area {
+    box-shadow: 7px 7px 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+    background-color: rgba(153, 153, 153, 0.8);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    box-shadow: 7px 7px 20px;
+    border-radius: 35px;
+}
+
+.show h3 {
+    color: #d43900
+}
+
+
+/*............................popup for attedance................... */
+
+.ontop {
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    position: fixed;
+    background: gray;
+    /* older browsers */
+    background: rgba(128, 128, 128, 0.4);
+}
+
+.center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*------------------------create class popup---------------------*/
+
+#popupclass,
+#timedclass {
+    display: flex;
+    height: 80%;
+    overflow: scroll;
+    width: 60%;
+    box-shadow: 0 0 10px;
+    background-color: #ffffff;
+}
+
+.class a,
+{
+    align-items: flex-start;
+}
+
+.class h2 {
+    align-self: center;
+}
+
+.input-container {
+    display: flex;
+}
+
+.input-container input {
+    height: 20px;
+    width: 20%;
+    align-self: center;
+    border: 1px solid grey;
+}
+
+#submitbutton {
+    float: right;
+    height: 24px;
+    width: auto;
+}
+
+.class {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.table-wrapper {
+    height: 100%;
+}
+
+.submitform {
+    margin: 1em;
+}
+
+#student-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    max-height: 100%;
+    overflow: scroll;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-top: 15px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:hover {
+    background-color: #eeeeee;
+}
+
+
+/*----------------------create class poup---------------------------*/
+
+#popupacc {
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.closeaccount {
+    align-self: flex-start;
+    margin: 0.4em;
+}
+
+.newaccount,
+.newaccount form {
+    display: flex;
+    flex-direction: column;
+}
+
+.existingaccount ol,
+.existingaccount p,
+.existingaccount button {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.4em;
+}
+
+.existingaccount button {
+    width: 90%;
+}
+
+.existingaccount {
+    display: flex;
+    flex-direction: column;
+}
+
+.existingaccount ol {
+    display: flex;
+    flex-direction: column;
+}
+
+.existingaccount ol li {
+    background-color: #b3b3b3;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.2em;
+    border-radius: 3%;
+}
+
+.existingaccount ol li:hover {
+    background-color: grey;
+}
+
+.acc a,
+.acc input,
+.acc h2,
+.acc div,
+.acc button {
+    margin-bottom: 0.5em;
+}
+
+#showedit {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#showedit p {
+    margin: 0.4em;
+}
+
+#showedit form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*----------------------------------FEEDBACK POPUP----------------------- */
+
+#fpopup,
+#vpopup {
+    display: flex;
+    height: auto;
+    width: 38%;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+
+.main-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.questions {
+    margin-left: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(245, 233, 233, 0.69);
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 130%;
+    height: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+
+/*..................................MEDIA..................................*/
+
+@media (min-width: 900px) {
+    .submenu {
+        width: 25%;
+        margin-left: 2%;
+        position: absolute;
+    }
+    #submenux {
+        margin-left: 3%;
+    }
+}
+
+@media (min-width: 750px) {
+    .groupcontainer {
+        flex-wrap: nowrap;
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    #popupacc {
+        flex-wrap: wrap;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .existingaccount,
+    .closeaccount,
+    .newaccount {
+        margin: 0.4em;
+    }
+}
+
+
+/*-------------MEDIA FOR FEEDBACK-----------------*/
+
+@media (max-width: 900px) {
+    #fpopup,
+    #vpopup {
+        position: absolute;
+        width: 70%;
+    }
+}
+
+@media (max-width: 450px) {
+    #fpopup,
+    #vpopup {
+        width: 90%;
+    }
+}

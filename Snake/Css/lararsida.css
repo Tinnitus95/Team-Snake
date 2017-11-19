@@ -1,35 +1,29 @@
 body {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background-image: url('../Pictures/background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: url('../Pictures/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-html,
-body {
-    font-family: Arial, Helvetica, sans-serif;
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /* define a fixed width for the entire menu */
 
 .submenu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    width: 100%;
-
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
 }
-
 
 /* make ALL links (main and submenu) have padding and background color */
 
-
 /* add hover behaviour */
-
 
 /* when hovering over a .mainmenu item,
 display the submenu inside it.
@@ -37,10 +31,9 @@ we're changing the submenu's max-height from 0 to 200px;
 */
 
 .main-nav li:hover .submenu {
-    display: block;
-    max-height: 300px;
+  display: block;
+  max-height: 300px;
 }
-
 
 /*
 we now overwrite the background-color for .submenu links only.
@@ -48,353 +41,338 @@ CSS reads down the page, so code at the bottom will overwrite the code at the to
 */
 
 .submenu a {
-    background-color: #999;
-    justify-content: center;
-
-    font-size: 1em;
+  background-color: #999;
+  justify-content: center;
+  display: flex;
+  font-size: 0.9em;
 }
-
 
 /* hover behaviour for links inside .submenu */
 
 .submenu a:hover {
-    background-color: #666;
+  background-color: #666;
 }
-
 
 /* this is the initial state of all submenus.
 we set it to max-height: 0, and hide the overflowed content.
 */
 
 .submenu {
-    max-height: 0;
-    -webkit-transition: all 0.5s ease-out;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
 }
 
 #content {
-    display: none;
+  display: none;
 }
 
-
+#thinner{
+  width: 25%;
+}
 /*............................Style for newsfeed........................ */
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 8% 5% 5% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8% 5% 5% 5%;
 }
 
 .feed {
-    display: flex;
-    max-width: 600px;
-    flex-direction: column-reverse;
-    justify-content: space-between;
+  display: flex;
+  max-width: 600px;
+  flex-direction: column-reverse;
+  justify-content: space-between;
 }
 
 .blog-post {
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid black;
-    background-color: rgba(153, 153, 153, 0.8);
-    margin-bottom: 5%;
-    box-shadow: 7px 7px 20px;
-    border-radius: 35px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  background-color: rgba(153, 153, 153, 0.8);
+  margin-bottom: 5%;
+  box-shadow: 7px 7px 20px;
+  border-radius: 35px;
 }
 
 .blog-post h3 {
-    color: #0b0b0b;
+  color: #0b0b0b;
 }
 
 .more {
-    align-self: flex-end;
-    text-decoration: underline;
-    font-size: 11px;
-    font-style: italic;
+  align-self: flex-end;
+  text-decoration: underline;
+  font-size: 11px;
+  font-style: italic;
 }
 
 .date {
-    font-size: 14px;
-    font-style: bold;
-    color: #d43900;
+  font-size: 14px;
+  font-style: bold;
+  color: #d43900;
 }
-
 
 /*..............................new blog-post...........................*/
 
 .posttoggle {
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 textarea {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    resize: none;
-    width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: none;
+  width: 100%;
 }
 
 ::-webkit-input-placeholder {
-    padding-left: 1%;
+  padding-left: 1%;
 }
-
 
 /* Removes the clear button from date inputs */
 
 input[type="date"]::-webkit-clear-button {
-    display: none;
+  display: none;
 }
-
 
 /* Removes the spin button */
 
 input[type="date"]::-webkit-inner-spin-button {
-    display: none;
+  display: none;
 }
-
 
 /* A few custom styles for date inputs */
 
 input[type="date"] {
-    border: 1px solid black;
-    margin-bottom: 7px;
-    padding-left: 1%;
+  border: 1px solid black;
+  margin-bottom: 7px;
+  padding-left: 1%;
 }
 
 #newsposttoggle {
-    display: none;
-    order: 1;
+  display: none;
+  order: 1;
 }
 
 .area {
-    box-shadow: 7px 7px 20px;
+  box-shadow: 7px 7px 20px;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .show {
-    display: flex;
-    background-color: rgba(153, 153, 153, 0.8);
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    box-shadow: 7px 7px 20px;
-    border-radius: 35px;
+  display: flex;
+  background-color: rgba(153, 153, 153, 0.8);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 7px 7px 20px;
+  border-radius: 35px;
 }
 
 .show h3 {
-    color: #d43900
+  color: #d43900
 }
-
 
 /*............................popup for attedance................... */
 
 .ontop {
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: none;
-    position: fixed;
-    background: gray;
-    /* older browsers */
-    background: rgba(128, 128, 128, 0.4);
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+  background: gray;
+  /* older browsers */
+  background: rgba(128, 128, 128, 0.4);
 }
 
 .center {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #popupup1 {
-    display: flex;
-    height: auto;
-    width: 50%;
-    margin: auto;
-    background-color: #ffffff;
+  display: flex;
+  height: auto;
+  width: 50%;
+  margin: auto;
+  background-color: #ffffff;
 }
 
 .main-js-content h3 {
-    font-size: 125%;
-    text-align: center;
+  font-size: 125%;
+  text-align: center;
 }
 
 .main-js-content {
-    padding-left: 17px;
-    text-align: center;
-    margin: 5px;
+  padding-left: 17px;
+  text-align: center;
+  margin: 5px;
 }
 
 .main-js-content textarea {
-    resize: none;
+  resize: none;
 }
 
 .main-content th {
-    text-align: center;
-    font-size: 175%;
-    padding-bottom: 5px;
+  text-align: center;
+  font-size: 175%;
+  padding-bottom: 5px;
 }
 
 .main-content td {
-    font-size: 100%;
-    text-align: center;
+  font-size: 100%;
+  text-align: center;
 }
 
 .main-content table {
-    border-spacing: 17px 0px;
-    text-align: center;
-    margin: 0 auto;
+  border-spacing: 17px 0px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.webbu1,
-.acc,
-.showacc,
-#timedacc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.webbu1, .acc, .showacc, #timedacc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#popupacc,
-.showacc,
-#timedacc {
-    display: flex;
-    height: auto;
-    width: 40%;
-    margin: auto;
-    background-color: #ffffff;
+#popupacc, .showacc, #timedacc {
+  display: flex;
+  height: auto;
+  width: 40%;
+  margin: auto;
+  background-color: #ffffff;
 }
 
 #selectorcontainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.acc a,
-.acc input,
-.acc h2,
-.acc div,
-.acc button {
-    margin-bottom: 5px;
+.acc a, .acc input, .acc h2, .acc div, .acc button {
+  margin-bottom: 5px;
 }
 
 .acc a {
-    align-self: flex-end;
-    margin: 5px;
+  align-self: flex-end;
+  margin: 5px;
 }
-
+.submitform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*----------------------------------FEEDBACK POPUP----------------------- */
 
 .lain-form {
-    background-color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 60%;
-    height: 80%;
-    overflow: scroll;
-    padding: 1em 1em 1em 1em;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  height: 80%;
+  overflow: scroll;
+  padding: 1em 1em 1em 1em;
 }
 
 .breakword {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .textarea {
-    display: block;
-    margin-top: 10px;
-    width: 80%;
+  display: block;
+  margin-top: 10px;
+  width: 80%;
 }
 
 .textarea textarea {
-    resize: none;
-    width: 80%;
+  resize: none;
+  width: 80%;
 }
 
-
-
-
 .next-prev a {
-    display: inline-flex;
-    text-decoration: none;
-    padding: 8px 16px;
+  display: inline-flex;
+  text-decoration: none;
+  padding: 8px 16px;
 }
 
 .next-prev a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 .previous {
-    background-color: #f1f1f1;
-    color: black;
+  background-color: #f1f1f1;
+  color: black;
 }
 
 .next {
-    background-color: #f1f1f1;
-    color: black;
-    justify-content: flex-end;
+  background-color: #f1f1f1;
+  color: black;
+  justify-content: flex-end;
 }
 
 footer {
-    background-color: rgba(245, 233, 233, 0.69);
-    width: 100%;
-    position: relative;
-    text-align: center;
-    font-size: 130%;
-    height: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
+  background-color: rgba(245, 233, 233, 0.69);
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 130%;
+  height: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
 }
-
 
 /*..................................style for grouping.......................*/
 
 #groupstyle {
   display: flex;
-    background-color: white;
-    flex-direction: column;
-    align-items: center;
-    overflow: scroll;
-    border:2px solid #888;
-    padding: 10px;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  border: 2px solid #888;
+  padding: 10px;
 }
 
-#groupstyle a{
+#groupstyle a {
   align-self: flex-start;
 }
 
-
-
-.groupcontainer{
+.groupcontainer {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  overflow: scroll;
+  flex-wrap: wrap;
   height: 50%;
-  width: 60%;
+  width: 90%;
 }
-#groups{
+
+#groups {
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
 }
-.gruppering{
+
+.gruppering {
   width: auto;
   height: auto;
   margin: 5px 5px;
@@ -416,212 +394,153 @@ footer {
   flex-direction: column;
 }
 
-.dokument{
-  width: 60%;
+/*---------------------------------------------DRAG AND DROP --------------------------------------*/
+
+/* draggable targets */
+
+[data-draggable="target"] {
+  float: left;
+  list-style-type: none;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0.5em;
+  border: 2px solid #888;
+  border-radius: 0.2em;
+  background: #ddd;
+  color: #555;
+}
+
+/* draggable items */
+
+[data-draggable="item"] {
+  display: block;
+  list-style-type: none;
+  margin: 0 0 2px 0;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  line-height: 1.3;
+}
+
+/*..................................Närvaro..................................*/
+
+.sidebar_1 {
+  height: inherit;
+  position: fixed!important;
+  z-index: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.dokument {
+  width: 50%;
   height: 60%;
   background-color: white;
   overflow: scroll;
 }
-#tab-1, #tab-2, #tab-3{
+
+#tab-1, #tab-2, #tab-3 {
   margin-left: 120px;
   display: flex;
   flex-direction: column;
 }
-#tab-2, #tab-3{
+
+#tab-2, #tab-3 {
   display: none;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
+
 button.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 8px;
-    width: 90%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 8px;
+  width: 90%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 button.accordion.active, button.accordion:hover {
-    background-color: #ccc;
+  background-color: #ccc;
 }
 
 /* Style the accordion panel. Note: hidden by default */
+
 div.panel {
-    padding: 0 8px;
-    background-color: white;
-    display: none;
+  padding: 0 8px;
+  background-color: white;
+  display: none;
 }
-.panel table{
+
+.panel table {
   width: 90% !important;
 }
+
 a.attendclose {
-    align-self: flex-end;
-    padding: 5px 10px;
+  align-self: flex-end;
+  padding: 5px 10px;
 }
+
 #popup {
-    border-radius: 5%;
-    border-style: solid;
-    border-width: 5px;
-    height: auto;
-    margin: auto;
-    background-color: #ffffff;
-    padding: 15px;
+  border-radius: 5%;
+  border-style: solid;
+  border-width: 5px;
+  height: auto;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 15px;
 }
-#popup p, #popup h3{
+
+#popup p, #popup h3 {
   text-align: center;
 }
 
 /*..................................Graph..................................*/
-  #myCanvas, #myCanvas2, #myCanvas3{
-    width: 90%;
-    border: 1px solid black;
-  }
+
+#myCanvas, #myCanvas2, #myCanvas3 {
+  width: 90%;
+  border: 1px solid black;
+}
 
 /*..................................MEDIA..................................*/
 
-@media (min-width: 770px) {
-    .submenu {
-        width: 25%;
-        margin-left: 1%;
-        position: absolute;
-    }
-    #thinner{
-      width: 15%;
-
-    }
+@media (min-width: 900px) {
+  #thinner {
+    width: 19%;
+    margin-left: 2%;
+    position: absolute;
+  }
+  .submenu a {
+    padding: 0.4em;
+  }
 }
 
+@@media (min-width: 750px) {
+  .groupcontainer {
+    flex-wrap: nowrap;
+    width: 60%;
+  }
+}
 
 /*-------------MEDIA FOR FEEDBACK-----------------*/
 
 @media (max-width: 900px) {
-    .lain-form {
-        position: absolute;
-        width: 80%;
-        height: 80%;
-        overflow: scroll;
-    }
+  .lain-form {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    overflow: scroll;
+  }
 }
 
 @media (max-width: 350px) {
-    .lain-form {
-        width: 80%;
-        height: 90%;
-    }
-}
-
-
-/*---------------------------------------------DRAG AND DROP --------------------------------------*/
-
-/* draggable targets */
-[data-draggable="target"]
-{
-    float:left;
-    list-style-type:none;
-    overflow-y:auto;
-    margin:0;
-
-    padding:0.5em;
-
-    border:2px solid #888;
-    border-radius:0.2em;
-
-    background:#ddd;
-    color:#555;
-}
-
-/* draggable items */
-[data-draggable="item"]
-{
-    display:block;
-    list-style-type:none;
-
-    margin:0 0 2px 0;
-    padding:0.2em 0.4em;
-
-    border-radius:0.2em;
-
-    line-height:1.3;
-}
-
-/*---------------------------------------------switch--------------------------------------*/
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 32px;
-    height: 17px;
-}
-
-.switch input {
-    display: none;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 17px;
-    width: 17px;
-    left: 0px;
-    bottom: 0px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: #2196F3;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(17px);
-    -ms-transform: translateX(17px);
-    transform: translateX(17px);
-}
-
-
-/* Rounded sliders */
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
-#silvia-webbutveckling {
-    width: 100%;
-    padding: 0;
-    text-align: left;
-    margin-top: 0;
-    display: none;
-}
-
-#silvia-lia {
-    width: 100%;
-    padding: 0;
-    text-align: left;
-    margin-top: 0;
-    display: none;
+  .lain-form {
+    width: 80%;
+    height: 90%;
+  }
 }
