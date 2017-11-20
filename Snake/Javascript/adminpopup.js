@@ -25,6 +25,9 @@ document.onkeydown = function (evt) {
 	evt = evt || window.event;
 	if (evt.keyCode == 27) {
 		hide('account');
+    hide('popEdu');
+    hide('feedback');
+    hide('vfeedback');
 	}
 };
 

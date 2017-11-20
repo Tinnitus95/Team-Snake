@@ -481,6 +481,15 @@ footer {
 }
 div.tab-container {
   order: 2;
+  display: flex;
+  justify-content: center;
+}
+#tab-4, #tab-5, #tab-6 {
+  align-items: center;
+}
+#tab-4 form, #tab-5 form, #tab-6 form {
+  display: flex;
+  flex-direction: column;
 }
 
 div.tab {
