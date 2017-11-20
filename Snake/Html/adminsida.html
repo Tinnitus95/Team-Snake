@@ -60,17 +60,18 @@
       <div class="center">
         <div class="edPage">
           <div class="edMain">
-          <div class="sidebar_1 tab">
-            <button class="tablinks" onclick="openSide(event,'tab-4')">Hantera Utbildning</button>
-            <button class="tablinks" onclick="openSide(event,'tab-5')">Hantera Kurser</button>
-            <button class="tablinks" onclick="openSide(event,'tab-6')">Hantera Klasser</button>
-          </div>
-          <div class="tab-container">
-            <div class="tabcontent" id="tab-4">
-              <a class="attendclose" href="#" onclick="hide('popEdu')"></a>
-              <h2>Skapa ny utbildning</h1>
+            <div class="sidebar_1 tab">
+              <button class="tablinks" onclick="openSide(event,'tab-4')">Hantera Utbildning</button>
+              <button class="tablinks" onclick="openSide(event,'tab-5')">Hantera Kurser</button>
+              <button class="tablinks" onclick="openSide(event,'tab-6')">Hantera Klasser</button>
+            </div>
+            <div class="tab-container">
+              <div class="tabcontent" id="tab-4">
+                <a class="attendclose" href="#" onclick="hide('popEdu')"></a>
+                <h2>Skapa ny utbildning</h1>
                 <form onsubmit="createEdu()"class="newEdu" >
-                  <input type="text"  placeholder="Namn på utbildning..." id="eduInput">
+                  <input type="text"  placeholder="Namn på utbildning..." id="eduInput"
+                  required="required">
                   <input type="submit" name="" value="Kör">
 
                 </form>
@@ -96,232 +97,222 @@
             <h2>KLASS FE18</h2>
 
 
-            <li data-draggable="item" draggable="true">Webbutveckling</li>
-            <li data-draggable="item" draggable="true">Html</li>
-            <li data-draggable="item" draggable="true">Arbetsmetodik</li>
-            <li data-draggable="item" draggable="true">Backend</li>
-            <li data-draggable="item" draggable="true">Jquery</li>
-            <li data-draggable="item" draggable="true">LIA</li>
-            <li data-draggable="item" draggable="true">Webbdesign</li>
-            <li data-draggable="item" draggable="true">React</li>
-            <li data-draggable="item" draggable="true">Angular</li>
-            <li data-draggable="item" draggable="true">Bootstrap</li>
-            <li data-draggable="item" draggable="true">El-lära</li>
-            <li data-draggable="item" draggable="true"></li>
-            <li data-draggable="item" draggable="true">Hugo Stigsson</li>
-            <li data-draggable="item" draggable="true">Tanja Niklasson</li>
-            <li data-draggable="item" draggable="true">Viktoria Albertsson</li>
-            <li data-draggable="item" draggable="true">Gunhild Axelsen</li>
+                <li data-draggable="item" draggable="true" clone="true">Webbutveckling</li>
+                <li data-draggable="item" draggable="true" clone="true">Html</li>
+                <li data-draggable="item" draggable="true" clone="true">Arbetsmetodik</li>
+                <li data-draggable="item" draggable="true" clone="true">Backend</li>
+                <li data-draggable="item" draggable="true" clone="true">Jquery</li>
+                <li data-draggable="item" draggable="true" clone="true">LIA</li>
+                <li data-draggable="item" draggable="true" clone="true">Webbdesign</li>
+                <li data-draggable="item" draggable="true" clone="true">React</li>
+                <li data-draggable="item" draggable="true" clone="true">Angular</li>
+                <li data-draggable="item" draggable="true" clone="true">Bootstrap</li>
+                <li data-draggable="item" draggable="true" clone="true">El-lära</li>
 
 
 
-          </ol>
+
+                </ol>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="posttoggle" onClick="openPost(newspost)">Nytt Inlägg</button>
+
+        <div class="feed">
+          <div id="newsposttoggle">
+            <div id="newspost">
+
+
+              <form class="new-post" action="index.html" method="post">
+                <textarea class="area" name="Titel" rows="1" cols="96" placeholder="Titel"></textarea>
+                <input id="datepicker" class="area" type="date" name="PostDate">
+                <textarea class="area" name="Post" rows="8" cols="96" placeholder="Inlägg"></textarea>
+
+
+
+
+              </form>
+              <button class="posttoggle" onclick="submit()">Publicera</button>
+            </div>
+          </div>
+
+          <div class="blog-post">
+            <h3>Rektorn Informerar</h3>
+            <div class="date">
+              <span>Publicerat 16/10-2017</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec, egestas aliquet
+              felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat, eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et velit molestie, pellentesque
+              ex non, dictum dolor...</p>
+            <a class="more" href="#">Läs vidare</a>
+
+          </div>
+          <div class="blog-post">
+            <h3>Rektorn Informerar</h3>
+            <div class="date">
+              <span>Publicerat 16/10-2017</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec, egestas aliquet
+              felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat, eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et velit molestie, pellentesque
+              ex non, dictum dolor...</p>
+            <a class="more" href="#">Läs vidare</a>
+
+          </div>
+
+          <div class="blog-post">
+            <h3>oscar Informerar</h3>
+            <div class="date">
+              <span>Publicerat 16/10-2017</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec, egestas aliquet
+              felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat, eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et velit molestie, pellentesque
+              ex non, dictum dolor...</p>
+            <a class="more" href="#">Läs vidare</a>
+
+          </div>
+          <div id="timed" class="hide">
+            <h3>Ditt inlägg har publicerats</h3>
+          </div>
         </div>
       </div>
-      </div>
+
 
     </div>
+    <div id="account" class="ontop">
+      <div class="center">
+        <div id="popupacc" class="acc">
+          <div class="existingaccount" id="studentlist">
+            <p>Student Konton</p>
+            <ol id="studentlogins">
+              <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">oscar</li>
+              <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">jesse</li>
+              <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">simon</li>
+              <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">natasha</li>
+              <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">silvia</li>
+              <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">elias</li>
+            </ol>
+            <button onclick="createaccount('hidenewacc', 'showedit')">Nytt Konto</button>
+          </div>
+          <div class="newaccount" id="hidenewacc">
+            <p>Skapa nytt student konto</p>
+            <form onsubmit="submitaccount('newstudent', 'studentlogins', 'resetform')" class="submitform" id="resetform">
+              <input type="text" placeholder="Användarnamn" required="required" id="newstudent">
+              <input type="password" placeholder="Lösenord" required="required">
+              <input type="email" placeholder="E-mail" required="required">
+              <input type="submit" value="Skapa Konto" id="sumbitbutton">
+            </form>
+          </div>
+          <div class="editacc" id="showedit">
+            <p>Redigera Konto</p>
+            <p id="thisaccount"></p>
+            <form onsubmit="editaccounts('accname', 'studentlogins', 'thisaccount', 'hidenewacc', 'showedit')">
+              <input type="text" required="required" id="accname">
+              <input type="password" placeholder="Nytt Lösenord" required="required" id="pass">
+              <input type="email" required="required" id="emailacc">
+              <input type="submit" value="Spara">
+            </form>
+          </div>
+          <a href="#" onClick="hide('account')" class="closeaccount">Close</a>
+        </div>
+      </div>
+    </div>
 
-    <button class="posttoggle" onClick="openPost(newspost)">Nytt Inlägg</button>
+    <div id="classes" class="ontop">
+      <div class="center">
+        <div id="popupclass" class="class">
+          <a href="#" onClick="hide('classes')">Close</a>
+          <h2>Skapa ny Klass</h2>
+          <form onsubmit="submitclass()" class="submitform" id="resetform2">
 
-    <div class="feed">
-      <div id="newsposttoggle">
-        <div id="newspost">
+            <div class="input-container">
+              <input type="text" id="firstname" placeholder="Förnamn" required="required">
+              <input type="text" id="lastname" placeholder="Efternamn" required="required">
+              <input type="text" id="email" placeholder="E-mail" required="required">
+              <input type="text" id="phonenum" placeholder="Telefon (Frivilligt)">
+            </div>
+
+            <div class="button-container">
+              <button type="button" onclick="addHtmlTableRow(); clearFields();">Lägg till Elev</button>
+              <button type="button" onclick="editHtmlTbleSelectedRow(); clearFields();">Redigera</button>
+              <button type="button" onclick="removeSelectedRow();">Ta bort</button>
+              <input type="submit" value="Skapa Klass" id="submitbutton">
+            </div>
 
 
-          <form class="new-post" action="index.html" method="post">
-            <textarea class="area" name="Titel" rows="1" cols="96" placeholder="Titel"></textarea>
-            <input id="datepicker" class="area" type="date" name="PostDate">
-            <textarea class="area" name="Post" rows="8" cols="96" placeholder="Inlägg"></textarea>
-
-
-
-
+            <div class="table-container">
+              <table id="student-table">
+                <tr>
+                  <th>Förnamn</th>
+                  <th>Efternamn</th>
+                  <th>Email</th>
+                  <th>telefon</th>
+                </tr>
+                <tr>
+              </table>
+            </div>
           </form>
-          <button class="posttoggle" onclick="submit()">Publicera</button>
         </div>
-      </div>
 
-      <div class="blog-post">
-        <h3>Rektorn Informerar</h3>
-        <div class="date">
-          <span>Publicerat 16/10-2017</span>
+        <div id="timedclass" class="hide">
+          <h3>Klassen har skapats.</h3>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et
-          sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec,
-          egestas aliquet felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat,
-          eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et
-          velit molestie, pellentesque ex non, dictum dolor...</p>
-        <a class="more" href="#">Läs vidare</a>
-
-      </div>
-      <div class="blog-post">
-        <h3>Rektorn Informerar</h3>
-        <div class="date">
-          <span>Publicerat 16/10-2017</span>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et
-          sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec,
-          egestas aliquet felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat,
-          eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et
-          velit molestie, pellentesque ex non, dictum dolor...</p>
-        <a class="more" href="#">Läs vidare</a>
-
-      </div>
-
-      <div class="blog-post">
-        <h3>oscar Informerar</h3>
-        <div class="date">
-          <span>Publicerat 16/10-2017</span>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate purus volutpat arcu consectetur, et
-          sodales erat convallis. Nulla quis metus et ligula efficitur scelerisque. Integer elit mi, tempor non augue nec,
-          egestas aliquet felis. Suspendisse volutpat pretium ante, eget aliquam ex placerat ornare. In aliquet euismod erat,
-          eu condimentum nulla aliquet condimentum. Curabitur a ex pellentesque, posuere nisl ut, molestie mi. Praesent et
-          velit molestie, pellentesque ex non, dictum dolor...</p>
-        <a class="more" href="#">Läs vidare</a>
-
-      </div>
-      <div id="timed" class="hide">
-        <h3>Ditt inlägg har publicerats</h3>
       </div>
     </div>
-  </div>
 
 
-  </div>
-  <div id="account" class="ontop">
-    <div class="center">
-      <div id="popupacc" class="acc">
-        <div class="existingaccount" id="studentlist">
-          <p>Student Konton</p>
-          <ol id="studentlogins">
-            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">oscar</li>
-            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">jesse</li>
-            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">simon</li>
-            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">natasha</li>
-            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">silvia</li>
-            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">elias</li>
-          </ol>
-          <button onclick="createaccount('hidenewacc', 'showedit')">Nytt Konto</button>
-        </div>
-        <div class="newaccount" id="hidenewacc">
-          <p>Skapa nytt student konto</p>
-          <form onsubmit="submitaccount('newstudent', 'studentlogins', 'resetform')" class="submitform" id="resetform">
-            <input type="text" placeholder="Användarnamn" required="required" id="newstudent">
-            <input type="password" placeholder="Lösenord" required="required">
-            <input type="email" placeholder="E-mail" required="required">
-            <input type="submit" value="Skapa Konto" id="sumbitbutton">
-          </form>
-        </div>
-        <div class="editacc" id="showedit">
-          <p>Redigera Konto</p>
-          <p id="thisaccount"></p>
-          <form onsubmit="editaccounts('accname', 'studentlogins', 'thisaccount', 'hidenewacc', 'showedit')">
-            <input type="text" required="required" id="accname">
-            <input type="password" placeholder="Nytt Lösenord" required="required" id="pass">
-            <input type="email" required="required" id="emailacc">
-            <input type="submit" value="Spara">
-          </form>
-        </div>
-        <a href="#" onClick="hide('account')" class="closeaccount">Close</a>
-      </div>
-    </div>
-  </div>
-
-  <div id="classes" class="ontop">
-    <div class="center">
-      <div id="popupclass" class="class">
-        <a href="#" onClick="hide('classes')">Close</a>
-        <h2>Skapa ny Klass</h2>
-        <form onsubmit="submitclass()" class="submitform" id="resetform2">
-
-          <div class="input-container">
-            <input type="text" id="firstname" placeholder="Förnamn" required="required">
-            <input type="text" id="lastname" placeholder="Efternamn" required="required">
-            <input type="text" id="email" placeholder="E-mail" required="required">
-            <input type="text" id="phonenum" placeholder="Telefon (Frivilligt)">
-          </div>
-
-          <div class="button-container">
-            <button type="button" onclick="addHtmlTableRow(); clearFields();">Lägg till Elev</button>
-            <button type="button" onclick="editHtmlTbleSelectedRow(); clearFields();">Redigera</button>
-            <button type="button" onclick="removeSelectedRow();">Ta bort</button>
-            <input type="submit" value="Skapa Klass" id="submitbutton">
-          </div>
-
-
-          <div class="table-container">
-            <table id="student-table">
-              <tr>
-                <th>Förnamn</th>
-                <th>Efternamn</th>
-                <th>Email</th>
-                <th>telefon</th>
-              </tr>
-              <tr>
-            </table>
-          </div>
-        </form>
-      </div>
-
-      <div id="timedclass" class="hide">
-        <h3>Klassen har skapats.</h3>
-      </div>
-    </div>
-  </div>
-
-
-  <div id="feedback" class="ontop">
-    <div class="center">
-      <div id="fpopup" class="dfeedback">
-        <div class="main-form">
-          <a class="fbclose" href="#" onClick="hide('feedback')">Close</a>
-          <div class="questions">
-            <table>
-              <tr>
-                <td>
-                  <button type="button" onclick="questionDaily()">Spara</button>
-                </td>
-                <td>
-                  <textarea id="questionDaily" rows="1" col="20">Hur har dagen varit?</textarea>
-                </td>
-              </tr>
-            </table>
+    <div id="feedback" class="ontop">
+      <div class="center">
+        <div id="fpopup" class="dfeedback">
+          <div class="main-form">
+            <a class="fbclose" href="#" onClick="hide('feedback')">Close</a>
+            <div class="questions">
+              <table>
+                <tr>
+                  <td>
+                    <button type="button" onclick="questionDaily()">Spara</button>
+                  </td>
+                  <td>
+                    <textarea id="questionDaily" rows="1" col="20">Hur har dagen varit?</textarea>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="vfeedback" class="ontop">
-    <div class="center">
-      <div id="fpopup" class="dfeedback">
-        <div class="main-form">
-          <a class="fbclose" href="#" onClick="hide('vfeedback')">Close</a>
-          <div class="questions">
-            <button type="button" onclick="newQuestion()">Ny Fråga</button>
-            <textarea id="newQuestion" cols="30" rows="2"></textarea>
-            <button type="button" onclick="generateQuestions()">Se Frågor</button>
-            <table id="questions"></table>
+    <div id="vfeedback" class="ontop">
+      <div class="center">
+        <div id="fpopup" class="dfeedback">
+          <div class="main-form">
+            <a class="fbclose" href="#" onClick="hide('vfeedback')">Close</a>
+            <div class="questions">
+              <button type="button" onclick="newQuestion()">Ny Fråga</button>
+              <textarea id="newQuestion" cols="30" rows="2"></textarea>
+              <button type="button" onclick="generateQuestions()">Se Frågor</button>
+              <table id="questions"></table>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
 
 
-  <footer>
-    <p>&copy; Copyright Snake Limited</p>
-  </footer>
-  <script src="../Javascript/dropdownmenu.js"></script>
-  <script src="../Javascript/toggles.js"></script>
-  <script src="../Javascript/submit.js"></script>
-  <script src="../Javascript/adminpopup.js"></script>
-  <script src="../Javascript/admin.js"></script>
-  <script src="../Javascript/tabcontainer.js"></script>
-  <script src="../Javascript/grouping.js"></script>
-  <script src="../Javascript/dragNdrop.js"></script>
+    <footer>
+      <p>&copy; Copyright Snake Limited</p>
+    </footer>
+    <script src="../Javascript/dropdownmenu.js"></script>
+    <script src="../Javascript/toggles.js"></script>
+    <script src="../Javascript/submit.js"></script>
+    <script src="../Javascript/adminpopup.js"></script>
+    <script src="../Javascript/admin.js"></script>
+    <script src="../Javascript/tabcontainer.js"></script>
+    <script src="../Javascript/grouping.js"></script>
+    <script src="../Javascript/dragNdrop.js"></script>
 </body>
 
 </html>
