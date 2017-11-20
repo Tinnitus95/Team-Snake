@@ -384,6 +384,15 @@ footer {
   margin: 0;
   min-width: 160px;
 }
+/*..................................Närvaro..................................*/
+.sidebar_1{
+  height: inherit;
+  position: fixed!important;
+  z-index: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
 
 /*---------------------------------------------DRAG AND DROP --------------------------------------*/
 
