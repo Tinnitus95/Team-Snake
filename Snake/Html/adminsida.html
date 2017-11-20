@@ -19,7 +19,7 @@
     <nav class="navigation">
       <ul class="main-nav">
         <li>
-          <a href="#" onclick="popclass()">Hantera Klasser</a>
+          <a href="#" onclick="pop('popEdu')">Hantera Klasser</a>
         </li>
         <li>
           <a href="#">Hantera Konton</a>
@@ -56,6 +56,83 @@
     </nav>
   </header>
   <div class="wrapper">
+    <div class="ontop" id="popEdu">
+      <div class="center">
+        <div class="edPage">
+          <div class="edMain">
+          <div class="sidebar_1 tab">
+            <button class="tablinks" onclick="openSide(event,'tab-4')">Hantera Utbildning</button>
+            <button class="tablinks" onclick="openSide(event,'tab-5')">Hantera Kurser</button>
+            <button class="tablinks" onclick="openSide(event,'tab-6')">Hantera Klasser</button>
+          </div>
+          <div class="tab-container">
+            <div class="tabcontent" id="tab-4">
+              <a class="attendclose" href="#" onclick="hide('popEdu')"></a>
+              <h2>Skapa ny utbildning</h1>
+              <form onsubmit="createEdu()"class="newEdu" >
+                <input type="text"  placeholder="Namn på utbildning..." id="eduInput">
+                <input type="submit" name="" value="Kör">
+
+              </form>
+              <div id="eduDivEmpty">
+                
+              </div>
+
+            </div>
+            <div class="tabcontent" id="tab-5">
+              <a class="attendclose" href="#" onclick="hide('popEdu')">Close</a>
+              <h3>Skapa ny Kurs</h3>
+              <form onsubmit="" class="newEdu" >
+                <input type="text"  placeholder="Kurs Namn" id="coursenameinput">
+                <input type="number"  placeholder="Poäng" id="coursepoints">
+                <input id="date" type="date">
+                <label>Ladda Upp Kurs Info</label>
+                <input type="file">
+                <input type="submit"  value="Kör">
+
+              </form>
+              <div id="eduDivEmpty">
+                
+              </div>
+            </div>
+            <div class="tabcontent" id="tab-6">
+              <a class="attendclose" href="#" onclick="hide('popEdu')"></a>
+              <h3>skapa ny Klass</h3>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="class">
+          <ol data-draggable="target">
+            <h2>KLASS FE18</h2>
+
+
+            <li data-draggable="item" draggable="true">Webbutveckling</li>
+            <li data-draggable="item" draggable="true">Html</li>
+            <li data-draggable="item" draggable="true">Arbetsmetodik</li>
+            <li data-draggable="item" draggable="true">Backend</li>
+            <li data-draggable="item" draggable="true">Jquery</li>
+            <li data-draggable="item" draggable="true">LIA</li>
+            <li data-draggable="item" draggable="true">Webbdesign</li>
+            <li data-draggable="item" draggable="true">React</li>
+            <li data-draggable="item" draggable="true">Angular</li>
+            <li data-draggable="item" draggable="true">Bootstrap</li>
+            <li data-draggable="item" draggable="true">El-lära</li>
+            <li data-draggable="item" draggable="true"></li>
+            <li data-draggable="item" draggable="true">Hugo Stigsson</li>
+            <li data-draggable="item" draggable="true">Tanja Niklasson</li>
+            <li data-draggable="item" draggable="true">Viktoria Albertsson</li>
+            <li data-draggable="item" draggable="true">Gunhild Axelsen</li>
+
+
+
+          </ol>
+        </div>
+      </div>
+      </div>
+
+    </div>
 
     <button class="posttoggle" onClick="openPost(newspost)">Nytt Inlägg</button>
 
@@ -254,6 +331,10 @@
   <script src="../Javascript/submit.js"></script>
   <script src="../Javascript/adminpopup.js"></script>
   <script src="../Javascript/admin.js"></script>
+  <script src="../Javascript/newDate.js"></script>
+  <script src="../Javascript/tabcontainer.js"></script>
+  <script src="../Javascript/grouping.js"></script>
+  <script src="../Javascript/dragNdrop.js"></script>
 </body>
 
 </html>
