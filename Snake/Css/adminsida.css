@@ -448,9 +448,8 @@ footer {
   align-items: center;
 }
 .sidebar_1 {
-  height: 50%;
-  position: fixed!important;
-  z-index: 1;
+  height: 100%;
+  width: 21%;
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -463,33 +462,51 @@ footer {
   height: 50%;
   width: 90%;
 }
-.edMain {
-  width: 50%;
-  height: 100%;
-  background-color: white;
-  overflow: scroll;
-}
-
-#tab-4, #tab-5, #tab-6 {
-  margin-left: 140px;
+.newcourse {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.newcourse form {
+  display: flex;
+  flex-direction: column;
+}
+.newcourse form input, .newcourse form label {
+  margin-bottom: 0.4em;
+}
+
+
+.container {
+  display: flex;
+  width: 70%;
+  background-color: white;
+  justify-content: space-between;
+}
+.educontent {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+.educontent form {
+  display: flex;
+  flex-direction: column;
+}
+#tab-4 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 #tab-5, #tab-6 {
   display: none;
+  width: 100%;
 }
-div.tab-container {
-  order: 2;
+.tab-container {
+  width: 100%;
   display: flex;
-  justify-content: center;
-}
-#tab-4, #tab-5, #tab-6 {
-  align-items: center;
-}
-#tab-4 form, #tab-5 form, #tab-6 form {
-  display: flex;
-  flex-direction: column;
 }
 
 div.tab {
