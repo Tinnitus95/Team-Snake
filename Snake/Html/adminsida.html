@@ -97,30 +97,41 @@
                 </div>
               </div>
               <div class="tabcontent" id="tab-5">
+                <div class="flexwrapper">
+
+
                 <div class="newcourse">
                   <a class="attendclose" href="#" onclick="hide('popEdu')">Close</a>
                   <h3>Skapa ny Kurs</h3>
-                  <form onsubmit="" class="newEdu" >
+                  <form onsubmit="createCourse()" class="newEdu" >
                     <input type="text"  placeholder="Kurs Namn" id="coursenameinput">
                     <input type="number"  placeholder="Poäng" id="coursepoints">
-                    <input id="date" type="date">
-                    <label>Ladda Upp Kurs Info</label>
+                    <input id="startdate" type="date">
+                    <input id="enddate" type="date">
+                    <select id="teachers">
+                      <option value="-">-</option>
+                      <option value="Kristian Kjeldsen">Kristian Kjeldsen</option>
+                      <option value="Tobias Landén">Tobias Landén</option>
+                      <option value="Albin Mörner">Albin Mörner</option>
+                      <option value="Ann Ahlstedt">Ann Ahlstedt</option>
+                      <option value="Göran Dessen">Göran Dessen</option>
+                      <option value="Andreas Asplinger">Andreas Asplinger</option>
+                      <option value="Mikael Svensson">Mikael Svensson</option>
+                      <option value="Pekka Lång">Pekka Lång</option>
+                    </select>
+                    <label>Ladda Upp Kursinfo</label>
                     <input type="file">
                     <input type="submit"  value="Kör">
-                  </form>
-                  <div id="eduDivEmpty">
-                  </div>
-                </div>
-                 <div class="class">
-                  <ol data-draggable="target">
-                    <h2>Lärare</h2>
 
-                    <li data-draggable="item" draggable="true">Förnamn Efternamn</li>
-                    <li data-draggable="item" draggable="true">Hugo Stigsson</li>
-                    <li data-draggable="item" draggable="true">Tanja Niklasson</li>
-                    <li data-draggable="item" draggable="true">Viktoria Albertsson</li>
-                    <li data-draggable="item" draggable="true">Gunhild Axelsen</li>
-                  </ol>
+                  </form>
+
+
+                </div>
+
+                <div id="courseDivEmpty">
+
+                </div>
+
                 </div>
               </div>
               <div class="tabcontent" id="tab-6">

@@ -8,7 +8,7 @@ function groupGenerateGroups() {
     groupGroups.innerHTML = "";
 
     for (let i = 0; i < numGroups.value; i++) {
-        groupGroups.innerHTML +="<div class=\"gruppering\" id=\"grupp" + i + "\"><ol data-draggable=\"target\"><h3>Grupp " + (i+1) + "</h3></ol></div>";
+        groupGroups.innerHTML +="<div class=\"gruppering\" id=\"grupp" + i + "\"><ol id=\"group" + i + "\" data-draggable=\"target\"><h3>Grupp " + (i+1) + "</h3></ol></div>";
     }
 }
 

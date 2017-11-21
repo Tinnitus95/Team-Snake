@@ -1939,12 +1939,14 @@
 
 
           <div id="groupstyle">
+            <div id="formcontainer">
             <a class="fbclose" href="#" onClick="hide('group')">Close</a>
             <h1>Uppgift 2: Gruppindelning</h1>
 
             <label for="quantity">antal grupper:</label>
             <input id="groupNr" type="number" name="quantity" min="1" onchange="groupGenerateGroups()">
-
+            <button onclick="splitgrp()">Fördela Jämnt</button>
+            </div>
             <div id="groups">
 
             </div>
@@ -1953,10 +1955,10 @@
 
 
           <div class="class">
-            <ol data-draggable="target">
+            <ol data-draggable="target" id="lista">
               <h2>KLASS FE18</h2>
 
-
+              
               <li data-draggable="item" draggable="true">Jesse Jonsson</li>
               <li data-draggable="item" draggable="true">Simon Gribert</li>
               <li data-draggable="item" draggable="true">Natasha Bosnjak</li>
@@ -1987,7 +1989,7 @@
               <li data-draggable="item" draggable="true">Irene Hansen</li>
               <li data-draggable="item" draggable="true">Svante Larsson</li>
               <li data-draggable="item" draggable="true">Birger Ek</li>
-              <li data-draggable="item" draggable="true">Thomas Sørensen</li>
+              
 
 
             </ol>
@@ -2280,7 +2282,7 @@
     <p>&copy; Copyright Snake Limited</p>
   </footer>
   <script src="../Javascript/dropdownmenu.js"></script>
-
+  <script src="../Javascript/split.js"></script>
   <script src="../Javascript/toggles.js"></script>
   <script src="../Javascript/submit.js"></script>
   <script src="../Javascript/Feedback.js"></script>
