@@ -63,7 +63,7 @@
             <div class="sidebar_1 tab">
               <button class="tablinks" onclick="openSide(event,'tab-4')">Hantera Utbildning</button>
               <button class="tablinks" onclick="openSide(event,'tab-5')">Hantera Kurser</button>
-              <button class="tablinks" onclick="openSide(event,'tab-6')">Hantera Klasser</button>
+              <button class="tablinks" onclick="openSide(event,'tab-6'); popclass();">Hantera Klasser</button>
             </div>
             <div class="tab-container">
               <div class="tabcontent" id="tab-4">
@@ -125,7 +125,67 @@
               </div>
               <div class="tabcontent" id="tab-6">
                   <a class="attendclose" href="#" onclick="hide('popEdu')"></a>
-                  <h3>skapa ny Klass</h3>
+                  
+                  
+          
+    <div class="center">
+      <div id="popupclass" class="class">
+      <header class="popup-header">  
+        <h2></h2>
+       </header>    
+        <form onsubmit="submitclass()" class="submitform" id="resetform2">
+
+            
+           <div class="classname-input">
+            <input type="text" id="class-name" placeholder="Namnge Klass" required="required">
+            <button type="button" onclick="addClassName()">Lägg till</button> 
+            <h2 id="ClassName"></h2>   
+              </div>  
+               
+                
+          <div class="input-container">
+            <input type="text" id="firstname" placeholder="Förnamn" required="required">
+            <input type="text" id="lastname" placeholder="Efternamn" required="required">
+            <input type="text" id="email" placeholder="E-mail" required="required">
+            <input type="text" id="phonenum" placeholder="Telefon (Frivilligt)">
+          </div>
+
+          <div class="button-container">
+             <div class="add-student">
+            <button type="button" onclick="addHtmlTableRow(); clearFields();">Lägg till Elev</button>
+            <button type="button" onclick="editHtmlTbleSelectedRow(); clearFields();">Redigera</button>
+            <button type="button" onclick="removeSelectedRow();">Ta bort</button>
+                 </div>
+              <div class="add-class">
+            <input type="submit" value="Skapa Klass" id="submitbutton" onclick="classCreated();">
+              </div>
+          </div>
+
+
+          <div class="table-container">
+            <table id="student-table">
+              <tr id="tableHead">
+                <th>Förnamn</th>
+                <th>Efternamn</th>
+                <th>Email</th>
+                <th>Telefon</th>
+              </tr>
+              <tr>
+            </table>
+          </div>
+        </form>
+          <footer class="popup-footer">
+               
+          </footer>
+      </div>
+
+      <div id="timedclass" class="hide">
+        <h3 id=classCreated></h3>
+          <button type="button" onclick="openSide(event,'tab-6'); popclass(); clearFields(); clearRows();">Stäng</button>
+      </div>
+    </div>
+           
+         
               </div>
             </div>
           </div>
@@ -201,87 +261,6 @@
 
 
   </div>
-  <div id="account" class="ontop">
-    <div class="center">
-      <div id="popupacc" class="acc">
-        <div class="existingaccount" id="studentlist">
-          <p>Student Konton</p>
-          <ol id="studentlogins">
-            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">oscar</li>
-            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">jesse</li>
-            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">simon</li>
-            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">natasha</li>
-            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">silvia</li>
-            <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">elias</li>
-          </ol>
-          <button onclick="createaccount('hidenewacc', 'showedit')">Nytt Konto</button>
-        </div>
-        <div class="newaccount" id="hidenewacc">
-          <p>Skapa nytt student konto</p>
-          <form onsubmit="submitaccount('newstudent', 'studentlogins', 'resetform')" class="submitform" id="resetform">
-            <input type="text" placeholder="Användarnamn" required="required" id="newstudent">
-            <input type="password" placeholder="Lösenord" required="required">
-            <input type="email" placeholder="E-mail" required="required">
-            <input type="submit" value="Skapa Konto" id="sumbitbutton">
-          </form>
-        </div>
-        <div class="editacc" id="showedit">
-          <p>Redigera Konto</p>
-          <p id="thisaccount"></p>
-          <form onsubmit="editaccounts('accname', 'studentlogins', 'thisaccount', 'hidenewacc', 'showedit')">
-            <input type="text" required="required" id="accname">
-            <input type="password" placeholder="Nytt Lösenord" required="required" id="pass">
-            <input type="email" required="required" id="emailacc">
-            <input type="submit" value="Spara">
-          </form>
-        </div>
-        <a href="#" onClick="hide('account')" class="closeaccount">Close</a>
-      </div>
-    </div>
-  </div>
-
-  <div id="classes" class="ontop">
-    <div class="center">
-      <div id="popupclass" class="class">
-        <a href="#" onClick="hide('classes')">Close</a>
-        <h2>Skapa ny Klass</h2>
-        <form onsubmit="submitclass()" class="submitform" id="resetform2">
-
-          <div class="input-container">
-            <input type="text" id="firstname" placeholder="Förnamn" required="required">
-            <input type="text" id="lastname" placeholder="Efternamn" required="required">
-            <input type="text" id="email" placeholder="E-mail" required="required">
-            <input type="text" id="phonenum" placeholder="Telefon (Frivilligt)">
-          </div>
-
-          <div class="button-container">
-            <button type="button" onclick="addHtmlTableRow(); clearFields();">Lägg till Elev</button>
-            <button type="button" onclick="editHtmlTbleSelectedRow(); clearFields();">Redigera</button>
-            <button type="button" onclick="removeSelectedRow();">Ta bort</button>
-            <input type="submit" value="Skapa Klass" id="submitbutton">
-          </div>
-
-
-          <div class="table-container">
-            <table id="student-table">
-              <tr>
-                <th>Förnamn</th>
-                <th>Efternamn</th>
-                <th>Email</th>
-                <th>telefon</th>
-              </tr>
-              <tr>
-            </table>
-          </div>
-        </form>
-      </div>
-
-      <div id="timedclass" class="hide">
-        <h3>Klassen har skapats.</h3>
-      </div>
-    </div>
-  </div>
-
 
   <div id="feedback" class="ontop">
     <div class="center">

@@ -219,52 +219,87 @@ input[type="date"] {
 
 #popupclass,
 #timedclass {
-    display: flex;
-    height: 80%;
-    overflow: scroll;
-    width: 60%;
+    display: flex; 
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
     box-shadow: 0 0 10px;
     background-color: #ffffff;
+    -webkit-transition: width 2s ease, height 1s ease;
+  -moz-transition: width 2s ease, height 1s ease;
+  -o-transition: width 2s ease, height 1s ease;
+  -ms-transition: width 2s ease, height 1s ease;
+  transition: width 2s ease, height 1s ease;
 }
 
-.class a,
-{
-    align-items: flex-start;
+#popupclass:hover {
+  height: 170%;
 }
 
-.class h2 {
-    align-self: center;
+
+.popup-header {
+    margin-bottom: 0;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#ffffff,#888888);
+}
+
+.popup-header h2 {
+    margin: 0;
+    padding: 0;
 }
 
 .input-container {
     display: flex;
+    margin-top: 0.5em;
+    
 }
 
+.classname-input {
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+
+#ClassName {
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #34495e;
+    border-bottom: 2px solid #34495e;
+    padding: 0;
+}
+
+ 
+.classname-input input, 
 .input-container input {
     height: 20px;
     width: 20%;
     align-self: center;
     border: 1px solid grey;
-}
-
-#submitbutton {
-    float: right;
-    height: 24px;
-    width: auto;
+    margin-right: 5px;
 }
 
 .class {
     display: flex;
     flex-direction: column;
-    width: 35%;
 }
 
 .table-container {
-    height: 100%;
+    border: 1px solid #bbbbbb;
+    display: flex;
+    height: 18em;
+    overflow-y: scroll;
     display: flex;
     justify-content: center;
     margin-top: 1em;
-    margin-bottom: 1em;
+    
 }
 
 .table-wrapper {
@@ -273,21 +308,31 @@ input[type="date"] {
 
 .submitform {
     margin: 1em;
+   
 }
 
 #student-table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    max-height: 100%;
-    overflow: scroll;
+    
+    
 }
 
 .button-container {
     display: flex;
     flex-direction: row;
     height: 100%;
+    width: 100%;
     margin-top: 15px;
+}
+
+.button-container button {
+    margin-right: 5px;
+}
+
+th {
+    background-color: #bbbbbb;
 }
 
 td,
@@ -301,12 +346,44 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-#student-table tr:hover {
+tr:hover {
+    cursor: pointer;
     background-color: #eeeeee;
 }
 
+.add-student {
+  width: 50%;  
+  display: flex;    
+}
 
-/*----------------------create class poup---------------------------*/
+.add-class {
+ width: 50%;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+#submitbutton {
+    width: 50%;
+    height: 25px;
+
+}   
+    
+.popup-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    background: linear-gradient(#777777,#ffffff);
+}
+
+#timedclass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*-------------------------------------------------*/
 
 #popupacc {
     height: auto;

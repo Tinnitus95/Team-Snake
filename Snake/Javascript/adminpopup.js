@@ -13,12 +13,13 @@ function popacc() {
 }
 
 function popclass() {
-	document.getElementById("resetform2").reset();
-	document.getElementById('timedclass').style.display = 'none';
-	document.getElementById('classes').style.display = 'flex';
-	document.getElementById("popupclass").style.display = "flex";
+     document.getElementById('timedclass').style.display = 'none';
+	 document.getElementById("popupclass").style.display = "flex";
 
 }
+
+
+    
 
 //To detect escape button
 document.onkeydown = function (evt) {
@@ -47,9 +48,8 @@ function submitclass() {
   document.getElementById("popupclass").style.display = "none";
   var timed = document.getElementById("timedclass");
   timed.style.display = "flex";
-  setTimeout(function() {
-  	 document.getElementById("classes").style.display = "none"
-  }, 1000);
+  
+        
 }
 
 function editaccount(name, hide, show, aname, aemail, p, pass) {
@@ -179,14 +179,32 @@ function editaccounts(name, logins, p, hide, show) {
         
     
              function clearFields() {
-
+            
              document.getElementById("firstname").value = "";
              document.getElementById("lastname").value = "";
              document.getElementById("email").value = "";
-             document.getElementById("phonenum").value = "";         
-           }
+             document.getElementById("phonenum").value = ""; 
+             
+             }
 
+             function clearRows() {
+             for (var i = document.getElementById("student-table").rows.length; i > 1; i--)
+             {
+             document.getElementById("student-table").deleteRow(i -1);
+             document.getElementById("ClassName").innerHTML = ""; 
+             document.getElementById("class-name").value = "";     
+                }
+             }
 
+             function addClassName() {
+              var x = document.getElementById("class-name").value;
+             document.getElementById("ClassName").innerHTML = "Klass: " + x;
 
+                }
+
+            function classCreated() {
+             var y = document.getElementById("class-name").value;
+             document.getElementById("classCreated").innerHTML = "Klass " + y + " har skapats.";
+            }
 
 
