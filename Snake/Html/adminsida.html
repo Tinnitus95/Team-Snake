@@ -309,6 +309,44 @@
       </div>
     </div>
   </div>
+  <div id="account" class="ontop">
+     <div class="center">
+       <div id="popupacc" class="acc">
+         <div class="existingaccount" id="studentlist">
+           <p>Student Konton</p>
+           <ol id="studentlogins">
+             <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">oscar</li>
+             <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">jesse</li>
+             <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">simon</li>
+             <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">natasha</li>
+             <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">silvia</li>
+             <li onclick="editaccount(this, 'hidenewacc', 'showedit', 'accname', 'emailacc', 'thisaccount', 'pass')">elias</li>
+           </ol>
+           <button onclick="createaccount('hidenewacc', 'showedit')">Nytt Konto</button>
+         </div>
+         <div class="newaccount" id="hidenewacc">
+           <p>Skapa nytt student konto</p>
+           <form onsubmit="submitaccount('newstudent', 'studentlogins', 'resetform')" class="submitform" id="resetform">
+             <input type="text" placeholder="Användarnamn" required="required" id="newstudent">
+             <input type="password" placeholder="Lösenord" required="required">
+             <input type="email" placeholder="Email" required="required">
+             <input type="submit" value="Skapa Konto" id="sumbitbutton">
+           </form>
+         </div>
+         <div class="editacc" id="showedit">
+           <p>Redigera Konto</p>
+           <p id="thisaccount"></p>
+           <form onsubmit="editaccounts('accname', 'studentlogins', 'thisaccount', 'hidenewacc', 'showedit')">
+             <input type="text" required="required" id="accname">
+             <input type="password" placeholder="Nytt Lösenord" required="required" id="pass">
+             <input type="email" required="required" id="emailacc">
+             <input type="submit" value="Spara">
+           </form>
+         </div>
+         <a href="#" onClick="hide('account')" class="closeaccount">Close</a>
+       </div>
+     </div>
+   </div>
 
 
 
