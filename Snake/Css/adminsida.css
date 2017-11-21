@@ -551,10 +551,15 @@ div.tab button.active {
 #eduDivEmpty {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 40px;
 }
-
+.eduGroup{
+  padding-bottom: 0.4em;
+}
 .eduGroup ol {
     width: 150px;
+
 }
 /*---------------------------------------------DRAG AND DROP --------------------------------------*/
 
