@@ -233,10 +233,10 @@ input[type="date"] {
   transition: width 2s ease, height 1s ease;
 }
 
+
 #popupclass:hover {
   height: 170%;
 }
-
 
 .popup-header {
     margin-bottom: 0;
@@ -537,7 +537,7 @@ footer {
   justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
-  height: 90%;
+  height: 50%;
   width: 90%;
 }
 .newcourse {
