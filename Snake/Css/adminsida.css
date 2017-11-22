@@ -234,9 +234,6 @@ input[type="date"] {
 }
 
 
-#popupclass:hover {
-  height: 170%;
-}
 
 .popup-header {
     margin-bottom: 0;
@@ -294,7 +291,7 @@ input[type="date"] {
 .table-container {
     border: 1px solid #bbbbbb;
     display: flex;
-    height: 18em;
+    height: 20em;
     overflow-y: scroll;
     display: flex;
     justify-content: center;
@@ -537,7 +534,7 @@ footer {
   justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
-  height: 50%;
+  height: 90%;
   width: 90%;
 }
 .newcourse {
@@ -648,6 +645,7 @@ div.tab button.active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 #courseDivEmpty {
     display: flex;
@@ -656,6 +654,7 @@ div.tab button.active {
     overflow: scroll;
     justify-content: space-evenly;
     height: 40%;
+    width: 100%;
   }
 #courseDivEmpty h3{
 
