@@ -6,7 +6,7 @@ function splitgrp() {
 	var rest = Math.floor(items.length % n);
 	var n = parseInt(document.getElementById("groupNr").value);
 	
-		var m = Math.ceil(items.length /n);
+		var m = Math.floor(items.length /n);
 
 
 
