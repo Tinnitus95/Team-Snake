@@ -219,7 +219,7 @@ input[type="date"] {
 
 #popupclass,
 #timedclass {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
@@ -252,7 +252,7 @@ input[type="date"] {
 .input-container {
     display: flex;
     margin-top: 0.5em;
-    
+
 }
 
 .classname-input {
@@ -273,8 +273,8 @@ input[type="date"] {
     padding: 0;
 }
 
- 
-.classname-input input, 
+
+.classname-input input,
 .input-container input {
     height: 20px;
     width: 20%;
@@ -296,7 +296,7 @@ input[type="date"] {
     display: flex;
     justify-content: center;
     margin-top: 1em;
-    
+
 }
 
 .table-wrapper {
@@ -305,15 +305,15 @@ input[type="date"] {
 
 .submitform {
     margin: 1em;
-   
+
 }
 
 #student-table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    
-    
+
+
 }
 
 .button-container {
@@ -349,22 +349,22 @@ tr:hover {
 }
 
 .add-student {
-  width: 50%;  
-  display: flex;    
+  width: 50%;
+  display: flex;
 }
 
 .add-class {
  width: 50%;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
 }
 
 #submitbutton {
     width: 50%;
     height: 25px;
 
-}   
-    
+}
+
 .popup-footer {
     display: flex;
     align-items: center;
@@ -592,7 +592,7 @@ footer {
 
 div.tab {
   overflow: hidden;
-  background-color: #696969;
+  background-color: rgb(120, 120, 120);
 }
 
 div.tab button {

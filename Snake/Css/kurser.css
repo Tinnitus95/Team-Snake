@@ -82,7 +82,7 @@ div.tab-container {
 
 div.tab {
   overflow: hidden;
-  background-color: #696969;
+  background-color: rgb(120, 120, 120);
 }
 
 /* Style the buttons inside the tab */
@@ -160,17 +160,17 @@ ul a:hover {
   align-items: center;
 }
 
-#pr-exercise button, #art-exercise button, 
-#ps-exercise button, #pr-exercisefe19 button, 
+#pr-exercise button, #art-exercise button,
+#ps-exercise button, #pr-exercisefe19 button,
 #ps-exercisefe19lia button, #art-exercisefe19a button{
   width: 237px;
 }
 
-#pr-exercise button, #pr-exercise .task, 
+#pr-exercise button, #pr-exercise .task,
 #art-exercise button, #art-exercise .task,
-#ps-exercise button, #ps-exercise .task, 
+#ps-exercise button, #ps-exercise .task,
 #pr-exercisefe19 button, #pr-exercisefe19 .task,
-#ps-exercisefe19lia button, #ps-exercisefe19lia .task, 
+#ps-exercisefe19lia button, #ps-exercisefe19lia .task,
 #art-exercisefe19a button, #art-exercisefe19a .task {
   margin-top: 5px;
 }
