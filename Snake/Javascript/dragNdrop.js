@@ -29,15 +29,9 @@
     item = e.target;
 
 
-
+    //to make the script copy on dragevent we need to check for another attribute
     clone = (e.target.getAttribute('data-clone') == 'true') ? true : false;
-    /*if(e.target.getAttribute('clone') == 'true') {
-      clone = true;
 
-    } else {
-
-      clone = false;
-    } */
     //we don't need the transfer data, but we have to define something
     //otherwise the drop action won't work at all in firefox
     //most browsers support the proper mime-type syntax, eg. "text/plain"
@@ -58,9 +52,10 @@
   //drop event to allow the element to be dropped into valid targets
   document.addEventListener('drop', function(e) {
 
-    //console.dir(myShit);
+
     //if this element is a drop target, move the item here
     //then prevent default to allow the action (same as dragover)
+
     if (e.target.getAttribute('data-draggable') == 'target') {
       if (clone == true) {
         e.target.appendChild(item.cloneNode(true));

@@ -24,79 +24,71 @@ const admin = [
 ];
 
 
-        function check(form) { /*function to check userid & password*/
-               /*the following code checkes whether the entered userid and password are matching*/
-               if (form.userchoice.value == "student") {
-               for(let i = 0; i < elev.length; i++) {
-                 if(form.username.value == elev[i].username && form.password.value == elev[i].password) {
-                   valid = true;
-                   break;
-                  }
-
-                 else {
-                 valid = false;
-                  }
-              }
-                if (valid) {
-                 window.open('../Html/huvudelevsida.html#',"_self")/*opens the target page while Id & password matches*/
-
-                 }
-               else {
-
-                   document.getElementById("Change").innerHTML = "Prova Igen";
-
-                   //alert("Error Password or Username")/*displays error message*/
-               }
-             }  else if (form.userchoice.value == "teacher") {
-               for(let i = 0; i < teacher.length; i++) {
-                 if(form.username.value == teacher[i].username && form.password.value == teacher[i].password) {
-                   valid = true;
-                   break;
-                  }
-
-                 else {
-                 valid = false;
-                  }
-              }
-                if (valid) {
-                 window.open('../Html/lararsida.html',"_self")/*opens the target page while Id & password matches*/
-
-                 }
-               else {
-
-                   document.getElementById("Change").innerHTML = "Prova Igen";
-
-                   //alert("Error Password or Username")/*displays error message*/
-               } 
-             } else if (form.userchoice.value == "admin") {
-                 for(let i = 0; i < admin.length; i++) {
-                 if(form.username.value == admin[i].username && form.password.value == admin[i].password) {
-                   valid = true;
-                   break;
-                  }
-
-                 else {
-                 valid = false;
-                  }
-              }
-                if (valid) {
-                 window.open('../Html/adminsida.html',"_self")/*opens the target page while Id & password matches*/
-
-                 }
-               else {
-
-                   document.getElementById("Change").innerHTML = "Prova Igen";
-
-                   //alert("Error Password or Username")/*displays error message*/
-               }
-               } 
-
-          }
-
-
-function handle(e){
-        if(e.keyCode === 13){
-            e.preventDefault(); // Ensure it is only this code that rusn
-            document.getElementById("login-btn").click();   
-        }
+function check(form) {
+  /*function to check userid & password
+                the following code checkes whether the entered userid and password are matching*/
+  if (form.userchoice.value == "student") {
+    for (let i = 0; i < elev.length; i++) {
+      if (form.username.value == elev[i].username && form.password.value == elev[i].password) {
+        valid = true;
+        break;
+      } else {
+        valid = false;
+      }
     }
+    if (valid) {
+      window.open('../Html/huvudelevsida.html#', "_self") /*opens the target page while Id & password matches*/
+
+    } else {
+
+      document.getElementById("Change").innerHTML = "Prova Igen";
+
+      //alert("Error Password or Username")/*displays error message*/
+    }
+  } else if (form.userchoice.value == "teacher") {
+    for (let i = 0; i < teacher.length; i++) {
+      if (form.username.value == teacher[i].username && form.password.value == teacher[i].password) {
+        valid = true;
+        break;
+      } else {
+        valid = false;
+      }
+    }
+    if (valid) {
+      window.open('../Html/lararsida.html', "_self") /*opens the target page while Id & password matches*/
+
+    } else {
+
+      document.getElementById("Change").innerHTML = "Prova Igen";
+
+      //alert("Error Password or Username")/*displays error message*/
+    }
+  } else if (form.userchoice.value == "admin") {
+    for (let i = 0; i < admin.length; i++) {
+      if (form.username.value == admin[i].username && form.password.value == admin[i].password) {
+        valid = true;
+        break;
+      } else {
+        valid = false;
+      }
+    }
+    if (valid) {
+      window.open('../Html/adminsida.html', "_self") /*opens the target page while Id & password matches*/
+
+    } else {
+
+      document.getElementById("Change").innerHTML = "Prova Igen";
+
+      //alert("Error Password or Username")/*displays error message*/
+    }
+  }
+
+}
+
+
+function handle(e) {
+  if (e.keyCode === 13) {
+    e.preventDefault(); // Ensure it is only this code that rusn
+    document.getElementById("login-btn").click();
+  }
+}
