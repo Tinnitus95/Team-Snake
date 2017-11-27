@@ -188,11 +188,11 @@ function clearRows() {
 
 function addClassName() {
   var x = document.getElementById("class-name").value;
-  document.getElementById("ClassName").innerHTML = "Klass: " + x;
-
+  document.getElementById("ClassName").innerHTML = "<h2> Klass: " + x + "</h2>";
 }
+
 
 function classCreated() {
   var y = document.getElementById("class-name").value;
-  document.getElementById("classCreated").innerHTML = "Klass " + y + " har skapats.";
+  document.getElementById("classCreated").innerHTML = "<h3> Klass " + y + " har skapats." + "</h3>";
 }
