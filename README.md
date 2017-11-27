@@ -9,7 +9,7 @@ Some functions may not work in older browsers as this was developed for Google C
 None.
 
 
-### Authors
+## Authors
 
 Jesse Jonsson
 Oscar Fredriksson
@@ -20,8 +20,9 @@ Natasha Bosnjak
 
 See also the list of [contributors](https://github.com/Tinnitus95/Team-Snake/contributors) who participated in this project.
 
-### Contributing
+## Contributing
 Pull requests welcome
-### Licence
+
+## Licence
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
