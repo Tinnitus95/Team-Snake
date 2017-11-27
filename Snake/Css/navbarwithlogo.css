@@ -1,105 +1,87 @@
-
 body {
-	
-    background: url("../Pictures/background.jpg");
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    font-family: 'arial';
-	line-height: 1.6;
-	margin: 0;
- 
+  background: url("../Pictures/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'arial';
+  line-height: 1.6;
+  margin: 0;
 }
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-h2,
-h3,
-a {
-	color: #34495e;
+h2, h3, a {
+  color: #34495e;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
+
 .logo img {
-    
-    height: 4em;
-	
-    
-    
-    
+  height: 4em;
 }
 
 .main-nav {
-	margin-top: 5px;
-	position: relative;
+  margin-top: 5px;
+  position: relative;
 }
-.logo a,
-.main-nav a {
-	padding: 0px 30px;
-	text-transform: uppercase;
-	text-align: center;
-	display: block;
+
+.logo a, .main-nav a {
+  padding: 0px 30px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
 }
 
 .main-nav a {
-	color: #424548;
-	font-size: 1.3em;
+  color: #424548;
+  font-size: 1.3em;
 }
 
 .main-nav a:hover {
-	color: #9b9ea0;
+  color: #9b9ea0;
 }
-
 
 .header {
-	padding-top: 0.2em;
-	padding-bottom: 0.2em;
-	border: 1px solid #655f5f;
-	background-color: rgba(245, 233, 233, 0.69);
-    box-shadow: 3px 3px 20px;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border: 1px solid #655f5f;
+  background-color: rgba(245, 233, 233, 0.69);
+  box-shadow: 3px 3px 20px;
 }
-
 
 /*-----------------------------------------------------------------
   Media querys
 ------------------------------------------------------------------ */
-@media (min-width: 260px){ 
-.header,
 
-
-    .header {
-		flex-direction: column;
-		align-items: center;
-    	}
+@media (min-width: 260px) {
+  .header, .header {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media  (min-width: 769px) {
-	.header,
-	.main-nav {
-		display: flex;
-	}
-
-    .header {
-		flex-direction: column;
-		align-items: center;
-    	}
-    .logo img {
-    
-    
-	display: flex;
+@media (min-width: 769px) {
+  .header, .main-nav {
+    display: flex;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo img {
+    display: flex;
     align-content: center;
-    }
-
+  }
 }
 
-@media  (min-width: 1025px) {
-	.header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

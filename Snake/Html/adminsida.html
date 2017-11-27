@@ -12,7 +12,7 @@
   <header class="header">
     <div class="logo">
       <a href="HomePageTwo.html">
-        <img src="../Pictures/KYH-logo.png">
+        <img src="../Pictures/KYH-logo.png" alt="logo">
       </a>
     </div>
 
@@ -70,30 +70,33 @@
                 <div class="educontent">
                   <a class="attendclose" href="#" onclick="hide('popEdu')"></a>
                   <h2>Skapa ny utbildning</h2>
-                  <form onsubmit="createEdu()"class="newEdu" >
+                  <form onsubmit="createEdu()" class="newEdu" >
                     <input type="text"  placeholder="Namn på utbildning..." id="eduInput">
-                    <input type="submit" name="" value="Kör">
+                    <input type="submit"  value="Kör">
                   </form>
                   <div id="eduDivEmpty">
                   </div>
                 </div>
                 <div class="class">
                   <ol data-draggable="target">
-                    <h2>KLASS FE18</h2>
+                    <li>
+                      <h2> Kurser</h2>
+                    </li>
 
 
-                    <li data-draggable="item" draggable="true" clone="true">Webbutveckling</li>
-                    <li data-draggable="item" draggable="true" clone="true">Html</li>
-                    <li data-draggable="item" draggable="true" clone="true">Arbetsmetodik</li>
-                    <li data-draggable="item" draggable="true" clone="true">Backend</li>
-                    <li data-draggable="item" draggable="true" clone="true">Jquery</li>
-                    <li data-draggable="item" draggable="true" clone="true">LIA</li>
-                    <li data-draggable="item" draggable="true" clone="true">Webbdesign</li>
-                    <li data-draggable="item" draggable="true" clone="true">React</li>
-                    <li data-draggable="item" draggable="true" clone="true">Angular</li>
-                    <li data-draggable="item" draggable="true" clone="true">Bootstrap</li>
-                    <li data-draggable="item" draggable="true" clone="true" >El-lära</li>
+                    <li data-draggable="item" draggable="true" data-clone="true">Webbutveckling</li>
+                    <li data-draggable="item" draggable="true" data-clone="true">Html</li>
+                    <li data-draggable="item" draggable="true" data-clone="true">Arbetsmetodik</li>
+                    <li data-draggable="item" draggable="true" data-clone="true">Backend</li>
+                    <li data-draggable="item" draggable="true" data-clone="true">Jquery</li>
+                    <li data-draggable="item" draggable="true" data-clone="true">LIA</li>
+                    <li data-draggable="item" draggable="true" data-clone="true">Webbdesign</li>
+                    <li data-draggable="item" draggable="true" data-clone="true">React</li>
+                    <li data-draggable="item" draggable="true" data-clone="true">Angular</li>
+                    <li data-draggable="item" draggable="true" data-clone="true">Bootstrap</li>
+                    <li data-draggable="item" draggable="true" data-clone="true" >El-lära</li>
 
+                    </ol>
                 </div>
               </div>
               <div class="tabcontent" id="tab-5">
@@ -136,24 +139,24 @@
               </div>
               <div class="tabcontent" id="tab-6">
                   <a class="attendclose" href="#" onclick="hide('popEdu')"></a>
-                  
-                  
-          
+
+
+
     <div class="center">
       <div id="popupclass" class="class">
-      <header class="popup-header">  
+      <header class="popup-header">
         <h2>Skapa ny klass</h2>
-       </header>    
+       </header>
         <form onsubmit="submitclass()" class="submitform" id="resetform2">
 
-            
+
            <div class="classname-input">
             <input type="text" id="class-name" placeholder="Namnge Klass" required="required">
-            <button type="button" onclick="addClassName()">Lägg till</button> 
-            <h2 id="ClassName"></h2>   
-              </div>  
-               
-                
+            <button type="button" onclick="addClassName()">Lägg till</button>
+            <h2 id="ClassName"></h2>
+              </div>
+
+
           <div class="input-container">
             <input type="text" id="firstname" placeholder="Förnamn" required="required">
             <input type="text" id="lastname" placeholder="Efternamn" required="required">
@@ -181,12 +184,12 @@
                 <th>Email</th>
                 <th>Telefon</th>
               </tr>
-              <tr>
+
             </table>
           </div>
         </form>
           <footer class="popup-footer">
-               
+
           </footer>
       </div>
 
@@ -195,8 +198,8 @@
           <button type="button" onclick="openSide(event,'tab-6'); popclass(); clearFields(); clearRows();">Stäng</button>
       </div>
     </div>
-           
-         
+
+
               </div>
             </div>
           </div>
@@ -268,7 +271,7 @@
         <h3>Ditt inlägg har publicerats</h3>
       </div>
     </div>
-  </div>
+
 
 
   </div>
@@ -285,7 +288,7 @@
                   <button type="button" onclick="questionDaily()">Spara</button>
                 </td>
                 <td>
-                  <textarea id="questionDaily" rows="1" col="20">Hur har dagen varit?</textarea>
+                  <textarea id="questionDaily" rows="1" cols="20">Hur har dagen varit?</textarea>
                 </td>
               </tr>
             </table>
@@ -296,7 +299,7 @@
   </div>
   <div id="vfeedback" class="ontop">
     <div class="center">
-      <div id="fpopup" class="dfeedback">
+      <div id="fpopup1" class="dfeedback">
         <div class="main-form">
           <a class="fbclose" href="#" onClick="hide('vfeedback')">Close</a>
           <div class="questions">

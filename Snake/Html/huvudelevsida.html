@@ -14,7 +14,7 @@
   <header class="header">
     <div class="logo">
       <a href="HomePageTwo.html">
-        <img src="../Pictures/KYH-logo.png">
+        <img src="../Pictures/KYH-logo.png" alt="logo">
       </a>
     </div>
 
@@ -31,7 +31,7 @@
         </li>
         <li>
           <a href="">Lämna utvärdering</a>
-          <ul class="submenu">
+          <ul class="submenu" >
             <li>
               <a href="#" onClick="pop('feedback')">Dagens Feedback</a>
             </li>
@@ -109,7 +109,9 @@
                   </table>
                   <div class="turnin">
                     <h3>Ladda upp din inlämningsuppgift</h3>
-                    <form method="">
+                    <form>
+
+
                       <div class="turnins">
                         <input type="file" name="kursToUpload" id="kursToUpload1">
                         <select>
@@ -119,7 +121,7 @@
                           <option value="uppgift4">uppgift4</option>
                         </select>
                       </div>
-                      <button type="skicka" onclick="turnInAssignment('webbutveckling','kursToUpload1')">Skicka</button>
+                      <button  onclick="turnInAssignment('webbutveckling','kursToUpload1')">Skicka</button>
                     </form>
                   </div>
                 </div>
@@ -224,7 +226,7 @@
                     </tr>
                   </table>
                   <h3>Ladda upp din inlämningsuppgift</h3>
-                  <form method="">
+                  <form >
                     <input type="file" name="kursToUpload" id="kursToUpload2">
                     <select>
                       <option value="uppgift1">uppgift1</option>
@@ -233,7 +235,7 @@
                       <option value="uppgift4">uppgift4</option>
                     </select>
                   </form>
-                  <button type="skicka" onclick="turnInAssignment('lia','kursToUpload2')">Skicka</button>
+                  <button  onclick="turnInAssignment('lia','kursToUpload2')">Skicka</button>
                 </div>
 
                 <div id="ps-test" class="tabcontent">
@@ -336,7 +338,7 @@
                     </tr>
                   </table>
                   <h3>Ladda upp din inlämningsuppgift</h3>
-                  <form method="">
+                  <form >
                     <input type="file" name="kursToUpload" id="kursToUpload3">
                     <select>
                       <option value="uppgift1">uppgift1</option>
@@ -345,7 +347,7 @@
                       <option value="uppgift4">uppgift4</option>
                     </select>
                   </form>
-                  <button type="skicka" onclick="turnInAssignment('arbetsmetodik','kursToUpload3')">Skicka</button>
+                  <button onclick="turnInAssignment('arbetsmetodik','kursToUpload3')">Skicka</button>
                 </div>
 
                 <div id="art-test" class="tabcontent">
@@ -812,7 +814,7 @@
           <a class="fbclose" href="#" onClick="hide('coursereview')">Close</a>
           <h3>Utvärdering av kursen</h3>
 
-          <form id="q1" action="">
+          <form id="q1" >
             <p class="breakword">Hur upplever du tempot har varit under kursens gång?</p>
             <textarea name="he" style="width: 60%" rows="3" cols="80" required></textarea>
 
@@ -871,45 +873,45 @@
             <a class="fbclose" href="#" onClick="hide('vfeedback')">Close</a>
             <h2>Veckans utvärderingar.</h2>
             <div class="questions">
-              <form id="q6" action="">
+              <form id="q6" >
                 <p>Hur upplever du tempot i skolan just nu?</p>
                 <span>Långsamt</span>
-                <input id="slider" type="range" min="0" max="10" value="5">
+                <input class="slider" type="range" min="0" max="10" value="5">
                 <span>Snabbt</span>
 
               </form>
             </div>
             <div class="questions">
-              <form id="q7" action="">
+              <form id="q7" >
                 <p>Hur upplever du stämningen i klassen?</p>
                 <span>Dålig</span>
-                <input id="slider" type="range" min="0" max="10" value="5">
+                <input class="slider" type="range" min="0" max="10" value="5">
                 <span>Bra</span>
               </form>
             </div>
 
             <div class="questions">
-              <form id="q8" action="">
+              <form id="q8" >
                 <p>Hur motiverad är du i dina studier?</p>
                 <span>Lite</span>
-                <input id="slider" type="range" min="0" max="10" value="5">
+                <input class="slider" type="range" min="0" max="10" value="5">
                 <span>Mycket</span>
               </form>
             </div>
             <div class="questions">
-              <form id="q9" action="">
+              <form id="q9" >
                 <p>Tycker du att du har tillgång till det du behöver?</p>
                 <span>Inget finns</span>
-                <input id="slider" type="range" min="0" max="10" value="5">
+                <input class="slider" type="range" min="0" max="10" value="5">
                 <span>Allt finns</span>
               </form>
             </div>
 
             <div class="questions">
-              <form id="q10" action="">
+              <form id="q10" >
                 <p>Är du nöjd med dina studier?</p>
                 <span>Missnöjd</span>
-                <input id="slider" type="range" min="0" max="10" value="5">
+                <input class="slider" type="range" min="0" max="10" value="5">
                 <span>Nöjd</span>
               </form>
             </div>

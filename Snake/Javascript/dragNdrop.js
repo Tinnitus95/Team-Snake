@@ -30,7 +30,7 @@
 
 
 
-    clone = (e.target.getAttribute('clone') == 'true') ? true : false;
+    clone = (e.target.getAttribute('data-clone') == 'true') ? true : false;
     /*if(e.target.getAttribute('clone') == 'true') {
       clone = true;
 

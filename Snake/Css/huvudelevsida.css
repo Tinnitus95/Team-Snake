@@ -1,374 +1,365 @@
     body {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background-image: url('../Pictures/background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background-image: url('../Pictures/background.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
 
-html,
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
+    html, body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
+    /* define a fixed width for the entire menu */
 
-/* define a fixed width for the entire menu */
+    .submenu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      width: 100%;
+    }
 
-.navigation {
-    height: top;
-}
+    /* make ALL links (main and submenu) have padding and background color */
 
-.submenu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    width: 100%;
-}
+    /* add hover behaviour */
 
-
-/* make ALL links (main and submenu) have padding and background color */
-
-
-/* add hover behaviour */
-
-
-/* when hovering over a .mainmenu item,
+    /* when hovering over a .mainmenu item,
 display the submenu inside it.
-we're changing the submenu's max-height from 0 to 200px;
+we're changing the submenu's max-height from 0 to 300px;
 */
 
-.main-nav li:hover .submenu {
-    display: block;
-    max-height: 300px;
-}
+    .main-nav li:hover .submenu {
+      display: block;
+      max-height: 300px;
+    }
 
-
-/*
+    /*
 we now overwrite the background-color for .submenu links only.
 CSS reads down the page, so code at the bottom will overwrite the code at the top.
 */
 
-.submenu a {
-    background-color: #999;
-    justify-content: center;
-    display: flex;
-    font-size: 1em;
-}
+    .submenu a {
+      background-color: #999;
+      justify-content: center;
+      display: flex;
+      font-size: 1em;
+    }
 
+    /* hover behaviour for links inside .submenu */
 
-/* hover behaviour for links inside .submenu */
+    .submenu a:hover {
+      background-color: #666;
+    }
 
-.submenu a:hover {
-    background-color: #666;
-}
-
-
-/* this is the initial state of all submenus.
+    /* this is the initial state of all submenus.
 we set it to max-height: 0, and hide the overflowed content.
 */
 
-.submenu {
-    max-height: 0;
-    -webkit-transition: all 0.5s ease-out;
-}
+    .submenu {
+      max-height: 0;
+      -webkit-transition: all 0.5s ease-out;
+    }
 
-#content {
-    display: none;
-}
+    #content {
+      display: none;
+    }
 
+    /*............................Style for newsfeed........................ */
 
-/*............................Style for newsfeed........................ */
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 8% 5% 5% 5%;
+    }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 8% 5% 5% 5%;
-}
+    .feed {
+      display: flex;
+      max-width: 600px;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+    }
 
-.feed {
-    display: flex;
-    max-width: 600px;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-}
+    .blog-post {
+      padding: 5%;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid black;
+      background-color: rgba(153, 153, 153, 0.8);
+      margin-bottom: 5%;
+      box-shadow: 7px 7px 20px;
+      border-radius: 35px;
+    }
 
-.blog-post {
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid black;
-    background-color: rgba(153, 153, 153, 0.8);
-    margin-bottom: 5%;
-    box-shadow: 7px 7px 20px;
-    border-radius: 35px;
-}
+    .blog-post h3 {
+      color: #0b0b0b;
+    }
 
-.blog-post h3 {
-    color: #0b0b0b;
-}
+    .more {
+      align-self: flex-end;
+      text-decoration: underline;
+      font-size: 11px;
+      font-style: italic;
+    }
 
-.more {
-    align-self: flex-end;
-    text-decoration: underline;
-    font-size: 11px;
-    font-style: italic;
-}
+    .date {
+      font-size: 14px;
+      font-weight: bold;
+      color: #d43900;
+    }
 
-.date {
-    font-size: 14px;
-    font-style: bold;
-    color: #d43900;
-}
+    /*............................popup for attedance................... */
 
+    .ontop {
+      z-index: 999;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: none;
+      position: fixed;
+      background: gray;
+      /* older browsers */
+      background: rgba(128, 128, 128, 0.4);
+    }
 
-/*............................popup for attedance................... */
+    .center {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.ontop {
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: none;
-    position: fixed;
-    background: gray;
-    /* older browsers */
-    background: rgba(128, 128, 128, 0.4);
-}
+    #popup {
+      border-radius: 5%;
+      border-style: solid;
+      border-width: 5px;
+      display: flex;
+      height: auto;
+      width: 30%;
+      margin: auto;
+      background-color: #ffffff;
+    }
 
-.center {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    #popup form {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-#popup {
-    border-radius: 5%;
-    border-style: solid;
-    border-width: 5px;
-    display: flex;
-    height: auto;
-    width: 30%;
-    margin: auto;
-    background-color: #ffffff;
-}
+    form input, form a, form h3, form p {
+      margin-bottom: 10px;
+      color: black;
+    }
 
-#popup form {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    form a, .fbclose {
+      display: flex;
+      align-self: flex-end;
+      margin-right: 10px;
+    }
 
-form input,
-form a,
-form h3,
-form p {
-    margin-bottom: 10px;
-    color: black;
-}
+    #okbutton, #code {
+      width: 40%;
+      box-sizing: border-box;
+    }
 
-form a,
-.fbclose {
-    display: flex;
-    align-self: flex-end;
-    margin-right: 10px;
-}
+    /*----------------------------------FEEDBACK POPUP----------------------- */
 
-#okbutton,
-#code {
-    width: 40%;
-    box-sizing: border-box;
-}
+    #fpopup, #vpopup {
+      display: flex;
+      height: auto;
+      width: 38%;
+      margin: auto;
+      background-color: #ffffff;
+      border-radius: 7px;
+    }
 
+    .main-form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-/*----------------------------------FEEDBACK POPUP----------------------- */
+    .breakword {
+      overflow-wrap: break-word;
+    }
 
-#fpopup,
-#vpopup {
-    display: flex;
-    height: auto;
-    width: 38%;
-    margin: auto;
-    background-color: #ffffff;
-    border-radius: 7px;
-}
+    textarea {
+      resize: none;
+    }
 
-.main-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .lain-form {
+      background-color: white;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 60%;
+      height: 80%;
+      overflow: scroll;
+      padding: 1em 1em 1em 1em;
+    }
 
-.breakword {
-    overflow-wrap: break-word;
-}
+    span {
+      font-size: 20px;
+    }
 
-textarea {
-    resize: none;
-}
+    .main-form p {
+      font-size: 100%;
+      margin-left: 1px;
+      text-align: center;
+      margin-top: 0.2px;
+      font-weight: bold;
+    }
 
-.lain-form {
-    background-color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 60%;
-    height: 80%;
-    overflow: scroll;
-    padding: 1em 1em 1em 1em;
-}
+    .main-form h3 {
+      margin-top: 7px;
+      margin-left: 10px;
+      font-size: 20px;
+      text-align: center;
+    }
 
-span {
-    font-size: 20px;
-}
+    .questions {
+      margin-left: 10px;
+      text-align: center;
+    }
 
-.main-form p {
-    font-size: 100%;
-    margin-left: 1px;
-    text-align: center;
-    margin-top: 0.2px;
-    font-weight: bold;
-}
+    .slider {
+      width: 200px;
+      height: 20px;
+    }
 
-.main-form h3 {
-    margin-top: 7px;
-    margin-left: 10px;
-    font-size: 20px;
-    text-align: center;
-}
+    .main-form button {
+      height: auto;
+      width: 100px;
+      font-size: 100%;
+      margin-left: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
 
-.questions {
-    margin-left: 10px;
-    text-align: center;
-}
+    .textarea {
+      display: block;
+      margin-top: 10px;
+      width: 80%;
+    }
 
-#slider {
-    width: 200px;
-    height: 20px;
-}
+    .textarea textarea {
+      resize: none;
+      width: 80%;
+    }
 
-.main-form button {
-    height: auto;
-    width: 100px;
-    font-size: 100%;
-    margin-left: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
+    footer {
+      background-color: rgba(245, 233, 233, 0.69);
+      width: 100%;
+      position: relative;
+      text-align: center;
+      font-size: 130%;
+      height: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: auto;
+    }
 
-.textarea {
-    display: block;
-    margin-top: 10px;
-    width: 80%;
-}
+    .questions span {
+      font-size: 1em;
+      vertical-align: text-bottom;
+    }
 
-.textarea textarea {
-    resize: none;
-    width: 80%;
-}
+    .turnin {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-footer {
-    background-color: rgba(245, 233, 233, 0.69);
-    width: 100%;
-    position: relative;
-    text-align: center;
-    font-size: 130%;
-    height: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-}
-.questions span{
-  font-size: 1em;
-  vertical-align: text-bottom;
-}
+    .turnins {
+      display: flex;
+    }
 
-.turnin {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.turnins {
-    display: flex;
-    /*-------------------------------DAILY REVIEW SMILEY--------------------------------------------------*/
     .cc-selector input {
-        margin: 0;
-        padding: 0;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
+      margin: 0;
+      padding: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
     }
+
     .sad {
-        background-image: url(https://openclipart.org/download/22396/nicubunu-Emoticons-Crying-face.svg);
+      background-image: url(https://openclipart.org/download/22396/nicubunu-Emoticons-Crying-face.svg);
     }
+
     .worried {
-        background-image: url(https://openclipart.org/download/22390/nicubunu-Emoticons-Worried-face.svg);
+      background-image: url(https://openclipart.org/download/22390/nicubunu-Emoticons-Worried-face.svg);
     }
+
     .happy {
-        background-image: url(https://openclipart.org/download/22398/nicubunu-Emoticons-Laughing-face.svg);
+      background-image: url(https://openclipart.org/download/22398/nicubunu-Emoticons-Laughing-face.svg);
     }
+
     .cc-selector input:active+.emojis-cc {
-        opacity: .9;
+      opacity: .9;
     }
+
     .cc-selector input:checked+.emojis-cc {
-        -webkit-filter: none;
-        -moz-filter: none;
-        filter: none;
+      -webkit-filter: none;
+      -moz-filter: none;
+      filter: none;
     }
+
     .emojis-cc {
-        cursor: pointer;
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: inline-block;
-        margin: 20px;
-        width: 100px;
-        height: 70px;
-        -webkit-transition: all 100ms ease-in;
-        -moz-transition: all 100ms ease-in;
-        transition: all 100ms ease-in;
-        -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-        -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-        filter: brightness(1.8) grayscale(1) opacity(.7);
+      cursor: pointer;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin: 20px;
+      width: 100px;
+      height: 70px;
+      -webkit-transition: all 100ms ease-in;
+      -moz-transition: all 100ms ease-in;
+      transition: all 100ms ease-in;
+      -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+      -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+      filter: brightness(1.8) grayscale(1) opacity(.7);
     }
+
     .emojis-cc:hover {
-        -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
-        -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
-        filter: brightness(1.2) grayscale(.5) opacity(.9);
+      -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+      -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+      filter: brightness(1.2) grayscale(.5) opacity(.9);
     }
+
     /*..................................MEDIA..................................*/
+
     @media (min-width: 900px) {
-        .submenu {
-            width: 25%;
-            margin-left: 2%;
-            position: absolute;
-        }
+      .submenu {
+        width: 25%;
+        margin-left: 2%;
+        position: absolute;
+      }
     }
+
     /*-------------MEDIA FOR FEEDBACK-----------------*/
+
     @media (max-width: 900px) {
-        #fpopup,
-        #vpopup {
-            position: absolute;
-            width: 70%;
-        }
+      #fpopup, #vpopup {
+        position: absolute;
+        width: 70%;
+      }
     }
+
     @media (max-width: 450px) {
-        #fpopup,
-        #vpopup {
-            width: 90%;
-        }
+      #fpopup, #vpopup {
+        width: 90%;
+      }
     }

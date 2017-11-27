@@ -1,14 +1,14 @@
 
 
 body {
-	
+
     background: url("../Pictures/background.jpg");
     background-repeat:no-repeat;
     background-attachment: fixed;
     font-family: 'arial';
 	line-height: 1.6;
 	margin: 0;
- 
+
 }
 ul {
   margin: 0;
@@ -26,7 +26,7 @@ a {
 	text-decoration: none;
 }
 .logo {
-    
+
 	margin: 0;
     font-size: 2em;
     font-style:bold;
