@@ -682,7 +682,7 @@ div.tab button.active {
 
 @media (min-width: 900px) {
     .submenu {
-        width: 25%;
+        width: 18%;
         margin-left: 2%;
         position: absolute;
     }
@@ -729,4 +729,19 @@ div.tab button.active {
     #vpopup {
         width: 90%;
     }
+
+
+    }
+
+@media (max-width: 750px) {
+  .container{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .sidebar_1{
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    }
+
 }
