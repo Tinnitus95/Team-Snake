@@ -9,6 +9,10 @@ function addTask(name, task, table) {
   var tdgradeop3 = document.createElement("OPTION");
   var tdna = document.createElement("A");
 
+  var onclick = document.createAttribute("onclick");
+  onclick.value = "pop('group')";
+  tdna.setAttributeNode(onclick);
+
   var name = document.getElementById(name).value;
   var status = document.getElementById(task).value;
 

@@ -178,6 +178,9 @@ input[type="date"] {
 .show h3 {
   color: #d43900
 }
+#pr-table a {
+  cursor: pointer;
+}
 
 /*............................popup for attedance................... */
 
