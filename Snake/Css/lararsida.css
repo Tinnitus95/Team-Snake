@@ -184,6 +184,10 @@ input[type="date"] {
 
 /*............................popup for attedance................... */
 
+.attendence {
+    box-shadow: 0 0 10px;
+}
+
 .ontop {
   z-index: 999;
   width: 100%;
@@ -447,6 +451,7 @@ footer {
   height: 60%;
   background-color: white;
   overflow: scroll;
+  box-shadow: 0 0 10px;
 }
 
 #tab-1, #tab-2, #tab-3 {

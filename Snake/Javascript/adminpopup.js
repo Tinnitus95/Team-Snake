@@ -182,17 +182,17 @@ function clearRows() {
   for (var i = document.getElementById("student-table").rows.length; i > 1; i--) {
     document.getElementById("student-table").deleteRow(i - 1);
     document.getElementById("ClassName").innerHTML = "";
-    document.getElementById("class-name").value = "";
+    document.getElementById("className-input").value = "";
   }
 }
 
 function addClassName() {
-  var x = document.getElementById("class-name").value;
+  var x = document.getElementById("className-input").value;
   document.getElementById("ClassName").innerHTML = "<h2> Klass: " + x + "</h2>";
 }
 
 
 function classCreated() {
-  var y = document.getElementById("class-name").value;
+  var y = document.getElementById("className-input").value;
   document.getElementById("classCreated").innerHTML = "<h3> Klass " + y + " har skapats." + "</h3>";
 }
