@@ -11,6 +11,18 @@ body {
     background-image: url('../Pictures/background.jpg');
     background-attachment: fixed;
 }
+footer {
+    background-color: rgba(245, 233, 233, 0.69);
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    font-size: 130%;
+    height: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
 .loginsection {
     display: flex;
     justify-content: center;

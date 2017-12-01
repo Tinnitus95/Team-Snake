@@ -37,7 +37,7 @@ function check(form) {
       }
     }
     if (valid) {
-      window.open('../Html/huvudelevsida.html#', "_self") /*opens the target page while Id & password matches*/
+      window.open('../Html/Student.html#', "_self") /*opens the target page while Id & password matches*/
 
     } else {
 
@@ -55,7 +55,7 @@ function check(form) {
       }
     }
     if (valid) {
-      window.open('../Html/lararsida.html', "_self") /*opens the target page while Id & password matches*/
+      window.open('../Html/Teacher.html', "_self") /*opens the target page while Id & password matches*/
 
     } else {
 
@@ -73,7 +73,7 @@ function check(form) {
       }
     }
     if (valid) {
-      window.open('../Html/adminsida.html', "_self") /*opens the target page while Id & password matches*/
+      window.open('../Html/Admin.html', "_self") /*opens the target page while Id & password matches*/
 
     } else {
 
