@@ -17,10 +17,13 @@ None.
 * **Oscar Fredriksson** - [Profile](https://github.com/Tinnitus95)
 * **Simon Gribert** - [Profile](https://github.com/Simonkyh)
 * **Silvia Morais** - [Profile](https://github.com/Silvia02)
-* **Natasha Bosnjak** - [Profile](https://github.com/NatashaBos)
 
 
 See also the list of [contributors](https://github.com/Tinnitus95/Team-Snake/contributors) who participated in this project.
 
 ## Contributing
 Pull requests welcome
+
+## Trello
+
+[LMS TEAM SNEK - Trello](https://trello.com/b/alffjKj3/lms-team-snek)
